@@ -32,7 +32,7 @@ The repository implements comprehensive experiments comparing various methods fo
     └── {task}_r2_summary.csv   # R² summary statistics for each task
 ```
 
-*Note: `{task}` represents: MW, LTMW, logP, sp3, TPSA, MR, HKA, BJ, Chi1v (9 tasks total)*
+*Note: `{task}` represents: ltmw, logp, sp3, tpsa, mr, hka, bj, chi1v, mw (9 tasks total)*
 
 ## Contents
 
@@ -62,16 +62,16 @@ The experiments use the **ESOL (Estimated SOLubility) dataset** based on Delaney
 - Experimental solubility values and other molecular properties
 - Molecular descriptors for various prediction tasks
 
-The following **9 molecular properties** are predicted in our experiments:
-1. **LogP** - Octanol-water partition coefficient
-2. **Molecular Weight** - Molecular weight
-3. **TPSA** - Topological polar surface area
-4. **sp3** - Fraction of SP3 carbons
-5. **MolMR** - Molecular refractivity
-6. **BJ** - Balaban J index
-7. **Chi** - Chi1v connectivity index
-8. **HKA** - Hall-Kier alpha
-9. **aM_w+b** - Synthetic property (linear function of molecular weight)
+The following **9 molecular properties** are predicted in our experiments (in order):
+1. **LTMW (aM_w+b)** - Linear transform of molecular weight
+2. **logP (LogP)** - Octanol-water partition coefficient
+3. **sp3** - Fraction of SP3 carbons
+4. **TPSA** - Topological polar surface area
+5. **MR (MolMR)** - Molecular refractivity
+6. **HKA** - Hall-Kier alpha
+7. **BJ** - Balaban J index
+8. **Chi1v (Chi)** - Chi1v connectivity index
+9. **MW (Molecular Weight)** - Molecular weight
 
 **Note**: The dataset file (`delaney-processed.csv`) is not included in this repository. Please obtain it from the original source and place it in the root directory.
 
@@ -137,7 +137,7 @@ This will:
 
 ### 2. Run experiments for specific tasks only
 ```bash
-python run_experiments.py --ml-only --tasks LogP "Molecular Weight" TPSA
+python run_experiments.py --ml-only --tasks "aM_w+b" LogP sp3
 ```
 
 ### 3. View visualizations from saved results
@@ -148,7 +148,7 @@ This will load all available task results and create visualizations.
 
 ### 4. Visualize a single task
 ```bash
-python -c "from visualization import visualize_single_task; visualize_single_task('logp')"
+python -c "from visualization import visualize_single_task; visualize_single_task('ltmw')"
 ```
 
 ### 5. Complete experiments with LLMs for all tasks
@@ -158,7 +158,7 @@ python run_experiments.py --openai-key YOUR_OPENAI_KEY --anthropic-key YOUR_ANTH
 
 ### 6. LLM experiments for specific tasks only
 ```bash
-python run_experiments.py --openai-key YOUR_KEY --tasks LogP TPSA
+python run_experiments.py --openai-key YOUR_KEY --tasks "aM_w+b" LogP
 ```
 
 ### 7. Use custom dataset
@@ -208,7 +208,7 @@ The experiments generate several types of output files **for each of the 9 tasks
 ### Pickle Files (Main Results)
 - `Results/results_dict_{task}.pkl`: Complete MAE results for all models and embeddings
 - `Results/r2_results_{task}.pkl`: Complete R² results for all models and embeddings
-- Where `{task}` = `logp`, `mw`, `tpsa`, `sp3`, `molmr`, `bj`, `chi`, `hka`, `amb`
+- Where `{task}` = `ltmw`, `logp`, `sp3`, `tpsa`, `mr`, `hka`, `bj`, `chi1v`, `mw`
 
 ### Summary CSV Files (Per Task)
 - `Results/{task}_mae_summary.csv`: MAE summary statistics across all methods
@@ -217,6 +217,7 @@ The experiments generate several types of output files **for each of the 9 tasks
 ### LLM Raw Outputs (Per Task)
 - `GPT_Response/gpt_{task}_results.txt`: Raw GPT-4o predictions (if API key provided)
 - `Claude_Response/claude_{task}_results.txt`: Raw Claude predictions (if API key provided)
+- Where `{task}` = `ltmw`, `logp`, `sp3`, `tpsa`, `mr`, `hka`, `bj`, `chi1v`, `mw`
 
 ### Visualizations (Generated automatically for each task)
 - Model comparison bar plots for each embedding type and task
@@ -278,9 +279,9 @@ If you use this code or data, please cite our paper:
 @article{joe2025eval_icl,
     title={Evaluating In-Context Learning in Large Language Models for Molecular Property Regression},
     author={Joe, C. Y. and Song, Kyungwoo and Chang, Rakwoo},
-    journal={[TBA]},
+    journal={[Journal Name]},
     year={2025},
-    doi={[TBA]}
+    doi={[DOI]}
 }
 ```
 
