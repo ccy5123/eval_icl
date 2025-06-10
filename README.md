@@ -32,7 +32,7 @@ The repository implements comprehensive experiments comparing various methods fo
     └── {task}_r2_summary.csv   # R² summary statistics for each task
 ```
 
-*Note: `{task}` represents: logp, mw, tpsa, sp3, molmr, bj, chi, hka, amb (9 tasks total)*
+*Note: `{task}` represents: MW, LTMW, logP, sp3, TPSA, MR, HKA, BJ, Chi1v (9 tasks total)*
 
 ## Contents
 
