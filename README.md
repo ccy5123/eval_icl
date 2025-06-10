@@ -278,9 +278,9 @@ If you use this code or data, please cite our paper:
 @article{joe2025eval_icl,
     title={Evaluating In-Context Learning in Large Language Models for Molecular Property Regression},
     author={Joe, C. Y. and Song, Kyungwoo and Chang, Rakwoo},
-    journal={[Journal Name]},
+    journal={[TBA]},
     year={2025},
-    doi={[DOI]}
+    doi={[TBA]}
 }
 ```
 
