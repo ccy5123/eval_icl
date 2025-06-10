@@ -186,10 +186,55 @@ def run_llm_experiment(predictor, data_df, filename, property_name, n_iterations
     print(f"Experiment completed. Results saved to {filename}")
 
 
+def run_llm_experiments_all_tasks(predictor, data_df, predictor_name, tasks=None, n_iterations=100):
+    """
+    Run LLM experiments for all tasks.
+    
+    Args:
+        predictor: LLM predictor instance (GPT or Claude)
+        data_df (pd.DataFrame): Dataset
+        predictor_name (str): 'gpt' or 'claude'
+        tasks (list): List of target properties to test
+        n_iterations (int): Number of iterations per task
+    """
+    from config import DATASET_CONFIG, TASK_NAME_MAPPING, TASK_OUTPUT_PATTERNS
+    
+    if tasks is None:
+        tasks = DATASET_CONFIG['target_properties']
+    
+    for task in tasks:
+        if task not in data_df.columns:
+            print(f"Warning: Task '{task}' not found in dataset. Skipping...")
+            continue
+        
+        print(f"\n{'='*60}")
+        print(f"RUNNING {predictor_name.upper()} EXPERIMENT FOR TASK: {task}")
+        print(f"{'='*60}")
+        
+        # Get task key for file naming
+        task_key = TASK_NAME_MAPPING.get(task, task.lower().replace(' ', '_'))
+        
+        # Generate filename
+        if predictor_name.lower() == 'gpt':
+            filename = TASK_OUTPUT_PATTERNS['gpt_results'].format(task=task_key)
+        elif predictor_name.lower() == 'claude':
+            filename = TASK_OUTPUT_PATTERNS['claude_results'].format(task=task_key)
+        else:
+            raise ValueError("predictor_name must be 'gpt' or 'claude'")
+        
+        # Run experiment for this task
+        try:
+            run_llm_experiment(predictor, data_df, filename, task, n_iterations)
+            print(f"Completed {predictor_name} experiment for {task}")
+        except Exception as e:
+            print(f"Error running {predictor_name} experiment for {task}: {e}")
+
+
 def main():
-    """Main function to run LLM experiments."""
+    """Main function to run LLM experiments for all tasks."""
     # Load data
     from data_preprocessing import load_and_prepare_data
+    from config import DATASET_CONFIG
     
     print("Loading dataset...")
     dataset = load_and_prepare_data()
@@ -202,20 +247,32 @@ def main():
     gpt_predictor = GPTPredictor(OPENAI_API_KEY)
     claude_predictor = ClaudePredictor(ANTHROPIC_API_KEY)
     
-    # Preview prompts (optional)
-    print("\nPreviewing GPT prompts...")
+    # Preview prompts for first task (optional)
+    print("\nPreviewing GPT prompts for LogP...")
     gpt_predictor.preview_prompts(dataset, 'LogP', n_previews=2)
     
-    # Run experiments
-    print("\n" + "="*50)
-    print("Starting GPT experiment...")
-    run_llm_experiment(gpt_predictor, dataset, "GPT_Response/gpt_logp_results.txt", 'LogP')
+    # Run experiments for all tasks
+    print("\n" + "="*80)
+    print("STARTING ALL GPT EXPERIMENTS")
+    print("="*80)
+    run_llm_experiments_all_tasks(
+        gpt_predictor, 
+        dataset, 
+        'gpt', 
+        tasks=DATASET_CONFIG['target_properties']
+    )
     
-    print("\n" + "="*50)
-    print("Starting Claude experiment...")
-    run_llm_experiment(claude_predictor, dataset, "Claude_Response/claude_logp_results.txt", 'LogP')
+    print("\n" + "="*80)
+    print("STARTING ALL CLAUDE EXPERIMENTS")
+    print("="*80)
+    run_llm_experiments_all_tasks(
+        claude_predictor, 
+        dataset, 
+        'claude', 
+        tasks=DATASET_CONFIG['target_properties']
+    )
     
-    print("\nAll LLM experiments completed!")
+    print("\nAll LLM experiments completed for all tasks!")
 
 
 if __name__ == "__main__":
