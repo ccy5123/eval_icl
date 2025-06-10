@@ -17,14 +17,19 @@ The repository implements comprehensive experiments comparing various methods fo
 ├── requirements.txt            # Python dependencies
 ├── config.py                   # Configuration parameters
 ├── data_preprocessing.py       # Data loading and feature extraction
-├── ml_experiments.py          # Traditional ML model experiments
+├── ml_experiments.py          # Traditional ML model experiments (MAE & R²)
 ├── llm_experiments.py         # GPT and Claude prediction experiments
+├── visualization.py           # Plotting and visualization functions
 ├── utils.py                   # Utility functions and result analysis
 ├── run_experiments.py         # Main script to run all experiments
 ├── delaney-processed.csv      # ESOL dataset (not included, see Dataset section)
 ├── GPT_Response/              # GPT-4o model outputs for all property prediction tasks
 ├── Claude_Response/           # Claude 3.5 Sonnet outputs for all property prediction tasks
-└── Results/                   # Aggregated performance results (MAE, R², rankings, etc.)
+└── Results/                   # Pickle files and processed results
+    ├── results_dict_logp.pkl  # MAE results for all models/embeddings
+    ├── r2_results_logp.pkl    # R² results for all models/embeddings
+    ├── mae_summary.csv        # MAE summary statistics
+    └── r2_summary.csv         # R² summary statistics
 ```
 
 ## Contents
@@ -36,15 +41,17 @@ The repository implements comprehensive experiments comparing various methods fo
 
 ### Data and Results
 - **`GPT_Response/`**: Contains the full response logs from **GPT-4o** for each molecular property prediction task
-  - Each file corresponds to a specific task (e.g., `gpt_mw.txt`, `gpt_logp.txt`, `gpt_amb.txt`, etc.)
+  - Files: `gpt_logp_results.txt`, `gpt_mw_results.txt`, `gpt_tpsa_results.txt`, etc.
   - Includes in-context examples, model predictions, and reasoning text
   
 - **`Claude_Response/`**: Same format as GPT_Response/, but for **Claude 3.5 Sonnet**
+  - Files: `claude_logp_results.txt`, `claude_mw_results.txt`, `claude_tpsa_results.txt`, etc.
   - Useful for analyzing differences in reasoning strategies between LLMs
   
 - **`Results/`**: Contains processed results across **100 trials per task**
-  - Mean Absolute Error (MAE), Coefficient of Determination (R²)
-  - Statistical analysis and performance comparisons
+  - Pickle files: `results_dict_{task}.pkl` (MAE), `r2_results_{task}.pkl` (R²)
+  - Summary CSV files: `{task}_mae_summary.csv`, `{task}_r2_summary.csv`
+  - Statistical analysis and performance comparisons for all 9 tasks
 
 ## Dataset
 
@@ -52,6 +59,17 @@ The experiments use the **ESOL (Estimated SOLubility) dataset** based on Delaney
 - SMILES representations of molecules
 - Experimental solubility values and other molecular properties
 - Molecular descriptors for various prediction tasks
+
+The following **9 molecular properties** are predicted in our experiments:
+1. **LogP** - Octanol-water partition coefficient
+2. **Molecular Weight** - Molecular weight
+3. **TPSA** - Topological polar surface area
+4. **sp3** - Fraction of SP3 carbons
+5. **MolMR** - Molecular refractivity
+6. **BJ** - Balaban J index
+7. **Chi** - Chi1v connectivity index
+8. **HKA** - Hall-Kier alpha
+9. **aM_w+b** - Synthetic property (linear function of molecular weight)
 
 **Note**: The dataset file (`delaney-processed.csv`) is not included in this repository. Please obtain it from the original source and place it in the root directory.
 
@@ -89,7 +107,7 @@ The experiments use the **ESOL (Estimated SOLubility) dataset** based on Delaney
 
 1. **Clone the repository**:
 ```bash
-git clone https://github.com/ccy5123/eval_icl/
+git clone [repository-url]
 cd molecular-property-prediction
 ```
 
@@ -104,17 +122,44 @@ pip install -r requirements.txt
 
 ## Usage
 
-### Quick Start (ML experiments only)
+## Usage Examples
+
+### 1. Run ML experiments for all 9 tasks (recommended first run)
 ```bash
 python run_experiments.py --ml-only
 ```
+This will:
+- Generate pickle files for all 9 tasks (`Results/results_dict_{task}.pkl`, `Results/r2_results_{task}.pkl`)
+- Create summary CSV files for each task
+- Show visualizations automatically for all tasks
 
-### Complete experiments with LLMs
+### 2. Run experiments for specific tasks only
+```bash
+python run_experiments.py --ml-only --tasks LogP "Molecular Weight" TPSA
+```
+
+### 3. View visualizations from saved results
+```bash
+python visualization.py
+```
+This will load all available task results and create visualizations.
+
+### 4. Visualize a single task
+```bash
+python -c "from visualization import visualize_single_task; visualize_single_task('logp')"
+```
+
+### 5. Complete experiments with LLMs for all tasks
 ```bash
 python run_experiments.py --openai-key YOUR_OPENAI_KEY --anthropic-key YOUR_ANTHROPIC_KEY
 ```
 
-### Custom dataset
+### 6. LLM experiments for specific tasks only
+```bash
+python run_experiments.py --openai-key YOUR_KEY --tasks LogP TPSA
+```
+
+### 7. Use custom dataset
 ```bash
 python run_experiments.py --dataset-path your_dataset.csv --ml-only
 ```
@@ -154,14 +199,28 @@ The experiments generate several output files:
 - `gpt_logp_results.txt`: Raw GPT-4o predictions
 - `claude_logp_results.txt`: Raw Claude predictions
 
-### LLM Results (Pre-generated)
-- `GPT_Response/gpt_*.txt`: Raw GPT-4o predictions for various properties
-- `Claude_Response/claude_*.txt`: Raw Claude predictions
-- `Results/*`: Processed performance metrics and statistical analysis
+### Output Files Generated
 
-### Analysis Results (Generated by running experiments)
-- `comprehensive_summary.csv`: Summary of all methods
-- `performance_comparison.png`: Visualization of results
+The experiments generate several types of output files **for each of the 9 tasks**:
+
+### Pickle Files (Main Results)
+- `Results/results_dict_{task}.pkl`: Complete MAE results for all models and embeddings
+- `Results/r2_results_{task}.pkl`: Complete R² results for all models and embeddings
+- Where `{task}` = `logp`, `mw`, `tpsa`, `sp3`, `molmr`, `bj`, `chi`, `hka`, `amb`
+
+### Summary CSV Files (Per Task)
+- `Results/{task}_mae_summary.csv`: MAE summary statistics across all methods
+- `Results/{task}_r2_summary.csv`: R² summary statistics across all methods
+
+### LLM Raw Outputs (Per Task)
+- `GPT_Response/gpt_{task}_results.txt`: Raw GPT-4o predictions (if API key provided)
+- `Claude_Response/claude_{task}_results.txt`: Raw Claude predictions (if API key provided)
+
+### Visualizations (Generated automatically for each task)
+- Model comparison bar plots for each embedding type and task
+- Ranking heatmaps across embedding types for each task
+- Cross-task comparison plots showing performance across all 9 properties
+- Both MAE and R² based visualizations
 
 ## Notes on LLM Data
 
