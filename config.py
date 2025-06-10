@@ -7,10 +7,43 @@ This file contains all configurable parameters and settings for the experiments.
 # Dataset configuration
 DATASET_CONFIG = {
     'default_csv_path': 'delaney-processed.csv',
-    'target_property': 'LogP',
+    'target_properties': [
+        'aM_w+b',         # LTMW - Linear transform of molecular weight
+        'LogP',           # logP - Octanol-water partition coefficient  
+        'sp3',            # sp3 - Fraction of SP3 carbons
+        'TPSA',           # TPSA - Topological polar surface area
+        'MolMR',          # MR - Molecular refractivity
+        'HKA',            # HKA - Hall-Kier alpha
+        'BJ',             # BJ - Balaban J index
+        'Chi',            # Chi1v - Chi1v connectivity index
+        'Molecular Weight' # MW - Molecular weight
+    ],
     'test_size': 1,
     'train_size': 50,
     'random_seed_range': (1, 101)  # 100 iterations
+}
+
+# Task-specific output file patterns
+TASK_OUTPUT_PATTERNS = {
+    'mae_results': 'Results/results_dict_{task}.pkl',
+    'r2_results': 'Results/r2_results_{task}.pkl',
+    'gpt_results': 'GPT_Response/gpt_{task}_results.txt',
+    'claude_results': 'Claude_Response/claude_{task}_results.txt',
+    'mae_summary': 'Results/{task}_mae_summary.csv',
+    'r2_summary': 'Results/{task}_r2_summary.csv'
+}
+
+# Task name mapping for file naming (in new order)
+TASK_NAME_MAPPING = {
+    'aM_w+b': 'ltmw',           # LTMW - Linear transform of molecular weight
+    'LogP': 'logp',             # logP - Octanol-water partition coefficient
+    'sp3': 'sp3',               # sp3 - Fraction of SP3 carbons
+    'TPSA': 'tpsa',             # TPSA - Topological polar surface area
+    'MolMR': 'mr',              # MR - Molecular refractivity
+    'HKA': 'hka',               # HKA - Hall-Kier alpha
+    'BJ': 'bj',                 # BJ - Balaban J index
+    'Chi': 'chi1v',             # Chi1v - Chi1v connectivity index
+    'Molecular Weight': 'mw'     # MW - Molecular weight
 }
 
 # Synthetic property parameters (for validation)
