@@ -32,7 +32,7 @@ The repository implements comprehensive experiments comparing various methods fo
     └── {task}_r2_summary.csv   # R² summary statistics for each task
 ```
 
-*Note: `{task}` represents: ltmw, logp, sp3, tpsa, mr, hka, bj, chi1v, mw (9 tasks total)*
+*Note: `{task}` represents: mw, ltmw, logp, sp3, tpsa, mr, hka, bj, chi1v (9 tasks total)*
 
 ## Contents
 
@@ -63,15 +63,15 @@ The experiments use the **ESOL (Estimated SOLubility) dataset** based on Delaney
 - Molecular descriptors for various prediction tasks
 
 The following **9 molecular properties** are predicted in our experiments (in order):
-1. **LTMW (aM_w+b)** - Linear transform of molecular weight
-2. **logP (LogP)** - Octanol-water partition coefficient
-3. **sp3** - Fraction of SP3 carbons
-4. **TPSA** - Topological polar surface area
-5. **MR (MolMR)** - Molecular refractivity
-6. **HKA** - Hall-Kier alpha
-7. **BJ** - Balaban J index
-8. **Chi1v (Chi)** - Chi1v connectivity index
-9. **MW (Molecular Weight)** - Molecular weight
+1. **MW (Molecular Weight)** - Molecular weight
+2. **LTMW (aM_w+b)** - Linear transform of molecular weight
+3. **logP (LogP)** - Octanol-water partition coefficient
+4. **sp3** - Fraction of SP3 carbons
+5. **TPSA** - Topological polar surface area
+6. **MR (MolMR)** - Molecular refractivity
+7. **HKA** - Hall-Kier alpha
+8. **BJ** - Balaban J index
+9. **Chi1v (Chi)** - Chi1v connectivity index
 
 **Note**: The dataset file (`delaney-processed.csv`) is not included in this repository. Please obtain it from the original source and place it in the root directory.
 
@@ -279,9 +279,9 @@ If you use this code or data, please cite our paper:
 @article{joe2025eval_icl,
     title={Evaluating In-Context Learning in Large Language Models for Molecular Property Regression},
     author={Joe, C. Y. and Song, Kyungwoo and Chang, Rakwoo},
-    journal={[Journal Name]},
+    journal={[TBA]},
     year={2025},
-    doi={[DOI]}
+    doi={[TBA]}
 }
 ```
 
