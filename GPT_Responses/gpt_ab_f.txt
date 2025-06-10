@@ -1,0 +1,2415 @@
+Iteration: 1
+SMILES: CCCCCCCCCC(=O)OC
+True Property: 1041.1533886156071
+Predicted Property:
+To predict the property value for the molecule CCCCCCCCCC(=O)OC, we need to consider the relationship between the molecular weight and the property values given in the examples. The property appears to be a function of molecular weight, f(M.W.).
+
+First, let's calculate the molecular weight of the molecule CCCCCCCCCC(=O)OC:
+
+- CCCCCCCCCC(=O)OC is a decyl ester, specifically decyl acetate.
+- The molecular formula is C11H22O2.
+
+Calculating the molecular weight:
+- Carbon (C): 11 atoms × 12.01 g/mol = 132.11 g/mol
+- Hydrogen (H): 22 atoms × 1.008 g/mol = 22.176 g/mol
+- Oxygen (O): 2 atoms × 16.00 g/mol = 32.00 g/mol
+
+Total molecular weight = 132.11 + 22.176 + 32.00 = 186.286 g/mol
+
+Now, let's compare this molecular weight with the examples provided:
+
+- CCCCCCCCCCO (M.W. = 172.27) has a property value of 860.14
+- CCCCCCCCCCC(=O)OC (M.W. = 186.29) is slightly heavier than CCCCCCCCCCO.
+
+From the examples, we observe that as the molecular weight increases, the property value also increases. Given the trend and the molecular weight of CCCCCCCCCC(=O)OC, we can predict that its property value will be slightly higher than that of CCCCCCCCCCO.
+
+Therefore, the predicted property value for CCCCCCCCCC(=O)OC is approximately 900.0.
+==================================================
+Iteration: 2
+SMILES: Clc2ccc1oc(=O)[nH]c1c2
+True Property: 933.0510810476297
+Predicted Property:
+To predict the property value for the molecule with the SMILES format "Clc2ccc1oc(=O)[nH]c1c2", we need to consider the molecular weight and how it might relate to the property values given in the examples. The property appears to be a function of molecular weight, f(M.W.).
+
+First, let's determine the molecular weight of the given molecule:
+
+- Chlorine (Cl): 35.45
+- Carbon (C): 12.01
+- Hydrogen (H): 1.01
+- Oxygen (O): 16.00
+- Nitrogen (N): 14.01
+
+The SMILES "Clc2ccc1oc(=O)[nH]c1c2" corresponds to a chlorinated benzoxazole structure. Let's break it down:
+
+- 1 Chlorine (Cl): 35.45
+- 7 Carbons (C): 7 x 12.01 = 84.07
+- 1 Nitrogen (N): 14.01
+- 1 Oxygen (O): 16.00
+- 1 Hydrogen (H): 1.01
+
+Total molecular weight = 35.45 + 84.07 + 14.01 + 16.00 + 1.01 = 150.54
+
+Now, let's compare this molecular weight to the examples provided. The property values seem to increase with molecular weight, but not linearly. For example, smaller molecules like CCC#C (M.W. = 40.06) have a property value of 186.81, while larger molecules like OC(CC(c1ccccc1)c3c(O)c2ccccc2oc3=O)c4ccc(cc4)c5ccc(Br)cc5 (M.W. = 500+) have a property value of 3245.59.
+
+Given the molecular weight of 150.54 for the target molecule, it is relatively small compared to many of the examples. The property value should be closer to those of smaller molecules. For instance, ClC(Cl)Cl (M.W. = 119.37) has a property value of 608.71, and c1ccc2c(c1)[nH]c3ccccc32 (M.W. = 131.17) has a property value of 917.83.
+
+Considering these comparisons, a reasonable prediction for the property value of Clc2ccc1oc(=O)[nH]c1c2, with a molecular weight of 150.54, would be around 950.0.
+==================================================
+Iteration: 3
+SMILES: CC(C)N(=O)=O
+True Property: 413.0058277646391
+Predicted Property:
+To predict the property value for the molecule "CC(C)N(=O)=O" (isopropyl nitrite), we need to consider the relationship between the molecular weight and the property values given in the examples. The property appears to be a function of molecular weight, f(M.W.).
+
+First, let's calculate the molecular weight of "CC(C)N(=O)=O":
+- C3H7NO2: 
+  - Carbon (C): 3 atoms × 12.01 g/mol = 36.03 g/mol
+  - Hydrogen (H): 7 atoms × 1.01 g/mol = 7.07 g/mol
+  - Nitrogen (N): 1 atom × 14.01 g/mol = 14.01 g/mol
+  - Oxygen (O): 2 atoms × 16.00 g/mol = 32.00 g/mol
+
+Total molecular weight = 36.03 + 7.07 + 14.01 + 32.00 = 89.11 g/mol
+
+Now, let's analyze the examples to find a pattern or trend between molecular weight and the property value. The property values increase with increasing molecular weight, but the relationship is not strictly linear. However, for smaller molecules, the property values are generally lower.
+
+Given the molecular weight of 89.11 g/mol for "CC(C)N(=O)=O", we can compare it to similar small molecules in the examples:
+- "CC(=O)N" with a molecular weight of 59.07 g/mol has a property value of 218.97.
+- "CCC(=C)C" with a molecular weight of 70.13 g/mol has a property value of 290.49.
+- "CCCCCC" with a molecular weight of 86.18 g/mol has a property value of 394.16.
+
+Based on these comparisons, the property value for "CC(C)N(=O)=O" should be slightly higher than 394.16, given its slightly higher molecular weight compared to "CCCCCC".
+
+Therefore, a reasonable prediction for the property value of "CC(C)N(=O)=O" is approximately 400.
+==================================================
+Iteration: 4
+SMILES: CC12CC(O)C3C(CCC4=CC(=O)CCC34C)C2CCC1C(=O)CO
+True Property: 2076.242030878767
+Predicted Property:
+To predict the property value for the given molecule, we need to consider the relationship between the molecular weight and the property values provided in the examples. The property appears to be a function of molecular weight, f(M.W.), but the exact nature of this function is not explicitly given. However, we can make an educated guess based on the examples.
+
+The given molecule in SMILES format is: `CC12CC(O)C3C(CCC4=CC(=O)CCC34C)C2CCC1C(=O)CO`.
+
+First, let's estimate the molecular weight of this molecule. The structure appears to be a polycyclic compound with several carbon (C), hydrogen (H), and oxygen (O) atoms. 
+
+- Count the number of each type of atom:
+  - Carbon (C): 20
+  - Hydrogen (H): 28
+  - Oxygen (O): 2
+
+Using approximate atomic weights:
+- Carbon (C): 12.01
+- Hydrogen (H): 1.008
+- Oxygen (O): 16.00
+
+Calculate the molecular weight:
+\[ \text{M.W.} = (20 \times 12.01) + (28 \times 1.008) + (2 \times 16.00) \]
+\[ \text{M.W.} = 240.2 + 28.224 + 32.00 \]
+\[ \text{M.W.} = 300.424 \]
+
+Now, we need to predict the property value based on this molecular weight. Observing the examples, the property values seem to increase with molecular weight, but not linearly. The relationship might be polynomial or involve other factors.
+
+Given the molecular weight of approximately 300.424, we can compare it to similar molecular weights in the examples and their corresponding property values. For instance, the molecule `ClCC#N` with a molecular weight of 325.14 has a property value of 325.14, which suggests a close relationship between molecular weight and property value for smaller molecules.
+
+However, for larger molecules, the property value tends to be higher than the molecular weight, possibly due to additional structural factors or a non-linear relationship.
+
+Considering these observations, a reasonable prediction for the property value of the given molecule, with a molecular weight of approximately 300.424, would be slightly higher than the molecular weight itself, due to the complexity and size of the structure.
+
+Therefore, a predicted property value could be around 350.0, accounting for the non-linear increase observed in larger molecules.
+==================================================
+Iteration: 5
+SMILES: Fc1cccc(F)c1C(=O)NC(=O)Nc2ccc(Cl)cc2
+True Property: 1845.0188981203823
+Predicted Property:
+To predict the property value for the given molecule, we need to consider the relationship between the molecular weight and the property values provided in the examples. The property appears to be a function of molecular weight, f(M.W.), but the exact nature of this function is not explicitly given. However, we can make an educated guess based on the examples.
+
+The given molecule in SMILES format is: Fc1cccc(F)c1C(=O)NC(=O)Nc2ccc(Cl)cc2.
+
+First, let's estimate the molecular weight of this molecule:
+
+- Fluorine (F): 19.00
+- Carbon (C): 12.01
+- Hydrogen (H): 1.01
+- Nitrogen (N): 14.01
+- Oxygen (O): 16.00
+- Chlorine (Cl): 35.45
+
+The structure can be broken down as follows:
+- Two fluorine atoms: 2 × 19.00 = 38.00
+- Twelve carbon atoms: 12 × 12.01 = 144.12
+- Eight hydrogen atoms: 8 × 1.01 = 8.08
+- Two nitrogen atoms: 2 × 14.01 = 28.02
+- Two oxygen atoms: 2 × 16.00 = 32.00
+- One chlorine atom: 1 × 35.45 = 35.45
+
+Adding these together gives an estimated molecular weight:
+38.00 + 144.12 + 8.08 + 28.02 + 32.00 + 35.45 = 285.67
+
+Now, we need to predict the property value based on this molecular weight. Observing the examples, the property value seems to increase with molecular weight, but not linearly. It appears to be a more complex function, possibly quadratic or another polynomial form.
+
+Given the molecular weight of approximately 285.67, and comparing it to similar molecular weights in the examples, we can make a rough estimate. For instance, the molecule with a molecular weight of 342.05 has a property value of 342.05, and the one with 325.14 has a property value of 325.14. These are relatively close to the molecular weight, suggesting a direct relationship.
+
+Therefore, for the given molecule with a molecular weight of approximately 285.67, the predicted property value is likely close to this molecular weight. However, considering the trend and possible slight deviations, a reasonable prediction for the property value would be around 285.67.
+
+Thus, the predicted property value for the molecule Fc1cccc(F)c1C(=O)NC(=O)Nc2ccc(Cl)cc2 is approximately **285.67**.
+==================================================
+Iteration: 6
+SMILES: CCCOC(C)C
+True Property: 497.55284413909214
+Predicted Property:
+To predict the property value for the molecule "CCCOC(C)C" based on the given examples, we need to consider the relationship between the molecular weight and the property values provided. The property appears to be a function of molecular weight, f(M.W.).
+
+First, let's calculate the molecular weight of "CCCOC(C)C":
+- C (carbon) has an atomic weight of approximately 12.01.
+- H (hydrogen) has an atomic weight of approximately 1.01.
+- O (oxygen) has an atomic weight of approximately 16.00.
+
+The SMILES "CCCOC(C)C" corresponds to the molecular formula C6H14O:
+- 6 carbons: 6 x 12.01 = 72.06
+- 14 hydrogens: 14 x 1.01 = 14.14
+- 1 oxygen: 1 x 16.00 = 16.00
+
+Total molecular weight = 72.06 + 14.14 + 16.00 = 102.20
+
+Now, let's compare this molecular weight to the examples provided. We need to find a pattern or trend in the property values relative to molecular weights. The property values increase with molecular weight, but the relationship is not linear and seems to be more complex.
+
+Given the examples, let's estimate the property value for a molecular weight of 102.20. The closest examples in terms of molecular weight are:
+- CCC(C)(C)CO (M.W. = 102.20) with a property value of 497.55284413909214.
+
+Based on this comparison, the predicted property value for "CCCOC(C)C" is approximately 497.55.
+==================================================
+Iteration: 7
+SMILES: CCC(C)n1c(=O)[nH]c(C)c(Br)c1=O 
+True Property: 1524.6927873163704
+Predicted Property:
+To predict the property value for the given molecule, CCC(C)n1c(=O)[nH]c(C)c(Br)c1=O, we need to consider the relationship between the molecular weight and the property values provided in the examples. The property appears to be a function of molecular weight, f(M.W.), but the exact nature of this function is not explicitly given. However, we can make an educated guess based on the examples.
+
+First, let's estimate the molecular weight of the given molecule:
+
+- CCC(C): This is a butyl group, contributing approximately 57 g/mol.
+- n1c(=O)[nH]c(C)c(Br)c1=O: This is a substituted pyrimidine ring with additional groups:
+  - Pyrimidine base: C4H3N2, approximately 95 g/mol.
+  - Two carbonyl groups: 2 * 28 = 56 g/mol.
+  - Bromine atom: approximately 80 g/mol.
+  - Additional methyl group: 15 g/mol.
+
+Adding these together gives an estimated molecular weight of approximately 303 g/mol.
+
+Now, let's look at the examples to find a pattern or trend. The property values increase with molecular weight, but not linearly. For example, smaller molecules like CC#C (M.W. = 40 g/mol) have a property value of 96.16, while larger molecules like CCC(C)C(Nc1ccc(cc1Cl)C(F)(F)F)C(=O)OC(C#N)c2cccc(Oc3ccccc3)c2 (M.W. = 500+ g/mol) have property values over 3000.
+
+Given the estimated molecular weight of 303 g/mol for the target molecule, we can interpolate between the examples. Molecules with similar molecular weights, such as ClC(=C)Cl (M.W. = 96 g/mol, property = 463.73) and CC(=O)N (M.W. = 59 g/mol, property = 218.97), suggest that the property value for the target molecule should be higher than 463.73 but lower than values for much larger molecules.
+
+Based on this reasoning, a reasonable prediction for the property value of CCC(C)n1c(=O)[nH]c(C)c(Br)c1=O is approximately 1100.
+==================================================
+Iteration: 8
+SMILES: c1ccc(cc1)c2ccccc2
+True Property: 833.8215896137283
+Predicted Property:
+To predict the property value for the given molecule, we need to consider the relationship between the molecular weight and the property values provided in the examples. The molecule in question, represented by the SMILES format `c1ccc(cc1)c2ccccc2`, is biphenyl, which consists of two phenyl rings connected by a single bond.
+
+First, let's calculate the molecular weight of biphenyl:
+
+- Each phenyl ring (C6H5) has a molecular weight of approximately 77.11 g/mol (6 carbons at 12.01 g/mol each and 5 hydrogens at 1.008 g/mol each).
+- Therefore, biphenyl (C12H10) has a molecular weight of approximately 154.21 g/mol.
+
+Now, let's analyze the examples to understand the relationship between molecular weight and the property value. The property values seem to increase with increasing molecular weight, but the relationship is not linear and appears to be a more complex function.
+
+Given the examples, we can observe that smaller molecules (e.g., CCC with a molecular weight of about 44.1 g/mol) have property values around 122.22, while larger molecules have significantly higher property values.
+
+Biphenyl, with a molecular weight of 154.21 g/mol, is relatively small compared to many of the examples provided. Based on the trend observed, we can estimate that the property value for biphenyl will be higher than that of smaller alkanes but significantly lower than those of larger, more complex molecules.
+
+Considering the examples and the molecular weight of biphenyl, a reasonable prediction for the property value of biphenyl would be around 700. This is an estimate based on the trend observed in the provided data.
+==================================================
+Iteration: 9
+SMILES: CCCCS
+True Property: 420.0950333721279
+Predicted Property:
+To predict the property value for the molecule CCCCCS, we need to consider the relationship between the molecular weight and the property values given in the examples. The property appears to be a function of molecular weight, f(M.W.).
+
+First, let's calculate the molecular weight of CCCCCS:
+- C (carbon) has an atomic weight of approximately 12.01.
+- H (hydrogen) has an atomic weight of approximately 1.01.
+- S (sulfur) has an atomic weight of approximately 32.07.
+
+The molecular formula for CCCCCS is C5H11S.
+
+Calculating the molecular weight:
+- 5 carbons: 5 × 12.01 = 60.05
+- 11 hydrogens: 11 × 1.01 = 11.11
+- 1 sulfur: 1 × 32.07 = 32.07
+
+Total molecular weight = 60.05 + 11.11 + 32.07 = 103.23
+
+Now, let's compare this molecular weight with the examples provided. We need to find a pattern or trend in the property values relative to the molecular weights.
+
+For example, let's consider:
+- CCSCC (molecular weight ~90.18) has a property value of 420.0950333721279.
+- CCCCCC (molecular weight ~86.18) has a property value of 497.55284413909226.
+
+The property values increase with molecular weight, but the relationship is not linear. However, we can see that for molecules with similar structures and molecular weights, the property values are in a similar range.
+
+Given that CCCCCS has a molecular weight of 103.23, which is slightly higher than CCSCC, we can predict that the property value for CCCCCS will be slightly higher than 420.0950333721279.
+
+Therefore, a reasonable prediction for the property value of CCCCCS is approximately 450.
+==================================================
+Iteration: 10
+SMILES: CCCC(C)(C)CO
+True Property: 588.2003255030342
+Predicted Property:
+To predict the property value for the molecule CCCC(C)(C)CO, we need to consider the molecular weight and how it might relate to the property values given in the examples. The molecule CCCC(C)(C)CO is 2-methyl-2-pentanol, which has a molecular formula of C6H14O.
+
+First, let's calculate the molecular weight of C6H14O:
+- Carbon (C): 6 atoms × 12.01 g/mol = 72.06 g/mol
+- Hydrogen (H): 14 atoms × 1.008 g/mol = 14.112 g/mol
+- Oxygen (O): 1 atom × 16.00 g/mol = 16.00 g/mol
+
+Total molecular weight = 72.06 + 14.112 + 16.00 = 102.172 g/mol
+
+Now, let's compare this molecular weight to the examples provided. We need to find a pattern or relationship between molecular weight and the property values. The examples suggest that the property value increases with molecular weight, but not linearly. 
+
+For instance:
+- CCC(C)Cl has a molecular weight of approximately 92.57 g/mol and a property value of 344.815.
+- CC(C)Br has a molecular weight of approximately 137.02 g/mol and a property value of 632.073.
+
+Given that CCCC(C)(C)CO has a molecular weight of 102.172 g/mol, it falls between these two examples. The property value should be higher than 344.815 but lower than 632.073.
+
+Considering the trend and the examples, a reasonable prediction for the property value of CCCC(C)(C)CO would be around 450.0.
+==================================================
+Iteration: 11
+SMILES: Cc1ccc2ccccc2c1
+True Property: 756.2022199222544
+Predicted Property:
+To predict the property value for the molecule "Cc1ccc2ccccc2c1" based on the given examples, we need to consider the relationship between the molecular weight and the property values provided. The SMILES "Cc1ccc2ccccc2c1" represents methylbiphenyl, which has a molecular weight of approximately 168.22 g/mol.
+
+Looking at the examples, we can see that the property values tend to increase with molecular weight, but the relationship is not strictly linear. For instance, the molecule "CCc1ccc2ccccc2c1" (ethylbiphenyl) has a molecular weight of approximately 182.27 g/mol and a property value of 846.8497012861964. The molecule "CCCCc1ccccc1" (pentylbenzene) has a molecular weight of approximately 148.26 g/mol and a property value of 704.639073575716.
+
+Given that methylbiphenyl is slightly lighter than ethylbiphenyl, we can expect its property value to be somewhat lower than 846.8497012861964. However, it should be higher than the property value for smaller molecules like "CCCC" (butane), which has a property value of 212.86663208193545.
+
+Considering these points, a reasonable estimate for the property value of "Cc1ccc2ccccc2c1" would be around 750. This value is consistent with the trend observed in the examples, where the property value increases with molecular weight but not in a strictly linear fashion.
+==================================================
+Iteration: 12
+SMILES: O=C1NC(=O)NC(=O)C1(C(C)CCC)CC=C
+True Property: 1377.1442527400864
+Predicted Property:
+To predict the property value for the given molecule, we need to consider the relationship between the molecular weight and the property values provided in the examples. The property appears to be a function of molecular weight, f(M.W.), but the exact nature of this function is not explicitly given. However, we can make an educated guess based on the examples.
+
+The given molecule is: O=C1NC(=O)NC(=O)C1(C(C)CCC)CC=C
+
+First, let's estimate the molecular weight of the molecule:
+
+- C: 12.01
+- H: 1.01
+- N: 14.01
+- O: 16.00
+
+The SMILES string represents a bicyclic structure with the following components:
+- 8 carbon atoms in the main ring and side chains
+- 11 hydrogen atoms
+- 2 nitrogen atoms
+- 3 oxygen atoms
+
+Calculating the molecular weight:
+- Carbon: 12.01 * 8 = 96.08
+- Hydrogen: 1.01 * 11 = 11.11
+- Nitrogen: 14.01 * 2 = 28.02
+- Oxygen: 16.00 * 3 = 48.00
+
+Total molecular weight = 96.08 + 11.11 + 28.02 + 48.00 = 183.21
+
+Now, we need to predict the property value based on the molecular weight. Observing the examples, the property values seem to increase with molecular weight, but the relationship is not linear. For molecules with similar structures and molecular weights, the property values are in the range of 800 to 1200.
+
+Given the molecular weight of approximately 183.21, which is relatively low compared to most examples, the property value is likely to be on the lower end of the scale. However, considering the complexity of the structure, it might be slightly higher than a simple linear extrapolation.
+
+Based on this analysis, a reasonable prediction for the property value of the given molecule is approximately 900.
+==================================================
+Iteration: 13
+SMILES: FC(F)(F)c1ccccc1
+True Property: 781.4700357155825
+Predicted Property:
+To predict the property value for the molecule with the SMILES format "FC(F)(F)c1ccccc1", we need to consider the molecular weight and how it might relate to the property values given in the examples.
+
+The molecule "FC(F)(F)c1ccccc1" is trifluoromethylbenzene. Let's calculate its molecular weight:
+
+- Fluorine (F): 19.00 g/mol
+- Carbon (C): 12.01 g/mol
+- Hydrogen (H): 1.01 g/mol
+
+The molecular formula for trifluoromethylbenzene is C7H5F3.
+
+Calculating the molecular weight:
+- C7: 7 × 12.01 = 84.07
+- H5: 5 × 1.01 = 5.05
+- F3: 3 × 19.00 = 57.00
+
+Total molecular weight = 84.07 + 5.05 + 57.00 = 146.12 g/mol
+
+Now, we need to estimate the property value based on the molecular weight. Observing the examples, the property seems to increase with molecular weight, but not linearly. For instance, smaller molecules like "CC1CO1" with a molecular weight of 58.08 have a property value of 212.58, while larger molecules have significantly higher property values.
+
+Given the molecular weight of 146.12 g/mol for trifluoromethylbenzene, it is relatively small compared to many of the examples provided. However, it is larger than some of the smallest examples.
+
+Based on the trend observed, a reasonable estimate for the property value of trifluoromethylbenzene would be around 500 to 600, considering its molecular weight is slightly higher than some of the smaller examples but much lower than the larger ones.
+
+Therefore, a predicted property value for "FC(F)(F)c1ccccc1" could be approximately 550.
+==================================================
+Iteration: 14
+SMILES: OCC1OC(O)C(O)C(O)C1O
+True Property: 1001.4809791129882
+Predicted Property:
+To predict the property value for the molecule given in SMILES format, OCC1OC(O)C(O)C(O)C1O, we need to consider the relationship between the molecular weight and the property values provided in the examples. The molecule in question is a sugar, specifically a form of glucose, which has a molecular weight of approximately 180.16 g/mol.
+
+From the examples, we can observe that the property value tends to increase with the molecular weight. However, the relationship is not linear, and the property values are significantly higher than the molecular weights, suggesting a non-linear function.
+
+Given the molecular weight of glucose (approximately 180.16 g/mol), we can estimate the property value by considering the trend in the examples. The smallest molecular weight in the examples is for C#C, with a molecular weight of approximately 25.03 g/mol and a property value of 5.52. The next smallest is C=CC=O, with a molecular weight of approximately 56.06 g/mol and a property value of 199.55. The property value increases significantly with molecular weight.
+
+Considering the molecular weight of glucose and the trend in the examples, a reasonable estimate for the property value of OCC1OC(O)C(O)C(O)C1O would be around 300 to 400. This is a rough estimate based on the observed trend and the molecular weight of the molecule.
+
+Therefore, the predicted property value for OCC1OC(O)C(O)C(O)C1O is approximately 350.
+==================================================
+Iteration: 15
+SMILES: CC(=O)OCC(=O)C3(O)CCC4C2CCC1=CC(=O)C=CC1(C)C2C(O)CC34C 
+True Property: 2438.2632689202605
+Predicted Property:
+To predict the property value for the given molecule, we need to consider the relationship between the molecular weight and the property values provided in the examples. The property appears to be a function of molecular weight, f(M.W.), but the exact nature of this function is not explicitly given. However, we can make an educated guess based on the examples.
+
+The given molecule in SMILES format is:
+
+CC(=O)OCC(=O)C3(O)CCC4C2CCC1=CC(=O)C=CC1(C)C2C(O)CC34C
+
+This molecule is a complex structure with multiple rings and functional groups. To estimate its molecular weight, we can break down the SMILES string into its components and count the atoms:
+
+- C: 27
+- O: 4
+- H: 36 (estimated based on typical valency and saturation)
+
+Using approximate atomic weights:
+- Carbon (C): 12.01
+- Oxygen (O): 16.00
+- Hydrogen (H): 1.01
+
+Estimated molecular weight (M.W.) = (27 * 12.01) + (4 * 16.00) + (36 * 1.01) = 324.27 + 64.00 + 36.36 = 424.63
+
+Now, we need to predict the property value based on this estimated molecular weight. Observing the examples, the property values increase with molecular weight, but the relationship is not strictly linear. However, for complex molecules with higher molecular weights, the property values tend to be higher.
+
+Given the complexity and the estimated molecular weight of 424.63, we can compare it to similar complex structures in the examples. The property values for complex molecules with molecular weights in the range of 400-500 tend to be around 800-1000.
+
+Therefore, a reasonable prediction for the property value of the given molecule is approximately 950.
+==================================================
+Iteration: 16
+SMILES: CC34CCC1C(CCC2CC(=O)CCC12C)C3CCC4O 
+True Property: 1714.2207928372718
+Predicted Property:
+To predict the property value for the given molecule, we need to consider the relationship between the molecular weight and the property values provided in the examples. The property appears to be a function of molecular weight, f(M.W.), but the exact nature of this function is not explicitly given. However, we can make an educated guess based on the examples.
+
+The given molecule in SMILES format is: CC34CCC1C(CCC2CC(=O)CCC12C)C3CCC4O
+
+First, let's estimate the molecular weight of this molecule:
+
+- C: 21 atoms × 12.01 g/mol = 252.21 g/mol
+- H: 32 atoms × 1.008 g/mol = 32.256 g/mol
+- O: 1 atom × 16.00 g/mol = 16.00 g/mol
+
+Total estimated molecular weight = 252.21 + 32.256 + 16.00 = 300.466 g/mol
+
+Now, let's compare this molecular weight with the examples provided. The property values seem to increase with molecular weight, but not linearly. For example, smaller molecules like CO (M.W. = 28.01 g/mol) have a property value of 44.31, while larger molecules like ClC4=C(Cl)C5(Cl)C3C1CC(C2OC12)C3C4(Cl)C5(Cl)Cl (M.W. = 406.9 g/mol) have a property value of 2298.84.
+
+Given the molecular weight of the target molecule (300.466 g/mol), we can predict that its property value will be somewhere between the values for molecules with similar molecular weights. For instance, C1CCOC1 (M.W. = 72.11 g/mol) has a property value of 303.23, and CCC(C)C (M.W. = 72.15 g/mol) has a property value of 303.51.
+
+Considering the trend and the molecular weight of the target molecule, a reasonable prediction for the property value would be around 1500. This is an approximation based on the observed trend in the examples provided.
+==================================================
+Iteration: 17
+SMILES: CC(=O)Nc1ccc(cc1)N(=O)=O
+True Property: 1001.526215611851
+Predicted Property:
+To predict the property value for the molecule "CC(=O)Nc1ccc(cc1)N(=O)=O" based on the given examples, we need to consider the molecular weight and how it might relate to the property values provided.
+
+First, let's determine the molecular weight of the molecule:
+
+- C: 8 atoms × 12.01 = 96.08
+- H: 6 atoms × 1.01 = 6.06
+- N: 2 atoms × 14.01 = 28.02
+- O: 3 atoms × 16.00 = 48.00
+
+Total molecular weight = 96.08 + 6.06 + 28.02 + 48.00 = 178.16
+
+Now, let's compare this molecular weight to the examples provided. The property values seem to increase with molecular weight, but not linearly. For instance, smaller molecules like "C=CC#N" with a molecular weight of 53.06 have a property value of 180.17, while larger molecules like "CCCCCCCCCCCCCCCCCCO" with a molecular weight of 258.49 have a property value of 1585.32.
+
+Given the molecular weight of 178.16 for "CC(=O)Nc1ccc(cc1)N(=O)=O", we can estimate the property value by comparing it to similar molecular weights in the examples. The closest example in terms of molecular weight is "CCCC=O" with a molecular weight of 72.11 and a property value of 303.23. However, our target molecule is significantly heavier, so we should expect a higher property value.
+
+Considering the trend and the examples, a reasonable prediction for the property value of "CC(=O)Nc1ccc(cc1)N(=O)=O" would be around 800. This is an estimation based on the pattern observed in the provided data.
+==================================================
+Iteration: 18
+SMILES: CCOP(=S)(OCC)SCn1c(=O)oc2cc(Cl)ccc12
+True Property: 2214.2068900531303
+Predicted Property:
+To predict the property value for the given molecule, we need to consider the relationship between the molecular weight and the property values provided in the examples. The property appears to be a function of molecular weight, f(M.W.), but the exact nature of this function is not explicitly given. However, we can make an educated guess based on the examples.
+
+First, let's determine the molecular weight of the given molecule, "CCOP(=S)(OCC)SCn1c(=O)oc2cc(Cl)ccc12":
+
+- C: 10 atoms × 12.01 = 120.1
+- H: 13 atoms × 1.01 = 13.13
+- O: 4 atoms × 16.00 = 64.00
+- P: 1 atom × 30.97 = 30.97
+- S: 1 atom × 32.07 = 32.07
+- N: 1 atom × 14.01 = 14.01
+- Cl: 1 atom × 35.45 = 35.45
+
+Total molecular weight = 120.1 + 13.13 + 64.00 + 30.97 + 32.07 + 14.01 + 35.45 = 309.73
+
+Now, let's compare this molecular weight with the examples provided. The property values seem to increase with increasing molecular weight, but not linearly. For example, smaller molecules like "CCC(C)O" with a molecular weight of 74.12 have a property value of 316.26, while larger molecules like "ClC1(C2(Cl)C3(Cl)C4(Cl)C5(Cl)C1(Cl)C3(Cl)Cl)C5(Cl)C(Cl)(Cl)C24Cl" with a molecular weight of 606.75 have a property value of 3362.76.
+
+Given the molecular weight of 309.73 for the target molecule, it falls in the lower range of the examples provided. Based on the trend observed, we can estimate the property value to be somewhat higher than the smaller molecules but significantly lower than the larger ones.
+
+Considering the examples and the molecular weight, a reasonable prediction for the property value of the given molecule is approximately 1250.
+==================================================
+Iteration: 19
+SMILES: CC(C)(C)CO
+True Property: 406.90536277515014
+Predicted Property:
+To predict the property value for the molecule given in SMILES format, CC(C)(C)CO, we need to consider the molecular weight and how it relates to the property values provided in the examples. The molecule CC(C)(C)CO is 2-methylpropan-2-ol, also known as tert-butanol.
+
+First, let's calculate the molecular weight of CC(C)(C)CO:
+- Carbon (C): 4 atoms × 12.01 g/mol = 48.04 g/mol
+- Hydrogen (H): 10 atoms × 1.008 g/mol = 10.08 g/mol
+- Oxygen (O): 1 atom × 16.00 g/mol = 16.00 g/mol
+
+Total molecular weight = 48.04 + 10.08 + 16.00 = 74.12 g/mol
+
+Now, let's compare this with the examples provided. The closest example in terms of structure and molecular weight is CCC(C)(C)CO, which has a property value of 497.55284413909214. The molecular weight of CCC(C)(C)CO is slightly higher than that of CC(C)(C)CO due to the additional carbon and hydrogen atoms.
+
+Given that the property is a function of molecular weight, and considering the trend from the examples, we can predict that the property value for CC(C)(C)CO will be slightly lower than that of CCC(C)(C)CO.
+
+Therefore, the predicted property value for CC(C)(C)CO is approximately 497.55 - 10 = 487.55.
+==================================================
+Iteration: 20
+SMILES: O=c1[nH]cnc2nc[nH]c12 
+True Property: 716.8658529826156
+Predicted Property:
+To predict the property value for the given molecule, we need to consider the relationship between the molecular weight and the property values provided in the examples. The molecule in question is given in SMILES format as "O=c1[nH]cnc2nc[nH]c12", which corresponds to a purine structure.
+
+First, let's calculate the molecular weight of the given molecule:
+
+- Oxygen (O): 16.00
+- Carbon (C): 12.01 × 4 = 48.04
+- Nitrogen (N): 14.01 × 4 = 56.04
+- Hydrogen (H): 1.01 × 2 = 2.02
+
+Total molecular weight = 16.00 + 48.04 + 56.04 + 2.02 = 122.10 g/mol
+
+Now, we need to estimate the property value based on the examples. The property values seem to increase with molecular weight, but the relationship is not linear. For smaller molecules, the property values are generally lower.
+
+Given the molecular weight of 122.10 g/mol, which is relatively low compared to the examples, we can expect the property value to be on the lower end of the spectrum. The smallest molecular weight in the examples is for "CC#N" with a molecular weight of 55.08 g/mol and a property value of 102.55. The next smallest is "CCCO" with a molecular weight of 74.12 g/mol and a property value of 225.61.
+
+Considering the trend and the molecular weight of the given molecule, a reasonable estimate for the property value would be slightly higher than 225.61 but significantly lower than the next higher property value in the examples.
+
+Therefore, a predicted property value for "O=c1[nH]cnc2nc[nH]c12" could be approximately 300.
+==================================================
+Iteration: 21
+SMILES: CC(C)OC=O
+True Property: 406.62101906801297
+Predicted Property:
+To predict the property value for the molecule "CC(C)OC=O" (isopropyl formate), we need to consider the relationship between the molecular weight and the property values given in the examples. The property appears to be a function of molecular weight, f(M.W.).
+
+First, let's calculate the molecular weight of "CC(C)OC=O":
+- C: 4 atoms × 12.01 g/mol = 48.04 g/mol
+- H: 8 atoms × 1.01 g/mol = 8.08 g/mol
+- O: 2 atoms × 16.00 g/mol = 32.00 g/mol
+
+Total molecular weight = 48.04 + 8.08 + 32.00 = 88.12 g/mol
+
+Now, let's compare this molecular weight with the examples provided. The closest molecular weights and their corresponding property values are:
+
+- CCC(CC)C=O (M.W. = 100.16 g/mol, Property = 484.5247324666244)
+- CC(C)(C)CO (M.W. = 74.12 g/mol, Property = 406.90536277515014)
+
+The molecular weight of isopropyl formate (88.12 g/mol) is between these two examples. The property value should also fall between the property values of these two examples.
+
+Using linear interpolation between these two points:
+- For M.W. = 74.12, Property = 406.90536277515014
+- For M.W. = 100.16, Property = 484.5247324666244
+
+We can estimate the property for M.W. = 88.12:
+
+Property ≈ 406.90536277515014 + [(88.12 - 74.12) / (100.16 - 74.12)] × (484.5247324666244 - 406.90536277515014)
+
+Property ≈ 406.90536277515014 + [14 / 26.04] × 77.61936969147426
+
+Property ≈ 406.90536277515014 + 41.740
+
+Property ≈ 448.64536277515014
+
+Therefore, the predicted property value for "CC(C)OC=O" is approximately 448.64536277515014.
+==================================================
+Iteration: 22
+SMILES: O=C(Nc1ccccc1)Nc2ccccc2
+True Property: 1208.8967887556119
+Predicted Property:
+To predict the property value for the molecule with the SMILES format "O=C(Nc1ccccc1)Nc2ccccc2", we need to consider the molecular weight and how it might relate to the property values given in the examples.
+
+The given molecule is a diphenylurea, which consists of two phenyl rings (C6H5) and a urea linkage (NHCONH). Let's calculate the molecular weight:
+
+- Each phenyl ring (C6H5) has a molecular weight of approximately 77.11 g/mol.
+- The urea linkage (NHCONH) has a molecular weight of approximately 60.06 g/mol.
+
+Adding these together gives the total molecular weight:
+\[ 2 \times 77.11 + 60.06 = 214.28 \, \text{g/mol} \]
+
+Now, we need to estimate the property value based on the molecular weight. Observing the examples, the property values seem to increase with molecular weight, but not linearly. The property values are likely calculated using a specific function of molecular weight, which could be non-linear or involve other factors.
+
+Given the molecular weight of 214.28 g/mol, we can compare it to the examples with similar molecular weights and their property values. The closest example in terms of molecular weight is "CC(C)I" with a molecular weight of 184.13 g/mol and a property value of 935.8040451212761. The next closest is "CCCC(C)(O)CC" with a molecular weight of 116.16 g/mol and a property value of 588.2003255030342.
+
+Considering the trend and the molecular weight of our target molecule, a reasonable estimate for the property value would be slightly higher than the example with a molecular weight of 184.13 g/mol. Therefore, I would predict the property value for "O=C(Nc1ccccc1)Nc2ccccc2" to be approximately:
+
+\[ 1000.0 \]
+
+This is a rough estimate based on the observed trend in the examples provided.
+==================================================
+Iteration: 23
+SMILES: C1c2ccccc2c3ccccc13
+True Property: 911.4409593052027
+Predicted Property:
+To predict the property value for the given molecule, C1c2ccccc2c3ccccc13, we need to consider the relationship between the molecular weight and the property values provided in the examples. The given SMILES represents a molecule known as triphenylene, which is a polycyclic aromatic hydrocarbon.
+
+First, let's determine the molecular weight of triphenylene. The molecular formula for triphenylene is C18H12. Calculating the molecular weight:
+
+- Carbon (C): 18 atoms × 12.01 g/mol = 216.18 g/mol
+- Hydrogen (H): 12 atoms × 1.008 g/mol = 12.096 g/mol
+
+Total molecular weight = 216.18 + 12.096 = 228.276 g/mol
+
+Now, we need to estimate the property value based on the examples. The property values seem to be a function of molecular weight, but they do not follow a simple linear relationship. However, we can observe that larger, more complex molecules tend to have higher property values.
+
+Given the examples, let's consider the property value for a similar aromatic compound, such as o1c2ccccc2c3ccccc13, which has a property value of 924.1847272705335. This molecule is dibenzofuran, with a molecular weight of approximately 168.19 g/mol.
+
+Triphenylene, with a molecular weight of 228.276 g/mol, is larger than dibenzofuran. Therefore, we can expect its property value to be higher than 924.1847272705335.
+
+Considering the trend and the complexity of the molecule, a reasonable estimate for the property value of triphenylene could be around 1000. However, without a precise mathematical model, this is an approximation.
+
+Therefore, the predicted property value for C1c2ccccc2c3ccccc13 (triphenylene) is approximately 1000.
+==================================================
+Iteration: 24
+SMILES: NC(=N)NS(=O)(=O)c1ccc(N)cc1 
+True Property: 1221.8085780024326
+Predicted Property:
+To predict the property value for the given molecule, NC(=N)NS(=O)(=O)c1ccc(N)cc1, we need to consider the molecular weight and how it might relate to the property values provided in the examples. The property seems to be a function of molecular weight, f(M.W.), but the exact nature of this function is not specified. However, we can make an educated guess based on the examples.
+
+First, let's determine the molecular weight of the given molecule:
+
+- N: 14.01 (2 N atoms in the guanidine group and 1 in the aniline group)
+- C: 12.01 (6 C atoms in the benzene ring)
+- H: 1.01 (7 H atoms)
+- S: 32.07 (1 S atom)
+- O: 16.00 (2 O atoms)
+
+Calculating the molecular weight:
+- N: 14.01 * 3 = 42.03
+- C: 12.01 * 6 = 72.06
+- H: 1.01 * 7 = 7.07
+- S: 32.07 * 1 = 32.07
+- O: 16.00 * 2 = 32.00
+
+Total molecular weight = 42.03 + 72.06 + 7.07 + 32.07 + 32.00 = 185.23
+
+Now, let's compare this molecular weight to the examples provided. The property values seem to increase with molecular weight, but not linearly. For instance, smaller molecules like c1ccsc1 (M.W. ~ 98) have a property value of 381.01, while larger molecules like Clc1cc(Cl)c(Cl)c(c1Cl)c2c(Cl)c(Cl)cc(Cl)c2Cl (M.W. ~ 290) have a property value of 2614.59.
+
+Given the molecular weight of 185.23 for NC(=N)NS(=O)(=O)c1ccc(N)cc1, we can estimate the property value to be somewhere between the values for molecules with similar molecular weights. Based on the trend observed, a reasonable estimate for the property value might be around 1000, considering the non-linear increase in property values with molecular weight.
+
+Therefore, the predicted property value for NC(=N)NS(=O)(=O)c1ccc(N)cc1 is approximately 1000.
+==================================================
+Iteration: 25
+SMILES: CCN(CC(C)=C)c1c(cc(cc1N(=O)=O)C(F)(F)F)N(=O)=O
+True Property: 1990.9324563806267
+Predicted Property:
+To predict the property value for the given molecule, we need to consider the relationship between the molecular weight and the property values provided in the examples. The property appears to be a function of molecular weight, f(M.W.), but the exact nature of this function is not explicitly given. However, we can make an educated guess based on the examples.
+
+The given molecule in SMILES format is: `CCN(CC(C)=C)c1c(cc(cc1N(=O)=O)C(F)(F)F)N(=O)=O`.
+
+First, let's estimate the molecular weight of this molecule:
+
+- C: 8 atoms × 12.01 = 96.08
+- H: 9 atoms × 1.01 = 9.09
+- N: 3 atoms × 14.01 = 42.03
+- O: 4 atoms × 16.00 = 64.00
+- F: 3 atoms × 19.00 = 57.00
+
+Total estimated molecular weight = 268.20 g/mol
+
+Now, let's compare this with the examples provided:
+
+- The molecule `CCCN(CCC)c1c(cc(cc1N(=O)=O)C(F)(F)F)N(=O)=O` has a molecular weight of 276.24 g/mol and a property value of 2003.960568053095.
+- The property values generally increase with increasing molecular weight, but the relationship is not strictly linear.
+
+Given the molecular weight of the target molecule (268.20 g/mol) is slightly less than the example with a similar structure (276.24 g/mol), we can expect the property value to be slightly less than 2003.960568053095.
+
+Therefore, a reasonable prediction for the property value of the given molecule is approximately 1990.
+==================================================
+Iteration: 26
+SMILES: CC(C)OC=O
+True Property: 406.62101906801297
+Predicted Property:
+To predict the property value for the molecule with the SMILES format "CC(C)OC=O", we need to consider the molecular weight and how it might relate to the property values given in the examples. The molecule "CC(C)OC=O" is isopropyl acetate, which has a molecular formula of C5H10O2.
+
+First, let's calculate the molecular weight of isopropyl acetate:
+- Carbon (C): 5 atoms × 12.01 g/mol = 60.05 g/mol
+- Hydrogen (H): 10 atoms × 1.008 g/mol = 10.08 g/mol
+- Oxygen (O): 2 atoms × 16.00 g/mol = 32.00 g/mol
+
+Total molecular weight = 60.05 + 10.08 + 32.00 = 102.13 g/mol
+
+Now, let's compare this molecular weight to the examples provided. The property values seem to increase with molecular weight, but the relationship is not strictly linear. However, we can observe that smaller molecules (with lower molecular weights) tend to have lower property values.
+
+Given the molecular weight of 102.13 g/mol for isopropyl acetate, we can estimate the property value by comparing it to similar small molecules in the examples. For instance, the molecule "CCC(=O)C" (molecular weight ~72 g/mol) has a property value of 303.23, and "COC(=O)C" (molecular weight ~74 g/mol) has a property value of 315.97.
+
+Considering the molecular weight of isopropyl acetate is slightly higher than these examples, we can predict a slightly higher property value. Therefore, a reasonable estimate for the property value of "CC(C)OC=O" would be around 350.0.
+==================================================
+Iteration: 27
+SMILES: Cc1cc(C)cc(O)c1
+True Property: 626.7353601771044
+Predicted Property:
+To predict the property value for the molecule "Cc1cc(C)cc(O)c1", we need to consider the molecular weight and the pattern observed in the given examples. The SMILES represents a methylphenol, specifically a cresol, which is a benzene ring with two methyl groups and one hydroxyl group.
+
+1. **Molecular Weight Estimation**:
+   - Benzene ring (C6H5): 78.11 g/mol
+   - Two methyl groups (2 x CH3): 2 x 15.04 = 30.08 g/mol
+   - Hydroxyl group (OH): 17.01 g/mol
+   - Total estimated molecular weight: 78.11 + 30.08 + 17.01 = 125.20 g/mol
+
+2. **Comparison with Similar Structures**:
+   - "Cc1ccc(O)cc1C" (a similar structure with a hydroxyl group and two methyl groups on a benzene ring) has a property value of 626.7353601771048.
+   - "Oc1cccc(O)c1" (a benzene ring with two hydroxyl groups) has a property value of 548.8316467784933.
+
+3. **Prediction**:
+   - The structure "Cc1cc(C)cc(O)c1" is similar to "Cc1ccc(O)cc1C" but with a slightly different arrangement of substituents.
+   - Given the molecular weight and the pattern observed, the property value should be close to that of "Cc1ccc(O)cc1C".
+
+Based on these observations, the predicted property value for "Cc1cc(C)cc(O)c1" is approximately 626.7353601771048.
+==================================================
+Iteration: 28
+SMILES: COP(=S)(OC)Oc1ccc(SC)c(C)c1
+True Property: 1635.9487250907782
+Predicted Property:
+To predict the property value for the given molecule "COP(=S)(OC)Oc1ccc(SC)c(C)c1", we need to consider the relationship between the molecular weight and the property values provided in the examples. The property appears to be a function of molecular weight, f(M.W.), but the exact nature of this function is not explicitly given. However, we can make an educated guess based on the examples.
+
+First, let's estimate the molecular weight of the given molecule:
+
+- C: 8 atoms × 12.01 = 96.08
+- O: 3 atoms × 16.00 = 48.00
+- P: 1 atom × 30.97 = 30.97
+- S: 1 atom × 32.07 = 32.07
+- H: 10 atoms × 1.01 = 10.10
+
+Total estimated molecular weight = 96.08 + 48.00 + 30.97 + 32.07 + 10.10 = 217.22
+
+Now, let's compare this molecular weight with the examples provided. The property values seem to increase with increasing molecular weight, but not linearly. For example, smaller molecules like "CC#C" with a molecular weight of 40.06 have a property value of 96.16, while larger molecules like "ClC1(C2(Cl)C3(Cl)C4(Cl)C5(Cl)C1(Cl)C3(Cl)Cl)C5(Cl)C(Cl)(Cl)C24Cl" with a molecular weight of 606.75 have a property value of 3362.76.
+
+Given the estimated molecular weight of 217.22 for "COP(=S)(OC)Oc1ccc(SC)c(C)c1", we can predict a property value that is higher than those of smaller molecules but lower than those of significantly larger molecules.
+
+Based on the trend observed in the examples, a reasonable prediction for the property value of the given molecule might be around 1000.0. This is a rough estimate, as the exact function relating molecular weight to the property is not known.
+==================================================
+Iteration: 29
+SMILES: Clc1cc(Cl)c(c(Cl)c1)c2c(Cl)cccc2Cl
+True Property: 1946.8010205615378
+Predicted Property:
+To predict the property value for the given molecule, Clc1cc(Cl)c(c(Cl)c1)c2c(Cl)cccc2Cl, we need to consider the relationship between the molecular weight and the property values provided in the examples. The molecule in question is a chlorinated biphenyl, specifically a hexachlorobiphenyl.
+
+First, let's estimate the molecular weight of the molecule. The structure consists of two phenyl rings with six chlorine atoms attached. The molecular formula is C12H4Cl6.
+
+- Carbon (C): 12 atoms × 12.01 g/mol = 144.12 g/mol
+- Hydrogen (H): 4 atoms × 1.01 g/mol = 4.04 g/mol
+- Chlorine (Cl): 6 atoms × 35.45 g/mol = 212.7 g/mol
+
+Adding these together gives an estimated molecular weight of:
+144.12 + 4.04 + 212.7 = 360.86 g/mol
+
+Now, let's compare this with the examples provided. The closest example in terms of structure and chlorine content is Clc1ccc(c(Cl)c1)c2c(Cl)c(Cl)c(Cl)c(Cl)c2Cl, which has a property value of 2391.992792940662. This molecule has a similar structure but with more chlorine atoms.
+
+Given the trend that more chlorine atoms generally increase the property value, and considering the molecular weight and structure, we can predict that the property value for Clc1cc(Cl)c(c(Cl)c1)c2c(Cl)cccc2Cl will be somewhat lower than 2391.992792940662 but still relatively high due to the presence of multiple chlorine atoms.
+
+Therefore, a reasonable prediction for the property value of Clc1cc(Cl)c(c(Cl)c1)c2c(Cl)cccc2Cl is approximately 2100.
+==================================================
+Iteration: 30
+SMILES: CCCN(=O)=O
+True Property: 413.005827764639
+Predicted Property:
+To predict the property value for the molecule CCCN(=O)=O, we need to consider the relationship between the molecular weight and the property values given in the examples. The property appears to be a function of molecular weight, f(M.W.).
+
+First, let's calculate the molecular weight of CCCN(=O)=O:
+
+- C (carbon) has an atomic weight of approximately 12.01 g/mol.
+- H (hydrogen) has an atomic weight of approximately 1.01 g/mol.
+- N (nitrogen) has an atomic weight of approximately 14.01 g/mol.
+- O (oxygen) has an atomic weight of approximately 16.00 g/mol.
+
+The molecular formula for CCCN(=O)=O is C3H7NO2.
+
+Calculating the molecular weight:
+- 3 carbons: 3 × 12.01 = 36.03
+- 7 hydrogens: 7 × 1.01 = 7.07
+- 1 nitrogen: 1 × 14.01 = 14.01
+- 2 oxygens: 2 × 16.00 = 32.00
+
+Total molecular weight = 36.03 + 7.07 + 14.01 + 32.00 = 89.11 g/mol
+
+Now, let's analyze the examples to find a pattern or function that relates molecular weight to the property value. The property values seem to increase with molecular weight, but the relationship is not linear. However, for smaller molecules, the property values are generally lower.
+
+Given the molecular weight of 89.11 g/mol for CCCN(=O)=O, we can compare it to similar small molecules in the examples:
+
+- C (molecular weight = 12.01) has a property value of -59.07581200989071.
+- Methyl formate (COC=O, molecular weight = 60.05) has a property value of 225.32605634012896.
+- Propyl formate (CCCCOC=O, molecular weight = 102.13) has a property value of 497.268500431955.
+
+Based on these examples, the property value for CCCN(=O)=O, with a molecular weight of 89.11, is likely to be between the values for methyl formate and propyl formate. Given the trend, a reasonable estimate for the property value of CCCN(=O)=O would be around 350.
+
+Therefore, the predicted property value for CCCN(=O)=O is approximately 350.
+==================================================
+Iteration: 31
+SMILES: Fc1cccc(Br)c1
+True Property: 968.1610665220929
+Predicted Property:
+To predict the property value for the molecule "Fc1cccc(Br)c1" based on the given examples, we need to consider the molecular weight and how it correlates with the property values provided.
+
+The SMILES "Fc1cccc(Br)c1" represents a fluorobenzene ring with a bromine substituent. Let's calculate the molecular weight:
+
+- Fluorine (F): 19.00 g/mol
+- Bromine (Br): 79.90 g/mol
+- Carbon (C): 6 atoms × 12.01 g/mol = 72.06 g/mol
+- Hydrogen (H): 4 atoms × 1.01 g/mol = 4.04 g/mol
+
+Total molecular weight = 19.00 + 79.90 + 72.06 + 4.04 = 175.00 g/mol
+
+Now, we need to find a pattern or relationship between molecular weight and the property values from the examples. The property values seem to increase with molecular weight, but the relationship is not linear. However, we can observe that for halogenated benzenes, the property values are relatively high compared to their molecular weights.
+
+For example:
+- "Clc1cccc(I)c1" has a molecular weight of approximately 254.45 g/mol and a property value of 1378.2299287127926.
+- "Clc1ccc(cc1)c2c(Cl)cccc2Cl" has a molecular weight of approximately 291.55 g/mol and a property value of 1501.6092481824144.
+
+Given the molecular weight of 175.00 g/mol for "Fc1cccc(Br)c1" and considering the trend observed in the examples, we can estimate the property value to be somewhat lower than those of the heavier halogenated benzenes but still relatively high due to the presence of both fluorine and bromine.
+
+A reasonable prediction for the property value of "Fc1cccc(Br)c1" would be around 1200.0, considering the influence of the halogen atoms and the molecular weight.
+==================================================
+Iteration: 32
+SMILES: CC1(C)C2CCC1(C)C(O)C2
+True Property: 834.0865462499245
+Predicted Property:
+To predict the property value for the given molecule, CC1(C)C2CCC1(C)C(O)C2, we need to consider the relationship between the molecular weight and the property values provided in the examples. The property appears to be a function of molecular weight, f(M.W.), but the exact nature of this function is not explicitly given. However, we can make an educated guess based on the examples.
+
+First, let's determine the molecular weight of the given molecule, CC1(C)C2CCC1(C)C(O)C2:
+
+- C10H18O: 
+  - Carbon (C): 10 atoms × 12.01 g/mol = 120.1 g/mol
+  - Hydrogen (H): 18 atoms × 1.008 g/mol = 18.144 g/mol
+  - Oxygen (O): 1 atom × 16.00 g/mol = 16.00 g/mol
+
+Total molecular weight = 120.1 + 18.144 + 16.00 = 154.244 g/mol
+
+Now, let's compare this molecular weight to the examples provided. The property values seem to increase with molecular weight, but not linearly. For smaller molecules, the property values are relatively lower, and for larger molecules, they are higher.
+
+Given the molecular weight of 154.244 g/mol, which is relatively low compared to the examples, we can expect the property value to be on the lower end of the spectrum. The smallest property value in the examples is 225.61040004726607 for a molecular weight of 60.095 g/mol (CC(C)O), and the next smallest is 381.1334831373515 for a molecular weight of 84.162 g/mol (CCCC(=C)C).
+
+Considering the trend and the molecular weight of the given molecule, a reasonable prediction for the property value would be slightly higher than the smallest values but still on the lower end. Therefore, I would predict the property value for CC1(C)C2CCC1(C)C(O)C2 to be approximately:
+
+**400.0**
+==================================================
+Iteration: 33
+SMILES: CCOP(=S)(OCC)N2C(=O)c1ccccc1C2=O
+True Property: 1771.3544909009079
+Predicted Property:
+To predict the property value for the given molecule, CCOP(=S)(OCC)N2C(=O)c1ccccc1C2=O, we need to consider the relationship between the molecular weight and the property values provided in the examples. The property appears to be a function of molecular weight, f(M.W.), but the exact nature of this function is not explicitly given. However, we can make an educated guess based on the examples.
+
+First, let's estimate the molecular weight of the given molecule:
+
+- C: 12.01 × 13 = 156.13
+- H: 1.01 × 15 = 15.15
+- O: 16.00 × 3 = 48.00
+- P: 30.97 × 1 = 30.97
+- S: 32.07 × 1 = 32.07
+- N: 14.01 × 1 = 14.01
+
+Adding these together gives an estimated molecular weight of approximately 296.33 g/mol.
+
+Now, let's compare this molecular weight to the examples provided. The property values seem to increase with molecular weight, but not linearly. For example, smaller molecules like CC1CCCO1 (M.W. ~ 86.13) have a property value of 393.88, while larger molecules like CCC(C)C(=O)OC2CC(C)C=C3C=CC(C)C(CCC1CC(O)CC(=O)O1)C23 (M.W. ~ 386.65) have a property value of 2451.58.
+
+Given the molecular weight of the target molecule (296.33), it falls in the lower to mid-range of the examples provided. Based on the trend observed, a reasonable estimate for the property value would be somewhere between the values for molecules with similar molecular weights.
+
+Considering the examples and the estimated molecular weight, a predicted property value for CCOP(=S)(OCC)N2C(=O)c1ccccc1C2=O could be around 900 to 1100. A specific prediction could be approximately 1000, given the trend and the molecular weight.
+==================================================
+Iteration: 34
+SMILES: Cc1cc(=O)n(c2ccccc2)n1C
+True Property: 1053.6580493726633
+Predicted Property:
+To predict the property value for the given molecule, Cc1cc(=O)n(c2ccccc2)n1C, we need to consider the relationship between the molecular weight and the property values provided in the examples. The property appears to be a function of molecular weight, f(M.W.), but the exact nature of this function is not explicitly given. However, we can make an educated guess based on the examples.
+
+First, let's determine the molecular weight of the given molecule:
+
+- Cc1cc(=O)n(c2ccccc2)n1C corresponds to 1,3-dimethyl-2-phenyl-1H-imidazol-4(5H)-one.
+- The molecular formula is C11H10N2O.
+- Calculating the molecular weight:
+  - Carbon (C): 11 atoms × 12.01 g/mol = 132.11 g/mol
+  - Hydrogen (H): 10 atoms × 1.008 g/mol = 10.08 g/mol
+  - Nitrogen (N): 2 atoms × 14.01 g/mol = 28.02 g/mol
+  - Oxygen (O): 1 atom × 16.00 g/mol = 16.00 g/mol
+- Total molecular weight = 132.11 + 10.08 + 28.02 + 16.00 = 186.21 g/mol
+
+Now, let's compare this molecular weight with the examples provided. The property values seem to increase with molecular weight, but not linearly. The relationship might be polynomial or involve some other transformation.
+
+Given the molecular weight of 186.21 g/mol, we can look at examples with similar molecular weights and their corresponding property values to make a prediction. For instance, the molecule with a molecular weight of 199.55417670233032 has a property value of 199.55417670233032, which suggests a close relationship between molecular weight and property value.
+
+Based on this analysis and the trend observed in the examples, a reasonable prediction for the property value of the given molecule, Cc1cc(=O)n(c2ccccc2)n1C, with a molecular weight of 186.21 g/mol, would be approximately 186.21. However, considering the non-linear nature observed in some examples, a slight adjustment might be necessary. Therefore, a predicted property value could be around 186.21 to 200, but without the exact function, this remains an estimation.
+==================================================
+Iteration: 35
+SMILES: CCCCCC(=O)OCC
+True Property: 769.210944523781
+Predicted Property:
+To predict the property value for the molecule "CCCCCC(=O)OCC" based on the given examples, we need to consider the relationship between the molecular weight and the property values provided. The property appears to be a function of molecular weight, f(M.W.).
+
+First, let's determine the molecular weight of the molecule "CCCCCC(=O)OCC":
+
+- C: 8 atoms × 12.01 = 96.08
+- H: 16 atoms × 1.01 = 16.16
+- O: 2 atoms × 16.00 = 32.00
+
+Total molecular weight = 96.08 + 16.16 + 32.00 = 144.24
+
+Now, let's compare this molecular weight with the examples provided. We need to find a pattern or trend in the property values relative to the molecular weights of the examples. 
+
+From the examples, we can see that as the molecular weight increases, the property value also tends to increase. However, the relationship is not strictly linear, and there may be other factors influencing the property.
+
+Given the molecular weight of 144.24 for "CCCCCC(=O)OCC", we can estimate the property value by comparing it to similar molecular weights in the examples. The closest molecular weights in the examples are:
+
+- CCC#C (M.W. = 54.09, Property = 186.81)
+- CCC(C)(C)C (M.W. = 72.15, Property = 394.16)
+- C=CCCC=C (M.W. = 82.15, Property = 368.11)
+- CCC(C)CO (M.W. = 88.15, Property = 406.91)
+- CCCCC(C)O (M.W. = 102.18, Property = 497.55)
+
+Based on these examples, the property value seems to increase with molecular weight. Given that the molecular weight of "CCCCCC(=O)OCC" is 144.24, which is higher than the examples listed, we can predict that the property value will be higher than 497.55.
+
+Therefore, a reasonable prediction for the property value of "CCCCCC(=O)OCC" would be approximately 600.0, considering the trend observed in the examples.
+==================================================
+Iteration: 36
+SMILES: COC(=O)c1ccccc1
+True Property: 717.0984978339095
+Predicted Property:
+To predict the property value for the molecule given in SMILES format, COC(=O)c1ccccc1, we need to consider the relationship between the molecular weight and the property values provided in the examples. The molecule COC(=O)c1ccccc1 is methyl benzoate.
+
+First, let's calculate the molecular weight of methyl benzoate:
+
+- Carbon (C): 8 atoms × 12.01 g/mol = 96.08 g/mol
+- Hydrogen (H): 8 atoms × 1.01 g/mol = 8.08 g/mol
+- Oxygen (O): 2 atoms × 16.00 g/mol = 32.00 g/mol
+
+Total molecular weight = 96.08 + 8.08 + 32.00 = 136.16 g/mol
+
+Now, we need to find a similar molecule from the examples to estimate the property value. The closest example in terms of structure and molecular weight is COc1ccccc1O, which has a molecular weight of 124.14 g/mol and a property value of 639.4791281424351.
+
+Given that methyl benzoate has a slightly higher molecular weight than phenol methyl ether (COc1ccccc1O), we can expect its property value to be slightly higher as well. Based on the trend observed in the examples, the property value tends to increase with molecular weight.
+
+Therefore, I predict the property value for COC(=O)c1ccccc1 to be approximately 650.
+==================================================
+Iteration: 37
+SMILES: C=CCC=C
+True Property: 277.45789010094165
+Predicted Property:
+To predict the property value for the molecule C=CCC=C, we need to consider the relationship between the molecular weight and the property values given in the examples. The molecule C=CCC=C is a linear alkene with the formula C5H8, which has a molecular weight of approximately 68.12 g/mol.
+
+Looking at the examples, we can see that the property values generally increase with increasing molecular weight. For smaller molecules, such as CSC (M.W. = 62.14 g/mol, property = 238.80) and NC(=O)N (M.W. = 59.07 g/mol, property = 225.35), the property values are in the range of 200-300. 
+
+Given that C=CCC=C has a molecular weight slightly higher than these examples, we can predict that its property value will also be slightly higher than those of CSC and NC(=O)N. Therefore, a reasonable prediction for the property value of C=CCC=C would be around 250.
+==================================================
+Iteration: 38
+SMILES: BrC(Br)Br
+True Property: 1470.486536964852
+Predicted Property:
+To predict the property value for the molecule BrC(Br)Br, we need to consider the relationship between the molecular weight and the property values given in the examples. The property appears to be a function of molecular weight, f(M.W.).
+
+First, let's calculate the molecular weight of BrC(Br)Br:
+- Bromine (Br) has an atomic weight of approximately 79.9.
+- Carbon (C) has an atomic weight of approximately 12.0.
+
+The molecular weight of BrC(Br)Br is:
+\[ \text{M.W.} = 3 \times 79.9 + 12.0 = 251.7 \]
+
+Now, let's examine the examples to find a pattern or relationship between molecular weight and the property value. The property values seem to increase with increasing molecular weight, but the relationship is not strictly linear. However, for small molecules, the property values are generally lower.
+
+For example:
+- CBr (M.W. = 127.9) has a property value of 450.778.
+- CCBr (M.W. = 141.9) has a property value of 541.426.
+
+Given that BrC(Br)Br has a molecular weight of 251.7, which is larger than both CBr and CCBr, we can expect its property value to be higher than 541.426.
+
+Considering the trend and the examples, a reasonable prediction for the property value of BrC(Br)Br would be around 800.0.
+==================================================
+Iteration: 39
+SMILES: CCOP(=S)(OCC)SC(CCl)N2C(=O)c1ccccc1C2=O
+True Property: 2382.4737411085466
+Predicted Property:
+To predict the property value for the given molecule, we need to consider the relationship between the molecular weight and the property values provided in the examples. The property appears to be a function of molecular weight, f(M.W.), but the exact nature of this function is not explicitly given. However, we can make an educated guess based on the examples.
+
+First, let's determine the molecular weight of the given molecule, "CCOP(=S)(OCC)SC(CCl)N2C(=O)c1ccccc1C2=O":
+
+- C: 15 atoms × 12.01 = 180.15
+- H: 18 atoms × 1.01 = 18.18
+- O: 4 atoms × 16.00 = 64.00
+- P: 1 atom × 30.97 = 30.97
+- S: 2 atoms × 32.07 = 64.14
+- Cl: 1 atom × 35.45 = 35.45
+- N: 1 atom × 14.01 = 14.01
+
+Total molecular weight = 180.15 + 18.18 + 64.00 + 30.97 + 64.14 + 35.45 + 14.01 = 407.90
+
+Now, let's compare this molecular weight to the examples provided. The property values seem to increase with molecular weight, but not linearly. For example, molecules with molecular weights around 400 have property values in the range of 393.88 to 497.55.
+
+Given the molecular weight of 407.90, we can estimate the property value to be slightly higher than the property value for a molecule with a molecular weight of 393.88, which is 393.8772511026822. Therefore, a reasonable prediction for the property value of the given molecule is approximately 420.0.
+==================================================
+Iteration: 40
+SMILES: CN(C)C(=O)Nc1ccc(c(Cl)c1)n2nc(oc2=O)C(C)(C)C
+True Property: 2026.6628281252083
+Predicted Property:
+To predict the property value for the given molecule, CN(C)C(=O)Nc1ccc(c(Cl)c1)n2nc(oc2=O)C(C)(C)C, we need to consider the relationship between the molecular weight and the property values provided in the examples. The property appears to be a function of molecular weight, f(M.W.), but the exact nature of this function is not explicitly given.
+
+First, let's estimate the molecular weight of the given molecule:
+
+- CN(C)C(=O)Nc1ccc(c(Cl)c1)n2nc(oc2=O)C(C)(C)C
+
+Breaking it down:
+- C: 12 atoms
+- N: 3 atoms
+- O: 3 atoms
+- Cl: 1 atom
+- H: 15 atoms (from implicit hydrogens)
+
+Using approximate atomic weights:
+- C: 12.01
+- N: 14.01
+- O: 16.00
+- Cl: 35.45
+- H: 1.01
+
+Calculating the molecular weight:
+- C: 12 * 12.01 = 144.12
+- N: 3 * 14.01 = 42.03
+- O: 3 * 16.00 = 48.00
+- Cl: 1 * 35.45 = 35.45
+- H: 15 * 1.01 = 15.15
+
+Total molecular weight ≈ 284.75
+
+Now, let's compare this molecular weight with the examples provided. The property values seem to increase with molecular weight, but not linearly. For instance, smaller molecules like benzene derivatives have lower property values, while larger, more complex molecules have higher values.
+
+Given the molecular weight of approximately 284.75, the property value should be somewhere between the values for smaller molecules like Oc1ccc(O)cc1 (548.83) and larger molecules like Clc1ccc(c(Cl)c1)c2cc(Cl)ccc2Cl (1724.21).
+
+Considering the trend and the molecular weight, a reasonable estimate for the property value of the given molecule would be around 1200. This is a rough estimate based on the observed pattern in the examples.
+==================================================
+Iteration: 41
+SMILES: Oc1cc(Cl)ccc1Oc2ccc(Cl)cc2Cl
+True Property: 1708.3917468409595
+Predicted Property:
+To predict the property value for the given molecule, Oc1cc(Cl)ccc1Oc2ccc(Cl)cc2Cl, we need to consider the relationship between the molecular weight and the property values provided in the examples. The molecule in question is a dichlorinated biphenyl ether, which can be broken down as follows:
+
+- The base structure is a biphenyl ether, which consists of two phenyl rings connected by an oxygen atom.
+- Each phenyl ring has one chlorine substituent, and one of the rings has an additional chlorine substituent.
+
+To estimate the molecular weight:
+- Each phenyl ring (C6H4) contributes approximately 76 g/mol.
+- The oxygen atom contributes 16 g/mol.
+- Each chlorine atom contributes approximately 35.5 g/mol.
+
+Calculating the molecular weight:
+- Two phenyl rings: 2 × 76 = 152 g/mol
+- One oxygen atom: 16 g/mol
+- Three chlorine atoms: 3 × 35.5 = 106.5 g/mol
+
+Total molecular weight ≈ 152 + 16 + 106.5 = 274.5 g/mol
+
+Now, we need to predict the property value based on the molecular weight. Observing the examples, the property value seems to increase with molecular weight, but not linearly. The property values for molecules with similar structures and molecular weights can provide a reference.
+
+For example, the molecule Clc1cccc(Cl)c1 (a dichlorobenzene) has a molecular weight of approximately 147 g/mol and a property value of 787.24. The molecule Clc1cc(Cl)c(Cl)c(Cl)c1Cl (a hexachlorobenzene) has a molecular weight of approximately 284 g/mol and a property value of 1455.03.
+
+Given that the molecular weight of Oc1cc(Cl)ccc1Oc2ccc(Cl)cc2Cl is approximately 274.5 g/mol, we can estimate the property value to be between these two reference points, but closer to the higher value due to the additional chlorine and oxygen.
+
+Therefore, a reasonable prediction for the property value of Oc1cc(Cl)ccc1Oc2ccc(Cl)cc2Cl is approximately 1400.
+==================================================
+Iteration: 42
+SMILES: CC/C=C\C
+True Property: 290.4860017734096
+Predicted Property:
+To predict the property value for the molecule "CC/C=C\C" based on the given examples, we need to consider the molecular weight and how it correlates with the property values provided.
+
+The SMILES "CC/C=C\C" represents 2-butene, which has the molecular formula C4H8. The molecular weight of 2-butene is approximately 56.11 g/mol.
+
+Looking at the examples, we can see that the property value tends to increase with molecular weight, but the relationship is not strictly linear. For smaller molecules, the property values are generally lower. For instance, the molecule "CC" (ethane) with a molecular weight of about 30.07 g/mol has a property value of 31.57. The molecule "C1C=CCC=C1" (cyclohexene) with a molecular weight of about 82.15 g/mol has a property value of 355.08.
+
+Given that 2-butene has a molecular weight between these two examples, we can estimate that its property value will also fall between the property values of ethane and cyclohexene. Since 2-butene is closer in molecular weight to cyclohexene, its property value should be closer to 355.08 than to 31.57.
+
+Therefore, a reasonable prediction for the property value of 2-butene (CC/C=C\C) would be around 300.
+==================================================
+Iteration: 43
+SMILES: CCCOCC
+True Property: 406.90536277515014
+Predicted Property:
+To predict the property value for the molecule CCCOCC, we need to consider the relationship between the molecular weight and the property values given in the examples. The molecule CCCOCC is hexanol ether, with a molecular weight of approximately 102.13 g/mol.
+
+Looking at the examples, we can see that the property values generally increase with molecular weight, but the relationship is not strictly linear. For example, the molecule CCCCCO (hexanol) has a molecular weight of about 102.18 g/mol and a property value of 406.90536277515014. Since CCCOCC is similar in structure and molecular weight to CCCCCO, we can expect the property value to be close to that of CCCCCO.
+
+Therefore, the predicted property value for CCCOCC is approximately 406.90536277515014.
+==================================================
+Iteration: 44
+SMILES: CN(C(=O)NC(C)(C)c1ccccc1)c2ccccc2
+True Property: 1571.4867142113799
+Predicted Property:
+To predict the property value for the given molecule, CN(C(=O)NC(C)(C)c1ccccc1)c2ccccc2, we need to consider the relationship between the molecular weight and the property values from the examples provided. The property appears to be a function of molecular weight, f(M.W.).
+
+First, let's determine the molecular weight of the given molecule:
+
+- CN(C(=O)NC(C)(C)c1ccccc1)c2ccccc2
+
+This molecule consists of:
+- 1 nitrogen (N)
+- 1 carbonyl group (C=O)
+- 1 amide linkage (NC)
+- 2 phenyl groups (c1ccccc1 and c2ccccc2)
+- 1 tertiary butyl group (C(C)(C))
+
+Calculating the molecular weight:
+- C: 15 carbons × 12.01 = 180.15
+- H: 17 hydrogens × 1.008 = 17.136
+- N: 2 nitrogens × 14.01 = 28.02
+- O: 1 oxygen × 16.00 = 16.00
+
+Total molecular weight = 180.15 + 17.136 + 28.02 + 16.00 = 241.306
+
+Now, we need to estimate the property value based on the molecular weight. Observing the examples, the property value seems to increase with molecular weight, but not linearly. For molecules with similar structures and molecular weights, the property values are in the range of 600 to 1000.
+
+Given the molecular weight of approximately 241.306, which is relatively low compared to most examples, the property value is likely to be on the lower end of the spectrum. However, considering the complexity and aromaticity of the structure, it might be slightly higher than a simple linear extrapolation.
+
+Based on these considerations, a reasonable prediction for the property value of the given molecule is approximately 800.
+==================================================
+Iteration: 45
+SMILES: CC(=O)Nc1ccc(Br)cc1
+True Property: 1220.5936548901195
+Predicted Property:
+To predict the property value for the molecule CC(=O)Nc1ccc(Br)cc1, we need to consider the relationship between the molecular weight and the property values given in the examples. The property appears to be a function of molecular weight, f(M.W.).
+
+First, let's calculate the molecular weight of the given molecule:
+
+- C: 8 atoms × 12.01 = 96.08
+- H: 8 atoms × 1.01 = 8.08
+- N: 1 atom × 14.01 = 14.01
+- O: 1 atom × 16.00 = 16.00
+- Br: 1 atom × 79.90 = 79.90
+
+Total molecular weight = 96.08 + 8.08 + 14.01 + 16.00 + 79.90 = 214.07
+
+Now, let's compare this molecular weight with the examples provided. The closest example in terms of structure and molecular weight is CCC(=O)Nc1ccc(Cl)c(Cl)c1, which has a molecular weight of 233.55 and a property value of 1246.5787923082707.
+
+Given that the molecular weight of CC(=O)Nc1ccc(Br)cc1 is slightly lower than that of CCC(=O)Nc1ccc(Cl)c(Cl)c1, we can expect the property value to be slightly lower as well.
+
+Therefore, a reasonable prediction for the property value of CC(=O)Nc1ccc(Br)cc1 would be approximately 1200.
+==================================================
+Iteration: 46
+SMILES: CC(C)Cc1ccccc1
+True Property: 704.639073575716
+Predicted Property:
+To predict the property value for the molecule "CC(C)Cc1ccccc1" based on the given examples, we need to consider the relationship between the molecular weight and the property value. The property appears to be a function of molecular weight, f(M.W.), but the exact nature of this function is not explicitly given. However, we can make an educated guess by examining the examples.
+
+The SMILES "CC(C)Cc1ccccc1" represents isobutylbenzene. Let's calculate its molecular weight:
+
+- C10H14: 
+  - Carbon (C): 10 atoms × 12.01 g/mol = 120.1 g/mol
+  - Hydrogen (H): 14 atoms × 1.008 g/mol = 14.112 g/mol
+- Total molecular weight = 120.1 + 14.112 = 134.212 g/mol
+
+Now, let's compare this with similar structures from the examples:
+
+- "CCc1ccccc1" (ethylbenzene) has a molecular weight of approximately 106.17 g/mol and a property value of 523.3441108478318.
+- "Cc1ccc(O)cc1C" (cresol) has a molecular weight of approximately 108.14 g/mol and a property value of 626.7353601771048.
+
+The molecular weight of isobutylbenzene (134.212 g/mol) is slightly higher than that of ethylbenzene and cresol. Given the trend in the examples, where the property value increases with molecular weight, we can predict that the property value for isobutylbenzene will be slightly higher than that of ethylbenzene and cresol.
+
+Based on this reasoning, a reasonable prediction for the property value of "CC(C)Cc1ccccc1" is approximately 650.
+==================================================
+Iteration: 47
+SMILES: O=Cc1ccccc1
+True Property: 523.0597671406946
+Predicted Property:
+To predict the property value for the molecule O=Cc1ccccc1, we need to consider the relationship between the molecular weight and the property values given in the examples. The molecule O=Cc1ccccc1 is benzaldehyde, which has a molecular weight of approximately 106.12 g/mol.
+
+Looking at the examples, we can see that the property values generally increase with increasing molecular weight, but the relationship is not strictly linear. However, for relatively simple aromatic compounds, the property values seem to be in the range of 600 to 1100 for molecular weights around 100 to 200 g/mol.
+
+For instance, the molecule NC(=O)c1ccccc1 (benzamide) has a molecular weight of about 121.14 g/mol and a property value of 620.0920572012627. Given that benzaldehyde is slightly lighter, we can expect its property value to be somewhat lower than that of benzamide.
+
+Based on this analysis, I would predict the property value for O=Cc1ccccc1 to be approximately 600.
+==================================================
+Iteration: 48
+SMILES: O=C2CN(N=Cc1ccc(o1)N(=O)=O)C(=O)N2 
+True Property: 1376.317071046597
+Predicted Property:
+To predict the property value for the given molecule, we need to consider the relationship between the molecular weight and the property values provided in the examples. The property appears to be a function of molecular weight, f(M.W.), but the exact nature of this function is not explicitly given. However, we can make an educated guess based on the examples.
+
+First, let's determine the molecular weight of the given molecule, O=C2CN(N=Cc1ccc(o1)N(=O)=O)C(=O)N2:
+
+- C: 8 atoms × 12.01 = 96.08
+- H: 4 atoms × 1.01 = 4.04
+- N: 4 atoms × 14.01 = 56.04
+- O: 5 atoms × 16.00 = 80.00
+
+Total molecular weight = 96.08 + 4.04 + 56.04 + 80.00 = 236.16 g/mol
+
+Now, let's compare this molecular weight with the examples provided. The property values seem to increase with molecular weight, but not linearly. For example, smaller molecules like CCC (molecular weight ~44 g/mol) have a property value of 122.22, while larger molecules like ClC1CC2C(C1Cl)C3(Cl)C(=C(Cl)C2(Cl)C3(Cl)Cl) (molecular weight ~406 g/mol) have a property value of 2485.41.
+
+Given the molecular weight of 236.16 g/mol for the target molecule, it falls in the lower range of the examples provided. Based on the trend observed, we can estimate that the property value for this molecule will be relatively low compared to the higher molecular weight examples.
+
+Considering the examples and the molecular weight of the target molecule, a reasonable prediction for the property value would be around 600 to 800. However, without a precise mathematical model, this is an approximation.
+
+Therefore, the predicted property value for the molecule O=C2CN(N=Cc1ccc(o1)N(=O)=O)C(=O)N2 is approximately 700.
+==================================================
+Iteration: 49
+SMILES: N(Nc1ccccc1)c2ccccc2 
+True Property: 1027.8861697348648
+Predicted Property:
+To predict the property value for the given molecule, N(Nc1ccccc1)c2ccccc2, we need to consider the molecular weight and how it relates to the property values provided in the examples. The molecule in question is a diphenylamine derivative, which consists of two phenyl rings connected by a nitrogen atom.
+
+First, let's estimate the molecular weight of the molecule:
+- Each phenyl ring (C6H5) has a molecular weight of approximately 77.11 g/mol.
+- The nitrogen atom (N) has a molecular weight of approximately 14.01 g/mol.
+- The total molecular weight of the molecule is approximately 2 * 77.11 + 14.01 = 168.23 g/mol.
+
+Now, let's compare this molecular weight to the examples provided. The property values seem to increase with molecular weight, but not linearly. Instead, they appear to follow a more complex function, possibly involving exponential or polynomial terms.
+
+Given the molecular weight of 168.23 g/mol, we can look at similar molecular weights in the examples:
+- c1ccc2c(c1)ccc3ccccc32 (molecular weight ~ 178 g/mol) has a property value of 989.0603289966767.
+- c1ccccc1O (molecular weight ~ 94 g/mol) has a property value of 445.44039744922065.
+
+The molecular weight of N(Nc1ccccc1)c2ccccc2 is closer to that of c1ccc2c(c1)ccc3ccccc32, suggesting a property value in a similar range. However, since the molecular weight is slightly lower, the property value should also be slightly lower than 989.0603289966767.
+
+Based on this analysis, a reasonable prediction for the property value of N(Nc1ccccc1)c2ccccc2 is approximately 950.
+==================================================
+Iteration: 50
+SMILES: O=C2NC(=O)C1(CCCC1)C(=O)N2
+True Property: 1014.5543272843187
+Predicted Property:
+To predict the property value for the given molecule, we need to consider the relationship between the molecular weight and the property values provided in the examples. The SMILES string for the molecule is:
+
+O=C2NC(=O)C1(CCCC1)C(=O)N2
+
+This represents a bicyclic compound with two amide groups. Let's break down the structure:
+
+1. The core structure is a bicyclic system with a cyclopentane ring (C1(CCCC1)) and a diketopiperazine moiety (O=C2NC(=O)C2).
+2. The molecular weight of this compound can be estimated by summing the atomic weights of its constituent atoms:
+   - Carbon (C): 8 atoms × 12.01 = 96.08
+   - Hydrogen (H): 10 atoms × 1.01 = 10.10
+   - Nitrogen (N): 2 atoms × 14.01 = 28.02
+   - Oxygen (O): 2 atoms × 16.00 = 32.00
+
+   Total estimated molecular weight = 96.08 + 10.10 + 28.02 + 32.00 = 166.20
+
+Now, we need to find a pattern or relationship between the molecular weight and the property values from the examples. The property values seem to be a function of molecular weight, but they are not directly proportional. Instead, they appear to be scaled or transformed in some way.
+
+Given the examples, let's consider the molecular weight of the given molecule (166.20) and compare it to similar structures or molecular weights in the examples. The closest example in terms of structure and molecular weight might be:
+
+- c1ccccc1 (benzene), with a molecular weight of 78.11 and a property value of 342.04914811994786.
+
+The given molecule is more complex than benzene, with additional functional groups and a higher molecular weight. Therefore, its property value should be higher than that of benzene.
+
+Considering the scaling observed in the examples, a reasonable estimate for the property value of the given molecule might be around 800 to 1000, given its molecular weight and structural complexity.
+
+Therefore, a predicted property value for the molecule O=C2NC(=O)C1(CCCC1)C(=O)N2 could be approximately:
+
+**900.0**
+==================================================
+Iteration: 51
+SMILES: Clc1ccc(cc1)c2c(Cl)cccc2Cl 
+True Property: 1501.6092481824144
+Predicted Property:
+To predict the property value for the given molecule, Clc1ccc(cc1)c2c(Cl)cccc2Cl, we need to consider the relationship between the molecular weight and the property values provided in the examples. The molecule in question is a dichlorobiphenyl, which consists of two phenyl rings with three chlorine atoms attached.
+
+First, let's estimate the molecular weight of the molecule:
+- Each phenyl ring (C6H4) has a molecular weight of approximately 76.1 g/mol.
+- There are two phenyl rings, so 2 x 76.1 = 152.2 g/mol.
+- There are three chlorine atoms, each with a molecular weight of approximately 35.5 g/mol, so 3 x 35.5 = 106.5 g/mol.
+
+Adding these together gives an estimated molecular weight of 152.2 + 106.5 = 258.7 g/mol.
+
+Now, let's compare this to similar molecules in the examples:
+- Clc1ccccc1c2ccccc2Cl has a property value of 1279.0133619928524.
+- Clc1cccc(c1Cl)c2cccc(Cl)c2Cl has a property value of 1724.2051343719759.
+
+The given molecule, Clc1ccc(cc1)c2c(Cl)cccc2Cl, is structurally similar to these examples, with a similar number of chlorine atoms and phenyl rings. Based on the trend observed in the examples, the property value seems to increase with the number of chlorine atoms and the complexity of the structure.
+
+Given the structural similarity and the estimated molecular weight, a reasonable prediction for the property value of Clc1ccc(cc1)c2c(Cl)cccc2Cl would be around 1279.0133619928524, as it closely resembles the structure of Clc1ccccc1c2ccccc2Cl.
+==================================================
+Iteration: 52
+SMILES: CCc1ccc(CC)cc1
+True Property: 704.639073575716
+Predicted Property:
+To predict the property value for the molecule "CCc1ccc(CC)cc1" based on the given examples, we need to consider the relationship between the molecular weight and the property value. The SMILES "CCc1ccc(CC)cc1" represents ethylbenzene, which has a molecular formula of C10H14.
+
+First, let's calculate the molecular weight of ethylbenzene:
+- Carbon (C): 10 atoms × 12.01 g/mol = 120.1 g/mol
+- Hydrogen (H): 14 atoms × 1.008 g/mol = 14.112 g/mol
+- Total molecular weight = 120.1 + 14.112 = 134.212 g/mol
+
+Now, let's compare this with similar molecules from the examples:
+- "Cc1ccc(C)cc1" (toluene) has a molecular weight of 92.14 g/mol and a property value of 523.3441108478321.
+- "CCCc1ccccc1" (propylbenzene) has a molecular weight of 120.19 g/mol and a property value of 613.9915922117739.
+
+Ethylbenzene has a molecular weight between toluene and propylbenzene. The property values for these molecules increase with molecular weight. Therefore, we can predict that the property value for ethylbenzene will be between 523.3441108478321 and 613.9915922117739.
+
+Given the trend, a reasonable estimate for the property value of ethylbenzene (CCc1ccc(CC)cc1) would be around 570.0.
+==================================================
+Iteration: 53
+SMILES: Nc1ccc(cc1)S(N)(=O)=O
+True Property: 950.1246281898219
+Predicted Property:
+To predict the property value for the molecule "Nc1ccc(cc1)S(N)(=O)=O" based on the given examples, we need to consider the molecular weight and how it might relate to the property values provided.
+
+First, let's determine the molecular weight of the molecule:
+
+- N (Nitrogen): 14.01
+- c1ccc(cc1) (Phenyl ring, C6H4): 6 * 12.01 (Carbon) + 4 * 1.01 (Hydrogen) = 76.06
+- S (Sulfur): 32.07
+- (N)(=O)=O (Sulfonamide group): 14.01 (Nitrogen) + 2 * 16.00 (Oxygen) = 46.01
+
+Adding these together gives the molecular weight:
+14.01 (N) + 76.06 (Phenyl) + 32.07 (S) + 46.01 (Sulfonamide) = 168.15
+
+Now, let's compare this molecular weight to the examples provided. The property values seem to increase with molecular weight, but not linearly. For example, smaller molecules like "CCC(C)C" with a molecular weight of 72.15 have a property value of 303.51, while larger molecules like "Brc1cc(Br)c(Br)cc1Br" with a molecular weight of 393.69 have a property value of 2381.47.
+
+Given the molecular weight of 168.15 for "Nc1ccc(cc1)S(N)(=O)=O", it is relatively small compared to many of the examples. The property value should be closer to those of smaller molecules. 
+
+Based on the trend observed, a reasonable prediction for the property value of "Nc1ccc(cc1)S(N)(=O)=O" would be around 600 to 700. Given the examples and the molecular weight, let's predict a specific value:
+
+Predicted property value: 650.
+==================================================
+Iteration: 54
+SMILES: c1ccc2c(c1)c3cccc4cccc2c34
+True Property: 1144.2990683796252
+Predicted Property:
+To predict the property value for the given molecule, we need to consider the relationship between the molecular weight and the property values provided in the examples. The SMILES string "c1ccc2c(c1)c3cccc4cccc2c34" represents a polycyclic aromatic hydrocarbon known as triphenylene.
+
+First, let's calculate the molecular weight of triphenylene. The molecular formula for triphenylene is C18H12. The atomic weights are approximately 12.01 for carbon and 1.01 for hydrogen. Therefore, the molecular weight is:
+
+\[ \text{M.W.} = (18 \times 12.01) + (12 \times 1.01) = 216.18 + 12.12 = 228.30 \]
+
+Next, we need to estimate the property value based on the molecular weight. Observing the examples, the property values seem to be a function of the molecular weight, but the exact function is not linear or straightforward. However, we can make an educated guess by comparing similar structures and their property values.
+
+For example, the molecule "c2ccc1[nH]ncc1c2" with a molecular weight of approximately 118.15 has a property value of 600.70. The molecule "CCCCCCCCCCCCCC" with a molecular weight of approximately 198.39 has a property value of 1119.34. These examples suggest that the property value increases with molecular weight, but not linearly.
+
+Given that triphenylene has a molecular weight of 228.30, which is slightly higher than the molecular weight of "CCCCCCCCCCCCCC", we can predict that the property value for triphenylene will be slightly higher than 1119.34. However, considering the complexity and aromatic nature of triphenylene, the property value might be significantly higher due to additional factors such as aromatic stabilization.
+
+Based on these considerations, a reasonable prediction for the property value of triphenylene could be around 1200.0. This is an estimate based on the trend observed in the examples and the molecular weight of triphenylene.
+==================================================
+Iteration: 55
+SMILES: Oc2cc(O)c1C(=O)CC(Oc1c2)c3ccc(O)c(O)c3
+True Property: 1700.0553063362554
+Predicted Property:
+To predict the property value for the given molecule, we need to consider the relationship between the molecular weight and the property values provided in the examples. The property appears to be a function of molecular weight, f(M.W.), but the exact nature of this function is not explicitly given. However, we can make an educated guess based on the examples.
+
+First, let's determine the molecular weight of the given molecule, Oc2cc(O)c1C(=O)CC(Oc1c2)c3ccc(O)c(O)c3. This molecule is a flavonoid structure, specifically a type of flavonol, which typically includes multiple hydroxyl groups and a ketone group.
+
+1. **Calculate the Molecular Weight:**
+   - C: 15 atoms × 12.01 = 180.15
+   - H: 10 atoms × 1.01 = 10.10
+   - O: 7 atoms × 16.00 = 112.00
+   - Total M.W. = 180.15 + 10.10 + 112.00 = 302.25
+
+2. **Estimate the Property Value:**
+   - From the examples, we observe that the property values increase with molecular weight, but not linearly. The relationship might be polynomial or involve some other transformation.
+   - For a molecular weight of approximately 302.25, we can look at similar molecular weights in the examples and their corresponding property values to make an estimation.
+
+Given the examples and the calculated molecular weight, a reasonable estimate for the property value of the given molecule would be around 900 to 1000. However, without the exact function, this is a rough estimate. Based on the trend observed, let's predict a specific value:
+
+**Predicted Property Value: 950.0**
+==================================================
+Iteration: 56
+SMILES: COP(=O)(NC(C)=O)SC 
+True Property: 1020.9520606949058
+Predicted Property:
+To predict the property value for the molecule "COP(=O)(NC(C)=O)SC" based on the given examples, we need to consider the molecular weight and how it correlates with the property values provided.
+
+First, let's determine the molecular weight of the molecule "COP(=O)(NC(C)=O)SC":
+- C: 4 atoms × 12.01 = 48.04
+- O: 3 atoms × 16.00 = 48.00
+- P: 1 atom × 30.97 = 30.97
+- N: 1 atom × 14.01 = 14.01
+- S: 1 atom × 32.07 = 32.07
+- H: 7 atoms × 1.01 = 7.07
+
+Total molecular weight = 48.04 + 48.00 + 30.97 + 14.01 + 32.07 + 7.07 = 180.16
+
+Now, let's analyze the relationship between molecular weight and the property values from the examples. The property values seem to increase with molecular weight, but not linearly. Instead, they appear to follow a more complex function, possibly quadratic or exponential.
+
+Given the molecular weight of 180.16, we can compare it to the examples with similar molecular weights and their corresponding property values. For instance, the molecule "C=C" with a molecular weight of 28.05 has a property value of 18.54, and "c1ccoc1" with a molecular weight of 68.08 has a property value of 277.17. These examples suggest that the property value increases significantly with molecular weight.
+
+Based on this analysis and the trend observed in the examples, a reasonable prediction for the property value of "COP(=O)(NC(C)=O)SC" with a molecular weight of 180.16 would be approximately 500. This is an estimation based on the observed trend and the molecular weight of the given molecule.
+==================================================
+Iteration: 57
+SMILES: Cl\C=C/Cl
+True Property: 463.73533006070716
+Predicted Property:
+To predict the property value for the molecule Cl\C=C/Cl, we need to consider the relationship between the molecular weight and the property values given in the examples. The property appears to be a function of molecular weight, f(M.W.).
+
+First, let's calculate the molecular weight of Cl\C=C/Cl:
+- Chlorine (Cl) has an atomic weight of approximately 35.45.
+- Carbon (C) has an atomic weight of approximately 12.01.
+- Hydrogen (H) has an atomic weight of approximately 1.01.
+
+The molecular formula for Cl\C=C/Cl is C2H2Cl2. Therefore, the molecular weight is:
+- 2 * 12.01 (C) + 2 * 1.01 (H) + 2 * 35.45 (Cl) = 24.02 + 2.02 + 70.90 = 96.94
+
+Now, let's compare this molecular weight to the examples provided. We need to find a pattern or trend in the property values relative to the molecular weights. 
+
+Looking at the examples, we can see that the property values generally increase with increasing molecular weight, but the relationship is not strictly linear. However, for smaller molecules, the property values tend to be lower.
+
+Given the molecular weight of 96.94 for Cl\C=C/Cl, we can estimate the property value by comparing it to similar molecular weights in the examples. The closest example in terms of molecular weight is CO (molecular weight ~28) with a property value of 44.32, and C=CC#N (molecular weight ~53) with a property value of 180.17. 
+
+Considering the trend and the molecular weight of Cl\C=C/Cl, a reasonable estimate for the property value would be slightly higher than 180.17, given the higher molecular weight compared to C=CC#N.
+
+Therefore, the predicted property value for Cl\C=C/Cl is approximately 250.
+==================================================
+Iteration: 58
+SMILES: c1ccncc1
+True Property: 348.43395681657387
+Predicted Property:
+To predict the property value for the molecule with the SMILES format "c1ccncc1" (pyridine), we need to consider the relationship between the molecular weight and the property values given in the examples. The property appears to be a function of molecular weight, f(M.W.).
+
+First, let's calculate the molecular weight of pyridine:
+
+- Carbon (C): 6 atoms × 12.01 g/mol = 72.06 g/mol
+- Hydrogen (H): 5 atoms × 1.01 g/mol = 5.05 g/mol
+- Nitrogen (N): 1 atom × 14.01 g/mol = 14.01 g/mol
+
+Total molecular weight of pyridine = 72.06 + 5.05 + 14.01 = 91.12 g/mol
+
+Now, we need to estimate the property value based on the molecular weight. Observing the examples, the property values increase with molecular weight, but the relationship is not linear. However, for smaller molecules, the property values are generally lower.
+
+Given the molecular weight of pyridine (91.12 g/mol), which is relatively low compared to the examples, we can expect the property value to be on the lower end of the spectrum. The smallest molecular weight example provided is "CC=C" with a molecular weight of 42.08 g/mol and a property value of 109.19. Pyridine's molecular weight is more than double that of "CC=C", so we can expect a higher property value, but still relatively low compared to larger molecules.
+
+Based on this reasoning, a reasonable estimate for the property value of pyridine might be around 200. This is a rough estimate, considering the trend observed in the examples.
+==================================================
+Iteration: 59
+SMILES: OCC(O)COC(=O)c1ccccc1Nc2ccnc3cc(Cl)ccc23
+True Property: 2246.4669760992415
+Predicted Property:
+To predict the property value for the given molecule, we need to consider the relationship between the molecular weight and the property values provided in the examples. The property appears to be a function of molecular weight, f(M.W.), but the exact nature of this function is not explicitly given. However, we can make an educated guess based on the examples.
+
+First, let's determine the molecular weight of the given molecule, OCC(O)COC(=O)c1ccccc1Nc2ccnc3cc(Cl)ccc23:
+
+- C: 18 atoms × 12.01 = 216.18
+- H: 13 atoms × 1.01 = 13.13
+- O: 4 atoms × 16.00 = 64.00
+- N: 2 atoms × 14.01 = 28.02
+- Cl: 1 atom × 35.45 = 35.45
+
+Total molecular weight = 216.18 + 13.13 + 64.00 + 28.02 + 35.45 = 356.78
+
+Now, let's compare this molecular weight with the examples provided. The property values seem to increase with molecular weight, but not linearly. For instance, smaller molecules like CCC(C)O (M.W. = 74.12) have a property value of 316.26, while larger molecules like Clc1c(Cl)c(Cl)c(c(Cl)c1Cl)c2c(Cl)c(Cl)c(Cl)c(Cl)c2Cl (M.W. = 406.90) have a property value of 3059.78.
+
+Given the molecular weight of 356.78 for the target molecule, it falls in the lower range of the examples provided. Based on the trend observed, we can estimate the property value to be somewhat higher than the smaller molecules but significantly lower than the largest ones.
+
+Considering the examples and the molecular weight, a reasonable prediction for the property value of the given molecule is approximately 1100.0.
+==================================================
+Iteration: 60
+SMILES: CCCCCO
+True Property: 406.90536277515014
+Predicted Property:
+To predict the property value for the molecule CCCCCO, we need to consider the relationship between the molecular weight and the property values given in the examples. The molecule CCCCCO is hexanol, which has a molecular weight of approximately 102.17 g/mol.
+
+Looking at the examples, we can see that the property values generally increase with increasing molecular weight. For instance, smaller molecules like CC(C)O (molecular weight ~60 g/mol) have a property value of 225.61, while larger molecules like CCCCCCCCCCCCCCCCCCCC (molecular weight ~282 g/mol) have a property value of 1663.23.
+
+Given that CCCCCO is a relatively small molecule, we can expect its property value to be closer to those of other small molecules. For example, CCCCCC (hexane) has a molecular weight of about 86 g/mol and a property value of 549.40. Since CCCCCO has a slightly higher molecular weight due to the additional oxygen atom, its property value should be slightly higher than that of hexane.
+
+Based on this reasoning, I would predict the property value for CCCCCO to be approximately 600.
+==================================================
+Iteration: 61
+SMILES: CC1=C(C(=O)Nc2ccccc2)S(=O)(=O)CCO1
+True Property: 1564.6753899540481
+Predicted Property:
+To predict the property value for the given molecule, CC1=C(C(=O)Nc2ccccc2)S(=O)(=O)CCO1, we need to consider the relationship between the molecular weight and the property values provided in the examples. The property appears to be a function of molecular weight, f(M.W.).
+
+First, let's determine the molecular weight of the given molecule:
+
+- C: 8 atoms × 12.01 = 96.08
+- H: 9 atoms × 1.01 = 9.09
+- N: 1 atom × 14.01 = 14.01
+- O: 4 atoms × 16.00 = 64.00
+- S: 1 atom × 32.07 = 32.07
+
+Total molecular weight = 96.08 + 9.09 + 14.01 + 64.00 + 32.07 = 215.25
+
+Now, let's analyze the examples to find a pattern or function that relates molecular weight to the property value. The property values increase with molecular weight, but not linearly. The relationship seems to be more complex, possibly exponential or polynomial.
+
+Given the examples, we can observe that molecules with molecular weights around 200-300 have property values in the range of 300-400. For instance:
+- CCCCl (M.W. ~ 92.57) has a property value of 344.815
+- CC=CC=O (M.W. ~ 70.09) has a property value of 290.202
+
+The molecular weight of the given molecule (215.25) is higher than these examples, suggesting a property value higher than 344.815 but likely less than 500, considering the trend.
+
+Based on this analysis and the trend observed in the examples, a reasonable prediction for the property value of the given molecule is approximately 450.
+==================================================
+Iteration: 62
+SMILES: COC(=O)C1=C(C)NC(=C(C1c2ccccc2N(=O)=O)C(=O)OC)C 
+True Property: 2075.414849185277
+Predicted Property:
+To predict the property value for the given molecule, we need to consider the relationship between the molecular weight and the property values provided in the examples. The property appears to be a function of molecular weight, f(M.W.), but the exact nature of this function is not explicitly given. However, we can make an educated guess based on the examples.
+
+First, let's determine the molecular weight of the given molecule:
+
+The SMILES string is: `COC(=O)C1=C(C)NC(=C(C1c2ccccc2N(=O)=O)C(=O)OC)C`
+
+Breaking it down:
+- COC(=O) is a methoxycarbonyl group.
+- C1=C(C)NC(=C(C1c2ccccc2N(=O)=O)C(=O)OC)C is a complex bicyclic structure with a nitro group and additional carbonyl groups.
+
+Let's calculate the molecular weight:
+- C: 15 atoms × 12.01 = 180.15
+- O: 6 atoms × 16.00 = 96.00
+- N: 2 atoms × 14.01 = 28.02
+- H: 13 atoms × 1.01 = 13.13
+
+Total molecular weight ≈ 317.30 g/mol
+
+Now, let's compare this molecular weight with the examples provided. The property values seem to increase with molecular weight, but not linearly. For instance, smaller molecules like `C1CCOC1` with a molecular weight of 303.23 have a property value of 303.23, while larger molecules like `ClC4=C(Cl)C5(Cl)C3C1CC(C2OC12)C3C4(Cl)C5(Cl)Cl` with a molecular weight of 2298.84 have a property value of 2298.84.
+
+Given the molecular weight of the target molecule is approximately 317.30, and considering the trend in the examples, the property value should be slightly higher than that of `C1CCOC1` (303.23) but significantly lower than the larger molecules.
+
+Therefore, a reasonable prediction for the property value of the given molecule is approximately 800.0.
+==================================================
+Iteration: 63
+SMILES: O=C2NC(=O)C1(CC1)C(=O)N2 
+True Property: 833.2593645564345
+Predicted Property:
+To predict the property value for the given molecule, we need to consider the relationship between the molecular weight and the property values provided in the examples. The SMILES string for the molecule is:
+
+O=C2NC(=O)C1(CC1)C(=O)N2
+
+This molecule is a diketopiperazine, a cyclic dipeptide. Let's calculate its molecular weight:
+
+- C: 6 atoms × 12.01 g/mol = 72.06 g/mol
+- H: 6 atoms × 1.01 g/mol = 6.06 g/mol
+- N: 2 atoms × 14.01 g/mol = 28.02 g/mol
+- O: 2 atoms × 16.00 g/mol = 32.00 g/mol
+
+Total molecular weight = 72.06 + 6.06 + 28.02 + 32.00 = 138.14 g/mol
+
+Now, let's analyze the examples to find a pattern or function that relates molecular weight to the property value. The property values seem to increase with molecular weight, but not linearly. Instead, they appear to follow a more complex function, possibly involving polynomial or exponential terms.
+
+Given the examples, let's estimate the property value for the molecular weight of 138.14 g/mol. The examples with lower molecular weights (e.g., c1ccoc1 with a molecular weight of 68.08 g/mol and a property value of 277.17) suggest that the property value increases rapidly with molecular weight at lower values.
+
+Considering this trend, a rough estimate for the property value of the given molecule with a molecular weight of 138.14 g/mol would be around 400 to 500. However, since the property values are not linear and the increase is more pronounced at lower molecular weights, a more precise estimate would be closer to the lower end of this range.
+
+Therefore, the predicted property value for the molecule O=C2NC(=O)C1(CC1)C(=O)N2 is approximately:
+
+**450.0**
+==================================================
+Iteration: 64
+SMILES: ClCC
+True Property: 254.16755554361316
+Predicted Property:
+To predict the property value for the molecule "ClCC" based on the given examples, we need to consider the relationship between the molecular weight and the property values provided. The property appears to be a function of molecular weight, f(M.W.).
+
+First, let's calculate the molecular weight of "ClCC":
+- Chlorine (Cl) has an atomic weight of approximately 35.45.
+- Carbon (C) has an atomic weight of approximately 12.01.
+- Hydrogen (H) has an atomic weight of approximately 1.008.
+
+The molecular formula for "ClCC" is C2H5Cl, which consists of:
+- 2 Carbon atoms: 2 * 12.01 = 24.02
+- 5 Hydrogen atoms: 5 * 1.008 = 5.04
+- 1 Chlorine atom: 35.45
+
+Adding these together gives the molecular weight:
+24.02 + 5.04 + 35.45 = 64.51
+
+Now, we need to estimate the property value based on the molecular weight. Observing the examples, it seems that the property value increases with molecular weight, but the relationship is not linear. However, for smaller molecules, the property values are generally lower.
+
+Given the molecular weight of 64.51, which is relatively low compared to the examples, we can expect the property value to be on the lower end of the spectrum. The smallest property value in the examples is 218.96709707142435 for "CC(=O)N" with a molecular weight of approximately 59.07.
+
+Since "ClCC" has a slightly higher molecular weight than "CC(=O)N", we can predict a slightly higher property value. Therefore, a reasonable estimate for the property value of "ClCC" would be around 250.0.
+==================================================
+Iteration: 65
+SMILES: Clc1cccc(n1)C(Cl)(Cl)Cl
+True Property: 1329.4649829387631
+Predicted Property:
+To predict the property value for the given molecule, Clc1cccc(n1)C(Cl)(Cl)Cl, we need to consider the molecular weight and how it might relate to the property values provided in the examples. The property seems to be a function of molecular weight, f(M.W.).
+
+First, let's determine the molecular weight of the given molecule:
+
+- Chlorine (Cl): 35.45 g/mol
+- Carbon (C): 12.01 g/mol
+- Hydrogen (H): 1.01 g/mol
+- Nitrogen (N): 14.01 g/mol
+
+The SMILES string Clc1cccc(n1)C(Cl)(Cl)Cl represents a molecule with the following atoms:
+- 6 Carbon atoms
+- 3 Chlorine atoms
+- 1 Nitrogen atom
+- 4 Hydrogen atoms (assuming the aromatic ring is fully hydrogenated)
+
+Calculating the molecular weight:
+- Carbon: 6 × 12.01 = 72.06
+- Chlorine: 4 × 35.45 = 141.8
+- Nitrogen: 1 × 14.01 = 14.01
+- Hydrogen: 4 × 1.01 = 4.04
+
+Total molecular weight = 72.06 + 141.8 + 14.01 + 4.04 = 231.91 g/mol
+
+Now, let's compare this molecular weight with the examples provided. The property values seem to increase with molecular weight, but not linearly. For example, molecules with similar structures and halogen substitutions tend to have higher property values.
+
+Given the molecular weight of 231.91 g/mol and the presence of multiple chlorine atoms, which tend to increase the property value significantly, we can estimate the property value by comparing it to similar structures in the examples.
+
+A similar structure with multiple chlorine atoms is Clc1ccc(c(Cl)c1Cl)c2c(Cl)cc(Cl)c(Cl)c2Cl, which has a property value of 2391.992792940662. However, the given molecule has fewer chlorine atoms and a nitrogen atom, which might slightly reduce the property value.
+
+Considering these factors, a reasonable prediction for the property value of Clc1cccc(n1)C(Cl)(Cl)Cl would be around 1600.
+==================================================
+Iteration: 66
+SMILES: CCCCC(C)O
+True Property: 497.55284413909214
+Predicted Property:
+To predict the property value for the molecule "CCCCC(C)O" based on the given examples, we need to consider the relationship between the molecular weight and the property values provided. The molecule "CCCCC(C)O" is a hexanol, specifically 2-hexanol, with a molecular weight of approximately 102.18 g/mol.
+
+Looking at the examples, we can see that the property values generally increase with increasing molecular weight, but the relationship is not strictly linear. For example, smaller molecules like "CC" (ethane) have a property value of 31.57, while larger molecules like "CC(C)C(C)(C)C" (2,2,4-trimethylpentane) have a property value of 484.81.
+
+Given that "CCCCC(C)O" is a medium-sized molecule, we can compare it to similar-sized molecules in the examples. For instance, "CCCCCC(C)(C)O" (2,2-dimethylpentanol) has a property value of 678.85, and "CCCCCCCl" (1-chlorohexane) has a property value of 616.76.
+
+Considering the molecular weight and the trend observed in the examples, a reasonable prediction for the property value of "CCCCC(C)O" would be around 600. This is an estimate based on the observed pattern and the molecular weight of the molecule.
+==================================================
+Iteration: 67
+SMILES: Brc1ccc(Br)cc1
+True Property: 1361.7573807697763
+Predicted Property:
+To predict the property value for the molecule Brc1ccc(Br)cc1, we need to consider the relationship between the molecular weight and the property values given in the examples. The molecule Brc1ccc(Br)cc1 is 1,4-dibromobenzene.
+
+First, let's calculate the molecular weight of 1,4-dibromobenzene:
+- Bromine (Br) has an atomic weight of approximately 79.9 g/mol.
+- Carbon (C) has an atomic weight of approximately 12.0 g/mol.
+- Hydrogen (H) has an atomic weight of approximately 1.0 g/mol.
+
+The molecular formula for 1,4-dibromobenzene is C6H4Br2.
+
+Calculating the molecular weight:
+- C6: 6 × 12.0 = 72.0
+- H4: 4 × 1.0 = 4.0
+- Br2: 2 × 79.9 = 159.8
+
+Total molecular weight = 72.0 + 4.0 + 159.8 = 235.8 g/mol
+
+Now, let's compare this with the example of tribromomethane (BrC(Br)Br), which has a molecular weight of approximately 252.7 g/mol and a property value of 1470.486536964852. The property value seems to increase with molecular weight, but not linearly.
+
+Given that 1,4-dibromobenzene has a slightly lower molecular weight than tribromomethane, we can expect its property value to be somewhat lower than 1470.486536964852.
+
+Based on the trend observed in the examples, a reasonable prediction for the property value of 1,4-dibromobenzene (Brc1ccc(Br)cc1) would be around 1400.
+==================================================
+Iteration: 68
+SMILES: Clc1cc(Cl)c(c(Cl)c1)c2c(Cl)cc(Cl)cc2Cl 
+True Property: 2169.3969067511002
+Predicted Property:
+To predict the property value for the given molecule, we need to consider the relationship between the molecular weight and the property values provided in the examples. The molecule in question is:
+
+Clc1cc(Cl)c(c(Cl)c1)c2c(Cl)cc(Cl)cc2Cl
+
+This molecule is a chlorinated aromatic compound, similar to some of the examples provided. Let's break down the process:
+
+1. **Identify the Molecular Weight**: The molecular weight of the molecule can be estimated by counting the number of each type of atom and using their atomic weights. The molecule has:
+   - 12 carbon atoms (C): 12 * 12.01 = 144.12
+   - 6 hydrogen atoms (H): 6 * 1.008 = 6.048
+   - 6 chlorine atoms (Cl): 6 * 35.45 = 212.7
+
+   Total estimated molecular weight = 144.12 + 6.048 + 212.7 = 362.868
+
+2. **Compare with Similar Molecules**: We have a few similar chlorinated aromatic compounds in the examples:
+   - Clc1ccc(c(Cl)c1)c2cc(Cl)c(Cl)c(Cl)c2Cl: Property = 2169.3969067511002
+   - Clc1ccc(Cl)c(c1)c2c(Cl)c(Cl)c(Cl)c2Cl: Property = 2391.992792940662
+
+   These examples have similar structures and a similar number of chlorine atoms, which significantly contribute to the molecular weight and the property value.
+
+3. **Estimate the Property**: Given the similarity in structure and the number of chlorine atoms, the property value for the given molecule should be close to the examples provided. The molecular weight is slightly lower than the second example but higher than the first.
+
+   Therefore, the predicted property value for the molecule Clc1cc(Cl)c(c(Cl)c1)c2c(Cl)cc(Cl)cc2Cl is likely to be between the two examples, closer to the higher end due to the high number of chlorine atoms.
+
+   A reasonable estimate for the property value would be around 2391.992792940662, considering the pattern observed in the examples.
+
+Thus, the predicted property value for the molecule Clc1cc(Cl)c(c(Cl)c1)c2c(Cl)cc(Cl)cc2Cl is approximately **2391.992792940662**.
+==================================================
+Iteration: 69
+SMILES: Cc1ccc(OP(=O)(Oc2cccc(C)c2)Oc3ccccc3C)cc1
+True Property: 2217.780573463286
+Predicted Property:
+To predict the property value for the given molecule, we need to consider the relationship between the molecular weight and the property values provided in the examples. The property appears to be a function of molecular weight, f(M.W.), but the exact nature of this function is not explicitly given. However, we can make an educated guess based on the examples.
+
+First, let's determine the molecular weight of the given molecule, Cc1ccc(OP(=O)(Oc2cccc(C)c2)Oc3ccccc3C)cc1. This molecule contains:
+
+- Carbon (C): 24 atoms
+- Hydrogen (H): 21 atoms
+- Oxygen (O): 4 atoms
+- Phosphorus (P): 1 atom
+
+Using the approximate atomic weights:
+- Carbon: 12.01
+- Hydrogen: 1.01
+- Oxygen: 16.00
+- Phosphorus: 30.97
+
+The molecular weight (M.W.) is calculated as follows:
+\[ \text{M.W.} = (24 \times 12.01) + (21 \times 1.01) + (4 \times 16.00) + (1 \times 30.97) \]
+
+\[ \text{M.W.} = 288.24 + 21.21 + 64.00 + 30.97 = 404.42 \]
+
+Now, we need to estimate the property value based on the molecular weight. Observing the examples, the property value seems to increase with molecular weight, but not linearly. For molecules with molecular weights around 400, the property values are in the range of 400 to 500.
+
+Given the molecular weight of 404.42, a reasonable estimate for the property value, considering the trend in the examples, would be around 500. Therefore, the predicted property value for the given molecule is approximately:
+
+**500.0**
+==================================================
+Iteration: 70
+SMILES: FC(F)(F)c1cccc(c1)N2CC(CCl)C(Cl)C2=O
+True Property: 1854.2665309593217
+Predicted Property:
+To predict the property value for the given molecule, FC(F)(F)c1cccc(c1)N2CC(CCl)C(Cl)C2=O, we need to consider the molecular weight and how it might relate to the property values provided in the examples. The property appears to be a function of molecular weight, f(M.W.), but the exact relationship is not explicitly given. However, we can make an educated guess based on the examples.
+
+First, let's estimate the molecular weight of the given molecule:
+
+- F (Fluorine): 19.00
+- C (Carbon): 12.01
+- H (Hydrogen): 1.01
+- N (Nitrogen): 14.01
+- O (Oxygen): 16.00
+- Cl (Chlorine): 35.45
+
+The SMILES string FC(F)(F)c1cccc(c1)N2CC(CCl)C(Cl)C2=O represents a molecule with the following atoms:
+
+- 9 Carbon atoms
+- 8 Hydrogen atoms
+- 1 Nitrogen atom
+- 1 Oxygen atom
+- 2 Chlorine atoms
+- 3 Fluorine atoms
+
+Calculating the molecular weight:
+
+\[ \text{M.W.} = (9 \times 12.01) + (8 \times 1.01) + (1 \times 14.01) + (1 \times 16.00) + (2 \times 35.45) + (3 \times 19.00) \]
+
+\[ \text{M.W.} = 108.09 + 8.08 + 14.01 + 16.00 + 70.90 + 57.00 \]
+
+\[ \text{M.W.} = 274.08 \]
+
+Now, let's compare this molecular weight to the examples provided. The property values seem to increase with molecular weight, but not linearly. For example, molecules with molecular weights around 300-400 have property values around 300-400, while those with molecular weights around 1000 have property values around 1000-2000.
+
+Given the molecular weight of approximately 274.08, we can predict that the property value will be somewhat lower than those with molecular weights around 300-400. However, since the property values are not strictly linear, we should consider the trend and the specific structure of the molecule.
+
+Based on the examples and the estimated molecular weight, a reasonable prediction for the property value of the given molecule might be around 1200. This accounts for the molecular weight and the potential influence of the specific functional groups present in the molecule.
+==================================================
+Iteration: 71
+SMILES: COc1ccccc1N(=O)=O
+True Property: 826.8745558598083
+Predicted Property:
+To predict the property value for the molecule COc1ccccc1N(=O)=O, we need to consider the molecular weight and how it might relate to the property values given in the examples. The molecule in question is methoxy nitrobenzene.
+
+First, let's calculate the molecular weight of methoxy nitrobenzene:
+
+- Carbon (C): 7 atoms × 12.01 g/mol = 84.07 g/mol
+- Hydrogen (H): 7 atoms × 1.01 g/mol = 7.07 g/mol
+- Nitrogen (N): 1 atom × 14.01 g/mol = 14.01 g/mol
+- Oxygen (O): 3 atoms × 16.00 g/mol = 48.00 g/mol
+
+Total molecular weight = 84.07 + 7.07 + 14.01 + 48.00 = 153.15 g/mol
+
+Now, let's compare this molecular weight to the examples provided. The property values seem to increase with molecular weight, but not linearly. Instead, they appear to follow a more complex function of molecular weight.
+
+Given the examples, we can estimate that a molecule with a molecular weight around 150 g/mol might have a property value in the range of 600 to 800, based on the trend observed in the examples.
+
+Therefore, a reasonable prediction for the property value of methoxy nitrobenzene (COc1ccccc1N(=O)=O) would be approximately 750.
+==================================================
+Iteration: 72
+SMILES: ClC1CC2C(C1Cl)C3(Cl)C(=C(Cl)C2(Cl)C3(Cl)Cl)Cl
+True Property: 2485.40616309221
+Predicted Property:
+To predict the property value for the given molecule, ClC1CC2C(C1Cl)C3(Cl)C(=C(Cl)C2(Cl)C3(Cl)Cl)Cl, we need to consider the molecular weight and the pattern observed in the provided examples. The property appears to be a function of molecular weight, f(M.W.), but the exact function is not explicitly given. However, we can infer a relationship based on the examples.
+
+The given molecule is a highly chlorinated compound, similar to some of the examples provided. Let's break down the structure:
+
+- The molecule is a polycyclic compound with multiple chlorine atoms.
+- The structure is similar to some of the highly chlorinated examples, such as ClC4=C(Cl)C5(Cl)C3C1CC(C2OC12)C3C4(Cl)C5(Cl)Cl, which has a property value of 2298.844379425308.
+
+Given the high degree of chlorination and the structural complexity, the property value is likely to be high. The molecular weight of the compound will be significant due to the presence of multiple chlorine atoms.
+
+Based on the pattern observed in the examples, and considering the structural similarity to the highly chlorinated example with a property value of 2298.844379425308, we can predict that the property value for ClC1CC2C(C1Cl)C3(Cl)C(=C(Cl)C2(Cl)C3(Cl)Cl)Cl will be close to this value.
+
+Therefore, the predicted property value for the given molecule is approximately:
+
+2298.844379425308
+==================================================
+Iteration: 73
+SMILES: CCCOC=O
+True Property: 406.62101906801286
+Predicted Property:
+To predict the property value for the molecule with the SMILES format "CCCOC=O", we need to consider the relationship between the molecular weight and the property values given in the examples. The molecule "CCCOC=O" corresponds to propyl formate, which has the molecular formula C4H8O2.
+
+First, let's calculate the molecular weight of propyl formate:
+- Carbon (C): 4 atoms × 12.01 g/mol = 48.04 g/mol
+- Hydrogen (H): 8 atoms × 1.01 g/mol = 8.08 g/mol
+- Oxygen (O): 2 atoms × 16.00 g/mol = 32.00 g/mol
+
+Total molecular weight = 48.04 + 8.08 + 32.00 = 88.12 g/mol
+
+Now, let's compare this with the examples provided. We can see that the property values generally increase with increasing molecular weight. For example:
+- "COC(=O)C" with a molecular weight of approximately 74.08 g/mol has a property value of 315.97.
+- "CCOCC" with a molecular weight of approximately 74.12 g/mol has a property value of 316.26.
+- "CCC(=O)OC" with a molecular weight of approximately 102.13 g/mol has a property value of 406.62.
+
+Given that the molecular weight of "CCCOC=O" (88.12 g/mol) is between those of "COC(=O)C" and "CCC(=O)OC", we can predict that its property value will also be between 315.97 and 406.62. Since the molecular weight of "CCCOC=O" is closer to that of "CCC(=O)OC", we can estimate a property value closer to 406.62.
+
+Therefore, a reasonable prediction for the property value of "CCCOC=O" is approximately 360.
+==================================================
+Iteration: 74
+SMILES: CCCCCCCCCC(=O)OCC
+True Property: 1131.8008699795496
+Predicted Property:
+To predict the property value for the molecule CCCCCCCCCC(=O)OCC, we need to consider the relationship between the molecular weight and the property values given in the examples. The property appears to be a function of molecular weight, f(M.W.).
+
+First, let's calculate the molecular weight of the given molecule, CCCCCCCCCC(=O)OCC:
+
+- C: 12 atoms × 12.01 g/mol = 144.12 g/mol
+- H: 22 atoms × 1.008 g/mol = 22.176 g/mol
+- O: 2 atoms × 16.00 g/mol = 32.00 g/mol
+
+Total molecular weight = 144.12 + 22.176 + 32.00 = 198.296 g/mol
+
+Now, let's compare this molecular weight with the examples provided. We can see that the property values increase with increasing molecular weight, but the relationship is not linear. However, we can observe that molecules with similar structures and molecular weights have similar property values.
+
+For example:
+- CCCCCCCCCCO (M.W. = 172.27 g/mol) has a property value of 860.1427695948604.
+- CCCCCCCCC(=O)OC (M.W. = 172.27 g/mol) has a property value of 859.8584258877233.
+
+The given molecule, CCCCCCCCCC(=O)OCC, has a molecular weight of 198.296 g/mol, which is slightly higher than the examples above. Based on the trend observed, we can predict that the property value will be slightly higher than those examples.
+
+Therefore, a reasonable prediction for the property value of CCCCCCCCCC(=O)OCC is approximately 900.0.
+==================================================
+Iteration: 75
+SMILES: Oc1ccc(Cl)cc1C(=O)Nc2ccc(cc2Cl)N(=O)=O
+True Property: 1951.2341974500864
+Predicted Property:
+To predict the property value for the given molecule, Oc1ccc(Cl)cc1C(=O)Nc2ccc(cc2Cl)N(=O)=O, we need to consider the molecular weight and how it might relate to the property values given in the examples. The property seems to be a function of molecular weight, f(M.W.), but the exact nature of this function is not explicitly provided. However, we can make an educated guess based on the examples.
+
+First, let's estimate the molecular weight of the given molecule:
+
+- Oc1ccc(Cl)cc1C(=O)Nc2ccc(cc2Cl)N(=O)=O
+  - O: 16
+  - c1ccc(Cl)cc1: 6 carbons (6 * 12 = 72), 4 hydrogens (4 * 1 = 4), 1 chlorine (35.5)
+  - C(=O): 12 (carbon) + 16 (oxygen) = 28
+  - Nc2ccc(cc2Cl): 6 carbons (72), 4 hydrogens (4), 1 nitrogen (14), 1 chlorine (35.5)
+  - N(=O)=O: 14 (nitrogen) + 2 * 16 (oxygen) = 46
+
+Adding these up:
+- Total molecular weight ≈ 16 + 72 + 4 + 35.5 + 28 + 72 + 4 + 14 + 35.5 + 46 = 327
+
+Now, let's compare this molecular weight with the examples and their property values. The property values seem to increase with molecular weight, but not linearly. For instance, smaller molecules like C=C have a property value of 18.54, while larger molecules like COc2ccc(Oc1ccc(NC(=O)N(C)C)cc1)cc2 have a property value of 1687.62.
+
+Given the molecular weight of approximately 327, we can look at examples with similar molecular weights and their property values. For instance, Oc1ccccc1Cl has a molecular weight of about 128.5 and a property value of 668.04. Our molecule is significantly larger, so we expect a higher property value.
+
+Based on the trend observed in the examples, a reasonable estimate for the property value of the given molecule, with a molecular weight of approximately 327, would be around 1200 to 1500. However, without the exact function, this is a rough estimate.
+
+Therefore, I would predict the property value to be approximately 1350.
+==================================================
+Iteration: 76
+SMILES: COP(=S)(OC)Oc1ccc(Sc2ccc(OP(=S)(OC)OC)cc2)cc1
+True Property: 2851.8024168094303
+Predicted Property:
+To predict the property value for the given molecule, we need to consider the relationship between the molecular weight and the property values provided in the examples. The property appears to be a function of molecular weight, f(M.W.), but the exact nature of this function is not explicitly given. However, we can make an educated guess based on the examples.
+
+The given molecule is: COP(=S)(OC)Oc1ccc(Sc2ccc(OP(=S)(OC)OC)cc2)cc1
+
+First, let's estimate the molecular weight of the molecule:
+
+- C: 16 atoms × 12.01 = 192.16
+- O: 6 atoms × 16.00 = 96.00
+- P: 2 atoms × 30.97 = 61.94
+- S: 2 atoms × 32.07 = 64.14
+- H: 17 atoms × 1.01 = 17.17
+
+Total estimated molecular weight ≈ 431.41
+
+Now, let's compare this with the examples:
+
+- The property values seem to increase with molecular weight, but not linearly. For instance, smaller molecules like CCC(C)CC (M.W. ≈ 72) have a property value of 394.16, while larger molecules like OC(C1=CC2C5C(C1C2=C(c3ccccc3)c4ccccn4)C(=O)NC5=O)(c6ccccc6)c7ccccn7 (M.W. ≈ 500) have a property value of 3143.27.
+
+Given the molecular weight of the target molecule (431.41), it is likely to have a property value between the examples with similar molecular weights. The closest example in terms of molecular weight is CCOP(=S)(OCC)Oc1ccc(cc1)S(C)=O with a property value of 1829.99.
+
+Therefore, based on the trend observed in the examples, the predicted property value for the given molecule is approximately:
+
+**1829.99**
+==================================================
+Iteration: 77
+SMILES: Oc1cccc(c1)N(=O)=O
+True Property: 736.2270744958665
+Predicted Property:
+To predict the property value for the molecule Oc1cccc(c1)N(=O)=O, we need to consider the relationship between the molecular weight and the property values given in the examples. The molecule in question is nitrophenol, which has a molecular weight of approximately 139.11 g/mol.
+
+From the examples, we can observe that the property value tends to increase with the molecular weight, but the relationship is not strictly linear. However, we can use the examples with similar molecular weights to make an estimation.
+
+For instance:
+- NC(=S)Nc1ccccc1 (molecular weight ~151.2 g/mol) has a property value of 820.9614992227507.
+- Cc1c[nH]c2ccccc12 (molecular weight ~131.17 g/mol) has a property value of 684.9676589274062.
+
+Given that nitrophenol has a molecular weight of approximately 139.11 g/mol, its property value is likely to be between these two examples. Therefore, a reasonable estimate for the property value of Oc1cccc(c1)N(=O)=O would be around 750.0.
+==================================================
+Iteration: 78
+SMILES: OCC1OC(CO)(OC2OC(COC3OC(CO)C(O)C(O)C3O)C(O)C(O)C2O)C(O)C1O
+True Property: 3097.107025428085
+Predicted Property:
+To predict the property value for the given molecule, we need to consider the relationship between the molecular weight and the property values provided in the examples. The property appears to be a function of molecular weight, f(M.W.), but the exact nature of this function is not explicitly given. However, we can make an educated guess based on the examples.
+
+The given molecule in SMILES format is:
+OCC1OC(CO)(OC2OC(COC3OC(CO)C(O)C(O)C3O)C(O)C(O)C2O)C(O)C1O
+
+This molecule is a complex sugar, likely a polysaccharide or a similar structure, with multiple hydroxyl groups and ether linkages. To estimate its molecular weight, we can consider the typical molecular weights of the components:
+
+- Each glucose unit (C6H12O6) has a molecular weight of approximately 180 g/mol.
+- The structure appears to have three such units, so the approximate molecular weight is 3 * 180 = 540 g/mol.
+- Additional atoms and linkages (such as ether linkages and additional hydroxyl groups) will add to this weight, but without exact counting, we can estimate a bit higher.
+
+Given the examples, the property values seem to increase with molecular weight, but not linearly. For instance, smaller molecules have property values in the hundreds, while larger, more complex molecules have values in the thousands.
+
+Considering the complexity and size of the given molecule, and comparing it to similar complex structures in the examples, a reasonable estimate for the property value would be in the range of 1000 to 1500. Given the complexity and the presence of multiple sugar units, a value closer to the higher end of this range seems appropriate.
+
+Therefore, a predicted property value for the given molecule could be approximately 1200.
+==================================================
+Iteration: 79
+SMILES: CCC#C
+True Property: 186.8104087369996
+Predicted Property:
+To predict the property value for the molecule with the SMILES format "CCC#C", we need to consider the molecular weight and how it might relate to the property values given in the examples.
+
+First, let's determine the molecular weight of "CCC#C":
+- C3H4 (prop-1-yne) has a molecular weight of:
+  - Carbon (C): 12.01 g/mol
+  - Hydrogen (H): 1.008 g/mol
+  - Total molecular weight = (3 * 12.01) + (4 * 1.008) = 36.03 + 4.032 = 40.062 g/mol
+
+Now, let's compare this with the examples provided. The property values seem to be a function of molecular weight, but not linearly. For smaller molecules, the property values are generally lower, and for larger molecules, they are higher.
+
+Looking at the examples:
+- ClC=C (molecular weight ~62.5 g/mol) has a property value of 241.13944387114526.
+- CCCO (molecular weight ~60.1 g/mol) has a property value of 225.61040004726607.
+
+Given that "CCC#C" has a molecular weight of 40.062 g/mol, which is smaller than both ClC=C and CCCO, we can expect its property value to be lower than those.
+
+Therefore, a reasonable prediction for the property value of "CCC#C" would be slightly lower than 225.61040004726607, perhaps around 200.0. However, without a precise function, this is an estimation based on the trend observed in the examples.
+==================================================
+Iteration: 80
+SMILES: CCOP(=S)(CC)Oc1cc(Cl)c(Cl)cc1Cl
+True Property: 1993.116733039999
+Predicted Property:
+To predict the property value for the given molecule, we need to consider the relationship between the molecular weight and the property values provided in the examples. The SMILES string for the molecule is:
+
+CCOP(=S)(CC)Oc1cc(Cl)c(Cl)cc1Cl
+
+First, let's estimate the molecular weight of the molecule:
+
+- C: 6 atoms × 12.01 = 72.06
+- H: 12 atoms × 1.01 = 12.12
+- O: 2 atoms × 16.00 = 32.00
+- P: 1 atom × 30.97 = 30.97
+- S: 1 atom × 32.07 = 32.07
+- Cl: 3 atoms × 35.45 = 106.35
+
+Total estimated molecular weight = 285.57
+
+Now, let's analyze the relationship between molecular weight and the property values from the examples. The property values seem to increase with molecular weight, but not linearly. Instead, they appear to follow a more complex function, possibly involving exponential or polynomial terms.
+
+Given the molecular weight of 285.57, we can compare it to similar molecular weights in the examples and their corresponding property values. For instance, the molecule with a molecular weight of 303.51 has a property value of 303.51, and the molecule with a molecular weight of 199.84 has a property value of 199.84. These examples suggest a direct correlation between molecular weight and property value for smaller molecules.
+
+Based on this analysis, the predicted property value for the given molecule with a molecular weight of 285.57 is approximately:
+
+**285.57**
+==================================================
+Iteration: 81
+SMILES: c1nccc(C(=O)NN)c1
+True Property: 723.5091559584574
+Predicted Property:
+To predict the property value for the molecule with the SMILES format `c1nccc(C(=O)NN)c1`, we need to consider the relationship between the molecular weight and the property values given in the examples. The property appears to be a function of molecular weight, f(M.W.), but the exact function is not provided. However, we can make an educated guess based on the examples.
+
+First, let's determine the molecular weight of the given molecule:
+
+- The SMILES `c1nccc(C(=O)NN)c1` represents a pyridine ring with a hydrazide group attached.
+- The molecular formula is C6H6N4O.
+
+Calculating the molecular weight:
+- Carbon (C): 6 atoms × 12.01 g/mol = 72.06 g/mol
+- Hydrogen (H): 6 atoms × 1.01 g/mol = 6.06 g/mol
+- Nitrogen (N): 4 atoms × 14.01 g/mol = 56.04 g/mol
+- Oxygen (O): 1 atom × 16.00 g/mol = 16.00 g/mol
+
+Total molecular weight = 72.06 + 6.06 + 56.04 + 16.00 = 150.16 g/mol
+
+Now, let's compare this molecular weight with the examples provided. The property values seem to increase with molecular weight, but not linearly. For instance, smaller molecules like `CC(C)O` with a molecular weight of 60.1 g/mol have a property value of 225.61, while larger molecules like `CCCCCCCCCCCCCCCCCCCCCCCCCC` with a molecular weight of 338.6 g/mol have a property value of 2207.11.
+
+Given the molecular weight of 150.16 g/mol for `c1nccc(C(=O)NN)c1`, we can estimate the property value by interpolating between similar molecular weights in the examples. For instance, `CCCC(=O)C` with a molecular weight of 86.13 g/mol has a property value of 393.88, and `CCCCOC` with a molecular weight of 102.17 g/mol has a property value of 406.91.
+
+Based on this interpolation and the trend observed, a reasonable estimate for the property value of `c1nccc(C(=O)NN)c1` with a molecular weight of 150.16 g/mol would be around 700.0. This is a rough estimate, as the exact function relating molecular weight to the property is not known.
+==================================================
+Iteration: 82
+SMILES: CCCOP(=S)(OCCC)SCC(=O)N1CCCCC1C
+True Property: 2121.6271639520514
+Predicted Property:
+To predict the property value for the given molecule, we need to consider the relationship between the molecular weight and the property values provided in the examples. The property seems to be a function of molecular weight, f(M.W.), but the exact function is not explicitly given. However, we can make an educated guess based on the examples.
+
+First, let's estimate the molecular weight of the given molecule, CCCOP(=S)(OCCC)SCC(=O)N1CCCCC1C:
+
+- C: 12 atoms × 12.01 = 144.12
+- H: 23 atoms × 1.01 = 23.23
+- O: 3 atoms × 16.00 = 48.00
+- P: 1 atom × 30.97 = 30.97
+- S: 1 atom × 32.07 = 32.07
+- N: 1 atom × 14.01 = 14.01
+
+Total estimated molecular weight = 292.40
+
+Now, let's compare this molecular weight with the examples provided. The property values seem to increase with molecular weight, but not linearly. For example, smaller molecules like CCC(C)C(=O)C have lower property values, while larger molecules like CCCCCCCCCCCCCCCCCCCCCCCCCC have higher property values.
+
+Given the molecular weight of 292.40, we can look at similar molecular weights in the examples and their corresponding property values. The closest example in terms of molecular weight is CCC(C)C(=O)C with a molecular weight of approximately 86.13 and a property value of 393.88. However, this is much smaller than our molecule.
+
+For a more comparable example, consider molecules with molecular weights in the range of 200-400, such as CCC(C)C(C)O with a property value of 406.91. Our molecule is slightly larger, so we can expect a slightly higher property value.
+
+Based on this analysis, a reasonable prediction for the property value of CCCOP(=S)(OCCC)SCC(=O)N1CCCCC1C would be around 500-600. However, without the exact function, this is an approximation.
+
+Therefore, I would predict the property value to be approximately 550.
+==================================================
+Iteration: 83
+SMILES: CCCCCCCC
+True Property: 575.4565575377036
+Predicted Property:
+To predict the property value for the molecule CCCCCCCC, we need to consider the relationship between the molecular weight and the property values given in the examples. The molecule CCCCCCCC is a linear alkane with 8 carbon atoms, also known as octane.
+
+First, let's calculate the molecular weight of CCCCCCCC:
+- Carbon (C) has an atomic weight of approximately 12.01 g/mol.
+- Hydrogen (H) has an atomic weight of approximately 1.008 g/mol.
+
+The molecular formula for octane is C8H18. Therefore, the molecular weight is:
+\[ (8 \times 12.01) + (18 \times 1.008) = 96.08 + 18.144 = 114.224 \, \text{g/mol} \]
+
+Now, let's examine the trend in the given examples. The property seems to increase with increasing molecular weight, but the relationship is not linear. For similar linear alkanes, we can observe the following:
+
+- CCCCCCCCCCCO (C11H24O) has a molecular weight of approximately 172.31 g/mol and a property value of 860.1427695948604.
+- CCCCCC=O (C6H12O) has a molecular weight of approximately 100.16 g/mol and a property value of 303.2297697387403.
+
+Given that CCCCCCCC (octane) has a molecular weight of 114.224 g/mol, which is between the molecular weights of the two examples above, we can estimate that the property value for octane will be between 303.2297697387403 and 860.1427695948604.
+
+Considering the trend and the molecular weight, a reasonable estimate for the property value of CCCCCCCC would be around 450.0. This is a rough estimate based on the observed trend in the examples provided.
+==================================================
+Iteration: 84
+SMILES: CC34CCC1C(CCC2=CC(=O)CCC12O)C3CCC4(O)C#C
+True Property: 1869.1751885130834
+Predicted Property:
+To predict the property value for the given molecule, we need to consider the relationship between the molecular weight and the property values provided in the examples. The property appears to be a function of molecular weight, f(M.W.), but the exact nature of this function is not explicitly given. However, we can make an educated guess based on the examples.
+
+First, let's determine the molecular weight of the given molecule, "CC34CCC1C(CCC2=CC(=O)CCC12O)C3CCC4(O)C#C". This molecule is a complex polycyclic structure with a hydroxyl group and an alkyne group. 
+
+1. **Calculate the Molecular Weight:**
+   - C: 21 atoms × 12.01 = 252.21
+   - H: 28 atoms × 1.008 = 28.224
+   - O: 1 atom × 16.00 = 16.00
+
+   Total molecular weight = 252.21 + 28.224 + 16.00 = 296.434 g/mol
+
+2. **Estimate the Property Value:**
+   - From the examples, we observe that the property values increase with molecular weight, but not linearly. The relationship seems to be more complex, possibly exponential or polynomial.
+   - For molecules with similar complexity and molecular weight, such as "CC12CC(=O)C3C(CCC4=CC(=O)CCC34C)C2CCC1(O)C(=O)CO" with a molecular weight of approximately 296.434, the property value is around 2166.605168535572.
+
+Given the molecular weight of the target molecule is similar to the example provided, we can predict that the property value will be in a similar range. However, due to the presence of the alkyne group and the specific structure, there might be slight variations.
+
+Therefore, the predicted property value for "CC34CCC1C(CCC2=CC(=O)CCC12O)C3CCC4(O)C#C" is approximately:
+
+**2166.605168535572**
+==================================================
+Iteration: 85
+SMILES: COc1cc(cc(OC)c1O)C6C2C(COC2=O)C(OC4OC3COC(C)OC3C(O)C4O)c7cc5OCOc5cc67
+True Property: 3640.7463440464826
+Predicted Property:
+To predict the property value for the given molecule, we need to consider the relationship between the molecular weight and the property values provided in the examples. The property appears to be a function of molecular weight, f(M.W.), but the exact nature of this function is not explicitly given. However, we can infer that the property value increases with increasing molecular weight, as seen in the examples.
+
+The given molecule in SMILES format is:
+
+COc1cc(cc(OC)c1O)C6C2C(COC2=O)C(OC4OC3COC(C)OC3C(O)C4O)c7cc5OCOc5cc67
+
+This molecule is quite complex, and without calculating the exact molecular weight, we can make a qualitative prediction based on the structure's complexity and the presence of multiple rings and functional groups.
+
+The molecule contains multiple aromatic rings, ether linkages, and several oxygen-containing functional groups, suggesting a relatively high molecular weight. Based on the examples, molecules with complex structures and multiple rings tend to have higher property values.
+
+Given the complexity and the likely high molecular weight of the molecule, we can predict that the property value will be on the higher end of the provided examples. Comparing it to similar complex structures in the examples, such as:
+
+- O=C1N(COC(=O)CCCC)C(=O)C(N1)(c2ccccc2)c3ccccc3, with a property value of 2205.1660526375626
+- CCC(=O)OC3CCC4C2CCC1=CC(=O)CCC1(C)C2CCC34C, with a property value of 2063.498262913436
+
+The predicted property value for the given molecule is likely to be in a similar range. Therefore, a reasonable prediction for the property value of the given molecule is approximately:
+
+**2100**
+==================================================
+Iteration: 86
+SMILES: Oc1ccccc1Cl
+True Property: 668.0362836387825
+Predicted Property:
+To predict the property value for the molecule Oc1ccccc1Cl, we need to consider the relationship between the molecular weight and the given property values from the examples. The property appears to be a function of molecular weight, f(M.W.), but the exact nature of this function is not explicitly provided. However, we can make an educated guess based on the examples.
+
+First, let's calculate the molecular weight of Oc1ccccc1Cl:
+
+- Phenol (Oc1ccccc1) has a molecular weight of approximately 94.11 (C6H5OH).
+- Adding a chlorine atom (Cl) adds approximately 35.45 to the molecular weight.
+
+Thus, the molecular weight of Oc1ccccc1Cl is approximately 94.11 + 35.45 = 129.56.
+
+Now, let's compare this with similar structures from the examples:
+
+- Oc1ccccc1O (molecular weight ~110.11) has a property value of 548.8316467784933.
+- Oc1ccccn1 (molecular weight ~95.11) has a property value of 451.8252061458468.
+- Oc1c(Cl)cc(Cl)cc1Cl (molecular weight ~181.45) has a property value of 1113.228056017906.
+
+Given these examples, the property value seems to increase with molecular weight, but not linearly. For Oc1ccccc1Cl, with a molecular weight of approximately 129.56, we can estimate the property value to be between the values for Oc1ccccc1O and Oc1c(Cl)cc(Cl)cc1Cl.
+
+Considering the trend and the molecular weight, a reasonable estimate for the property value of Oc1ccccc1Cl would be around 600.0.
+==================================================
+Iteration: 87
+SMILES: ClCC#CCOC(=O)Nc1cccc(Cl)c1
+True Property: 1505.2087810204916
+Predicted Property:
+To predict the property value for the given molecule, ClCC#CCOC(=O)Nc1cccc(Cl)c1, we need to consider the molecular weight and how it might relate to the property values provided in the examples. The property seems to be a function of molecular weight, f(M.W.), but the exact function is not given. However, we can make an educated guess based on the examples.
+
+First, let's estimate the molecular weight of the given molecule:
+
+- Cl (Chlorine) = 35.45
+- C (Carbon) = 12.01
+- O (Oxygen) = 16.00
+- N (Nitrogen) = 14.01
+- H (Hydrogen) = 1.01
+
+The SMILES string ClCC#CCOC(=O)Nc1cccc(Cl)c1 represents:
+
+- 2 Cl atoms
+- 8 C atoms
+- 1 O atom
+- 1 N atom
+- 5 H atoms
+
+Calculating the molecular weight:
+
+\[ \text{M.W.} = 2(35.45) + 8(12.01) + 1(16.00) + 1(14.01) + 5(1.01) \]
+
+\[ \text{M.W.} = 70.90 + 96.08 + 16.00 + 14.01 + 5.05 \]
+
+\[ \text{M.W.} = 202.04 \]
+
+Now, let's compare this molecular weight with the examples provided. The property values seem to increase with molecular weight, but not linearly. For example, smaller molecules like CC(C)O with a molecular weight of around 60 have a property value of 225.61, while larger molecules like Clc1ccc(c(Cl)c1)c2ccc(Cl)c(Cl)c2Cl with a molecular weight of around 300 have a property value of 1946.80.
+
+Given the molecular weight of 202.04 for ClCC#CCOC(=O)Nc1cccc(Cl)c1, we can estimate the property value by considering the trend in the examples. The property value for molecules with similar molecular weights (around 200) seems to be in the range of 1000 to 1500.
+
+Therefore, a reasonable prediction for the property value of ClCC#CCOC(=O)Nc1cccc(Cl)c1, based on the trend observed in the examples, would be approximately:
+
+\[ \text{Predicted Property Value} \approx 1200 \]
+
+This is an estimation based on the observed trend and the molecular weight of the given molecule.
+==================================================
+Iteration: 88
+SMILES: OC(c1ccc(Cl)cc1)(c2cncnc2)c3ccccc3Cl
+True Property: 1977.5941515731001
+Predicted Property:
+To predict the property value for the given molecule, OC(c1ccc(Cl)cc1)(c2cncnc2)c3ccccc3Cl, we need to consider the relationship between the molecular weight and the property values provided in the examples. The property appears to be a function of molecular weight, f(M.W.), but the exact nature of this function is not explicitly given. However, we can make an educated guess based on the examples.
+
+First, let's estimate the molecular weight of the given molecule:
+
+- The molecule contains:
+  - 2 chlorine atoms (Cl), each with an atomic weight of approximately 35.5.
+  - 1 oxygen atom (O), with an atomic weight of approximately 16.
+  - 1 nitrogen atom (N), with an atomic weight of approximately 14.
+  - 1 carbon atom (C) in the hydroxyl group, with an atomic weight of approximately 12.
+  - 3 phenyl rings (each with 6 carbon atoms and 5 hydrogen atoms), contributing a total of 18 carbon atoms and 15 hydrogen atoms.
+  - 1 additional carbon atom in the pyrimidine ring, contributing 1 carbon atom and 1 nitrogen atom.
+
+- Total molecular weight estimate:
+  - Carbon: 20 atoms × 12 = 240
+  - Hydrogen: 15 atoms × 1 = 15
+  - Oxygen: 1 atom × 16 = 16
+  - Nitrogen: 2 atoms × 14 = 28
+  - Chlorine: 2 atoms × 35.5 = 71
+
+Adding these together gives an estimated molecular weight of 370.
+
+Now, let's compare this estimated molecular weight with the examples provided. The property values seem to increase with molecular weight, but not linearly. For example, smaller molecules like CC (molecular weight ~30) have a property value of 31.57, while larger molecules like Clc1ccc(c(Cl)c1)c2c(Cl)c(Cl)c(Cl)c(Cl)c2Cl (molecular weight ~300) have a property value of 2391.99.
+
+Given the estimated molecular weight of 370 for the target molecule, we can predict that its property value will be higher than those of molecules with lower molecular weights and lower than those with significantly higher molecular weights.
+
+Based on the examples and the trend observed, a reasonable prediction for the property value of the given molecule is approximately 1500.
+==================================================
+Iteration: 89
+SMILES: CCCCOC=O
+True Property: 497.268500431955
+Predicted Property:
+To predict the property value for the molecule given in SMILES format, CCCCCOC=O, we need to consider the relationship between the molecular weight and the property values provided in the examples. The property appears to be a function of molecular weight, f(M.W.).
+
+First, let's calculate the molecular weight of CCCCCOC=O:
+
+- C (carbon) has an atomic weight of approximately 12.01.
+- H (hydrogen) has an atomic weight of approximately 1.01.
+- O (oxygen) has an atomic weight of approximately 16.00.
+
+The molecular formula for CCCCCOC=O is C6H12O2.
+
+Calculating the molecular weight:
+- Carbon: 6 atoms × 12.01 = 72.06
+- Hydrogen: 12 atoms × 1.01 = 12.12
+- Oxygen: 2 atoms × 16.00 = 32.00
+
+Total molecular weight = 72.06 + 12.12 + 32.00 = 116.18
+
+Now, let's compare this molecular weight with the examples provided. We can see that the property values increase with increasing molecular weight. For example, CCCOC(=O)C has a molecular weight of approximately 102.13 and a property value of 497.268500431955, while CCCCCCC(=O)C has a molecular weight of approximately 114.18 and a property value of 665.8196951945081.
+
+Given that CCCCCOC=O has a molecular weight of 116.18, which is slightly higher than CCCCCCC(=O)C, we can predict that its property value will be slightly higher than 665.8196951945081.
+
+Therefore, the predicted property value for CCCCCOC=O is approximately 670.
+==================================================
+Iteration: 90
+SMILES: ClCCl
+True Property: 386.1159603692329
+Predicted Property:
+To predict the property value for the molecule "ClCCl" (dichloromethane), we need to consider the relationship between the molecular weight and the given property values from the examples. The property seems to increase with molecular weight, but not linearly, suggesting a more complex relationship.
+
+First, let's calculate the molecular weight of ClCCl:
+- Chlorine (Cl) has an atomic weight of approximately 35.45.
+- Carbon (C) has an atomic weight of approximately 12.01.
+- Hydrogen (H) has an atomic weight of approximately 1.01.
+
+For ClCCl:
+- Molecular weight = 2(35.45) + 12.01 + 2(1.01) = 84.93
+
+Now, let's compare this with the examples:
+- ClCBr (molecular weight ~129.39) has a property value of 673.37.
+- ClC(Cl)C(Cl)Cl (molecular weight ~168.27) has a property value of 921.96.
+- ClC=C(Cl)Cl (molecular weight ~147.39) has a property value of 686.33.
+
+Given these examples, the property value for ClCCl should be lower than that of ClCBr and ClC(Cl)C(Cl)Cl, as its molecular weight is lower. The property value for ClC=C(Cl)Cl is also higher, suggesting that the property value for ClCCl should be significantly lower than 686.33.
+
+Considering the trend and the molecular weight, a reasonable estimate for the property value of ClCCl would be around 500. This is a rough estimate based on the observed trend in the examples provided.
+==================================================
+Iteration: 91
+SMILES: Cc1cccc(C)c1O
+True Property: 626.7353601771048
+Predicted Property:
+To predict the property value for the molecule "Cc1cccc(C)c1O" based on the given examples, we need to consider the relationship between the molecular weight and the property value. The SMILES "Cc1cccc(C)c1O" represents a molecule with a methyl group and a hydroxyl group attached to a benzene ring, which is cresol.
+
+First, let's estimate the molecular weight of cresol:
+- C7H8O: 
+  - Carbon (C): 12.01 * 7 = 84.07
+  - Hydrogen (H): 1.01 * 8 = 8.08
+  - Oxygen (O): 16.00 * 1 = 16.00
+- Total molecular weight ≈ 108.15 g/mol
+
+Now, let's compare this with similar structures from the examples:
+- Cc1cccc(O)c1 (phenol with a methyl group): 536.0878788131627
+- Cc1ccc(C)cc1 (toluene): 523.3441108478321
+
+The molecular weight of cresol is slightly higher than toluene due to the additional hydroxyl group. The property value for toluene is 523.34, and phenol with a methyl group is 536.09. Given that cresol is similar to these structures, we can predict that its property value will be slightly higher than toluene and close to the phenol with a methyl group.
+
+Therefore, the predicted property value for "Cc1cccc(C)c1O" is approximately 536.09.
+==================================================
+Iteration: 92
+SMILES: Clc1ccc(c(Cl)c1)c2cc(Cl)ccc2Cl 
+True Property: 1724.2051343719759
+Predicted Property:
+To predict the property value for the given molecule, we need to consider the relationship between the molecular weight and the property values provided in the examples. The molecule in question is given in SMILES format as:
+
+Clc1ccc(c(Cl)c1)c2cc(Cl)ccc2Cl
+
+This molecule is a dichlorobiphenyl, specifically 2,2',4,4'-tetrachlorobiphenyl. To estimate its property value, we can compare it to similar molecules in the examples:
+
+1. Clc1ccc(c(Cl)c1)c2cc(Cl)c(Cl)c(Cl)c2Cl (SMILES: Clc1ccc(c(Cl)c1)c2cc(Cl)c(Cl)c(Cl)c2Cl) has a property value of 2169.3969067511002.
+2. Clc1cccc(Cl)c1 (SMILES: Clc1cccc(Cl)c1) has a property value of 787.2409204990715.
+
+The given molecule is similar to the first example but with fewer chlorine atoms. The molecular weight of the given molecule is less than that of the first example but more than the second example. Therefore, its property value should be between these two values.
+
+Considering the pattern and the examples, a reasonable estimate for the property value of the given molecule is around 1800. This is a rough estimate based on the trend observed in the examples provided.
+==================================================
+Iteration: 93
+SMILES: CC=C(C)C
+True Property: 290.4860017734095
+Predicted Property:
+To predict the property value for the molecule with the SMILES format "CC=C(C)C", we need to consider the relationship between the molecular weight and the property values given in the examples. The molecule "CC=C(C)C" is isoprene, which has a molecular formula of C5H8.
+
+First, let's calculate the molecular weight of isoprene:
+- Carbon (C) has an atomic weight of approximately 12.01 g/mol.
+- Hydrogen (H) has an atomic weight of approximately 1.008 g/mol.
+
+The molecular weight of isoprene (C5H8) is:
+\[ (5 \times 12.01) + (8 \times 1.008) = 60.05 + 8.064 = 68.114 \, \text{g/mol} \]
+
+Now, we need to estimate the property value based on the molecular weight. From the examples, we observe that the property value seems to increase with the molecular weight, but the relationship is not strictly linear. However, for small molecules, the property value appears to be roughly proportional to the molecular weight.
+
+For example:
+- C1CCCC1 (cyclopentane) has a molecular weight of about 70.13 g/mol and a property value of 290.4860017734096.
+- CCC (propane) has a molecular weight of about 44.10 g/mol and a property value of 212.86663208193545.
+
+Given that isoprene has a molecular weight of 68.114 g/mol, which is slightly less than cyclopentane, we can estimate that its property value will be slightly less than that of cyclopentane.
+
+Therefore, a reasonable prediction for the property value of isoprene (CC=C(C)C) would be approximately 280.0.
+==================================================
+Iteration: 94
+SMILES: ClCCl
+True Property: 386.1159603692329
+Predicted Property:
+To predict the property value for the molecule "ClCCl" (dichloromethane), we need to consider the relationship between the molecular weight and the property values given in the examples. The property appears to be a function of molecular weight, f(M.W.).
+
+First, let's calculate the molecular weight of ClCCl:
+- Carbon (C): 12.01 g/mol
+- Hydrogen (H): 1.01 g/mol
+- Chlorine (Cl): 35.45 g/mol
+
+The molecular formula for ClCCl is CH2Cl2, so the molecular weight is:
+\[ 12.01 + (2 \times 1.01) + (2 \times 35.45) = 84.93 \, \text{g/mol} \]
+
+Now, let's compare this with the examples provided. We need to find a pattern or a similar molecular weight to estimate the property value. The closest example in terms of molecular weight is "ClC=C" with a molecular weight of approximately 61.47 g/mol and a property value of 241.13944387114526.
+
+Given that ClCCl has a slightly higher molecular weight than ClC=C, we can expect its property value to be slightly higher than 241.13944387114526. However, the increase should not be too large, as the molecular weight difference is not substantial.
+
+Therefore, a reasonable prediction for the property value of ClCCl would be around 250.
+==================================================
+Iteration: 95
+SMILES: Oc1c(Cl)ccc(Cl)c1Cl
+True Property: 1113.228056017906
+Predicted Property:
+To predict the property value for the molecule "Oc1c(Cl)ccc(Cl)c1Cl" based on the given examples, we need to consider the molecular weight and how it might relate to the property values provided.
+
+The SMILES "Oc1c(Cl)ccc(Cl)c1Cl" represents a chlorinated phenol, specifically 2,4,6-trichlorophenol. Let's calculate its molecular weight:
+
+- Phenol (C6H5OH) has a molecular weight of approximately 94.11 g/mol.
+- Each chlorine atom (Cl) adds approximately 35.45 g/mol.
+
+For 2,4,6-trichlorophenol:
+- Base phenol: 94.11 g/mol
+- Three chlorine atoms: 3 x 35.45 g/mol = 106.35 g/mol
+
+Total molecular weight = 94.11 + 106.35 = 200.46 g/mol
+
+Now, let's compare this with the examples provided. We need to find a pattern or relationship between molecular weight and the property values. The examples show a variety of property values, but they generally increase with molecular weight.
+
+Given the molecular weight of 200.46 g/mol for 2,4,6-trichlorophenol, we can look at similar examples:
+
+- "Oc1cccc(Cl)c1" has a molecular weight of approximately 128.56 g/mol and a property value of 668.0362836387825.
+- "ClC(Cl)C(Cl)Cl" has a molecular weight of approximately 187.27 g/mol and a property value of 921.9552141122987.
+
+The property value seems to increase with molecular weight, but not linearly. Considering the molecular weight of 200.46 g/mol for 2,4,6-trichlorophenol, we can estimate a property value slightly higher than 921.9552141122987, given that it is heavier than "ClC(Cl)C(Cl)Cl".
+
+Therefore, a reasonable prediction for the property value of "Oc1c(Cl)ccc(Cl)c1Cl" would be approximately 950.
+==================================================
+Iteration: 96
+SMILES: COc1cc(cc(OC)c1O)C6C2C(COC2=O)C(OC4OC3COC(C)OC3C(O)C4O)c7cc5OCOc5cc67
+True Property: 3640.7463440464826
+Predicted Property:
+To predict the property value for the given molecule, we need to consider the relationship between the molecular weight and the property values provided in the examples. The property appears to be a function of molecular weight, f(M.W.), but the exact nature of this function is not explicitly given. However, we can infer that the property value increases with increasing molecular weight based on the examples.
+
+The given molecule in SMILES format is:
+
+COc1cc(cc(OC)c1O)C6C2C(COC2=O)C(OC4OC3COC(C)OC3C(O)C4O)c7cc5OCOc5cc67
+
+This molecule is quite complex and likely has a high molecular weight due to the presence of multiple aromatic rings, ether linkages, and sugar-like moieties. Based on the examples, molecules with higher molecular weights tend to have higher property values.
+
+For instance, the molecule with the highest property value in the examples is:
+
+CC(=O)OCC(=O)C3(O)CCC4C2CCC1=CC(=O)CCC1(C)C2C(=O)CC34C, with a property value of 2438.2632689202615.
+
+Given the complexity and likely high molecular weight of the provided molecule, it is reasonable to predict that its property value will be in a similar range to the higher values in the examples.
+
+Therefore, a reasonable prediction for the property value of the given molecule is approximately 2400.
+==================================================
+Iteration: 97
+SMILES: CSc1nnc(c(=O)n1N)C(C)(C)C
+True Property: 1222.09292170957
+Predicted Property:
+To predict the property value for the molecule with the SMILES format "CSc1nnc(c(=O)n1N)C(C)(C)C", we need to consider the relationship between the molecular weight and the property values given in the examples. The property seems to be a function of molecular weight, f(M.W.), but the exact function is not provided. However, we can make an educated guess based on the examples.
+
+First, let's estimate the molecular weight of the given molecule:
+
+- CSc1nnc(c(=O)n1N)C(C)(C)C
+  - C: 8 atoms × 12.01 = 96.08
+  - S: 1 atom × 32.07 = 32.07
+  - N: 4 atoms × 14.01 = 56.04
+  - O: 1 atom × 16.00 = 16.00
+  - H: 15 atoms × 1.01 = 15.15
+
+Total estimated molecular weight = 96.08 + 32.07 + 56.04 + 16.00 + 15.15 = 215.34
+
+Now, let's compare this molecular weight with the examples provided:
+
+- The property values for molecules with similar molecular weights (around 200-300) are:
+  - COc1ccc(cc1)C(c2ccc(OC)cc2)C(Cl)(Cl)Cl (M.W. ~ 215) = 2070.981672296727
+  - CCC#C (M.W. ~ 186) = 186.8104087369996
+  - CC(C)C (M.W. ~ 212) = 212.86663208193545
+  - CC(C)O (M.W. ~ 225) = 225.61040004726607
+
+Given the molecular weight of 215.34, the property value should be close to the values for molecules with similar weights. The property values for these molecules range from around 186 to 225.
+
+Therefore, a reasonable prediction for the property value of the molecule "CSc1nnc(c(=O)n1N)C(C)(C)C" would be approximately 225.61040004726607, as it is close to the molecular weight of the given molecule.
+==================================================
+Iteration: 98
+SMILES: CCOC(=O)c1ccccc1
+True Property: 807.7459791978516
+Predicted Property:
+To predict the property value for the molecule with the SMILES format "CCOC(=O)c1ccccc1", we need to consider the relationship between the molecular weight and the property values given in the examples. The molecule in question is ethyl benzoate.
+
+First, let's calculate the molecular weight of ethyl benzoate:
+
+- C: 9 atoms × 12.01 g/mol = 108.09 g/mol
+- H: 10 atoms × 1.008 g/mol = 10.08 g/mol
+- O: 2 atoms × 16.00 g/mol = 32.00 g/mol
+
+Total molecular weight = 108.09 + 10.08 + 32.00 = 150.17 g/mol
+
+Now, we need to find a pattern or relationship between the molecular weight and the property values from the examples. The property values seem to increase with increasing molecular weight, but the relationship is not linear. However, we can observe that molecules with similar structures and molecular weights have similar property values.
+
+For example, the molecule "COC(=O)c1cccnc1" has a molecular weight of approximately 137.14 g/mol and a property value of 723.48. Another similar molecule, "CC(C)COC(=O)C", has a molecular weight of approximately 116.16 g/mol and a property value of 587.92.
+
+Given that ethyl benzoate has a molecular weight of 150.17 g/mol, which is slightly higher than the examples provided, we can estimate that its property value will be slightly higher than those examples.
+
+Based on this analysis, a reasonable prediction for the property value of ethyl benzoate (CCOC(=O)c1ccccc1) would be around 750.0.
+==================================================
+Iteration: 99
+SMILES: CCCCCCCBr
+True Property: 994.6631924986758
+Predicted Property:
+To predict the property value for the molecule "CCCCCCCBr" based on the given examples, we need to consider the molecular weight and how it might relate to the property values provided.
+
+First, let's determine the molecular weight of "CCCCCCCBr":
+- C (carbon) has an atomic weight of approximately 12.01.
+- H (hydrogen) has an atomic weight of approximately 1.008.
+- Br (bromine) has an atomic weight of approximately 79.90.
+
+The SMILES "CCCCCCCBr" represents a molecule with 7 carbon atoms, 15 hydrogen atoms, and 1 bromine atom.
+
+Calculating the molecular weight:
+- Carbon: 7 * 12.01 = 84.07
+- Hydrogen: 15 * 1.008 = 15.12
+- Bromine: 1 * 79.90 = 79.90
+
+Total molecular weight = 84.07 + 15.12 + 79.90 = 179.09
+
+Now, let's compare this molecular weight to the examples provided. The property values seem to increase with increasing molecular weight, but not linearly. For example, smaller molecules like "CCC#C" (M.W. = 54.09) have a property value of 186.81, while larger molecules like "Clc1ccc(c(Cl)c1Cl)c2c(Cl)cc(Cl)c(Cl)c2Cl" (M.W. = 291.98) have a property value of 2391.99.
+
+Given the molecular weight of "CCCCCCCBr" (179.09), it is larger than "CCC#C" but smaller than many of the other examples. Based on the trend observed, we can estimate that the property value for "CCCCCCCBr" will be higher than 186.81 but significantly lower than the values for much larger molecules.
+
+Considering the examples and the trend, a reasonable prediction for the property value of "CCCCCCCBr" would be around 600. This is an estimate based on the observed pattern of increasing property values with increasing molecular weight, while also considering the specific examples provided.
+==================================================
+Iteration: 100
+SMILES: CO
+True Property: 44.31543731938203
+Predicted Property:
+To predict the property value for the molecule CO (carbon monoxide), we need to consider the relationship between the molecular weight and the property values given in the examples. The property appears to be a function of molecular weight, f(M.W.).
+
+First, let's calculate the molecular weight of CO:
+- Carbon (C) has an atomic weight of approximately 12.01 g/mol.
+- Oxygen (O) has an atomic weight of approximately 16.00 g/mol.
+
+Therefore, the molecular weight of CO is 12.01 + 16.00 = 28.01 g/mol.
+
+Now, let's examine the examples to understand the relationship between molecular weight and the property value. The property values increase with increasing molecular weight, but the relationship is not linear. However, for very small molecules, the property values are relatively low.
+
+Given that CO is a very small molecule with a molecular weight of 28.01 g/mol, we can infer that its property value will be quite low compared to the examples provided. The smallest property value in the examples is for C#C (acetylene) with a molecular weight of 26.04 g/mol and a property value of 5.51544600911555.
+
+Since CO has a slightly higher molecular weight than C#C, we can predict that its property value will be slightly higher than 5.51544600911555. However, given the small difference in molecular weight, the property value will not be significantly higher.
+
+Therefore, a reasonable prediction for the property value of CO is approximately 6.0.
+==================================================
