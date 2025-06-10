@@ -1,0 +1,2789 @@
+Iteration: 1
+SMILES: CCCCCCCCCC(=O)OC
+True Property: 1041.1533886156071
+Predicted Property:
+Let me analyze this molecule and make a prediction based on the given examples.
+
+The target molecule CCCCCCCCCC(=O)OC is an ester with:
+- A long alkyl chain (10 carbons)
+- An ester group (-C(=O)O-)
+- A methoxy group (-OC)
+
+Looking at patterns in the training examples:
+1. Longer chain molecules tend to have higher values (e.g., CCCCCCCCCCO at 860.14)
+2. The presence of oxygen atoms tends to increase the value
+3. Ester groups generally contribute to higher values
+4. The length is similar to CCCCCCCCCCO but has an additional ester group
+
+Considering these factors:
+- The base value would be similar to CCCCCCCCCCO (860.14)
+- The ester group would add additional contribution
+- The molecule is slightly more complex than a simple alcohol
+
+Based on my analysis of the patterns and structural features, I predict the property value for CCCCCCCCCC(=O)OC to be approximately:
+
+1012.5
+
+This prediction takes into account the molecular size, the presence of the ester group, and the overall complexity of the molecule compared to similar structures in the training set.
+==================================================
+Iteration: 2
+SMILES: Clc2ccc1oc(=O)[nH]c1c2
+True Property: 933.0510810476297
+Predicted Property:
+As an experienced chemist, I'll analyze this molecule and predict its property value based on the patterns observed in the training examples.
+
+The molecule "Clc2ccc1oc(=O)[nH]c1c2" contains:
+- A chlorine substituent
+- A fused bicyclic system
+- An oxazolone-like ring structure
+- An NH group
+- A carbonyl group (C=O)
+
+Looking at similar structural patterns in the training set:
+- Molecules with chlorine typically contribute significantly to the property value
+- Fused ring systems generally increase the value
+- Presence of NH and C=O groups also contributes moderately
+- The overall size and complexity is moderate
+
+Comparing to similar molecules in the training set:
+- It's less complex than many of the larger molecules (>2000)
+- More complex than simple aromatics (~500-700)
+- Has similar features to some mid-range molecules (~1000-1500)
+
+Based on these considerations and the patterns observed in the training data, I predict the property value to be approximately:
+
+1105.7
+
+This prediction takes into account the molecule's moderate complexity, the presence of the chlorine atom, the fused ring system, and the functional groups present, while comparing it to similar structures in the training set.
+==================================================
+Iteration: 3
+SMILES: CC(C)N(=O)=O
+True Property: 413.0058277646391
+Predicted Property:
+As an experienced chemist, I'll analyze this molecule (isopropyl nitrite, CC(C)N(=O)=O) by comparing it to the training examples and considering its structural features:
+
+1. It's a relatively small molecule, similar in size to some of the simpler examples
+2. Contains a nitro/nitrite group (N(=O)=O) like some examples (e.g., Oc1ccc(cc1)N(=O)=O at 736.22)
+3. Has a branched alkyl group (isopropyl)
+4. Molecular complexity is moderate-low
+5. Looking at similar sized molecules with nitrogen-oxygen functionalities
+
+Analyzing similar structures and their values:
+- Simple molecules like CC(=O)N have value around 219
+- Molecules with N(=O)=O group tend to have values in 700-900 range
+- The branching pattern and size suggests a moderate value
+
+Based on these considerations and patterns in the training data, I would predict the property value for CC(C)N(=O)=O to be approximately:
+
+585.7
+
+This prediction takes into account the molecule's size, functionality, and structural similarity to the training examples, particularly considering the presence of the nitro group and the relatively simple carbon backbone.
+==================================================
+Iteration: 4
+SMILES: CC12CC(O)C3C(CCC4=CC(=O)CCC34C)C2CCC1C(=O)CO
+True Property: 2076.242030878767
+Predicted Property:
+As an experienced chemist, I'll analyze this molecule and predict its property value based on the training examples provided.
+
+Looking at the given molecule (CC12CC(O)C3C(CCC4=CC(=O)CCC34C)C2CCC1C(=O)CO), I notice:
+
+1. It's a complex steroid-like structure
+2. Contains multiple ring systems (4 fused rings)
+3. Has oxygen-containing functional groups (ketone, hydroxyl)
+4. Contains multiple carbons in various environments
+5. Has a similar structural complexity to some of the steroid-like molecules in the training set
+
+Looking at similar molecules in the training set:
+- Complex steroid structures with oxygen functionalities tend to have values around 2000-2400
+- The presence of ketone and hydroxyl groups typically increases the value
+- Multiple ring systems generally contribute to higher values
+- The molecule is similar in complexity to CC(=O)OC3(CCC4C2CCC1=CC(=O)C=CC1(C)C2C(O)CC34C) which has a value of 2438.26
+
+Based on these observations and patterns, I predict the property value for this molecule to be approximately:
+
+2156.4
+
+This prediction takes into account the structural complexity, functional groups present, and similarity to known examples while considering that it's slightly less complex than some of the highest-value steroids in the training set.
+==================================================
+Iteration: 5
+SMILES: Fc1cccc(F)c1C(=O)NC(=O)Nc2ccc(Cl)cc2
+True Property: 1845.0188981203823
+Predicted Property:
+Let me analyze this molecule and predict its property value based on the training examples provided.
+
+The target molecule Fc1cccc(F)c1C(=O)NC(=O)Nc2ccc(Cl)cc2 has several key structural features:
+1. Two fluorine atoms on a benzene ring
+2. A urea linkage (-NC(=O)NC(=O)-)
+3. A chlorine substituent on another benzene ring
+4. Two aromatic rings connected by the urea bridge
+
+Looking at similar structures in the training set:
+- Molecules with urea groups (NC(=O)NC(=O)) typically have values around 1200-1400
+- Halogenated aromatics (with F, Cl) tend to increase the value
+- Multiple aromatic rings connected by functional groups usually result in values between 1500-2000
+- The presence of multiple halogens (F, Cl) typically increases the value
+
+Considering these patterns and the complexity of the molecule, I would predict the property value to be approximately:
+
+1856.4
+
+This prediction takes into account:
+- The base value for similar-sized molecules with urea groups
+- The additional contribution from the two fluorine atoms
+- The contribution from the chlorine atom
+- The presence of two aromatic rings
+- The overall molecular size and complexity
+==================================================
+Iteration: 6
+SMILES: CCCOC(C)C
+True Property: 497.55284413909214
+Predicted Property:
+Let me analyze this molecule (CCCOC(C)C) and predict its property value based on the training examples provided.
+
+Looking at the patterns in the given examples, I notice that:
+1. Smaller, simpler molecules tend to have lower values
+2. The presence of oxygen typically contributes moderately to the property
+3. Branched alkyl chains have values in the mid-range
+4. The molecule in question is a relatively simple ether with branching
+
+Comparing to similar structures in the training set:
+- CC(C)CCOC(=O)C has a value of 678.56
+- CCC(C)(C)CO has a value of 497.55
+- Simple alkyl compounds like CCCCC=C have values around 381.13
+
+The target molecule CCCOC(C)C is:
+- Smaller than CC(C)CCOC(=O)C
+- Has similar branching pattern to some examples
+- Contains one oxygen atom
+- Has a relatively simple structure
+
+Based on these observations and the patterns in the training data, I would predict the property value for CCCOC(C)C to be approximately:
+
+545.7
+
+This prediction takes into account the molecule's size, complexity, presence of oxygen, and branching pattern while comparing it to similar structures in the training set.
+==================================================
+Iteration: 7
+SMILES: CCC(C)n1c(=O)[nH]c(C)c(Br)c1=O 
+True Property: 1524.6927873163704
+Predicted Property:
+As an experienced chemist, I'll analyze this molecule and predict its property value based on the training examples provided.
+
+The molecule CCC(C)n1c(=O)[nH]c(C)c(Br)c1=O has several key structural features:
+1. A pyrimidine-dione core structure
+2. A bromine substituent
+3. An ethyl and methyl branched N-substituent
+4. A methyl substituent on the ring
+5. Two carbonyl groups
+
+Looking at the training examples:
+- Complex heterocyclic structures typically have values between 1200-1800
+- Presence of bromine typically adds 300-400 to the base value
+- N-substituted heterocycles generally contribute significantly
+- Carbonyl groups add approximately 200-300 per group
+- The alkyl substituents (ethyl, methyl) add moderate contributions
+
+Based on these patterns and considering the molecular complexity and similarity to other examples (especially other heterocyclic structures with similar substituents), I would predict the property value to be approximately:
+
+1486.5
+
+This prediction takes into account the molecule's overall complexity, the presence of the bromine atom, the heterocyclic core, and the various substituents, while comparing it to similar structures in the training set.
+==================================================
+Iteration: 8
+SMILES: c1ccc(cc1)c2ccccc2
+True Property: 833.8215896137283
+Predicted Property:
+Let me analyze this molecule and make a prediction based on the training examples provided.
+
+The molecule "c1ccc(cc1)c2ccccc2" is biphenyl, consisting of two benzene rings connected directly to each other.
+
+Looking at the patterns in the training data:
+1. Simpler aromatic structures tend to have lower values
+2. The presence of benzene rings typically contributes several hundred units to the property
+3. Connected ring systems appear to increase the value
+4. This molecule is relatively simple compared to many of the training examples
+5. It's most similar in complexity to molecules like "Nc1cccc2ccccc12" (762.5870) but without the amino group
+
+Based on these observations and the structural similarity to other aromatic compounds in the training set, I predict the property value for biphenyl (c1ccc(cc1)c2ccccc2) to be approximately:
+
+847.3
+
+This prediction takes into account that:
+- It's a purely aromatic system
+- It has two connected rings
+- It lacks any functional groups
+- It's more complex than single ring systems but simpler than most functionalized examples in the training set
+==================================================
+Iteration: 9
+SMILES: CCCCS
+True Property: 420.0950333721279
+Predicted Property:
+As an experienced chemist, I'll analyze this molecule (CCCCS - butanethiol) by comparing it to the training examples and looking for patterns in molecular structure and corresponding property values.
+
+Key observations:
+1. The molecule is relatively small and linear
+2. Contains a sulfur atom
+3. Similar in size to molecules like CCSCC (420.09) and CCBr (541.42)
+4. Has a simple chain structure like many of the smaller molecules in the training set
+5. The presence of sulfur seems to contribute moderately to the property value
+6. Similar chain length to some other aliphatic compounds in the dataset
+
+Looking at structurally similar molecules and considering the trends:
+- CCSCC (420.09) is the most similar structure, also containing sulfur
+- CCBr (541.42) has similar chain length but with Br instead of SH
+- Simple alkyl chains tend to have values in the 400-700 range
+- The sulfur functionality appears to contribute less to the property than halogens
+
+Based on these considerations and the patterns observed in the training data, I predict the property value for CCCCS to be approximately:
+
+465.3
+
+This prediction takes into account the molecule's size, the presence of sulfur, and the general trends observed in similar aliphatic compounds in the training set.
+==================================================
+Iteration: 10
+SMILES: CCCC(C)(C)CO
+True Property: 588.2003255030342
+Predicted Property:
+Let me analyze this molecule and predict its property value based on the patterns in the training examples.
+
+CCCC(C)(C)CO is a branched alcohol with:
+- A main chain of 4 carbons (CCCC)
+- Two methyl branches (C)(C)
+- A terminal hydroxyl group (CO)
+
+Looking at similar structures in the training set:
+- CCC(CC)CO (497.55) - similar branched alcohol
+- CCCCOCCO (600.94) - alcohol with similar carbon count
+- Simple alcohols tend to have values in the 450-650 range
+- Branching tends to slightly increase the value
+- The presence of hydroxyl group contributes around 100-150 to the value
+
+Considering these patterns and the molecule's structure, I predict the property value for CCCC(C)(C)CO to be approximately:
+
+539.7
+
+This prediction takes into account:
+- The base carbon chain contribution
+- The branching effect of the two methyl groups
+- The hydroxyl group contribution
+- The overall molecular size and complexity
+==================================================
+Iteration: 11
+SMILES: Cc1ccc2ccccc2c1
+True Property: 756.2022199222544
+Predicted Property:
+Looking at the given examples and the target molecule Cc1ccc2ccccc2c1 (methylnaphthalene), I can make a prediction based on structural similarities and patterns in the data.
+
+The target molecule is very similar to CCc1ccc2ccccc2c1 (ethylnaphthalene) from the training set, which has a value of 846.8497012861964. The only difference is that our target molecule has one less CH2 group.
+
+Also looking at other aromatic systems in the dataset:
+- Simple aromatics tend to have values in the 500-900 range
+- Naphthalene-based structures typically fall in the 800-1000 range
+- The addition/removal of small alkyl groups typically changes the value by 100-200 units
+
+Given that our target molecule (methylnaphthalene) has one less CH2 group compared to ethylnaphthalene (846.8497), and considering the general patterns in the dataset, I would predict the value to be approximately:
+
+775.4
+
+This prediction takes into account:
+1. The base naphthalene structure
+2. The effect of the methyl substituent
+3. The relationship to the known ethylnaphthalene value
+4. The general range of values for similar aromatic systems in the dataset
+==================================================
+Iteration: 12
+SMILES: O=C1NC(=O)NC(=O)C1(C(C)CCC)CC=C
+True Property: 1377.1442527400864
+Predicted Property:
+As an experienced chemist, I'll analyze this molecule and predict its property value based on the training examples provided. Let me break this down:
+
+1. The molecule contains a barbituric acid core structure (the NC(=O)NC(=O)NC(=O) ring system)
+2. It has aliphatic substituents including a CC=C group and a branched alkyl chain
+3. Looking at similar structures in the training set:
+   - O=C1NC(=O)NC(=O)C1(CC)C(C)C has a value of 1118.2299
+   - Other molecules with similar ring systems also have values in the 800-1200 range
+   - The presence of the CC=C group might increase the value slightly
+   - The branched alkyl chain would contribute similarly to the CC/C(C)C groups in the example
+
+Considering these factors, and the general trends in the training data where:
+- More complex structures generally have higher values
+- Similar ring systems show values around 1000-1200
+- Additional alkyl chains and unsaturation typically add to the value
+
+I would predict a property value of approximately 1185.4 for O=C1NC(=O)NC(=O)C1(C(C)CCC)CC=C
+
+This prediction takes into account the structural similarity to the barbituric acid derivative in the training set while accounting for the additional complexity of the substituents.
+==================================================
+Iteration: 13
+SMILES: FC(F)(F)c1ccccc1
+True Property: 781.4700357155825
+Predicted Property:
+As an experienced chemist, I'll analyze this molecule and predict its property value based on the training examples provided.
+
+The molecule FC(F)(F)c1ccccc1 is trifluoromethylbenzene, which contains:
+- A benzene ring (c1ccccc1)
+- A trifluoromethyl group (CF3)
+
+Looking at similar structures in the training set:
+- CN(C)C(=O)Nc1cccc(c1)C(F)(F)F has a CF3 group and shows a high value (~1337)
+- Simple benzene derivatives like COc1ccccc1 have values around ~536
+- Halogenated aromatics like Clc1ccccc1 tend to have values in the 600-900 range
+- The CF3 group typically contributes more than a single halogen
+
+Given these patterns, and considering:
+1. The molecule is smaller than CN(C)C(=O)Nc1cccc(c1)C(F)(F)F
+2. But has more complex substitution than simple monosubstituted benzenes
+3. The CF3 group contributes significantly to the property
+
+I would predict a value of approximately 890-910 for this molecule.
+
+My specific prediction is: 897.4
+==================================================
+Iteration: 14
+SMILES: OCC1OC(O)C(O)C(O)C1O
+True Property: 1001.4809791129882
+Predicted Property:
+Let me analyze this molecule and make a prediction based on the training examples provided.
+
+The molecule OCC1OC(O)C(O)C(O)C1O is a cyclic sugar (monosaccharide) structure with multiple hydroxyl groups. Looking at the patterns in the training data:
+
+1. Molecules with multiple OH groups tend to have higher values
+2. Cyclic structures generally contribute to higher values
+3. The presence of oxygen atoms also tends to increase the value
+4. Similar complex sugar-like structures in the training data (like the glycosides) have values in the 2000-3000 range
+5. The molecule has structural similarity to parts of some of the larger molecules in the training set, particularly the sugar moieties
+
+Given these observations and the molecule's:
+- 6 oxygen atoms
+- Cyclic structure
+- Multiple hydroxyl groups
+- Similar complexity to other sugar derivatives in the dataset
+
+I would predict a value of approximately 1850-1950, with my specific prediction being:
+
+1897.4
+
+This takes into account that it's simpler than the larger glycosides in the training set (which have values around 2700-3000) but more complex than simple alcohols or ethers (which have values around 400-600).
+==================================================
+Iteration: 15
+SMILES: CC(=O)OCC(=O)C3(O)CCC4C2CCC1=CC(=O)C=CC1(C)C2C(O)CC34C 
+True Property: 2438.2632689202605
+Predicted Property:
+As an experienced chemist, I'll analyze this molecule and predict its property value based on the patterns observed in the training examples.
+
+Looking at the given molecule (CC(=O)OCC(=O)C3(O)CCC4C2CCC1=CC(=O)C=CC1(C)C2C(O)CC34C), I notice:
+
+1. It's a complex steroid-like structure
+2. Contains multiple ring systems (4 fused rings)
+3. Has multiple oxygen-containing functional groups (ketones, hydroxyl groups)
+4. Contains an acetate ester group
+5. Has multiple chiral centers
+6. Similar complexity to other steroid-like structures in the training set
+
+Looking at similar complex structures in the training examples:
+- CC34CCC1C(CCC2=CC(=O)CCC12C)C3CCC4=O (1688.16)
+- CC12CCC3C(CCC4=CC(=O)CCC34C)C2CCC1O (1701.19)
+
+These are the most similar structures in terms of core skeleton and functionality. The target molecule has additional functional groups (acetate ester, additional ketone) which would likely increase the property value somewhat.
+
+Based on these observations and the general trends in the training data where:
+- More complex structures tend to have higher values
+- Oxygen-containing functional groups contribute significantly
+- Multiple ring systems increase the value
+- Similar steroid cores are in the ~1700 range
+
+I predict the property value to be approximately 1850-1900, with my specific prediction being:
+
+1875.4
+
+This takes into account the slightly higher complexity and additional functional groups compared to the similar steroid structures in the training set.
+==================================================
+Iteration: 16
+SMILES: CC34CCC1C(CCC2CC(=O)CCC12C)C3CCC4O 
+True Property: 1714.2207928372718
+Predicted Property:
+Let me analyze this molecule and make a prediction based on the training examples provided.
+
+The target molecule CC34CCC1C(CCC2CC(=O)CCC12C)C3CCC4O is a steroid-like structure with:
+- A basic steroid skeleton
+- One ketone group (=O)
+- One hydroxyl group (-OH)
+- Multiple ring systems
+- Several methyl groups
+
+Looking at similar structures in the training set:
+1. CC34CCC1C(CCC2=CC(=O)CCC12O)C3CCC4(O)C#C (value: 1869.17)
+2. CC12CC(O)C3C(CCC4=CC(=O)CCC34C)C2CCC1(O)C(=O)CO (value: 2179.63)
+
+These are the most similar structures as they are also steroid-based with ketone and hydroxyl groups. However, our target molecule:
+- Has fewer oxygen atoms
+- Lacks the triple bond or additional functional groups
+- Has a slightly simpler overall structure
+
+Given these considerations and the general trend that:
+- More complex structures tend to have higher values
+- Oxygen-containing groups contribute significantly
+- Ring systems increase the value
+- The presence of ketone and hydroxyl groups adds moderate value
+
+I would predict a value of approximately 1650-1750, with my specific prediction being:
+
+1683.5
+
+This takes into account that it should be lower than the more functionalized steroids in the training set but still maintain a relatively high value due to its complex ring structure and functional groups.
+==================================================
+Iteration: 17
+SMILES: CC(=O)Nc1ccc(cc1)N(=O)=O
+True Property: 1001.526215611851
+Predicted Property:
+Let me analyze this molecule and predict its property value based on the given examples.
+
+The molecule CC(=O)Nc1ccc(cc1)N(=O)=O has:
+- An acetamide group (CC(=O)N-)
+- A nitro group (-N(=O)=O)
+- A para-substituted benzene ring
+
+Looking at patterns in the training examples:
+1. Molecules with similar size tend to have similar values
+2. Presence of nitro groups tends to increase the value
+3. Aromatic rings contribute significantly to the value
+4. Amide groups also contribute to the value
+
+Comparing with similar structures in the training set:
+- Simple aromatic compounds have values around 600-800
+- Addition of functional groups like amide and nitro typically adds 300-400 points
+- Para-substituted benzenes show consistent patterns
+
+Based on these observations and the structural features present, I would predict the property value to be approximately:
+
+1087.4
+
+This prediction takes into account:
+- The base benzene ring contribution
+- The acetamide group contribution
+- The nitro group contribution
+- The overall molecular size and complexity
+==================================================
+Iteration: 18
+SMILES: CCOP(=S)(OCC)SCn1c(=O)oc2cc(Cl)ccc12
+True Property: 2214.2068900531303
+Predicted Property:
+As an experienced chemist, I'll analyze this molecule and predict its property value based on the training examples provided. Let me break down my thought process:
+
+1. The molecule contains several key structural features:
+- Phosphorothioate group (P=S)
+- Chlorine substituent
+- Benzofuran ring system
+- Multiple oxygen atoms
+- Sulfur linkages
+
+2. Looking at similar structures from the training set:
+- CCOP(=S)(OCC)SC(CCl)N2C(=O)c1ccccc1C2=O has a value of 2382.47
+- COP(=S)(OC)Oc1cc(Cl)c(Cl)cc1Cl has a value of 1915.21
+
+3. Key observations:
+- Molecules with P=S groups tend to have higher values (>1900)
+- Presence of chlorine typically adds to the value
+- Heterocyclic systems contribute significantly
+- The size and complexity of the molecule is moderate to high
+
+4. Considering these factors and the structural similarities to the reference compounds, particularly the phosphorothioate compounds, but noting this molecule is slightly less complex than some of the higher-valued examples:
+
+I predict the property value to be approximately: 2105.8
+
+This prediction takes into account that the molecule has similar structural features to the phosphorothioate compounds in the training set but is somewhat simpler than the highest-valued examples.
+==================================================
+Iteration: 19
+SMILES: CC(C)(C)CO
+True Property: 406.90536277515014
+Predicted Property:
+Looking at the examples and the target molecule CC(C)(C)CO, I can make the following observations:
+
+1. The molecule is a relatively simple, small alcohol
+2. It has a tertiary carbon with three methyl groups and a CH2OH group
+3. Looking at similar structures in the training set:
+   - CCC(C)(C)CO has a value of 497.55284413909214
+   - Simple alcohols generally have values in the 400-600 range
+   - The structure is very similar to CCC(C)(C)CO, just missing one carbon
+
+Given that CC(C)(C)CO is nearly identical to CCC(C)(C)CO (just missing one CH2 group), and they share the same functional groups and similar branching pattern, I would predict the property value to be very close to 497.55284413909214.
+
+Based on the patterns in the data and the structural similarity, I predict the property value for CC(C)(C)CO to be approximately:
+
+497.55284413909214
+
+This prediction is based on the extremely close structural similarity to the known compound CCC(C)(C)CO, which has exactly this value in the training set.
+==================================================
+Iteration: 20
+SMILES: O=c1[nH]cnc2nc[nH]c12 
+True Property: 716.8658529826156
+Predicted Property:
+As an experienced chemist, I'll analyze this molecule (hypoxanthine) and predict its property value based on the training examples provided.
+
+Looking at the patterns in the given examples, I notice that:
+1. Smaller molecules generally have lower values
+2. Molecules with aromatic rings tend to have higher values
+3. The presence of heteroatoms (N, O) contributes to the value
+4. Fused ring systems typically increase the value
+5. The presence of conjugated systems affects the value
+
+For the molecule O=c1[nH]cnc2nc[nH]c12:
+- It has a fused bicyclic structure
+- Contains multiple nitrogen atoms
+- Has a conjugated system
+- Contains an oxygen atom
+- Has [nH] groups
+- Is relatively compact compared to many examples
+- Has some structural similarity to the nucleobase-like structures in the training set
+
+Considering these factors and comparing to similar structures in the training set, I would predict a property value of approximately:
+
+892.5
+
+This prediction takes into account that the molecule is larger than the smallest examples but significantly smaller than the complex multi-ring systems with high values, while still containing significant heterocyclic character and conjugation.
+==================================================
+Iteration: 21
+SMILES: CC(C)OC=O
+True Property: 406.62101906801297
+Predicted Property:
+Let me analyze this molecule (CC(C)OC=O - isopropyl formate) by comparing it to the training examples and considering its structural features:
+
+1. It's a relatively small molecule
+2. Contains an ester group (OC=O)
+3. Has branching (isopropyl group)
+4. Similar in size/complexity to molecules like CCC(CC)C=O (484.52) and CC(C)(C)CO (406.91)
+5. Contains oxygen functionality like many lower-value compounds
+6. Has fewer atoms than most higher-value compounds in the training set
+7. No aromatic rings or complex functionalities
+
+Looking at the patterns in the training data:
+- Simple aliphatic molecules tend to have values between 300-600
+- Presence of oxygen typically doesn't increase values dramatically
+- Branching slightly increases values compared to linear chains
+- Ester groups appear to contribute moderately to the property
+
+Based on these observations and comparing with similar molecules in the training set, I would predict the property value for CC(C)OC=O to be approximately:
+
+445.7
+
+This prediction takes into account that it's slightly more complex than the simplest molecules (~250-400) but less complex than aromatic or multi-functional molecules (>800).
+==================================================
+Iteration: 22
+SMILES: O=C(Nc1ccccc1)Nc2ccccc2
+True Property: 1208.8967887556119
+Predicted Property:
+As an experienced chemist, I'll analyze this molecule and predict its property value based on the training examples provided.
+
+The molecule O=C(Nc1ccccc1)Nc2ccccc2 is a urea derivative with:
+- Two phenyl rings
+- A central urea group (N-C(=O)-N)
+- Symmetric structure
+
+Looking at the patterns in the training data:
+1. Molecules with aromatic rings generally have values between 900-2000
+2. Molecules with amide/urea groups tend to have values in the 1200-1800 range
+3. Symmetric molecules often have moderate values
+4. The presence of N-C(=O)-N motif appears in several examples with values around 1500-1700
+
+Considering these factors and comparing with similar structures in the training set, particularly:
+- CON(C)C(=O)Nc1ccc(Cl)cc1 (1734.26)
+- CN(C)C(=O)Nc1cccc(OC(=O)NC(C)(C)C)c1 (1642.44)
+
+But noting that our target molecule is simpler (no substituents) and more symmetric, I would predict a value of approximately:
+
+1425.8
+
+This prediction takes into account the structural features while considering that the molecule is simpler than many of the substituted examples in the training set.
+==================================================
+Iteration: 23
+SMILES: C1c2ccccc2c3ccccc13
+True Property: 911.4409593052027
+Predicted Property:
+As an experienced chemist, I'll analyze this molecule and predict its property value based on the given examples.
+
+The molecule C1c2ccccc2c3ccccc13 is fluorene, a polycyclic aromatic hydrocarbon consisting of two benzene rings connected by a five-membered ring.
+
+Looking at the patterns in the training examples:
+1. Molecules with fused ring systems tend to have values between 800-1000
+2. Similar structure o1c2ccccc2c3ccccc13 (dibenzofuran) has a value of 924.1847272705335
+3. Simple benzene (c1ccccc1) has a value of 342.04914811994786
+4. The presence of fused aromatic rings increases the value significantly
+5. This molecule is very similar to dibenzofuran, just replacing the oxygen with a CH2 group
+
+Given these observations, and particularly considering the strong structural similarity to dibenzofuran (just differing by O vs CH2), I would predict a value of approximately:
+
+915.7
+
+This prediction is slightly lower than dibenzofuran because the CH2 bridge typically contributes slightly less to this property than an oxygen bridge, but still maintains a similar overall structural contribution to the property value.
+==================================================
+Iteration: 24
+SMILES: NC(=N)NS(=O)(=O)c1ccc(N)cc1 
+True Property: 1221.8085780024326
+Predicted Property:
+As an experienced chemist, I'll analyze this molecule and predict its property value based on the patterns observed in the training examples.
+
+The molecule NC(=N)NS(=O)(=O)c1ccc(N)cc1 has several key structural features:
+1. A sulfonamide group -S(=O)(=O)-
+2. A para-substituted benzene ring
+3. An amino group (-NH2) on the benzene ring
+4. A guanidine-like structure (-NC(=N)N-)
+
+Looking at the training examples:
+- Molecules with sulfonamide groups (like CC2Cc1ccccc1N2NC(=O)c3ccc(Cl)c(c3)S(N)(=O)=O) have values around 2200
+- Para-substituted benzenes typically contribute 700-800 to the value
+- Amino groups tend to increase the value
+- The presence of multiple nitrogen atoms tends to increase the value
+
+Considering these factors and comparing with similar structures in the training set, particularly other molecules containing sulfonamide groups and amino substituents, I would predict the property value to be approximately:
+
+1685.4
+
+This prediction takes into account the complexity of the molecule, the presence of the sulfonamide group, the para-amino substitution, and the guanidine-like structure, while considering the general range of values seen in the training set for molecules of similar size and functionality.
+==================================================
+Iteration: 25
+SMILES: CCN(CC(C)=C)c1c(cc(cc1N(=O)=O)C(F)(F)F)N(=O)=O
+True Property: 1990.9324563806267
+Predicted Property:
+Let me analyze this molecule and make a prediction based on the patterns in the training examples.
+
+The target molecule CCN(CC(C)=C)c1c(cc(cc1N(=O)=O)C(F)(F)F)N(=O)=O has several key features:
+1. A complex aromatic ring system
+2. Multiple nitro (N(=O)=O) groups
+3. A trifluoromethyl group (C(F)(F)F)
+4. An alkyl amine with a branched unsaturated substituent
+
+Looking at similar molecules in the training set:
+- CCCN(CCC)c1c(cc(cc1N(=O)=O)C(F)(F)F)N(=O)=O (very similar structure) has value 2003.96
+- Other molecules with nitro groups and complex substituents tend to have values between 1500-2500
+- The presence of CF3 and NO2 groups typically contributes to higher values
+- The slight difference in the alkyl chain (CC(C)=C vs CCC) would make a small difference
+
+Given the very close structural similarity to the first reference compound (which has value 2003.96), and accounting for the small structural differences, I predict the property value to be approximately:
+
+1985.7
+
+This prediction takes into account that the molecule is slightly less massive than the reference compound but maintains the same key functional groups that appear to drive the property value.
+==================================================
+Iteration: 26
+SMILES: CC(C)OC=O
+True Property: 406.62101906801297
+Predicted Property:
+Let me analyze this molecule (CC(C)OC=O - isopropyl formate) by comparing it to the training examples and considering its structural features:
+
+1. It's a relatively small molecule with a formate ester group
+2. Contains branching (isopropyl group)
+3. Has an oxygen atom and a carbonyl group
+4. Similar in size and functionality to some simpler molecules in the training set
+
+Looking at similar molecules from the training set:
+- COC(=O)C (methyl acetate): 315.97
+- CCC(=O)C (butanone): 303.23
+- Simple branched molecules like CC1CCCC1: 381.13
+- Other small oxygenated molecules like CCC(C)(C)CO: 497.55
+
+Considering that:
+- The molecule is slightly larger than methyl acetate
+- Has branching which tends to increase the value somewhat
+- Contains similar functional groups to some reference molecules
+- Is in a similar molecular weight range to molecules with values between 300-400
+
+Based on these considerations and patterns in the training data, I predict the property value for CC(C)OC=O to be approximately:
+
+358.4
+
+This prediction takes into account the molecule's size, branching, and functional groups while comparing it to similar structures in the training set.
+==================================================
+Iteration: 27
+SMILES: Cc1cc(C)cc(O)c1
+True Property: 626.7353601771044
+Predicted Property:
+Let me analyze this molecule and make a prediction based on the patterns in the training examples.
+
+The molecule "Cc1cc(C)cc(O)c1" is a benzene ring with:
+- Two methyl groups (C) at meta positions
+- One hydroxyl group (O)
+
+Looking at similar structures in the training set:
+- Cc1ccc(O)cc1C (dimethyl phenol) has a value of 626.7354
+- Oc1cccc(O)c1 (dihydroxybenzene) has a value of 548.8316
+- Cc1cccc(C)c1C (trimethylbenzene) has a value of 613.9916
+- Simple phenols tend to have values in the 500-700 range
+- Methyl substituents tend to increase the value slightly
+- Hydroxyl groups also contribute to the value
+
+Given these patterns and the specific substitution pattern of the target molecule (dimethyl phenol with meta substitution), I would predict a value of approximately:
+
+635.4
+
+This prediction takes into account that:
+1. The base phenol structure typically gives values in the 500-600 range
+2. The two methyl groups would increase this value
+3. The specific meta substitution pattern would likely result in a value similar to, but slightly higher than, the ortho-substituted dimethyl phenol in the training set
+==================================================
+Iteration: 28
+SMILES: COP(=S)(OC)Oc1ccc(SC)c(C)c1
+True Property: 1635.9487250907782
+Predicted Property:
+Let me analyze this molecule and make a prediction based on the patterns in the training examples.
+
+The target molecule COP(=S)(OC)Oc1ccc(SC)c(C)c1 has several key features:
+1. Phosphorothioate group (P(=S))
+2. Methoxy groups (OC)
+3. Aromatic ring with substituents
+4. Methylthio group (SC)
+5. Methyl substituent (C)
+
+Looking at similar structures in the training set:
+- COP(=S)(OC)Oc1ccc(cc1Cl)N(=O)=O has a value of 1760.8079
+- Other molecules with phosphorothioate groups and aromatic rings tend to have values between 1700-2200
+- The presence of sulfur atoms generally increases the value
+- Methylthio group (SC) would contribute similarly to a chloro substituent
+
+Considering these factors and the overall molecular complexity, I predict the property value would be approximately:
+
+1850.5
+
+This prediction takes into account that the molecule is slightly less complex than some of the phosphorothioate examples in the training set, but still maintains similar structural features and atomic composition.
+==================================================
+Iteration: 29
+SMILES: Clc1cc(Cl)c(c(Cl)c1)c2c(Cl)cccc2Cl
+True Property: 1946.8010205615378
+Predicted Property:
+Let me analyze this molecule and make a prediction based on the training examples provided.
+
+The target molecule Clc1cc(Cl)c(c(Cl)c1)c2c(Cl)cccc2Cl has several key features:
+1. It's a biaryl system (two aromatic rings connected)
+2. Contains 5 chlorine atoms
+3. Has similar structural elements to some of the training examples, particularly the polychlorinated biphenyls
+
+Looking at similar structures in the training set:
+- Clc1ccc(c(Cl)c1)c2c(Cl)c(Cl)c(Cl)c(Cl)c2Cl (7 Cl atoms) has value 2391.99
+- ClC(Cl)C(c1ccc(Cl)cc1)c2ccccc2Cl (4 Cl atoms) has value 1905.50
+
+The target molecule has:
+- Fewer chlorines than the first reference (5 vs 7)
+- More chlorines than the second reference (5 vs 4)
+- Similar biaryl core structure to both
+
+Based on these structural comparisons and the observed pattern that more chlorine atoms generally increase the property value, I would predict the property value to be approximately:
+
+2150.5
+
+This prediction places it between the two reference molecules, closer to the higher value due to its significant chlorination but lower than the fully chlorinated biphenyl system.
+==================================================
+Iteration: 30
+SMILES: CCCN(=O)=O
+True Property: 413.005827764639
+Predicted Property:
+Let me analyze this molecule (CCCN(=O)=O, which is propyl nitrite) by comparing it with the training examples and looking for patterns:
+
+1. It's a relatively small molecule with a nitro group
+2. Looking at similar molecules in the training set:
+- Simple alkyl chains tend to have lower values (300-600)
+- Addition of N=O groups tends to increase the value
+- Molecules with similar size and nitrogen/oxygen containing groups like CC(=O)OC=O are around 500-700
+- The nitro-containing compound CC(=O)Nc1ccc(cc1)N(=O)=O has a value of 1001.5
+
+Given:
+- The molecule is smaller than most examples
+- It contains a nitro group which tends to increase the value
+- It has a short alkyl chain (propyl)
+- It's simpler than most molecules in the training set
+
+Based on these patterns and considering the relative contributions of the functional groups, I would predict the property value to be approximately:
+
+580-620 range, with my best estimate being 597.4
+
+This takes into account:
+- Base value for small molecules (~200-300)
+- Contribution from the nitro group (~250-300)
+- Small contribution from the propyl chain (~50-100)
+==================================================
+Iteration: 31
+SMILES: Fc1cccc(Br)c1
+True Property: 968.1610665220929
+Predicted Property:
+Let me analyze this molecule and predict its property value based on the patterns in the training examples.
+
+The molecule Fc1cccc(Br)c1 is a fluorobromobenzene, where:
+- It has a benzene ring (c1ccccc1)
+- One fluorine (F) substituent
+- One bromine (Br) substituent
+- The substituents are in different positions on the ring
+
+Looking at similar structures in the training set:
+- Clc1cccc(I)c1 has a value of 1378.23 (similar disubstituted benzene with halogen atoms)
+- Other halogenated aromatics like Clc1ccc(Cl)c(Cl)cc1Cl have values around 1400-1500
+- Simpler halogenated compounds have lower values
+- The presence of halogens generally increases the value
+- Meta-substitution pattern is similar to some training examples
+
+Considering these factors, and that:
+- Br is similar in effect to I
+- F is smaller than Cl
+- The structure is relatively simple compared to many training examples
+
+I would predict a value of approximately 1290-1300 for this molecule.
+
+My specific prediction is: 1295.47
+
+This takes into account that the value should be:
+- Lower than the I/Cl analog (1378.23)
+- Higher than simple monohalogenated benzenes
+- Reflective of the disubstitution pattern with halogens
+==================================================
+Iteration: 32
+SMILES: CC1(C)C2CCC1(C)C(O)C2
+True Property: 834.0865462499245
+Predicted Property:
+As an experienced chemist, I'll analyze this molecule and predict its property value based on the given training examples. Let me break this down:
+
+The molecule CC1(C)C2CCC1(C)C(O)C2 is a bicyclic structure with:
+- Two bridged rings
+- Multiple methyl substituents (C)
+- One hydroxyl group (OH)
+- Relatively compact and rigid structure
+
+Looking at similar structures in the training set:
+- Molecules with bicyclic systems tend to have values in the 800-2000 range
+- The presence of OH groups typically adds 200-400 to the base value
+- Methyl substituents generally contribute moderately to the value
+- Rigid ring systems tend to increase the value
+
+Comparing specifically to:
+CC12CCC3C(CCC4=CC(=O)CCC34C)C2CCC1C(=O)CO (1972.85)
+CC12CCC(=O)C=C1CCC3C2CCC4(C)C3CCC4(O)C#C (1856.43)
+
+The target molecule is simpler than these examples but shares some structural features. However, it lacks the complex substituents and multiple functional groups that drive up the values in these examples.
+
+Based on these considerations, I predict the property value to be approximately:
+
+1105.7
+
+This prediction takes into account the molecule's bicyclic nature, the presence of the OH group, the methyl substituents, and its relative simplicity compared to the higher-value training examples.
+==================================================
+Iteration: 33
+SMILES: CCOP(=S)(OCC)N2C(=O)c1ccccc1C2=O
+True Property: 1771.3544909009079
+Predicted Property:
+As an experienced chemist, I'll analyze this molecule and predict its property value by considering its structural features and patterns from the training examples.
+
+The target molecule CCOP(=S)(OCC)N2C(=O)c1ccccc1C2=O has several key features:
+1. It contains a phosphorothioate group (P=S)
+2. Has a phthalimide ring system
+3. Contains ethoxy groups
+4. Has multiple oxygen atoms and one sulfur atom
+5. Contains both aliphatic and aromatic portions
+
+Looking at the training examples:
+- More complex molecules with multiple rings and heteroatoms typically have higher values (>1000)
+- Molecules containing fused ring systems with heteroatoms often have values between 1200-2000
+- The presence of P=S and multiple O atoms typically increases the value
+- The combination of aromatic and aliphatic regions tends to increase the value
+
+Based on these patterns and the molecule's complexity, I would predict a value of approximately:
+
+1685.4
+
+This prediction takes into account:
+- The molecule's overall complexity
+- The presence of the phosphorothioate group
+- The phthalimide ring system
+- Multiple heteroatoms
+- The combination of aromatic and aliphatic regions
+
+This value places it in a similar range to other complex heterocyclic compounds in the training set with similar structural features.
+==================================================
+Iteration: 34
+SMILES: Cc1cc(=O)n(c2ccccc2)n1C
+True Property: 1053.6580493726633
+Predicted Property:
+As an experienced chemist, I'll analyze this molecule and predict its property value based on the patterns observed in the training examples.
+
+The molecule "Cc1cc(=O)n(c2ccccc2)n1C" has several key structural features:
+1. A pyrazolone core structure
+2. A phenyl substituent
+3. Two methyl groups
+4. A carbonyl group
+5. Two nitrogen atoms in the heterocyclic ring
+
+Looking at the training examples:
+- Molecules with heterocyclic rings typically have values between 800-2000
+- The presence of a phenyl group typically adds 400-600 to the base value
+- Carbonyl groups contribute around 200-300
+- N-substituted systems often have values in the 1200-1600 range
+- Similar sized molecules with comparable complexity (like CCN2c1ccccc1N(C)C(=O)c3ccccc23 at 1467.8) suggest this range
+
+Considering all these factors and the overall molecular complexity, I predict the property value to be approximately:
+
+1386.4
+
+This prediction takes into account the molecule's size, the presence of the heterocyclic ring system, the phenyl substituent, and the overall electronic nature of the structure, while comparing it to similar molecules in the training set.
+==================================================
+Iteration: 35
+SMILES: CCCCCC(=O)OCC
+True Property: 769.210944523781
+Predicted Property:
+Let me analyze this molecule (CCCCCC(=O)OCC) and predict its property value based on the patterns in the training examples.
+
+Looking at the molecule:
+- It's an ester with a straight chain structure
+- Contains a C(=O)O group (ester group)
+- Has relatively simple aliphatic chains on both sides
+- Similar in complexity to simpler molecules in the training set
+
+Analyzing similar structures from the training set:
+- CCCCCC (straight chain alkane): 394.16
+- Simple oxygenated compounds tend to have values in the 400-800 range
+- Adding functional groups typically increases the value
+- Esters generally show moderate values compared to more complex aromatics
+
+Given these patterns and the molecule's structure, I predict the property value to be approximately:
+
+728.4
+
+This prediction takes into account:
+1. The base hydrocarbon chain contribution
+2. The additional complexity from the ester group
+3. The relative simplicity compared to aromatic and heterocyclic compounds
+4. The moderate size of the molecule
+
+This is my best estimate based on the patterns observed in the training data and the molecular features present.
+==================================================
+Iteration: 36
+SMILES: COC(=O)c1ccccc1
+True Property: 717.0984978339095
+Predicted Property:
+Let me analyze this molecule and make a prediction based on the given examples.
+
+COC(=O)c1ccccc1 is a methyl benzoate molecule, which consists of:
+- A benzene ring (c1ccccc1)
+- A carboxyl group (C(=O))
+- A methoxy group (COC)
+
+Looking at the patterns in the training examples:
+1. Simple aromatic structures tend to have values in the 500-1000 range
+2. The presence of a benzene ring typically contributes around 500-600 to the value
+3. Carbonyl groups (C=O) typically add some value to the base structure
+4. Simple substituents like methoxy (COC) tend to add moderate values
+
+Comparing to similar structures in the examples:
+- CC(=O)c1ccccc1 (acetophenone) has a value of 613.7072
+- This is very similar to our target molecule, just with -COC instead of -C
+
+Given these considerations and the structural similarity to acetophenone, I would predict the property value for COC(=O)c1ccccc1 to be approximately 650-670.
+
+My specific prediction would be: 658.4
+==================================================
+Iteration: 37
+SMILES: C=CCC=C
+True Property: 277.45789010094165
+Predicted Property:
+Let me analyze this molecule and predict its property value based on the training examples provided.
+
+The molecule C=CCC=C (1,4-pentadiene) has these key characteristics:
+- It's a small hydrocarbon
+- Contains 5 carbons
+- Has two double bonds
+- Linear structure
+- No rings, no heteroatoms
+
+Looking at similar molecules from the training set:
+- CCC(=C)C (value: 290.4860)
+- Simple hydrocarbons tend to have lower values
+- Presence of double bonds seems to slightly increase the value
+- Short carbon chains generally have values in the 200-400 range
+- The molecule is slightly larger than C1CCC=CC1 (value: 368.1054)
+
+Taking these factors into account, and considering that:
+1. It's a relatively simple molecule
+2. Has similar complexity to other small hydrocarbons in the dataset
+3. Contains two double bonds which would increase the value somewhat
+4. Has a linear structure rather than cyclic
+
+I would predict a property value of approximately 325.7 for C=CCC=C.
+
+This prediction places it in the appropriate range for small hydrocarbons with unsaturation, slightly higher than the simplest examples but lower than cyclic or functionalized molecules in the training set.
+==================================================
+Iteration: 38
+SMILES: BrC(Br)Br
+True Property: 1470.486536964852
+Predicted Property:
+Let me analyze this molecule and make a prediction based on the training examples provided.
+
+BrC(Br)Br is tribromomethane (bromoform), a relatively simple molecule with three bromine atoms attached to a carbon atom.
+
+Looking at the patterns in the training data:
+1. Simple halogenated compounds tend to have values in the range of 400-1500
+2. Each bromine atom seems to contribute significantly to the value
+3. Looking at similar examples:
+   - CBr (one bromine) ≈ 450
+   - CCBr (one bromine) ≈ 541
+   - CCC(C)Br (one bromine) ≈ 813
+   - Brc1ccc(Br)cc1 (two bromines) ≈ 1361
+
+Given that BrC(Br)Br has:
+- Three bromine atoms (more than any of the example molecules)
+- A very simple carbon skeleton
+- Similar structural elements to the simpler bromine-containing compounds
+
+Based on these observations and the apparent additive nature of the property, I would predict a value of approximately:
+
+1150.5
+
+This prediction takes into account that each bromine appears to add significantly to the property value, while considering that the effects might not be purely additive due to the proximity of the bromine atoms to each other on the same carbon.
+==================================================
+Iteration: 39
+SMILES: CCOP(=S)(OCC)SC(CCl)N2C(=O)c1ccccc1C2=O
+True Property: 2382.4737411085466
+Predicted Property:
+As an experienced chemist analyzing this molecule and the given examples, I can see this is a complex organophosphate compound containing a phosphorothioate group, a chlorinated carbon chain, and a phthalimide ring system. Looking at the patterns in the training examples:
+
+1. Larger molecules generally have higher values
+2. Presence of multiple rings increases the value
+3. Presence of heteroatoms (P, S, N, O) tends to increase the value
+4. Presence of halogens (Cl) contributes significantly
+5. Complex functional groups and conjugated systems increase the value
+
+This molecule has:
+- A phosphorothioate group (P=S)
+- Multiple oxygen atoms
+- A chlorinated carbon chain
+- A phthalimide ring system
+- Multiple conjugated systems
+
+Comparing to similar complexity molecules in the training set and considering all these structural features, I would predict the property value to be approximately:
+
+2215.4
+
+This prediction is based on:
+- Its similarity in complexity to molecules like CC5(C)OC4CC3C2CCC1=CC(=O)C=CC1(C)C2(F)C(O)CC3(C)C4(O5)C(=O)CO (2645.17)
+- But slightly lower due to smaller size
+- Yet higher than simpler organophosphates in the training set
+- The presence of the phthalimide ring system and multiple heteroatoms supporting a relatively high value
+==================================================
+Iteration: 40
+SMILES: CN(C)C(=O)Nc1ccc(c(Cl)c1)n2nc(oc2=O)C(C)(C)C
+True Property: 2026.6628281252083
+Predicted Property:
+As an experienced chemist, I'll analyze this molecule and predict its property value based on the patterns observed in the training examples.
+
+Looking at the given molecule CN(C)C(=O)Nc1ccc(c(Cl)c1)n2nc(oc2=O)C(C)(C)C, I notice:
+
+1. It contains a chlorine atom (Cl)
+2. Has multiple ring structures
+3. Contains N, O, and C atoms
+4. Has amide groups (C(=O)N)
+5. Contains a complex heterocyclic structure
+6. Has branched alkyl groups (C(C)(C)C)
+
+Comparing with similar structures in the training set:
+- Molecules with Cl atoms typically have values >1500
+- Complex ring structures tend to increase the value
+- Presence of N and O atoms generally contributes significantly
+- The size and complexity is similar to some of the larger molecules in the training set
+
+Based on these structural features and patterns from the training data, I would predict the property value to be approximately:
+
+2105.4
+
+This prediction takes into account the molecule's complexity, the presence of the chlorine atom, the multiple heteroatoms, and its overall size and structure, which places it in a similar range to other complex heterocyclic compounds in the training set.
+==================================================
+Iteration: 41
+SMILES: Oc1cc(Cl)ccc1Oc2ccc(Cl)cc2Cl
+True Property: 1708.3917468409595
+Predicted Property:
+As an experienced chemist, I'll analyze this molecule and predict its property value based on the training examples provided.
+
+The target molecule Oc1cc(Cl)ccc1Oc2ccc(Cl)cc2Cl has several key structural features:
+1. Three chlorine atoms
+2. Two benzene rings
+3. Two oxygen atoms (one phenol, one ether linkage)
+4. Biaryl ether structure
+
+Looking at similar structures from the training set:
+- Oc1ccc(Cl)cc1Cc2cc(Cl)ccc2O (1576.44) - very similar biaryl structure with chlorines
+- Clc1cc(Cl)c(Cl)c(Cl)c1Cl (1455.03) - multiple chlorines
+- Clc1cccc(Cl)c1 (787.24) - dichlorobenzene structure
+
+The target molecule has:
+- Similar complexity to Oc1ccc(Cl)cc1Cc2cc(Cl)ccc2O
+- Three chlorines (less than pentachlorobenzene but more than dichlorobenzene)
+- Ether linkage instead of CH2 bridge
+- Similar molecular weight and size
+
+Based on these structural comparisons and the property values of similar molecules, I predict the property value would be approximately:
+
+1625-1635, with a specific prediction of 1630.45
+
+This takes into account the slightly higher value expected compared to the similar biaryl structure due to the ether linkage, while considering the impact of the three chlorine atoms.
+==================================================
+Iteration: 42
+SMILES: CC/C=C\C
+True Property: 290.4860017734096
+Predicted Property:
+Let me analyze this molecule and predict its property value based on the patterns in the training examples.
+
+The molecule "CC/C=C\C" is 2-pentene (with specific stereochemistry - trans/E configuration).
+
+Looking at the training examples, I notice:
+1. Simple hydrocarbons tend to have lower values
+2. The presence of double bonds seems to contribute moderately to the property
+3. Linear molecules tend to have values proportional to their size
+4. Similar molecules in the training set:
+   - C1C=CCC=C1 (cyclohexene) = 355.08
+   - CC (ethane) = 31.57
+   - CCC (similar chain length but no double bond) would be around 200-300
+
+Given that this molecule:
+- Is a small linear hydrocarbon (5 carbons)
+- Contains one double bond
+- Has a similar structure to some training examples
+- Is slightly more complex than ethane but simpler than cyclohexene
+
+I would predict the property value to be approximately:
+
+371.5
+
+This prediction takes into account the molecule's size, the presence of the double bond, and its linear nature, while staying consistent with the patterns observed in the training data.
+==================================================
+Iteration: 43
+SMILES: CCCOCC
+True Property: 406.90536277515014
+Predicted Property:
+Let me analyze this molecule and make a prediction based on the patterns in the training examples.
+
+CCCOCC is a relatively simple aliphatic ether with:
+- 5 carbons in total
+- 1 oxygen atom
+- Linear structure
+- Ether functional group
+
+Looking at similar molecules from the training set:
+- CCS (238.8) - smaller, with sulfur instead of oxygen
+- CCCCCO (406.9) - similar length but with alcohol group
+- CCC(C)CO (406.9) - branched alcohol
+- CC(C)COC=O (497.3) - ether with additional functional groups
+- CCCCCC(=O)OCC (769.2) - longer chain with ester group
+
+The target molecule CCCOCC is most similar to simple linear molecules with oxygen functionality, but simpler than esters and more complex ethers. It should have a value lower than alcohols of similar size (like CCCCCO at 406.9) because ethers typically show lower values than alcohols in this dataset.
+
+Based on these patterns and relationships, I predict the property value for CCCOCC to be approximately:
+
+365-375, with a best estimate of 370.5
+
+This prediction takes into account:
+1. The molecule's size
+2. The presence of one oxygen atom
+3. The ether functional group
+4. The linear nature of the carbon chain
+5. Comparison with similar structures in the training set
+==================================================
+Iteration: 44
+SMILES: CN(C(=O)NC(C)(C)c1ccccc1)c2ccccc2
+True Property: 1571.4867142113799
+Predicted Property:
+As an experienced chemist, I'll analyze this molecule and predict its property value based on the patterns observed in the training examples.
+
+Looking at the given molecule CN(C(=O)NC(C)(C)c1ccccc1)c2ccccc2, I notice:
+1. It contains two phenyl rings (c1ccccc1 and c2ccccc2)
+2. It has a urea-like structure (C(=O)N)
+3. Contains tertiary carbon with two methyl groups
+4. Has multiple nitrogen atoms
+5. Contains several sp2 and sp3 carbons
+
+Analyzing similar structures from the examples:
+- Complex molecules with multiple rings and N/O containing groups typically have values between 1500-2000
+- The presence of two phenyl rings typically contributes significantly
+- Urea-like structures tend to increase the value
+- No halogens present (which typically increase values)
+
+Based on these structural features and patterns from the training set, I predict the property value to be approximately:
+
+1654.7
+
+This prediction takes into account the molecule's complexity, the presence of two phenyl rings, the urea-like structure, and its overall size and composition, while noting it lacks halogens or other heavy atoms that would significantly increase the value.
+==================================================
+Iteration: 45
+SMILES: CC(=O)Nc1ccc(Br)cc1
+True Property: 1220.5936548901195
+Predicted Property:
+Let me analyze this molecule and make a prediction based on the patterns in the training examples.
+
+The molecule CC(=O)Nc1ccc(Br)cc1 is a bromoacetanilide derivative with:
+- An acetamide group (CC(=O)N-)
+- A para-substituted benzene ring
+- A bromine substituent
+
+Looking at similar structures in the training set:
+- CCC(=O)Nc1ccc(Cl)c(Cl)c1 has a value of 1246.57
+- Simple brominated compounds like CBr has 450.77
+- Simple aromatic compounds with halogens like COc1ccc(Cl)cc1 has 758.68
+
+The target molecule is simpler than the dichlorinated acetanilide but more complex than simple bromobenzenes. It has:
+- Similar core structure to the chlorinated analog
+- Single halogen instead of two
+- Slightly larger halogen (Br vs Cl)
+
+Based on these structural relationships and the patterns in the training data, I predict the property value for CC(=O)Nc1ccc(Br)cc1 to be approximately:
+
+1154.3
+
+This prediction takes into account that:
+1. It should be higher than simple aromatic halides
+2. Lower than the dichlorinated analog
+3. The bromine contribution would be slightly higher than chlorine
+4. The acetamide group contributes significantly to the property
+==================================================
+Iteration: 46
+SMILES: CC(C)Cc1ccccc1
+True Property: 704.639073575716
+Predicted Property:
+Let me analyze this molecule and make a prediction based on the patterns in the training examples.
+
+The molecule CC(C)Cc1ccccc1 is isobutylbenzene, which consists of:
+- A benzene ring (c1ccccc1)
+- An isobutyl group (CC(C)C-)
+
+Looking at similar structures in the training set:
+- CCc1ccccc1 (ethylbenzene) has a value of 523.34
+- Simple alkyl benzenes tend to have values between 500-700
+- Adding branching typically increases the value slightly
+- The size and complexity of the molecule affects the value
+
+Given that this molecule is slightly larger than ethylbenzene but still relatively simple, and considering the branching pattern, I would predict a value of approximately:
+
+584.7
+
+This prediction takes into account that:
+1. It's larger than ethylbenzene (523.34)
+2. Has branching which typically increases the value
+3. Is still a relatively simple molecule
+4. Follows the general pattern seen for similar aromatic compounds with alkyl substituents
+==================================================
+Iteration: 47
+SMILES: O=Cc1ccccc1
+True Property: 523.0597671406946
+Predicted Property:
+Let me analyze this molecule and make a prediction based on the given examples.
+
+O=Cc1ccccc1 is benzaldehyde, a relatively simple aromatic molecule consisting of:
+- A benzene ring (c1ccccc1)
+- An aldehyde group (O=C-H)
+
+Looking at patterns in the training examples:
+1. Simple aromatic compounds tend to have values in the 600-800 range
+2. The presence of oxygen typically increases the value somewhat
+3. Small molecules generally have lower values than larger ones
+4. This structure is most similar to NC(=O)c1ccccc1 (benzamide) which has a value of 620.0920572012627, but has one less nitrogen
+
+Given these observations, and considering that:
+- It's slightly smaller than benzamide
+- Has one oxygen instead of an amide group
+- Maintains the basic benzene ring structure
+
+I would predict a value of approximately 585-595 for O=Cc1ccccc1.
+
+My specific prediction is: 591.4
+==================================================
+Iteration: 48
+SMILES: O=C2CN(N=Cc1ccc(o1)N(=O)=O)C(=O)N2 
+True Property: 1376.317071046597
+Predicted Property:
+As an experienced chemist analyzing this molecule and the given examples, I'll make a prediction based on several observations:
+
+1) The molecule contains several key structural features:
+- A furan ring (5-membered oxygen heterocycle)
+- A nitro group (-NO2)
+- An imine linkage (C=N)
+- A cyclic urea/hydantoin-like structure
+- Multiple conjugated systems
+
+2) Looking at patterns in the training examples:
+- Molecules with nitro groups tend to have values around 800-1000
+- Heterocyclic structures generally increase the value
+- Multiple ring systems tend to have higher values
+- Conjugated systems typically contribute to higher values
+- The presence of multiple oxygen atoms tends to increase the value
+
+3) Comparing to similar structures in the training set:
+- It has complexity similar to some molecules in the 1200-1500 range
+- Contains features found in molecules like the nitrobenzene derivatives
+- Has a similar number of heteroatoms to some mid-range examples
+
+Based on these considerations and the patterns observed in the training data, I predict the property value for O=C2CN(N=Cc1ccc(o1)N(=O)=O)C(=O)N2 to be approximately:
+
+1428.6
+
+This prediction takes into account the molecule's complexity, the presence of multiple functional groups, and its similarity to other molecules in the training set.
+==================================================
+Iteration: 49
+SMILES: N(Nc1ccccc1)c2ccccc2 
+True Property: 1027.8861697348648
+Predicted Property:
+Let me analyze this molecule and predict its property value based on the training examples provided.
+
+The molecule N(Nc1ccccc1)c2ccccc2 has these key characteristics:
+1. Contains two phenyl rings (c1ccccc1)
+2. Connected by N-N bridge
+3. Has conjugated system
+4. Contains no halogens
+5. Relatively symmetric structure
+6. Similar complexity to some training examples with two aromatic rings
+
+Looking at similar structures in the training set:
+- Simple aromatic compounds tend to have values in the 400-800 range
+- Diphenyl-type structures tend to be in the 900-1500 range
+- The N-N bridge will contribute additional complexity
+
+Comparing specifically to:
+- c1ccc2c(c1)ccc3ccccc32 (989.0603)
+- CCc1ccccn1 (529.7289)
+- Other bi-aryl systems in the training set
+
+Based on these patterns and the structural features, I predict the property value for N(Nc1ccccc1)c2ccccc2 to be approximately:
+
+1245.7
+
+This prediction takes into account:
+- The presence of two phenyl rings
+- The N-N linking group
+- The overall molecular complexity
+- The absence of highly electronegative atoms like halogens
+- The conjugated nature of the system
+==================================================
+Iteration: 50
+SMILES: O=C2NC(=O)C1(CCCC1)C(=O)N2
+True Property: 1014.5543272843187
+Predicted Property:
+Let me analyze this molecule and make a prediction based on the patterns in the training examples.
+
+The target molecule O=C2NC(=O)C1(CCCC1)C(=O)N2 has these key characteristics:
+1. It's a cyclic structure with a cyclopentane ring fused to a heterocyclic ring
+2. Contains multiple C=O groups
+3. Contains N atoms in a ring system
+4. Has a moderate molecular size
+5. Contains similar structural elements to some training examples, particularly the ones with NC(=O) patterns
+
+Looking at similar structures in the training set:
+- CCC1(C(=O)NC(=O)NC1=O)C2=CCCCC2 has a value of 1364.1161410676186
+- CCC1(C(C)C)C(=O)NC(=O)NC1=O has a value of 1118.2299203207285
+- CCCC(C)(C)C=O has a much lower value of 665.8196951945081
+
+Given that our target molecule:
+- Is slightly simpler than the first two similar compounds
+- Has a similar ring system and functional groups
+- Lacks the additional alkyl substituents present in the training examples
+
+I predict the property value would be approximately:
+
+1250.4
+
+This prediction takes into account that the molecule has similar core structure to compounds in the 1100-1400 range but is slightly simplified, suggesting a middle-range value within that interval.
+==================================================
+Iteration: 51
+SMILES: Clc1ccc(cc1)c2c(Cl)cccc2Cl 
+True Property: 1501.6092481824144
+Predicted Property:
+Let me analyze this molecule and make a prediction based on the training examples provided.
+
+The target molecule Clc1ccc(cc1)c2c(Cl)cccc2Cl has these key features:
+- It's a biphenyl structure (two benzene rings connected)
+- Contains 3 chlorine atoms
+- Has similar structural elements to some training examples, particularly:
+  * Clc1ccccc1c2ccccc2Cl (dichlorinated biphenyl)
+  * Clc1cccc(c1Cl)c2cccc(Cl)c2Cl (tetrachlorinated biphenyl)
+
+Looking at similar structures in the training set:
+- Clc1ccccc1c2ccccc2Cl has a value of ~1279
+- Clc1cccc(c1Cl)c2cccc(Cl)c2Cl has a value of ~1724
+- Other chlorinated aromatics show that each Cl typically adds to the base value
+
+Given that our target molecule has:
+- One more chlorine than the dichlorobiphenyl
+- One less chlorine than the tetrachlorobiphenyl
+- Similar core structure to both
+
+I would predict a value of approximately 1502 for this molecule.
+
+This prediction takes into account:
+1. The base biphenyl structure
+2. The contribution of three chlorine atoms
+3. The relative position of the chlorines
+4. Comparison with similar structures in the training set
+
+Therefore, my predicted property value for Clc1ccc(cc1)c2c(Cl)cccc2Cl is 1502.0
+==================================================
+Iteration: 52
+SMILES: CCc1ccc(CC)cc1
+True Property: 704.639073575716
+Predicted Property:
+Let me analyze this molecule and make a prediction based on the examples provided.
+
+The molecule "CCc1ccc(CC)cc1" is a para-diethylbenzene, which has:
+- A benzene ring core
+- Two ethyl (CC-) groups in para position
+
+Looking at similar structures from the examples:
+- "Cc1ccc(C)cc1" (p-xylene) has a value of 523.3441
+- "CCCc1ccccc1" (propylbenzene) has a value of 613.9916
+- "CC(C)(C)Cc1ccccc1" (t-butylbenzene) has a value of 795.2866
+
+The target molecule is most similar to p-xylene, but with ethyl groups instead of methyl groups. The pattern suggests that:
+1. Benzene-based structures typically have values in the 500-800 range
+2. Adding alkyl chains increases the value
+3. Symmetrical substitutions tend to have more moderate values
+
+Based on these patterns and the closest structural analogues, I predict the property value for CCc1ccc(CC)cc1 to be approximately:
+
+613.5
+
+This prediction takes into account that the molecule is larger than p-xylene but smaller than t-butylbenzene, and has symmetrical substitution pattern similar to p-xylene.
+==================================================
+Iteration: 53
+SMILES: Nc1ccc(cc1)S(N)(=O)=O
+True Property: 950.1246281898219
+Predicted Property:
+Let me analyze this molecule and predict its property value based on the patterns in the training examples.
+
+The molecule "Nc1ccc(cc1)S(N)(=O)=O" has these key characteristics:
+1. A benzene ring (c1ccc(cc1))
+2. An amine group (N-)
+3. A sulfonamide group (-S(N)(=O)=O)
+
+Looking at patterns from the training examples:
+- Simple benzene derivatives typically have values between 600-800
+- Addition of nitrogen-containing groups often increases the value
+- Sulfonyl groups (S(=O)=O) tend to contribute significantly to the property
+- The presence of multiple functional groups typically leads to higher values
+- Molecules with similar complexity and polar groups tend to have values in the 1000-1500 range
+
+Considering these factors and comparing with similar structures in the training set, I would predict the property value to be approximately:
+
+1156.4
+
+This prediction takes into account:
+- The base benzene ring contribution
+- The electron-donating effect of the amine group
+- The significant contribution of the sulfonamide group
+- The overall polarity and complexity of the molecule
+==================================================
+Iteration: 54
+SMILES: c1ccc2c(c1)c3cccc4cccc2c34
+True Property: 1144.2990683796252
+Predicted Property:
+Let me analyze this molecule and predict its property value based on the training examples provided.
+
+The molecule "c1ccc2c(c1)c3cccc4cccc2c34" is pyrene, a polycyclic aromatic hydrocarbon (PAH) consisting of four fused benzene rings.
+
+Looking at the patterns in the training data:
+1. Molecules with multiple aromatic rings tend to have higher values
+2. Fused ring systems generally show values between 800-1500
+3. Pure hydrocarbon aromatics without heteroatoms tend to have moderate values
+4. The complexity of the ring system affects the value
+
+Comparing specifically to similar structures in the training set:
+- "Cc1ccc(C)c2ccccc12" (methylated naphthalene) has a value of 846.85
+- Other fused aromatic systems show similar ranges
+- Pyrene is more complex than naphthalene but consists only of C and H atoms
+
+Given these considerations and the patterns observed, I predict the property value for pyrene to be approximately:
+
+1012.5
+
+This prediction takes into account:
+- The four fused rings (increasing the value compared to naphthalene)
+- The purely aromatic hydrocarbon nature
+- The symmetrical structure
+- The absence of any substituents or heteroatoms
+==================================================
+Iteration: 55
+SMILES: Oc2cc(O)c1C(=O)CC(Oc1c2)c3ccc(O)c(O)c3
+True Property: 1700.0553063362554
+Predicted Property:
+Let me analyze this molecule and predict its property value based on the training examples provided.
+
+The molecule "Oc2cc(O)c1C(=O)CC(Oc1c2)c3ccc(O)c(O)c3" has several key features:
+1. It's a complex cyclic structure
+2. Contains multiple hydroxyl (OH) groups
+3. Has a ketone group (C=O)
+4. Contains multiple aromatic rings
+5. Has an ether linkage (O)
+
+Looking at the patterns in the training data:
+- Complex cyclic structures tend to have higher values
+- Molecules with multiple oxygen-containing groups (OH, C=O) tend to have values in the 1500-2500 range
+- Aromatic systems with multiple substituents typically show values around 1800-2200
+- The presence of multiple hydroxyl groups often increases the value
+
+Based on these observations and comparing with similar structures in the training set, I would predict the property value to be approximately:
+
+1856.4
+
+This prediction takes into account the molecule's complexity, the presence of multiple hydroxyl groups, the ketone functionality, and the aromatic system, while comparing it to molecules of similar size and functionality in the training set.
+==================================================
+Iteration: 56
+SMILES: COP(=O)(NC(C)=O)SC 
+True Property: 1020.9520606949058
+Predicted Property:
+Let me analyze this molecule and predict its property value based on the patterns in the training examples.
+
+The molecule COP(=O)(NC(C)=O)SC contains:
+- A phosphorus center with double-bonded oxygen (P=O)
+- Methoxy group (COP)
+- Acetamido group (NC(C)=O)
+- Methylthio group (SC)
+
+Looking at similar structures in the training set:
+- Phosphorus-containing compounds like COP(=S)(OC)SCC(=O)N(C)C=O have values around 1500
+- Compounds with P=O or P=S and similar functional groups tend to be in the 1400-1600 range
+- The presence of S, N, and O atoms typically contributes significantly to the property value
+- The size and complexity is moderate, suggesting a mid-range value
+
+Based on these patterns and considering the structural features, I predict the property value for COP(=O)(NC(C)=O)SC to be approximately:
+
+1385.7
+
+This prediction takes into account:
+- The presence of the phosphoryl group
+- The moderate molecular size
+- The multiple heteroatoms (P, O, N, S)
+- The overall complexity compared to reference molecules
+==================================================
+Iteration: 57
+SMILES: Cl\C=C/Cl
+True Property: 463.73533006070716
+Predicted Property:
+Let me analyze this molecule and predict its property value based on the training examples provided.
+
+The molecule Cl\C=C/Cl (trans-1,2-dichloroethene) has the following key features:
+1. A double bond (C=C)
+2. Two chlorine atoms
+3. Trans configuration (indicated by \/)
+4. Small molecule with 4 atoms total
+
+Looking at patterns in the training data:
+- Small molecules generally have lower values
+- Halogenated compounds (with Cl, Br, I) tend to have values in the 800-1300 range
+- Double bonds seem to contribute moderately to the property
+- Chlorine atoms typically increase the property value significantly
+
+Comparing with similar molecules in the training set:
+- FC(F)(F)C(Cl)Br: 1112.79 (halogenated, but more complex)
+- Clc1cccc(Br)c1: 1074.49 (aromatic with halogens)
+- C=CC#N: 180.17 (small molecule with double bond)
+
+Given these patterns and considering that this is a relatively simple molecule but with two chlorine atoms and a double bond, I would predict the property value to be approximately:
+
+728.4
+
+This prediction takes into account the molecule's small size (reducing the base value) but factors in the presence of two chlorine atoms and the double bond which would increase the property value moderately.
+==================================================
+Iteration: 58
+SMILES: c1ccncc1
+True Property: 348.43395681657387
+Predicted Property:
+Let me analyze this molecule and predict its property value based on the training examples provided.
+
+The molecule "c1ccncc1" is pyridine, a simple aromatic heterocyclic compound with one nitrogen atom.
+
+Looking at the patterns in the training data:
+1. Simple aromatic compounds tend to have values in the 600-800 range
+2. The presence of nitrogen in aromatic rings seems to slightly decrease the value
+3. Small molecules generally have lower values
+4. Similar structures like "c1ccc2cnccc2c1" (quinoline) has a value of 671.9395
+5. Pyridine is simpler than quinoline, so it should have a lower value
+
+Considering these patterns and the molecule's characteristics:
+- It's a simple 6-membered aromatic ring
+- Contains one nitrogen
+- No substituents
+- Small molecular size
+- Similar to but simpler than quinoline
+
+Based on this analysis, I predict the property value for pyridine (c1ccncc1) to be approximately:
+
+482.5
+
+This prediction takes into account that it's a simple aromatic structure with one nitrogen, and should have a value lower than quinoline but higher than very simple aliphatic compounds in the training set.
+==================================================
+Iteration: 59
+SMILES: OCC(O)COC(=O)c1ccccc1Nc2ccnc3cc(Cl)ccc23
+True Property: 2246.4669760992415
+Predicted Property:
+Let me analyze this molecule and predict its property value based on the patterns in the training examples.
+
+Looking at the given molecule OCC(O)COC(=O)c1ccccc1Nc2ccnc3cc(Cl)ccc23, I notice:
+
+1. It contains multiple aromatic rings (including a quinoline system)
+2. Has a chlorine substituent
+3. Contains oxygen-containing functional groups (alcohols and ester)
+4. Has an amine linkage
+5. Contains a relatively complex fused ring system
+
+Analyzing patterns from the training data:
+- Molecules with multiple aromatic rings typically have values >1000
+- Presence of chlorine tends to increase the value
+- Oxygen-containing functional groups contribute significantly
+- Complex fused ring systems generally result in higher values
+- The presence of both polar groups and aromatic systems tends to push values higher
+
+Based on these observations and comparing with similar structures in the training set, particularly considering:
+- The complexity is similar to some of the higher-value compounds
+- The presence of multiple functional groups
+- The fused ring system with chlorine substitution
+
+I would predict a property value of approximately 1850-1900, specifically:
+
+1873.4
+
+This prediction takes into account the molecule's complexity, functional groups, and similarity to other molecules in the training set with comparable features.
+==================================================
+Iteration: 60
+SMILES: CCCCCO
+True Property: 406.90536277515014
+Predicted Property:
+Let me analyze this molecule and make a prediction based on the patterns in the training examples.
+
+CCCCCO is a primary alcohol with a 5-carbon chain (pentanol).
+
+Looking at the patterns in the training data:
+- Simple alcohols tend to have lower values (e.g., CC(C)O at 225.61)
+- Longer carbon chains increase the value (e.g., CCCCCCCCCCCCO at 1041.44)
+- The presence of oxygen typically adds some value
+- The complexity and size of the molecule generally correlates with higher values
+- Linear molecules tend to have values proportional to their length
+
+Given that CCCCCO is:
+- A relatively simple linear molecule
+- Has one oxygen (alcohol group)
+- Has 5 carbons in chain (medium length)
+- Similar in complexity to molecules like CCCC(C)(O)CC (588.20)
+
+Based on these observations and interpolating between similar molecules in the training set, I would predict the property value for CCCCCO to be approximately:
+
+445.7
+
+This prediction takes into account that it's simpler than many molecules in the training set but more complex than the simplest alcohols, and considers its linear nature and functional group.
+==================================================
+Iteration: 61
+SMILES: CC1=C(C(=O)Nc2ccccc2)S(=O)(=O)CCO1
+True Property: 1564.6753899540481
+Predicted Property:
+As an experienced chemist, I'll analyze this molecule and predict its property value based on the training examples provided. Let me break this down:
+
+The target molecule CC1=C(C(=O)Nc2ccccc2)S(=O)(=O)CCO1 has several key structural features:
+1. A cyclic structure containing sulfone group (S(=O)(=O))
+2. An amide linkage (C(=O)N)
+3. A phenyl ring
+4. A heterocyclic oxygen-containing ring
+5. Methyl substituent
+
+Looking at the training examples:
+- Molecules with similar complexity and aromatic rings tend to have values between 1000-2000
+- Presence of S(=O)(=O) groups typically increases the value
+- Amide linkages contribute significantly
+- Heterocyclic structures with oxygen generally add to the value
+- The combination of aromatic and heterocyclic systems often results in values around 1500-1800
+
+Based on these patterns and the structural features present, I would predict the property value to be approximately:
+
+1642.5
+
+This prediction takes into account the molecule's complexity, the presence of the sulfone group, the amide linkage, and the combination of aromatic and heterocyclic systems, while comparing it to similar structures in the training set.
+==================================================
+Iteration: 62
+SMILES: COC(=O)C1=C(C)NC(=C(C1c2ccccc2N(=O)=O)C(=O)OC)C 
+True Property: 2075.414849185277
+Predicted Property:
+As an experienced chemist, I'll analyze this molecule and predict its property value based on the training examples provided. Let me break down my analysis:
+
+1. The molecule is relatively complex, containing:
+- An ester group (COC(=O))
+- A pyridine-like ring with substituents
+- A nitro-phenyl group
+- Multiple methyl groups
+- Multiple ester groups
+
+2. Looking at the patterns in the training data:
+- Larger, more complex molecules generally have higher values
+- Presence of nitrogen-containing groups tends to increase the value
+- Aromatic rings contribute significantly
+- Multiple functional groups (especially O and N containing) increase the value
+- Conjugated systems tend to have higher values
+
+3. Comparing to similar structures in the training set:
+- It's more complex than simple aromatics (~500-800 range)
+- Has similar complexity to some of the larger molecules (1500-2000 range)
+- Contains multiple functional groups like the higher-valued examples
+
+Based on these considerations and the structural complexity being similar to other molecules in the 1800-2200 range, but with additional functionality, I predict the property value to be:
+
+2156.4
+
+This prediction takes into account the molecule's size, complexity, presence of multiple functional groups, and similarity to other molecules in the training set.
+==================================================
+Iteration: 63
+SMILES: O=C2NC(=O)C1(CC1)C(=O)N2 
+True Property: 833.2593645564345
+Predicted Property:
+Let me analyze this molecule and make a prediction based on the given examples.
+
+The target molecule O=C2NC(=O)C1(CC1)C(=O)N2 has these key characteristics:
+- It's a cyclic structure
+- Contains multiple C=O groups (3 carbonyl groups)
+- Has a cyclopropane ring fused to a larger ring
+- Contains multiple nitrogen atoms
+- Forms a cyclic imide structure
+
+Looking at the training examples:
+- Molecules with cyclic structures generally have higher values
+- Presence of C=O groups tends to increase the value
+- Nitrogen-containing heterocycles typically have values around 1000-1600
+- Small, strained rings (like cyclopropane) tend to add to the value
+- Multiple carbonyl groups in cyclic systems often result in values between 700-1500
+
+Considering these patterns and comparing with similar structures in the training set (especially other cyclic molecules containing C=O and N), I would predict the property value to be approximately:
+
+1087.4
+
+This prediction takes into account:
+- The complexity of the cyclic structure
+- The presence of three carbonyl groups
+- The strained cyclopropane ring
+- The symmetrical nature of the molecule
+- The similarity to other cyclic imides in the training set
+==================================================
+Iteration: 64
+SMILES: ClCC
+True Property: 254.16755554361316
+Predicted Property:
+Let me analyze this molecule (ClCC) and make a prediction based on the patterns in the training examples.
+
+I notice that:
+1. This is a very small molecule with only 3 carbons and 1 chlorine
+2. It's similar in size to some of the smaller molecules in the training set
+3. Looking at similar small halogenated compounds in the training set:
+   - BrCCBr has a value of ~1051
+   - Simple chlorinated compounds tend to have values between 400-1000
+   - The presence of chlorine typically increases the value
+   - Small alkyl chains (like CC) typically contribute lower values
+
+Given these observations and patterns, and considering that this molecule has:
+- One chlorine (contributing moderate increase)
+- A very short carbon chain (contributing small base value)
+- Simple structure without any complex features
+
+I would predict a value of approximately 520-550 for ClCC.
+
+My specific prediction is: 534.7
+
+This takes into account that it should be:
+- Higher than simple alkanes like C1CCCC1 (290.4)
+- Lower than di-halogenated compounds like BrCCBr (1051.2)
+- Somewhat similar to but slightly higher than CCOC(=O)N (413.0)
+==================================================
+Iteration: 65
+SMILES: Clc1cccc(n1)C(Cl)(Cl)Cl
+True Property: 1329.4649829387631
+Predicted Property:
+Let me analyze this molecule and make a prediction based on the patterns in the training examples.
+
+The molecule Clc1cccc(n1)C(Cl)(Cl)Cl contains:
+- A pyridine ring (6-membered aromatic ring with one nitrogen)
+- Multiple chlorine atoms (4 in total)
+- One chlorine directly attached to the ring
+- Three chlorines as part of a CCl3 group
+
+Looking at similar patterns in the training set:
+- Molecules with multiple chlorines tend to have higher values
+- Aromatic rings contribute moderately to the property
+- Nitrogen-containing heterocycles also contribute to the value
+- CCl3 groups appear in some examples and tend to increase the value significantly
+
+Comparing with similar structures:
+- ClC(Cl)C(Cl)(Cl)Cl has a value of 1144.55
+- Other molecules with multiple chlorines and aromatic rings typically have values between 1500-2000
+
+Given the presence of:
+- Multiple chlorines (similar to many high-value compounds)
+- An aromatic ring with nitrogen
+- The CCl3 group
+- The overall size and complexity of the molecule
+
+I predict the property value to be approximately: 1450.8
+
+This prediction takes into account that the molecule is smaller than some of the highest-value compounds in the training set but has significant halogenation and structural features that contribute to higher values.
+==================================================
+Iteration: 66
+SMILES: CCCCC(C)O
+True Property: 497.55284413909214
+Predicted Property:
+Let me analyze this molecule (CCCCC(C)O) and predict its property value based on the patterns in the training examples.
+
+This molecule is a branched alcohol with:
+- A 5-carbon main chain
+- A methyl branch
+- A hydroxyl group
+- Similar in structure to other alcohols in the training set
+
+Looking at similar molecules from the training set:
+- CC(C)CC(C)O (497.55) - branched alcohol, similar size
+- CCCCCC(C)(C)O (678.85) - slightly larger branched alcohol
+- Simple alcohols generally show values in the 400-700 range
+- The complexity and size of this molecule falls between these examples
+
+Considering these factors and the structural patterns, I predict the property value for CCCCC(C)O to be approximately:
+
+565.4
+
+This prediction takes into account:
+1. The molecule's size (6 carbons total)
+2. The presence of one hydroxyl group
+3. The branching pattern
+4. The relative simplicity compared to more complex molecules in the training set
+5. The patterns observed in similar alcohols in the training data
+==================================================
+Iteration: 67
+SMILES: Brc1ccc(Br)cc1
+True Property: 1361.7573807697763
+Predicted Property:
+Let me analyze this molecule and make a prediction based on the training examples.
+
+The molecule Brc1ccc(Br)cc1 is a 1,4-dibromobenzene (para-dibromobenzene).
+
+Looking at the patterns in the training data:
+1. Halogenated aromatics tend to have relatively high values
+2. Bromine substituents generally contribute more to the value than chlorine
+3. Symmetric disubstituted benzenes show values typically between 1200-1500
+4. Similar halogenated structures like Clc1ccc(I)cc1 have a value of 1378.23
+
+Considering these factors:
+- The molecule has two bromine atoms (heavy contribution)
+- It's a symmetric para-substituted benzene
+- It's similar in structure to Clc1ccc(I)cc1 but with two Br instead of Cl and I
+- Bromine atoms typically contribute more than chlorine but slightly less than iodine
+
+Based on these considerations and the patterns observed in the training data, I predict the property value for Brc1ccc(Br)cc1 to be approximately:
+
+1425.7
+
+This prediction takes into account the symmetry of the molecule, the presence of two bromine atoms, and the comparison with similar halogenated aromatic compounds in the training set.
+==================================================
+Iteration: 68
+SMILES: Clc1cc(Cl)c(c(Cl)c1)c2c(Cl)cc(Cl)cc2Cl 
+True Property: 2169.3969067511002
+Predicted Property:
+Let me analyze this molecule and make a prediction based on the training examples provided.
+
+The target molecule Clc1cc(Cl)c(c(Cl)c1)c2c(Cl)cc(Cl)cc2Cl has several key characteristics:
+1. It's a biaryl system (two aromatic rings connected)
+2. Contains 6 chlorine atoms
+3. Has a similar structural pattern to some of the training examples, particularly the polychlorinated biphenyls
+
+Looking at similar structures in the training set:
+- Clc1ccc(cc1)c2ccc(Cl)cc2 (2 Cl atoms) has value 1279.01
+- Clc1ccc(c(Cl)c1)c2cc(Cl)c(Cl)c(Cl)c2Cl (6 Cl atoms) has value 2169.40
+- Clc1cccc(c1)c2cc(Cl)ccc2Cl (3 Cl atoms) has value 1501.61
+
+The target molecule has:
+- Same basic biaryl framework
+- 6 chlorine atoms (same as the second reference)
+- Similar substitution pattern
+
+Based on these structural similarities and the observed pattern that more chlorine atoms increase the property value, and considering the specific substitution pattern, I predict the property value to be approximately:
+
+2150-2200, more specifically: 2175.43
+
+This prediction takes into account that the molecule is very similar to the training example with 6 chlorines (2169.40), with only slight differences in substitution pattern that should have minimal effect on the property.
+==================================================
+Iteration: 69
+SMILES: Cc1ccc(OP(=O)(Oc2cccc(C)c2)Oc3ccccc3C)cc1
+True Property: 2217.780573463286
+Predicted Property:
+As an experienced chemist, I'll analyze this molecule and predict its property value based on the training examples provided. Let me break down my analysis:
+
+1. The molecule contains multiple aromatic rings (3 phenyl rings)
+2. It has a phosphate center P(=O)(O-)(O-)(O-)
+3. Contains methyl substituents on each aromatic ring
+4. Has multiple ether linkages (P-O-Ar)
+5. The overall size and complexity is substantial
+
+Looking at the training examples:
+- Complex molecules with multiple aromatic rings typically have values >1000
+- Phosphate-containing molecules tend to have higher values
+- The presence of multiple substituents increases the value
+- Molecules with similar complexity like "CC(C)NC(=O)N1CC(=O)N(C1=O)c2cc(Cl)cc(Cl)c2" have values around 1970
+
+Based on these patterns and the structural features, I predict the property value for Cc1ccc(OP(=O)(Oc2cccc(C)c2)Oc3ccccc3C)cc1 to be approximately:
+
+2156.4
+
+This prediction takes into account the molecule's complexity, presence of phosphate group, multiple aromatic rings, and substituents, placing it in the higher range of the provided examples but not as high as the most complex halogenated structures in the training set.
+==================================================
+Iteration: 70
+SMILES: FC(F)(F)c1cccc(c1)N2CC(CCl)C(Cl)C2=O
+True Property: 1854.2665309593217
+Predicted Property:
+As an experienced chemist, I'll analyze this molecule and predict its property value based on the patterns observed in the training examples.
+
+Looking at the given molecule FC(F)(F)c1cccc(c1)N2CC(CCl)C(Cl)C2=O, I notice:
+1. It contains a trifluoromethyl group (CF3)
+2. Has a benzene ring
+3. Contains two chlorine atoms
+4. Has a cyclic amide (lactam) structure
+5. Overall complexity is moderate to high
+
+Analyzing similar structures from the training set:
+- Molecules with chlorine atoms typically have values >1000
+- Complex cyclic structures with multiple substituents tend to have values between 1500-2500
+- Presence of fluorine and multiple halogens generally increases the value
+- Molecules with similar complexity and halogen content like "Clc1cccc(c1)c2cc(Cl)ccc2Cl" have values around 1500-1700
+
+Based on these observations and the structural features, I predict the property value for this molecule to be approximately:
+
+1856.4
+
+This prediction takes into account the molecule's complexity, the presence of multiple halogens (F and Cl), and the cyclic amide structure, while comparing it to similar molecules in the training set.
+==================================================
+Iteration: 71
+SMILES: COc1ccccc1N(=O)=O
+True Property: 826.8745558598083
+Predicted Property:
+Let me analyze this molecule and predict its property value based on the patterns in the training examples.
+
+The molecule COc1ccccc1N(=O)=O is a nitrobenzene derivative with a methoxy substituent.
+
+Looking at the training examples, I can observe that:
+1. Molecules with nitro groups (N(=O)=O) tend to have values in the 300-1000 range
+2. Benzene rings typically contribute 500-700 to the value
+3. Methoxy substituents (COc) typically add 200-300 to the base value
+4. The combination of aromatic rings with electron-withdrawing groups like nitro tends to increase the value
+
+Analyzing similar structures from the training set:
+- CCN(=O)=O has a value of 322.36
+- O=N(=O)c1cccc2ccccc12 has a value of 956.34
+- Simple benzene derivatives are typically in the 600-800 range
+
+Given these patterns and the specific structural features of COc1ccccc1N(=O)=O (methoxy-nitrobenzene), I predict the property value to be approximately:
+
+892.5
+
+This prediction takes into account:
+- The base benzene ring contribution
+- The electron-withdrawing effect of the nitro group
+- The electron-donating effect of the methoxy group
+- The ortho substitution pattern
+==================================================
+Iteration: 72
+SMILES: ClC1CC2C(C1Cl)C3(Cl)C(=C(Cl)C2(Cl)C3(Cl)Cl)Cl
+True Property: 2485.40616309221
+Predicted Property:
+Let me analyze this molecule and make a prediction based on the training examples provided.
+
+The target molecule appears to be a complex polychlorinated structure with multiple chlorine atoms and ring systems. Looking at similar patterns in the training data:
+
+1. Complex chlorinated molecules tend to have higher values (>1000)
+2. Multiple ring systems also contribute to higher values
+3. The most similar structure in the training set is "ClC4=C(Cl)C5(Cl)C3C1CC(C2OC12)C3C4(Cl)C5(Cl)Cl" with a value of 2298.844379425308
+
+The target molecule has:
+- Multiple chlorine atoms (8 Cl atoms)
+- Multiple fused ring systems
+- Similar complexity to some of the higher-valued molecules in the training set
+- No oxygen atoms (unlike the most similar example which had one)
+
+Considering these factors and comparing with similar structures in the training data, particularly other polychlorinated compounds, I would predict a value of approximately:
+
+2150.5
+
+This prediction takes into account that the molecule is highly chlorinated and has a complex ring structure, but is slightly less complex than the most similar example in the training set which had an additional oxygen atom.
+==================================================
+Iteration: 73
+SMILES: CCCOC=O
+True Property: 406.62101906801286
+Predicted Property:
+Let me analyze this molecule (CCCOC=O) by comparing it to the training examples and looking for patterns:
+
+1. This is a propyl formate molecule
+2. It has similar structural elements to other esters in the training set:
+- CC(=O)OC (methyl acetate): 406.62
+- CC(C)OC=O (isopropyl formate): 406.62
+- CCOC(=O)C (ethyl acetate): similar but slightly different
+
+3. Looking at the pattern:
+- Adding carbons generally increases the value
+- The C=O and O functional groups contribute significantly
+- The molecule is relatively simple and small
+- It's most similar in size and structure to the examples around the 400-500 range
+
+Based on the patterns in the training data, particularly comparing it to similar esters and considering the number of carbons and functional groups, I would predict the property value for CCCOC=O to be approximately:
+
+406.62
+
+This prediction is based on the observation that similar simple esters in the training set (especially those with the same functional groups and similar carbon count) tend to have values in this range, and this molecule shares very similar structural features with molecules showing this value in the training set.
+==================================================
+Iteration: 74
+SMILES: CCCCCCCCCC(=O)OCC
+True Property: 1131.8008699795496
+Predicted Property:
+Let me analyze this molecule and make a prediction based on the patterns in the training examples.
+
+The target molecule CCCCCCCCCC(=O)OCC is a long-chain ester with:
+- A long alkyl chain (10 carbons)
+- An ester group (-C(=O)O-)
+- A short ethyl group at the end
+
+Looking at similar structures in the training set:
+- CCCCCCCCCCO (860.14) - similar length alcohol
+- CCCCCCCC(=O)OC (859.86) - similar ester but shorter
+- Long chain molecules generally show values in the 800-900 range
+- Adding carbons typically increases the value
+- Esters tend to have similar values to their alcohol counterparts
+
+Given that this molecule is:
+- Slightly longer than CCCCCCCC(=O)OC
+- Has similar functionality to the training examples
+- Contains an ester group
+- Has a longer chain than most training examples
+
+I predict the property value would be approximately 960.5
+
+This prediction takes into account:
+1. The base value for long-chain compounds (800-900 range)
+2. Additional contribution from the extra carbons
+3. The ester group contribution
+4. The slight increase expected from the longer chain compared to similar molecules in the training set
+==================================================
+Iteration: 75
+SMILES: Oc1ccc(Cl)cc1C(=O)Nc2ccc(cc2Cl)N(=O)=O
+True Property: 1951.2341974500864
+Predicted Property:
+As an experienced chemist, I'll analyze this molecule and predict its property value based on the patterns observed in the training examples.
+
+The target molecule has several key structural features:
+1. A phenol group (Oc1)
+2. Chlorine substituents
+3. An amide linkage (C(=O)N)
+4. A nitro group (N(=O)=O)
+5. Two benzene rings
+6. Multiple substituents on aromatic rings
+
+Looking at similar structures in the training set:
+- Molecules with chlorine substituents tend to have higher values (>1000)
+- Amide-containing structures generally contribute significantly to the value
+- Nitro groups and multiple substituents typically increase the value
+- The presence of two aromatic rings with multiple substituents tends to result in values >1500
+
+Considering these factors and comparing with similar structures in the training set (especially those with chlorine substituents and amide linkages), I would predict the property value to be approximately:
+
+1856.4
+
+This prediction takes into account:
+- The complexity of the molecule
+- The presence of multiple functional groups
+- The similarity to other complex aromatic structures in the training set
+- The contribution of chlorine, hydroxyl, amide, and nitro groups
+==================================================
+Iteration: 76
+SMILES: COP(=S)(OC)Oc1ccc(Sc2ccc(OP(=S)(OC)OC)cc2)cc1
+True Property: 2851.8024168094303
+Predicted Property:
+Let me analyze this molecule and predict its property value based on the training examples provided.
+
+The target molecule COP(=S)(OC)Oc1ccc(Sc2ccc(OP(=S)(OC)OC)cc2)cc1 has several key structural features:
+1. Two phosphorothioate groups (-P(=S)(OC)OC)
+2. Two phenyl rings connected by a sulfur bridge
+3. Symmetric structure
+4. Multiple oxygen and sulfur atoms
+5. Methoxy groups
+
+Looking at similar structures from the training set:
+- CCOP(=S)(OCC)Oc1ccc(cc1)S(C)=O has a value of ~1830
+- Other molecules with phosphorothioate groups and aromatic rings tend to have values between 1500-2500
+- The presence of multiple sulfur atoms and aromatic rings generally increases the value
+- The symmetry and size of the molecule suggests a higher value
+
+Considering these factors and the overall complexity and size of the molecule, I would predict a property value of approximately:
+
+2250.4
+
+This prediction takes into account:
+- The presence of two phosphorothioate groups (contributing significantly to the value)
+- The symmetric nature of the molecule
+- The presence of multiple aromatic rings
+- The sulfur bridge between the rings
+- The overall molecular size and complexity
+==================================================
+Iteration: 77
+SMILES: Oc1cccc(c1)N(=O)=O
+True Property: 736.2270744958665
+Predicted Property:
+Let me analyze this molecule and make a prediction based on the given examples.
+
+The molecule "Oc1cccc(c1)N(=O)=O" is a nitrophenol structure, containing:
+- A benzene ring
+- A hydroxyl (OH) group
+- A nitro (NO2) group
+
+Looking at patterns in the training examples:
+1. Molecules with benzene rings typically have values >600
+2. Presence of NO2 groups tends to increase the value
+3. Hydroxyl groups contribute moderately to the value
+4. Similar sized molecules with aromatic rings and polar substituents tend to fall in the 800-1000 range
+
+Comparing to similar structures in the training set:
+- Simple aromatic compounds like "CCOc1ccccc1" have values around 626
+- Molecules with NO2 groups tend to have higher values
+- The complexity is moderate, similar to "Cc1ccc(cc1)S(=O)(=O)N" which has a value of 943
+
+Based on these patterns and considering the structural features, I predict the property value for "Oc1cccc(c1)N(=O)=O" to be approximately:
+
+875.4
+
+This prediction takes into account the molecule's size, aromaticity, and the presence of both electron-withdrawing (NO2) and electron-donating (OH) groups.
+==================================================
+Iteration: 78
+SMILES: OCC1OC(CO)(OC2OC(COC3OC(CO)C(O)C(O)C3O)C(O)C(O)C2O)C(O)C1O
+True Property: 3097.107025428085
+Predicted Property:
+As an experienced chemist analyzing this molecule and the given examples, I notice this is a complex carbohydrate-like structure with multiple sugar rings and hydroxyl groups. Looking at the patterns in the training examples:
+
+1. Larger molecules generally have higher values
+2. Molecules with multiple oxygen atoms and hydroxyl groups tend to have values around 1000-2000
+3. Complex ring systems increase the value
+4. The presence of multiple OH groups and ether linkages contributes significantly
+
+This molecule contains:
+- Multiple sugar rings (3 rings)
+- Many hydroxyl groups (OH)
+- Multiple ether linkages (O)
+- Complex branching structure
+- Similar structural elements to simple sugars in the training set (like OCC1OC(O)C(O)C(O)C1O which has value ~1001)
+
+However, this molecule is significantly more complex than the simple sugar shown in the training set, with three connected sugar rings and additional functionalities.
+
+Based on these observations and the patterns in the training data, I would predict a value of approximately:
+
+2450.7
+
+This prediction takes into account the increased complexity and size compared to the simple sugar examples, while considering the contribution of multiple oxygen-containing functional groups and ring systems.
+==================================================
+Iteration: 79
+SMILES: CCC#C
+True Property: 186.8104087369996
+Predicted Property:
+Let me analyze this molecule (CCC#C) and predict its property value based on the patterns in the training examples.
+
+Looking at the examples, I notice:
+1. Simpler, smaller molecules tend to have lower values
+2. Aliphatic chains generally have values in the 200-500 range
+3. Triple bonds don't appear in the training set, but we can estimate their impact
+4. The molecule CCC(=O)C has a value of 303.23, which is somewhat similar in size
+5. The molecule ClC=C has a value of 241.14, showing how unsaturation affects the property
+
+Given that CCC#C is:
+- A 4-carbon chain
+- Contains a triple bond
+- Has no functional groups
+- Is relatively small and simple
+- Is similar in size to some of the smaller molecules in the training set
+
+I predict the property value would be approximately:
+
+285.4
+
+This prediction takes into account that:
+- It's slightly smaller than CCC(=O)C (303.23)
+- It's more unsaturated than typical alkanes
+- It lacks any heteroatoms
+- It's in the general range of other simple, small molecules in the dataset
+==================================================
+Iteration: 80
+SMILES: CCOP(=S)(CC)Oc1cc(Cl)c(Cl)cc1Cl
+True Property: 1993.116733039999
+Predicted Property:
+Let me analyze this molecule and predict its property value based on the patterns observed in the training examples.
+
+The molecule CCOP(=S)(CC)Oc1cc(Cl)c(Cl)cc1Cl contains:
+- A phosphorothioate group (P=S)
+- Three chlorine atoms on a benzene ring
+- Ethoxy and ethyl groups attached to the phosphorus
+- An oxygen bridge connecting the phosphorus to the aromatic ring
+
+Looking at the patterns from the examples:
+1. Molecules with multiple chlorines tend to have higher values (>1000)
+2. Presence of aromatic rings generally contributes significantly
+3. Complex structures with multiple functional groups tend to have higher values
+4. The presence of sulfur and phosphorus typically increases the value
+5. The size and complexity of this molecule is moderate to high
+
+Considering these factors and comparing with similar structures in the training set (especially those with multiple chlorines on aromatic rings), I would predict the property value to be approximately:
+
+1756.4
+
+This prediction takes into account:
+- The three chlorine substituents (similar to other polychlorinated compounds in the training set)
+- The complexity of the phosphorothioate group
+- The overall molecular size and connectivity
+- The presence of both aliphatic and aromatic components
+==================================================
+Iteration: 81
+SMILES: c1nccc(C(=O)NN)c1
+True Property: 723.5091559584574
+Predicted Property:
+Let me analyze this molecule and make a prediction based on the patterns in the training examples.
+
+The molecule "c1nccc(C(=O)NN)c1" is a pyridine ring with a hydrazide group (-C(=O)NN).
+
+Looking at the patterns in the training data:
+1. Simple aromatic rings like benzene and pyridine derivatives tend to have values in the 400-700 range
+2. The presence of nitrogen atoms in aromatic rings tends to increase the value slightly
+3. Amide/hydrazide-like groups (-C(=O)N-) typically add 200-400 to the base value
+4. The molecule's complexity is moderate, similar to some of the simpler examples
+
+Considering these factors:
+- Base pyridine structure: ~500
+- Additional nitrogen atoms: +100
+- Hydrazide group: +300
+
+Therefore, I predict the property value to be approximately 900.
+
+My specific prediction is: 897.4
+
+This takes into account the molecule's relatively simple structure while acknowledging the presence of the polar hydrazide group and the pyridine nitrogen.
+==================================================
+Iteration: 82
+SMILES: CCCOP(=S)(OCCC)SCC(=O)N1CCCCC1C
+True Property: 2121.6271639520514
+Predicted Property:
+As an experienced chemist, I'll analyze this molecule and predict its property value based on the training examples provided. Let me break down my analysis:
+
+1. The molecule CCCOP(=S)(OCCC)SCC(=O)N1CCCCC1C contains:
+- A phosphorothioate group (P=S)
+- Two propoxy groups (OCCC)
+- A thioester linkage
+- An N-substituted cyclohexane ring
+- An amide group
+- Several alkyl chains
+
+2. Looking at similar structures in the training set:
+- Phosphorothioate-containing compounds like CCOP(=S)(OCC)Oc1ccc(cc1)N(=O)=O have values around 1719
+- Compounds with cyclohexyl rings and amide groups tend to have values between 1200-1800
+- The complexity and size of this molecule is similar to other medium-large molecules in the dataset
+
+3. Considering the structural features and molecular size, and comparing to similar compounds in the training set, I would predict the property value to be approximately:
+
+1856.4
+
+This prediction takes into account:
+- The presence of the P=S group (contributing significantly to the value)
+- The overall molecular size
+- The presence of the cyclohexyl ring and amide group
+- The alkyl chain contributions
+==================================================
+Iteration: 83
+SMILES: CCCCCCCC
+True Property: 575.4565575377036
+Predicted Property:
+Let me analyze this as an experienced chemist. The molecule CCCCCCCC is n-octane, a straight-chain saturated hydrocarbon (alkane) with 8 carbons.
+
+Looking at the training examples, I notice several patterns:
+1. Longer carbon chains tend to have higher values
+2. Saturated hydrocarbons (alkanes) typically have values in the 500-900 range
+3. The simplest molecule (C) has a negative value (-59.07)
+4. Adding carbons in a chain increases the value systematically
+
+Looking at similar molecules in the training set:
+- CCCO (propanol): 225.61
+- CCCC=O (butanal): 303.22
+- CCCCCCCCCCO (11C alcohol): 860.14
+- CCCC1CCCC1 (branched C8): 562.42
+
+Since CCCCCCCC is a straight-chain C8 alkane, it should have a value:
+- Higher than shorter chains
+- Lower than functionalized molecules of similar size
+- Similar to but slightly lower than CCCC1CCCC1 (562.42) since it's less complex
+- In the range of other saturated hydrocarbons
+
+Based on these patterns and considerations, I predict the property value for CCCCCCCC to be approximately:
+
+542.7
+
+This takes into account the molecule's size, saturation, and lack of functional groups while following the apparent trends in the training data.
+==================================================
+Iteration: 84
+SMILES: CC34CCC1C(CCC2=CC(=O)CCC12O)C3CCC4(O)C#C
+True Property: 1869.1751885130834
+Predicted Property:
+Let me analyze this molecule and make a prediction based on the training examples provided.
+
+The target molecule CC34CCC1C(CCC2=CC(=O)CCC12O)C3CCC4(O)C#C has several key features:
+1. It's a complex steroid-like structure
+2. Contains multiple rings
+3. Has oxygen atoms (=O and -OH groups)
+4. Contains a triple bond (C#C)
+5. Has a similar core structure to some of the training examples, particularly the steroid-like molecules
+
+Looking at similar structures in the training set:
+- CC12CC(O)C3C(CCC4=CC(=O)C=CC34C)C2CCC1(O)C(=O)CO (2166.61)
+- CC12CC(=O)C3C(CCC4=CC(=O)CCC34C)C2CCC1(O)C(=O)CO (2166.61)
+
+These molecules have similar steroid cores and similar functional groups, though they differ in some specifics. The target molecule is slightly less functionalized (has fewer oxygen-containing groups) but maintains the core structure and has a triple bond instead of some of the other functional groups.
+
+Based on the patterns observed in the training set and the structural features present, I predict the property value to be approximately:
+
+2050.8
+
+This prediction takes into account that the molecule is slightly less complex than the similar steroids in the training set but still maintains significant structural complexity and similar core features.
+==================================================
+Iteration: 85
+SMILES: COc1cc(cc(OC)c1O)C6C2C(COC2=O)C(OC4OC3COC(C)OC3C(O)C4O)c7cc5OCOc5cc67
+True Property: 3640.7463440464826
+Predicted Property:
+As an experienced chemist, I can analyze this complex molecule and make a prediction based on the training examples provided. I notice several patterns in the training data:
+
+1. Larger, more complex molecules tend to have higher values
+2. Presence of oxygen-containing groups (ethers, esters) increases the value
+3. Ring systems, especially fused rings, contribute significantly
+4. The presence of substituents like methoxy (OC) groups adds to the value
+
+The target molecule contains:
+- Multiple fused ring systems
+- Several methoxy (OC) groups
+- Multiple ether linkages
+- An ester group
+- Several oxygen-containing rings
+- A methylenedioxy group (OCO)
+- Complex connectivity
+
+Given these structural features and comparing with similar complex structures in the training set (especially those with multiple rings and oxygen-containing groups), I would predict the property value to be approximately:
+
+2875.4
+
+This prediction is based on:
+- The molecule's high complexity (more complex than any training example)
+- Multiple oxygen-containing functional groups
+- The presence of fused ring systems
+- The overall size of the molecule
+- The presence of multiple substituents
+
+The value is higher than those in the training set because this molecule is more complex than any of the training examples, but follows the general trend of increasing values with increasing molecular complexity and oxygen content.
+==================================================
+Iteration: 86
+SMILES: Oc1ccccc1Cl
+True Property: 668.0362836387825
+Predicted Property:
+Let me analyze this molecule and make a prediction based on the patterns in the training examples.
+
+The molecule Oc1ccccc1Cl is a chlorophenol - it has:
+- A benzene ring (c1ccccc1)
+- A hydroxyl group (O)
+- A chlorine substituent (Cl)
+
+Looking at similar structures in the training set:
+- Simple benzene derivatives tend to have values in the 500-900 range
+- Adding OH groups typically adds 200-300 to the base value
+- Chlorine substituents tend to increase the value by 300-500
+- Molecules with both OH and Cl tend to have values in the 900-1200 range
+
+Some relevant comparisons:
+- Oc1ccccc1O (dihydroxybenzene) = 548.83
+- CNc1ccccc1 (aniline derivative) = 529.73
+- ClCCl (simple chlorinated compound) = 386.12
+- Oc1cc(Cl)ccc1Oc2ccc(Cl)cc2Cl (more complex chlorinated phenol) = 1708.39
+
+Based on these patterns and considering the relatively simple structure with both OH and Cl substituents, I predict the property value for Oc1ccccc1Cl to be approximately:
+
+847.5
+
+This takes into account the base benzene structure (~500-600) plus the contributions from both the OH and Cl substituents while considering the molecule's overall complexity.
+==================================================
+Iteration: 87
+SMILES: ClCC#CCOC(=O)Nc1cccc(Cl)c1
+True Property: 1505.2087810204916
+Predicted Property:
+Let me analyze this molecule and predict its property value based on the patterns in the training examples.
+
+The molecule "ClCC#CCOC(=O)Nc1cccc(Cl)c1" contains:
+- Two chlorine atoms
+- A triple bond (C#C)
+- A carbamate group (-OC(=O)N-)
+- A benzene ring
+- Multiple functional groups connected in sequence
+
+Looking at the training examples:
+- Molecules with chlorine atoms typically have higher values (>600)
+- Aromatic systems contribute significantly
+- Multiple functional groups tend to increase the value
+- The presence of halogens (Cl) generally increases the value
+- Complex structures with multiple connecting groups tend to have values >1000
+
+Considering these patterns and comparing with similar structures in the training set, particularly those with chlorine substituents and complex connecting groups, I would predict the property value to be approximately:
+
+1428.5
+
+This prediction takes into account:
+- The presence of two chlorine atoms
+- The complexity of the structure
+- The carbamate linking group
+- The aromatic system
+- The triple bond contribution
+==================================================
+Iteration: 88
+SMILES: OC(c1ccc(Cl)cc1)(c2cncnc2)c3ccccc3Cl
+True Property: 1977.5941515731001
+Predicted Property:
+As an experienced chemist, I'll analyze this molecule and predict its property value based on the training examples provided.
+
+Looking at the molecule OC(c1ccc(Cl)cc1)(c2cncnc2)c3ccccc3Cl, I notice:
+1. It contains two chlorine atoms
+2. Has a pyrimidine ring (cncnc)
+3. Contains two benzene rings
+4. Has a hydroxyl group (OH)
+5. Has a complex branched structure
+
+Analyzing similar structures from the training set:
+- Molecules with chlorine atoms typically have higher values (>1000)
+- Di-chlorinated compounds like Clc1ccccc1Cl have value around 787
+- More complex structures with multiple rings tend to have values between 1500-2000
+- The presence of nitrogen heterocycles tends to increase the value
+- The hydroxyl group will contribute some additional value
+
+Considering all these factors, and comparing with similar complexity molecules in the training set, I would predict the property value to be approximately:
+
+1856.4
+
+This prediction takes into account:
+- The complexity similar to other multi-ring structures
+- The presence of two chlorine atoms
+- The pyrimidine ring contribution
+- The hydroxyl group contribution
+- The overall molecular size and complexity
+==================================================
+Iteration: 89
+SMILES: CCCCOC=O
+True Property: 497.268500431955
+Predicted Property:
+Let me analyze this molecule (CCCCOC=O) by comparing it with the training examples and looking for patterns:
+
+1. This is a butyl formate molecule - a relatively simple aliphatic ester
+2. Looking at similar structures in the training set:
+- CCOC=O (ethyl formate) has value 315.97
+- CCCOC(=O)C (propyl acetate) has value 497.27
+- Simple aliphatic molecules generally have lower values
+- Adding carbons to chain typically increases the value moderately
+- Esters tend to have values in the 300-500 range for simple structures
+
+3. The target molecule CCCCOC=O is one carbon longer than CCOC=O, but maintains the same functional group pattern.
+
+4. Considering the progression and patterns in the training data, and that each additional carbon tends to add roughly 60-100 to the value in similar series, I would predict:
+
+Predicted value for CCCCOC=O: 497.8
+
+This prediction takes into account:
+- Base value of similar ester CCOC=O (315.97)
+- Additional contribution of two extra carbons in the chain
+- Similar structural patterns in the training set
+- The general trend that longer aliphatic chains increase the value gradually
+==================================================
+Iteration: 90
+SMILES: ClCCl
+True Property: 386.1159603692329
+Predicted Property:
+Let me analyze this molecule and make a prediction based on the patterns I observe in the training examples.
+
+ClCCl is a simple molecule (dichloromethane) with:
+- 2 chlorine atoms
+- 1 carbon atom
+- Simple linear structure
+- Similar to some other small halogenated compounds in the training set
+
+Looking at similar molecules in the training set:
+- ClC(Cl)C(Cl)Cl (921.96) - more complex with 4 Cl
+- ClCBr (673.37) - similar size but with Br instead of one Cl
+- ClC=C(Cl)Cl (686.33) - similar but with double bond
+
+Given that:
+1. The molecule is smaller than ClC(Cl)C(Cl)Cl
+2. It has two Cl atoms (which tend to increase the value)
+3. It's simpler than most halogenated compounds shown
+4. The value seems to increase with number of halogens but not linearly
+
+Based on these observations and patterns, I would predict the property value for ClCCl to be approximately:
+
+580-600, with my best estimate being 592.4
+
+This takes into account that it should be:
+- Higher than single halogen compounds
+- Lower than tri- and tetra-chlorinated compounds
+- Roughly proportional to molecular complexity and number of halogens
+==================================================
+Iteration: 91
+SMILES: Cc1cccc(C)c1O
+True Property: 626.7353601771048
+Predicted Property:
+Let me analyze this molecule and make a prediction based on the patterns in the training examples.
+
+The molecule "Cc1cccc(C)c1O" is a dimethylphenol (two methyl groups and one hydroxyl group on a benzene ring).
+
+Looking at similar structures in the training set:
+- Cc1cccc(O)c1 (methylphenol) has a value of 536.0878788131627
+- Cc1ccccc1 (methylbenzene) patterns are around 500-600
+- Molecules with hydroxyl groups (-OH) tend to increase the value
+- Additional methyl groups typically add around 50-100 to the value
+
+Given that this molecule is similar to Cc1cccc(O)c1 but has an additional methyl group, and analyzing the overall patterns of substituent effects, I would predict the property value to be approximately:
+
+586.4
+
+This prediction takes into account:
+1. The base value for methylphenol (around 536)
+2. The additional methyl group effect (approximately +50)
+3. The position of substituents and their electronic effects
+==================================================
+Iteration: 92
+SMILES: Clc1ccc(c(Cl)c1)c2cc(Cl)ccc2Cl 
+True Property: 1724.2051343719759
+Predicted Property:
+Let me analyze this molecule and make a prediction based on the examples provided.
+
+The target molecule Clc1ccc(c(Cl)c1)c2cc(Cl)ccc2Cl has these key features:
+- Two benzene rings connected by a single bond
+- 4 chlorine atoms
+- Similar structure to some molecules in the training set, particularly "Clc1ccc(c(Cl)c1)c2cc(Cl)c(Cl)c(Cl)c2Cl" but with fewer chlorines
+
+Looking at similar structures in the examples:
+- "Clc1ccc(c(Cl)c1)c2cc(Cl)c(Cl)c(Cl)c2Cl" has value 2169.397 (similar core structure but with 6 Cl)
+- "Clc1cccc(Cl)c1" has value 787.241 (simpler structure with 2 Cl)
+- Other chlorinated aromatics show that each Cl contributes significantly to the property value
+
+Given that the target molecule:
+- Has 4 Cl atoms (vs 6 in the most similar reference)
+- Has two benzene rings like the reference
+- Has similar connectivity pattern
+
+I would predict a value of approximately 1845.5
+
+This prediction takes into account that it should be lower than the 6-Cl variant (2169.397) but significantly higher than simple dichlorobenzene (787.241), considering the contribution of the additional ring system and two extra chlorines.
+==================================================
+Iteration: 93
+SMILES: CC=C(C)C
+True Property: 290.4860017734095
+Predicted Property:
+Let me analyze this molecule and make a prediction based on the training examples provided.
+
+The target molecule CC=C(C)C is 2-methylbut-2-ene, a small branched alkene.
+
+Looking at patterns in the training data:
+1. Small hydrocarbons tend to have lower values (e.g., CC at 31.57, CCCC at 212.87)
+2. The presence of double bonds tends to increase the value somewhat
+3. Branching also tends to increase the value slightly
+4. The molecule's size is similar to pentane (C5H12) but has a double bond and branching
+
+Considering these factors:
+- It's a C5 hydrocarbon like pentane
+- Has one double bond
+- Has branching
+- Is relatively small and simple
+
+Based on the training examples and these structural features, I predict the property value would be approximately:
+
+365.4
+
+This prediction takes into account that it should be:
+- Higher than butane (CCCC, 212.87)
+- Lower than more complex molecules
+- Slightly higher than a straight-chain C5 due to the double bond and branching
+- In line with other small hydrocarbon molecules in the training set
+==================================================
+Iteration: 94
+SMILES: ClCCl
+True Property: 386.1159603692329
+Predicted Property:
+Let me analyze this molecule and make a prediction based on the given examples.
+
+ClCCl is a simple molecule (dichloromethane) with:
+- 1 carbon atom
+- 2 chlorine atoms
+- Simple linear structure
+- Similar to some other simple halogenated compounds in the training set
+
+Looking at similar molecules from the examples:
+- ClCCCCl (1,4-dichlorobutane) has a value of 567.41
+- ClCCBr (bromochloroethane) has a value of 764.02
+- CCCCl (1-chloropropane) has a value of 344.82
+- ClC=C (vinyl chloride) has a value of 241.14
+
+ClCCl is smaller than ClCCCCl but has two chlorines like it. It's simpler than ClCCBr. Based on the pattern that smaller molecules generally have lower values, and considering the contribution of chlorine atoms to the property value, I would predict:
+
+Predicted value for ClCCl: 382.5
+
+This prediction takes into account:
+1. The small size of the molecule
+2. The presence of two chlorine atoms
+3. The general trend that simpler molecules have lower values
+4. The relative position compared to similar halogenated compounds in the training set
+==================================================
+Iteration: 95
+SMILES: Oc1c(Cl)ccc(Cl)c1Cl
+True Property: 1113.228056017906
+Predicted Property:
+As an experienced chemist, I'll analyze this molecule and predict its property value based on the patterns observed in the training examples.
+
+The molecule Oc1c(Cl)ccc(Cl)c1Cl has:
+- A benzene ring (c1)
+- One hydroxyl group (O)
+- Three chlorine atoms (Cl)
+- Similar structural elements to some molecules in the training set
+
+Looking at similar molecules from the training set:
+- Oc1cccc(Cl)c1 (single Cl) has value 668.04
+- Molecules with multiple Cl atoms tend to have higher values
+- The presence of OH group with Cl substituents typically increases the value
+- Tri-chlorinated compounds generally show values between 900-1300
+
+Considering these patterns and the specific substitution pattern (OH and 3 Cl atoms on benzene), I would predict the property value to be approximately:
+
+1102.5
+
+This prediction takes into account:
+1. The base value for chlorinated phenols
+2. The additive effect of multiple chlorine atoms
+3. The position and interaction effects between the OH and Cl groups
+4. The overall molecular size and complexity
+==================================================
+Iteration: 96
+SMILES: COc1cc(cc(OC)c1O)C6C2C(COC2=O)C(OC4OC3COC(C)OC3C(O)C4O)c7cc5OCOc5cc67
+True Property: 3640.7463440464826
+Predicted Property:
+As an experienced chemist, I can analyze this complex molecule and make a prediction based on the training examples provided. I notice several patterns in the training data:
+
+1. Larger, more complex molecules generally have higher values
+2. Presence of oxygen-containing groups (especially ethers, esters) increases the value
+3. Fused ring systems tend to have higher values
+4. The presence of multiple functional groups increases the value
+5. Molecules with similar structural motifs tend to have similar values
+
+The target molecule contains:
+- Multiple ether linkages (OC)
+- Multiple fused ring systems
+- Several oxygen-containing functional groups
+- Complex stereochemistry
+- A methylenedioxy group (OCO)
+- Multiple substituents
+
+Comparing this to the training set, this molecule is significantly more complex than most examples. The most complex molecules in the training set (like the steroid derivatives) had values around 2200-2400.
+
+Given that this molecule is even more complex, with more oxygen-containing groups and fused rings, I would predict the property value to be approximately:
+
+2850-2900, with my best estimate being 2873.4
+
+This prediction takes into account the additive effects of the multiple functional groups, the complexity of the ring systems, and the overall molecular size while comparing to the patterns seen in the training data.
+==================================================
+Iteration: 97
+SMILES: CSc1nnc(c(=O)n1N)C(C)(C)C
+True Property: 1222.09292170957
+Predicted Property:
+Let me analyze this molecule and predict its property value based on the patterns in the training examples.
+
+Looking at the given molecule CSc1nnc(c(=O)n1N)C(C)(C)C, I notice:
+1. It contains a heterocyclic ring structure
+2. Has sulfur (S) and nitrogen (N) atoms
+3. Contains a carbonyl group (C=O)
+4. Has a tert-butyl group C(C)(C)C
+5. Medium-sized molecule with moderate complexity
+
+Analyzing patterns from the training data:
+- Molecules with heterocycles typically have values between 1000-1500
+- Presence of S and N atoms tends to increase the value
+- Carbonyl groups contribute moderately to the value
+- Branched alkyl groups (like tert-butyl) add around 200-400 to the value
+- Similar sized molecules with comparable complexity are in the 1200-1400 range
+
+Based on these observations and the structural features, I predict the property value for CSc1nnc(c(=O)n1N)C(C)(C)C to be approximately:
+
+1328.5
+
+This prediction takes into account the molecule's size, complexity, and the presence of key functional groups seen in the training examples.
+==================================================
+Iteration: 98
+SMILES: CCOC(=O)c1ccccc1
+True Property: 807.7459791978516
+Predicted Property:
+As an experienced chemist, I'll analyze this molecule and predict its property value based on the patterns observed in the training examples.
+
+The molecule CCOC(=O)c1ccccc1 is an ethyl benzoate, which contains:
+- A benzene ring (c1ccccc1)
+- An ester group (-C(=O)O-)
+- An ethyl group (CC-)
+
+Looking at similar structures in the training set:
+- COC(=O)c1cccnc1 (723.4833)
+- Simple aromatic compounds with similar size are typically in the 700-1000 range
+- Esters generally contribute moderately to the property
+- The presence of the benzene ring with a single substituent typically gives values in the 800-900 range
+
+Considering these patterns and the structural features, I would predict the property value for CCOC(=O)c1ccccc1 to be approximately:
+
+814.5
+
+This prediction takes into account:
+1. The similarity to other aromatic esters in the training set
+2. The size and complexity of the molecule
+3. The presence of the ester group
+4. The single substitution pattern on the benzene ring
+==================================================
+Iteration: 99
+SMILES: CCCCCCCBr
+True Property: 994.6631924986758
+Predicted Property:
+Let me analyze this molecule and make a prediction based on the patterns in the training examples.
+
+CCCCCCCBr is a linear alkyl bromide with 7 carbons and a bromine atom.
+
+Looking at the patterns in the training data:
+1. Longer carbon chains tend to have higher values (e.g., CCCCCCC at 484.8090)
+2. Bromine atoms tend to increase the value significantly (e.g., looking at brominated compounds like c1(Br)c(Br)cc(Br)cc1 at 1871.6114)
+3. Simple aliphatic halides tend to have moderate values
+4. The presence of a single bromine on an alkyl chain would add some value but not as much as aromatic bromines
+
+Considering these factors:
+- The base alkyl chain (CCCCCCC) would contribute around 485
+- The bromine substitution would add additional value, but less than in aromatic systems
+- The linear nature of the molecule suggests a moderate overall value
+
+Based on these considerations, I predict the property value for CCCCCCCBr to be approximately:
+
+776.5
+
+This prediction takes into account both the contribution of the alkyl chain and the moderate increase expected from the bromine substitution, while staying within the general range seen for similar molecules in the training set.
+==================================================
+Iteration: 100
+SMILES: CO
+True Property: 44.31543731938203
+Predicted Property:
+Let me analyze this molecule and the pattern in the given examples.
+
+The molecule CO (carbon monoxide) is one of the simplest molecules in the dataset. Looking at the examples, I notice that:
+
+1. Simpler molecules tend to have lower values
+2. The smallest molecule in the training set is C#C (acetylene) with a value of 5.51544600911555
+3. Small molecules with single bonds and oxygen tend to have values in the low hundreds
+4. The presence of oxygen typically contributes to a moderate increase in the value
+5. The number of atoms appears to correlate with the property value
+6. Single bonds and simple structures generally result in lower values
+
+Given that CO:
+- Is a very simple molecule
+- Has only two atoms
+- Contains one oxygen
+- Has a double bond
+- Is slightly more complex than C#C but much simpler than most examples
+
+Based on these observations and patterns, I would predict a property value of approximately:
+
+192.4
+
+This prediction takes into account that it should be higher than C#C but significantly lower than most other molecules in the training set, considering its simplicity and small size.
+==================================================
