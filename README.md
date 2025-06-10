@@ -15,7 +15,7 @@ The repository implements comprehensive experiments comparing various methods fo
 ```
 ├── README.md                   # This file
 ├── requirements.txt            # Python dependencies
-├── config.py                   # Configuration parameters
+├── config.py                   # Configuration parameters (9 tasks defined)
 ├── data_preprocessing.py       # Data loading and feature extraction
 ├── ml_experiments.py          # Traditional ML model experiments (MAE & R²)
 ├── llm_experiments.py         # GPT and Claude prediction experiments
@@ -23,14 +23,16 @@ The repository implements comprehensive experiments comparing various methods fo
 ├── utils.py                   # Utility functions and result analysis
 ├── run_experiments.py         # Main script to run all experiments
 ├── delaney-processed.csv      # ESOL dataset (not included, see Dataset section)
-├── GPT_Response/              # GPT-4o model outputs for all property prediction tasks
-├── Claude_Response/           # Claude 3.5 Sonnet outputs for all property prediction tasks
-└── Results/                   # Pickle files and processed results
-    ├── results_dict_logp.pkl  # MAE results for all models/embeddings
-    ├── r2_results_logp.pkl    # R² results for all models/embeddings
-    ├── mae_summary.csv        # MAE summary statistics
-    └── r2_summary.csv         # R² summary statistics
+├── GPT_Response/              # GPT-4o outputs for all 9 molecular property tasks
+├── Claude_Response/           # Claude 3.5 Sonnet outputs for all 9 molecular property tasks
+└── Results/                   # Pickle files and CSV summaries for all 9 tasks
+    ├── results_dict_{task}.pkl # MAE results for each task
+    ├── r2_results_{task}.pkl   # R² results for each task
+    ├── {task}_mae_summary.csv  # MAE summary statistics for each task
+    └── {task}_r2_summary.csv   # R² summary statistics for each task
 ```
+
+*Note: `{task}` represents: logp, mw, tpsa, sp3, molmr, bj, chi, hka, amb (9 tasks total)*
 
 ## Contents
 
