@@ -1,4 +1,37 @@
-"""
+def run_ml_experiments_only(dataset_path='delaney-processed.csv', tasks=None):
+    """Run only traditional ML experiments for all tasks."""
+    print("="*60)
+    print("MOLECULAR PROPERTY PREDICTION - ML EXPERIMENTS (ALL TASKS)")
+    print("="*60)
+    
+    from config import DATASET_CONFIG
+    
+    # Prepare dataset
+    print("\n1. Preparing dataset...")
+    start_time = time.time()
+    from data_preprocessing import prepare_complete_dataset
+    dataset = prepare_complete_dataset(dataset_path)
+    prep_time = time.time() - start_time
+    print(f"Dataset preparation completed in {prep_time:.2f} seconds")
+    print(f"Dataset shape: {dataset.shape}")
+    
+    # Get tasks to run
+    if tasks is None:
+        tasks = DATASET_CONFIG['target_properties']
+    
+    print(f"\n2. Running experiments for {len(tasks)} tasks:")
+    for task in tasks:
+        print(f"   - {task}")
+    
+    # Run ML experiments
+    print("\n3. Running traditional ML experiments...")
+    start_time = time.time()
+    from ml_experiments import run_all_tasks_experiments
+    
+    mae_results = run_all_tasks_experiments(dataset, experiment_type='mae', tasks=tasks)
+    r2_results = run_all_tasks_experiments(dataset, experiment_type='r2', tasks=tasks)
+    
+    ml_time"""
 Main script to run all experiments for molecular property prediction comparison.
 
 This script orchestrates the complete experimental pipeline including:
@@ -91,9 +124,31 @@ def run_complete_experiments(dataset_path='delaney-processed.csv',
     else:
         print("\n4. Skipping LLM experiments (no API keys provided)")
     
+    # Generate visualizations
+    print("\n" + "="*60)
+    print("GENERATING VISUALIZATIONS")
+    print("="*60)
+    
+    try:
+        from visualization import load_and_visualize_results
+        load_and_visualize_results()
+        print("Visualizations completed!")
+    except Exception as e:
+        print(f"Error generating visualizations: {e}")
+        print("You can run visualization.py separately to generate plots.")
+    
     print("\n" + "="*60)
     print("ALL EXPERIMENTS COMPLETED!")
     print("="*60)
+    print("\nOutput files:")
+    print("- Results/results_dict_logp.pkl (MAE results)")
+    print("- Results/r2_results_logp.pkl (R² results)")
+    print("- Results/mae_summary.csv (MAE summary)")
+    print("- Results/r2_summary.csv (R² summary)")
+    if openai_key:
+        print("- GPT_Response/gpt_logp_results.txt (GPT predictions)")
+    if anthropic_key:
+        print("- Claude_Response/claude_logp_results.txt (Claude predictions)")
     
     return ml_results
 
