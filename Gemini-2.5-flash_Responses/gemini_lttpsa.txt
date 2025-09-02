@@ -1,0 +1,831 @@
+Iteration: 1
+SMILES: CCCCCCCCCC(=O)OC
+True Property: 0.0
+Predicted Property:
+0.0
+==================================================
+Iteration: 2
+SMILES: Clc2ccc1oc(=O)[nH]c1c2
+True Property: 505.22691869539636
+Predicted Property:
+732.45080193
+==================================================
+Iteration: 3
+SMILES: CC(C)N(=O)=O
+True Property: 431.87925435687697
+Predicted Property:
+1407.7109425
+==================================================
+Iteration: 4
+SMILES: CC12CC(O)C3C(CCC4=CC(=O)CCC34C)C2CCC1C(=O)CO
+True Property: 1238.7035620805912
+Predicted Property:
+The provided examples suggest a property that is influenced by the molecular structure, particularly the presence of certain functional groups and the overall complexity/size of the molecule.
+
+Let's analyze the given molecule:
+`CC12CC(O)C3C(CCC4=CC(=O)CCC34C)C2CCC1C(=O)CO`
+
+This molecule is a complex polycyclic structure, likely a steroid derivative, given the characteristic fused ring system and the presence of hydroxyl and carbonyl groups.
+
+Looking at the examples:
+*   **Simple alkanes/alkyl halides:** Tend to have negative values, often around -674.49. Examples: `CC(C)Cl`, `ClCC(C)C`, `CCCCCC`, `Brc1cc(Br)cc(Br)c1`.
+*   **Ketones/Aldehydes:** Tend to have negative values, often around -236.71. Examples: `CC(C)C(=O)C`, `CCCC(=O)CCC`, `CCCC=O`.
+*   **Esters:** Tend to have values around 0.0. Examples: `CCCOC(=O)C`, `CCCCC(=O)OC`, `CCCCOC=O`.
+*   **Alcohols:** Tend to have negative values, often around -155.67. Examples: `CC(C)CCCO`, `Cc1cc(C)c(O)c(C)c1`.
+*   **Aromatic compounds (especially polycyclic):** Often have negative values, frequently -674.49. Examples: `Clc1ccc(Br)cc1`, `c1ccc2c(c1)c3cccc4c3c2cc5ccccc54`, `Cc1ccc2cc3ccccc3cc2c1`.
+*   **Molecules with multiple heteroatoms (N, O, S, Cl, F, I, Br) and complex structures, especially those with nitro groups, multiple amines, or specific heterocyclic systems:** Tend to have significantly positive values, sometimes very large. Examples: `CCC(C)c1cc(cc(N(=O)=O)c1O)N(=O)=O` (2057.06), `Nc3nc(N)c2nc(c1ccccc1)c(N)nc2n3` (2649.74), `OCC1OC(O)(CO)C(O)C1O` (2156.31).
+*   **Urea/Thiourea derivatives:** Tend to have positive values. Examples: `CC1CCCCC1NC(=O)Nc2ccccc2` (380.33), `O=C1NC(=O)NC(=O)C1(CC)CC` (1255.88).
+*   **Steroid-like structures:** `CC(=O)C1CCC2C3CCC4=CC(=O)CCC4(C)C3CCC12C` has a value of 201.06. This is a very relevant example.
+
+The target molecule `CC12CC(O)C3C(CCC4=CC(=O)CCC34C)C2CCC1C(=O)CO` is a steroid with multiple oxygen-containing functional groups (hydroxyl and two carbonyls, one of which is part of a primary alcohol/hydroxymethyl group). It is structurally similar to `CC(=O)C1CCC2C3CCC4=CC(=O)CCC4(C)C3CCC12C` (which has a value of 201.06492602).
+
+Comparing the target molecule to the steroid example `CC(=O)C1CCC2C3CCC4=CC(=O)CCC4(C)C3CCC12C`:
+*   Both are tetracyclic steroid skeletons.
+*   The example has two carbonyl groups (one ketone, one alpha,beta-unsaturated ketone).
+*   The target molecule has one hydroxyl group, one ketone, and one primary alcohol (hydroxymethyl) group.
+
+The presence of multiple oxygen atoms and the complex polycyclic structure suggests a positive value, similar to the steroid example. The specific arrangement of functional groups will influence the exact value. Given the similarity in complexity and the presence of oxygen functionalities, the value should be in a similar range to the steroid example provided.
+
+The example `CC(=O)C1CCC2C3CCC4=CC(=O)CCC4(C)C3CCC12C` has a value of 201.06492602. The target molecule has a similar complexity and number of oxygen atoms.
+
+Considering the general trend, the value should be positive and within a similar magnitude to other complex oxygenated molecules, especially the steroid example.
+
+Predicted value: 201.06492602
+==================================================
+Iteration: 5
+SMILES: Fc1cccc(F)c1C(=O)NC(=O)Nc2ccc(Cl)cc2
+True Property: 818.1085637757942
+Predicted Property:
+1255.88640652
+==================================================
+Iteration: 6
+SMILES: CCCOC(C)C
+True Property: -437.7778427477369
+Predicted Property:
+-155.67144145
+==================================================
+Iteration: 7
+SMILES: CCC(C)n1c(=O)[nH]c(C)c(Br)c1=O 
+True Property: 732.4508019259148
+Predicted Property:
+1255.88640652
+==================================================
+Iteration: 8
+SMILES: c1ccc(cc1)c2ccccc2
+True Property: -674.4907594765953
+Predicted Property:
+-674.49075948
+==================================================
+Iteration: 9
+SMILES: CCCCS
+True Property: -674.4907594765953
+Predicted Property:
+-674.49075948
+==================================================
+Iteration: 10
+SMILES: CCCC(C)(C)CO
+True Property: -155.6714414457389
+Predicted Property:
+-155.67144145
+==================================================
+Iteration: 11
+SMILES: Cc1ccc2ccccc2c1
+True Property: -674.4907594765953
+Predicted Property:
+-674.49075948
+==================================================
+Iteration: 12
+SMILES: O=C1NC(=O)NC(=O)C1(C(C)CCC)CC=C
+True Property: 1255.8864065235314
+Predicted Property:
+1255.88640652
+==================================================
+Iteration: 13
+SMILES: FC(F)(F)c1ccccc1
+True Property: -674.4907594765953
+Predicted Property:
+-674.49075948
+==================================================
+Iteration: 14
+SMILES: OCC1OC(O)C(O)C(O)C1O
+True Property: 2156.318747406545
+Predicted Property:
+2438.42514871
+==================================================
+Iteration: 15
+SMILES: CC(=O)OCC(=O)C3(O)CCC4C2CCC1=CC(=O)C=CC1(C)C2C(O)CC34C 
+True Property: 1913.1943215571869
+Predicted Property:
+437.77784275
+==================================================
+Iteration: 16
+SMILES: CC34CCC1C(CCC2CC(=O)CCC12C)C3CCC4O 
+True Property: 282.10640130199795
+Predicted Property:
+363.14787659
+==================================================
+Iteration: 17
+SMILES: CC(=O)Nc1ccc(cc1)N(=O)=O
+True Property: 1178.178915983072
+Predicted Property:
+The molecule is N-(4-nitrophenyl)acetamide.
+
+Let's analyze the functional groups and their likely contributions to the property.
+- Acetamide group (CH3C(=O)NH-): This group is relatively polar due to the carbonyl and amide functionalities.
+- Nitro group (-NO2): This is a highly electron-withdrawing and polar group.
+- Phenyl ring: Aromatic ring.
+
+Comparing to the examples:
+- `O=N(=O)c1ccccc1` (nitrobenzene) has a property of 431.87925436.
+- `COc1ccccc1N(=O)=O` (1-methoxy-4-nitrobenzene) has a property of 668.59217109. The addition of a methoxy group seems to increase the value.
+- `O=N(=O)c1cccc2ccccc12` (nitronaphthalene) has a property of 431.87925436, same as nitrobenzene, suggesting that the size of the aromatic system alone might not be the dominant factor for this property, or that the specific position of the nitro group matters.
+
+The presence of both an acetamide and a nitro group on a benzene ring suggests a significant contribution from both polar groups. The acetamide group itself is polar, and the nitro group is strongly polar and electron-withdrawing. The combination of these two groups, especially in a para relationship, will lead to a highly polar molecule.
+
+Considering the values for nitrobenzene (431.87925436) and 1-methoxy-4-nitrobenzene (668.59217109), the addition of another polar group like acetamide, which can also participate in hydrogen bonding, is likely to increase the property value further. The acetamide group is more complex than a simple methoxy group and has a significant dipole.
+
+Given the increase from nitrobenzene to methoxynitrobenzene, and the strong polarity of the acetamide group, the value for N-(4-nitrophenyl)acetamide should be higher than 668.59217109.
+
+Let's consider the example `O=C1NCCN1c2ncc(s2)N(=O)=O`, which has a value of 1591.84948444. This molecule has a nitro group and a complex heterocyclic system with an amide. This suggests that the presence of multiple polar groups, especially a nitro group, can lead to very high values.
+
+The molecule `CNC(=O)C=C(C)OP(=O)(OC)OC` has a value of 1219.72549508, which contains an amide and phosphate ester.
+
+The molecule `O=C(Cn1ccnc1N(=O)=O)NCc2ccccc2` has a value of 1635.19128609. This molecule has a nitro group and two amide-like functionalities.
+
+The target molecule has a nitro group and an acetamide group. Both are strong contributors to polarity and potentially other intermolecular forces. The value should be significantly higher than nitrobenzene and likely higher than methoxynitrobenzene. It should be in the range of molecules with multiple strong polar groups.
+
+Based on the examples, the property seems to be related to polarity, hydrogen bonding capacity, and potentially molecular weight or complexity, but polarity and specific functional groups appear to be dominant. The nitro group consistently leads to higher values. The acetamide group also contributes significantly.
+
+Given the values for molecules with nitro groups and other polar functionalities, a value in the range of 1000-1500 seems plausible. The acetamide group is a strong hydrogen bond donor and acceptor, and the nitro group is a strong electron-withdrawing group.
+
+Let's re-evaluate the contribution.
+Nitrobenzene: ~430
+Methoxy-nitrobenzene: ~670 (increase of ~240 from methoxy)
+The acetamide group is more polar and can form more hydrogen bonds than a methoxy group.
+So, the increase from nitrobenzene to N-(4-nitrophenyl)acetamide should be greater than 240.
+
+If we consider the contribution of the acetamide group, it's likely to be substantial.
+For example, `CN(C)C(=O)NC1CCCCCCC1` (a urea derivative) has a value of 154.90206035. This is a simple amide/urea.
+`CCCCNC(=O)n1c(NC(=O)OC)nc2ccccc12` (a complex urea/carbamate) has a value of 1511.83385061.
+
+The combination of a nitro group and an acetamide group on a benzene ring will lead to a significant increase in the property. The value should be in the range of molecules with multiple strong polar groups.
+
+Considering the examples, the property seems to be related to the sum of contributions from polar groups and their interactions.
+Nitro group: ~430 (from nitrobenzene)
+Acetamide group: difficult to isolate, but it's a polar group.
+
+Let's look at `COP(=S)(OC)Oc1ccc(cc1Cl)N(=O)=O`, which has a value of 1142.01800454. This has a nitro group, a chlorine, and a phosphate ester.
+The target molecule has a nitro group and an acetamide group. The acetamide group is quite polar.
+
+I predict a value significantly higher than nitrobenzene and methoxynitrobenzene, likely in the range of 1000-1200, similar to molecules with multiple strong polar groups.
+
+Final prediction based on the observed trends for nitro and amide groups:
+
+Predicted property: 1050.0
+
+The final answer is $\boxed{1050.0}$
+==================================================
+Iteration: 18
+SMILES: CCOP(=S)(OCC)SCn1c(=O)oc2cc(Cl)ccc12
+True Property: 700.136795958595
+Predicted Property:
+1544.40431695
+==================================================
+Iteration: 19
+SMILES: CC(C)(C)CO
+True Property: -155.6714414457389
+Predicted Property:
+-155.67144145
+==================================================
+Iteration: 20
+SMILES: O=c1[nH]cnc2nc[nH]c12 
+True Property: 1234.3437358786516
+Predicted Property:
+1166.12527884
+==================================================
+Iteration: 21
+SMILES: CC(C)OC=O
+True Property: 0.0
+Predicted Property:
+-437.77784275
+==================================================
+Iteration: 22
+SMILES: O=C(Nc1ccccc1)Nc2ccccc2
+True Property: 380.3307210280574
+Predicted Property:
+The property value for O=C(Nc1ccccc1)Nc2ccccc2 is 308.52181888.
+==================================================
+Iteration: 23
+SMILES: C1c2ccccc2c3ccccc13
+True Property: -674.4907594765953
+Predicted Property:
+-674.49075948
+==================================================
+Iteration: 24
+SMILES: NC(=N)NS(=O)(=O)c1ccc(N)cc1 
+True Property: 2455.8644535163025
+Predicted Property:
+1435.66512226
+==================================================
+Iteration: 25
+SMILES: CCN(CC(C)=C)c1c(cc(cc1N(=O)=O)C(F)(F)F)N(=O)=O
+True Property: 1621.3424263920283
+Predicted Property:
+1495.1639269
+==================================================
+Iteration: 26
+SMILES: CC(C)OC=O
+True Property: 0.0
+Predicted Property:
+0.0
+==================================================
+Iteration: 27
+SMILES: Cc1cc(C)cc(O)c1
+True Property: -155.6714414457389
+Predicted Property:
+-155.67144145
+==================================================
+Iteration: 28
+SMILES: COP(=S)(OC)Oc1ccc(SC)c(C)c1
+True Property: 35.64799070997976
+Predicted Property:
+35.64799071
+==================================================
+Iteration: 29
+SMILES: Clc1cc(Cl)c(c(Cl)c1)c2c(Cl)cccc2Cl
+True Property: -674.4907594765953
+Predicted Property:
+-674.49075948
+==================================================
+Iteration: 30
+SMILES: CCCN(=O)=O
+True Property: 431.87925435687697
+Predicted Property:
+-236.71291673
+==================================================
+Iteration: 31
+SMILES: Fc1cccc(Br)c1
+True Property: -674.4907594765953
+Predicted Property:
+-674.49075948
+==================================================
+Iteration: 32
+SMILES: CC1(C)C2CCC1(C)C(O)C2
+True Property: -155.6714414457389
+Predicted Property:
+282.1064013
+==================================================
+Iteration: 33
+SMILES: CCOP(=S)(OCC)N2C(=O)c1ccccc1C2=O
+True Property: 757.5839176782747
+Predicted Property:
+757.58391768
+==================================================
+Iteration: 34
+SMILES: Cc1cc(=O)n(c2ccccc2)n1C
+True Property: 16.157002983659858
+Predicted Property:
+647.81888154
+==================================================
+Iteration: 35
+SMILES: CCCCCC(=O)OCC
+True Property: 0.0
+Predicted Property:
+0.0
+==================================================
+Iteration: 36
+SMILES: COC(=O)c1ccccc1
+True Property: 0.0
+Predicted Property:
+0.0
+==================================================
+Iteration: 37
+SMILES: C=CCC=C
+True Property: -674.4907594765953
+Predicted Property:
+-674.49075948
+==================================================
+Iteration: 38
+SMILES: BrC(Br)Br
+True Property: -674.4907594765953
+Predicted Property:
+-674.49075948
+==================================================
+Iteration: 39
+SMILES: CCOP(=S)(OCC)SC(CCl)N2C(=O)c1ccccc1C2=O
+True Property: 757.5839176782747
+Predicted Property:
+1030.45774585
+==================================================
+Iteration: 40
+SMILES: CN(C)C(=O)Nc1ccc(c(Cl)c1)n2nc(oc2=O)C(C)(C)C
+True Property: 1386.6811925817303
+Predicted Property:
+1047.89705065
+==================================================
+Iteration: 41
+SMILES: Oc1cc(Cl)ccc1Oc2ccc(Cl)cc2Cl
+True Property: 81.04147528311944
+Predicted Property:
+The provided examples suggest that the property value is related to the molecular structure, specifically the presence and arrangement of certain functional groups and atoms. Let's analyze the given molecule:
+
+**Oc1cc(Cl)ccc1Oc2ccc(Cl)cc2Cl**
+
+This molecule contains two benzene rings connected by an oxygen atom (ether linkage). Each benzene ring has chlorine substituents and one has a hydroxyl group.
+
+Let's look for similar patterns in the examples:
+
+*   **Oc1ccc(Cl)cc1Cl**: -155.67144145 (A single benzene ring with a hydroxyl and two chlorines)
+*   **Oc1cc(Cl)c(Cl)c(Cl)c1Cl**: -155.67144145 (A single benzene ring with a hydroxyl and four chlorines)
+*   **CCCC(C)(C)O**: -155.67144145 (An alcohol, but the value is the same as the chlorinated phenols)
+*   **CCCCCCC(C)O**: -155.67144145 (Another alcohol)
+*   **CCCCCCCCCCCCCCO**: -155.67144145 (Another alcohol)
+*   **CCCCO**: -155.67144145 (Another alcohol)
+
+It appears that molecules with a hydroxyl group (alcohols or phenols) often have a property value around -155.67. The presence of halogens on a benzene ring with a hydroxyl group also seems to fall into this category.
+
+Now consider the ether linkage and the presence of two chlorinated benzene rings.
+
+*   **c1c(Cl)cccc1c2ccccc2**: -674.49075948 (Biphenyl with one chlorine)
+*   **Clc1cccc(Cl)c1c2ccccc2**: -674.49075948 (Biphenyl with two chlorines)
+*   **CCCCCBr**: -674.49075948 (Alkyl bromide)
+*   **C1CCc2ccccc2C1**: -674.49075948 (Tetralin, a fused ring system)
+*   **CCCc1ccccc1**: -674.49075948 (Alkyl benzene)
+*   **CC(C)(C)c1ccccc1**: -674.49075948 (Alkyl benzene)
+*   **CCCCCCC=C**: -674.49075948 (Alkene)
+*   **ICI**: -674.49075948 (Inorganic molecule)
+*   **BrC(Br)Br**: -674.49075948 (Halogenated methane)
+
+The value -674.49075948 seems to be associated with a broader range of molecules, including simple hydrocarbons, halogenated hydrocarbons, and biphenyls. This might represent a baseline or a category for less polar or more "hydrocarbon-like" structures, or perhaps structures without specific highly polar or hydrogen-bonding groups.
+
+The target molecule, **Oc1cc(Cl)ccc1Oc2ccc(Cl)cc2Cl**, has an ether linkage connecting two chlorinated benzene rings, and one of the rings also has a hydroxyl group.
+
+The presence of the hydroxyl group is a strong indicator for the -155.67 value, as seen in the examples. The ether linkage and the additional chlorinated ring might influence it, but the dominant feature seems to be the phenolic character.
+
+Let's consider the structure as a chlorinated diphenyl ether with an additional hydroxyl group.
+
+If we consider the "base" of a chlorinated phenol like **Oc1ccc(Cl)cc1Cl** (-155.67144145), the addition of another chlorinated phenyl group via an ether linkage is the main difference.
+
+However, the examples show that the -155.67 value is quite robust for various alcohols and phenols, regardless of the number of carbons or even some halogenation.
+
+Given the strong correlation of the -155.67 value with the presence of a hydroxyl group on a benzene ring (phenols), and the fact that the target molecule contains such a feature, it is highly probable that its property value will align with this category. The additional complexity of the second chlorinated phenyl group linked by an ether might slightly perturb it, but the examples don't show a clear pattern for such complex additions leading to a drastically different value, especially when a strong functional group like a phenol is present.
+
+Therefore, the most logical prediction based on the provided examples is to associate it with the phenolic group's characteristic value.
+
+The predicted specific property value is: -155.67144145
+==================================================
+Iteration: 42
+SMILES: CC/C=C\C
+True Property: -674.4907594765953
+Predicted Property:
+-674.49075948
+==================================================
+Iteration: 43
+SMILES: CCCOCC
+True Property: -437.7778427477369
+Predicted Property:
+-674.49075948
+==================================================
+Iteration: 44
+SMILES: CN(C(=O)NC(C)(C)c1ccccc1)c2ccccc2
+True Property: 154.90206035127895
+Predicted Property:
+413.67056845
+==================================================
+Iteration: 45
+SMILES: CC(=O)Nc1ccc(Br)cc1
+True Property: 71.8089021495995
+Predicted Property:
+-155.67144145
+==================================================
+Iteration: 46
+SMILES: CC(C)Cc1ccccc1
+True Property: -674.4907594765953
+Predicted Property:
+-674.49075948
+==================================================
+Iteration: 47
+SMILES: O=Cc1ccccc1
+True Property: -236.71291672885832
+Predicted Property:
+-437.77784275
+==================================================
+Iteration: 48
+SMILES: O=C2CN(N=Cc1ccc(o1)N(=O)=O)C(=O)N2 
+True Property: 2353.023847223483
+Predicted Property:
+746.29966163
+==================================================
+Iteration: 49
+SMILES: N(Nc1ccccc1)c2ccccc2 
+True Property: -57.44712171967964
+Predicted Property:
+-40.52073764
+==================================================
+Iteration: 50
+SMILES: O=C2NC(=O)C1(CCCC1)C(=O)N2
+True Property: 1255.8864065235312
+Predicted Property:
+1255.88640652
+==================================================
+Iteration: 51
+SMILES: Clc1ccc(cc1)c2c(Cl)cccc2Cl 
+True Property: -674.4907594765953
+Predicted Property:
+-674.49075948
+==================================================
+Iteration: 52
+SMILES: CCc1ccc(CC)cc1
+True Property: -674.4907594765953
+Predicted Property:
+-674.49075948
+==================================================
+Iteration: 53
+SMILES: Nc1ccc(cc1)S(N)(=O)=O
+True Property: 1535.6846645421494
+Predicted Property:
+1099.18912362
+==================================================
+Iteration: 54
+SMILES: c1ccc2c(c1)c3cccc4cccc2c34
+True Property: -674.4907594765953
+Predicted Property:
+-674.49075948
+==================================================
+Iteration: 55
+SMILES: Oc2cc(O)c1C(=O)CC(Oc1c2)c3ccc(O)c(O)c3
+True Property: 2075.277272123426
+Predicted Property:
+1037.63863606
+==================================================
+Iteration: 56
+SMILES: COP(=O)(NC(C)=O)SC 
+True Property: 746.2996616261946
+Predicted Property:
+994.29683441
+==================================================
+Iteration: 57
+SMILES: Cl\C=C/Cl
+True Property: -674.4907594765953
+Predicted Property:
+-674.49075948
+==================================================
+Iteration: 58
+SMILES: c1ccncc1
+True Property: -343.91334922361756
+Predicted Property:
+-13.33593897
+==================================================
+Iteration: 59
+SMILES: OCC(O)COC(=O)c1ccccc1Nc2ccnc3cc(Cl)ccc23
+True Property: 1676.7378651931479
+Predicted Property:
+1147.91659293
+==================================================
+Iteration: 60
+SMILES: CCCCCO
+True Property: -155.6714414457389
+Predicted Property:
+-155.67144145
+==================================================
+Iteration: 61
+SMILES: CC1=C(C(=O)Nc2ccccc2)S(=O)(=O)CCO1
+True Property: 1184.0775043739316
+Predicted Property:
+1255.88640652
+==================================================
+Iteration: 62
+SMILES: COC(=O)C1=C(C)NC(=C(C1c2ccccc2N(=O)=O)C(=O)OC)C 
+True Property: 2089.382592188525
+Predicted Property:
+1621.34242639
+==================================================
+Iteration: 63
+SMILES: O=C2NC(=O)C1(CC1)C(=O)N2 
+True Property: 1255.8864065235312
+Predicted Property:
+The molecule O=C2NC(=O)C1(CC1)C(=O)N2 is a cyclic imide with a spiro-fused cyclopropane ring. Analyzing the provided examples, molecules with multiple carbonyl groups, especially in cyclic or fused systems, and often containing nitrogen, tend to have positive and sometimes large property values.
+
+Let's look at some relevant examples:
+*   `ClC(Cl)CC(=O)NC2=C(Cl)C(=O)c1ccccc1C2=O` (947.36458765) - Contains multiple carbonyls, a cyclic imide-like structure, and chlorine.
+*   `OC3N=C(c1ccccc1)c2cc(Cl)ccc2NC3=O` (907.6132311) - Contains multiple carbonyls, a cyclic imide-like structure, and nitrogen.
+*   `CN(C)C(=O)Nc1ccc(Cl)cc1` (154.90206035) - Contains a single amide carbonyl and nitrogen.
+*   `CCN2c1ncccc1N(CC)C(=O)c3cccnc23` (590.62822018) - Contains a cyclic amide/imide and multiple nitrogens.
+*   `CC34CC(O)C1(F)C(CCC2=CC(=O)CCC12C)C3CCC4(O)C(=O)CO` (1757.52288011) - Complex polycyclic structure with multiple carbonyls and hydroxyls.
+
+The target molecule has three carbonyl groups and two nitrogen atoms within a cyclic system, resembling an imide. The presence of the spiro cyclopropane ring adds some structural rigidity and strain.
+
+Comparing it to `ClC(Cl)CC(=O)NC2=C(Cl)C(=O)c1ccccc1C2=O` (947.36458765) and `OC3N=C(c1ccccc1)c2cc(Cl)ccc2NC3=O` (907.6132311), which are complex cyclic systems with multiple carbonyls and nitrogens, the target molecule is simpler but still possesses the key features of multiple carbonyls and nitrogens in a cyclic arrangement.
+
+The values for molecules with multiple carbonyls and nitrogen in cyclic systems are generally high and positive. The spiro cyclopropane might slightly influence the value, but the dominant features are the imide-like structure and multiple carbonyls.
+
+Given the structural similarity to cyclic imides and the presence of multiple carbonyls and nitrogens, the property value is expected to be positive and significant, likely in the range of hundreds. It's less complex than the 900+ examples, but more complex than simple amides.
+
+A value around 400-600 seems reasonable, considering the complexity and functional groups. Let's refine this. The molecule is a bicyclic system with three carbonyls and two nitrogens. It's a derivative of glutarimide with a spiro cyclopropane.
+
+Consider `CC(=O)OC3(C)CCC4C2CCC1=CC(=O)CCC1(C)C2CCC34C` (437.77784275) which has two carbonyls in a complex steroid-like structure. Our molecule has three carbonyls and two nitrogens in a smaller, but still bicyclic, system.
+
+Another example: `CCN2c1ncccc1N(CC)C(=O)c3cccnc23` (590.62822018) has one carbonyl and three nitrogens in a fused bicyclic system.
+
+The target molecule has three carbonyls and two nitrogens. This combination of functional groups and cyclic structure often leads to positive values.
+
+Let's estimate based on the number of carbonyls and nitrogens in a cyclic system.
+- `CN(C)C(=O)Nc1ccc(Cl)cc1` (154.90206035) - 1 carbonyl, 2 nitrogens, acyclic amide.
+- `CCN2c1ncccc1N(CC)C(=O)c3cccnc23` (590.62822018) - 1 carbonyl, 3 nitrogens, fused bicyclic.
+- `ClC(Cl)CC(=O)NC2=C(Cl)C(=O)c1ccccc1C2=O` (947.36458765) - 3 carbonyls, 1 nitrogen, fused bicyclic.
+
+Our molecule has 3 carbonyls and 2 nitrogens in a bicyclic system. It's more complex than the 154 value, and has more carbonyls than the 590 value, but is less complex than the 947 value (which also has halogens).
+
+A value in the range of 500-700 seems appropriate. Given the presence of three carbonyls and two nitrogens in a relatively strained bicyclic system, it should be on the higher end of this range.
+
+Predicted value: 650.0
+==================================================
+Iteration: 64
+SMILES: ClCC
+True Property: -674.4907594765953
+Predicted Property:
+-674.49075948
+==================================================
+Iteration: 65
+SMILES: Clc1cccc(n1)C(Cl)(Cl)Cl
+True Property: -343.91334922361756
+Predicted Property:
+-674.49075948
+==================================================
+Iteration: 66
+SMILES: CCCCC(C)O
+True Property: -155.6714414457389
+Predicted Property:
+-155.67144145
+==================================================
+Iteration: 67
+SMILES: Brc1ccc(Br)cc1
+True Property: -674.4907594765953
+Predicted Property:
+-674.49075948
+==================================================
+Iteration: 68
+SMILES: Clc1cc(Cl)c(c(Cl)c1)c2c(Cl)cc(Cl)cc2Cl 
+True Property: -674.4907594765953
+Predicted Property:
+-674.49075948
+==================================================
+Iteration: 69
+SMILES: Cc1ccc(OP(=O)(Oc2cccc(C)c2)Oc3ccccc3C)cc1
+True Property: 473.42583345771675
+Predicted Property:
+-201.06492602
+==================================================
+Iteration: 70
+SMILES: FC(F)(F)c1cccc(c1)N2CC(CCl)C(Cl)C2=O
+True Property: -153.61975852717887
+Predicted Property:
+1099.18912362
+==================================================
+Iteration: 71
+SMILES: COc1ccccc1N(=O)=O
+True Property: 668.5921710857352
+Predicted Property:
+1538.24926819
+==================================================
+Iteration: 72
+SMILES: ClC1CC2C(C1Cl)C3(Cl)C(=C(Cl)C2(Cl)C3(Cl)Cl)Cl
+True Property: -674.4907594765953
+Predicted Property:
+-674.49075948
+==================================================
+Iteration: 73
+SMILES: CCCOC=O
+True Property: 0.0
+Predicted Property:
+-153.61975853
+==================================================
+Iteration: 74
+SMILES: CCCCCCCCCC(=O)OCC
+True Property: 0.0
+Predicted Property:
+-236.71291673
+==================================================
+Iteration: 75
+SMILES: Oc1ccc(Cl)cc1C(=O)Nc2ccc(cc2Cl)N(=O)=O
+True Property: 1696.998234013928
+Predicted Property:
+1697.76761511
+==================================================
+Iteration: 76
+SMILES: COP(=S)(OC)Oc1ccc(Sc2ccc(OP(=S)(OC)OC)cc2)cc1
+True Property: 745.786740896555
+Predicted Property:
+1056.87316342
+==================================================
+Iteration: 77
+SMILES: Oc1cccc(c1)N(=O)=O
+True Property: 950.6985723877332
+Predicted Property:
+431.87925436
+==================================================
+Iteration: 78
+SMILES: OCC1OC(CO)(OC2OC(COC3OC(CO)C(O)C(O)C3O)C(O)C(O)C2O)C(O)C1O
+True Property: 6216.086322507114
+Predicted Property:
+1637.49942938
+==================================================
+Iteration: 79
+SMILES: CCC#C
+True Property: -674.4907594765953
+Predicted Property:
+-674.49075948
+==================================================
+Iteration: 80
+SMILES: CCOP(=S)(CC)Oc1cc(Cl)c(Cl)cc1Cl
+True Property: -201.06492601887857
+Predicted Property:
+319.80607493
+==================================================
+Iteration: 81
+SMILES: c1nccc(C(=O)NN)c1
+True Property: 1069.6961816642126
+Predicted Property:
+-155.67144145
+==================================================
+Iteration: 82
+SMILES: CCCOP(=S)(OCCC)SCC(=O)N1CCCCC1C
+True Property: 319.8060749305378
+Predicted Property:
+1142.01800454
+==================================================
+Iteration: 83
+SMILES: CCCCCCCC
+True Property: -674.4907594765953
+Predicted Property:
+-674.49075948
+==================================================
+Iteration: 84
+SMILES: CC34CCC1C(CCC2=CC(=O)CCC12O)C3CCC4(O)C#C
+True Property: 800.9257193328543
+Predicted Property:
+1757.52288011
+==================================================
+Iteration: 85
+SMILES: COc1cc(cc(OC)c1O)C6C2C(COC2=O)C(OC4OC3COC(C)OC3C(O)C4O)c7cc5OCOc5cc67
+True Property: 3450.161287923436
+Predicted Property:
+1948.5858519
+==================================================
+Iteration: 86
+SMILES: Oc1ccccc1Cl
+True Property: -155.6714414457389
+Predicted Property:
+950.69857239
+==================================================
+Iteration: 87
+SMILES: ClCC#CCOC(=O)Nc1cccc(Cl)c1
+True Property: 308.52181887845774
+Predicted Property:
+The provided examples show a wide range of property values, from highly negative to highly positive. There isn't a simple linear relationship with molecular weight or number of atoms. However, some patterns can be observed:
+
+*   **Simple hydrocarbons and halogenated hydrocarbons often have negative values, frequently around -674.49075948.** Examples: `CCCC`, `CCCCCCCCC`, `ClC1C(Cl)C(Cl)C(Cl)C(Cl)C1Cl`, `c1ccccc1`, `BrC(Br)(Br)Br`, `Clc1ccc(Cl)c(c1)c2c(Cl)c(Cl)cc(Cl)c2Cl`. This suggests a baseline or a common low value for less complex or highly halogenated structures.
+*   **Molecules with oxygen-containing functional groups (alcohols, esters, ketones, amides, ethers) tend to have more positive values.**
+    *   Alcohols like `CCCO`, `CC(C)C(C)O`, `CCC(C)(C)O` are around -155.67.
+    *   Esters/Amides/Carbonyls often have positive values: `CC(=O)Nc1ccccc1` (71.8), `COC(=O)c1ccccc1C(=O)OC` (674.49), `O=C1N(COC(=O)CCCC)C(=O)C(N1)(c2ccccc2)c3ccccc3` (1267.17).
+    *   Complex polyols like `OCC(O)C(O)C(O)C(O)CO` have very high positive values (2438.42).
+*   **Molecules with nitrogen, especially in rings or amides, also tend towards positive values.** `c1cC2C(=O)NC(=O)C2cc1` (509.58), `COc1ncnc2nccnc12` (884.53).
+*   **The presence of multiple functional groups, especially those with hydrogen bonding potential (OH, NH, C=O), seems to increase the value.**
+
+The target molecule is `ClCC#CCOC(=O)Nc1cccc(Cl)c1`.
+Let's break it down:
+*   **Chlorine atoms:** Two chlorine atoms, which often contribute to lower values, but not as low as highly chlorinated alkanes.
+*   **Alkyne group (`C#C`):** This is a less common feature in the examples, but generally, unsaturation can influence properties.
+*   **Ether linkage (`-O-C=`):** Present.
+*   **Ester group (`-C(=O)O-`):** Present.
+*   **Amide group (`-C(=O)N-`):** Present. This is a strong contributor to positive values in the examples.
+*   **Phenyl ring (`c1cccc(Cl)c1`):** Aromatic rings are common.
+
+The combination of an ester and an amide group, along with a chlorinated phenyl ring, suggests a value that is likely positive and potentially in the range of hundreds, similar to `CC(=O)Nc1ccccc1` (71.8) or `COC(=O)c1ccccc1C(=O)OC` (674.49). The presence of two chlorines might slightly depress the value compared to a non-chlorinated analog, but the amide and ester functionalities are strong drivers for a positive value.
+
+Considering the structure `ClCC#CCOC(=O)Nc1cccc(Cl)c1`, it has a significant number of polar bonds and functional groups (ester, amide, ether, alkyne, two chlorines, and an aromatic ring). The amide and ester groups are particularly influential in the positive direction.
+
+Comparing it to `CCCCOC(=O)c1ccc(N)cc1` (667.30986926), which has an ester and an amine, and `CC(=O)Nc1ccccc1` (71.80890215), which has an amide. The target molecule has both an ester and an amide, similar to the first example, but also two chlorines and an alkyne.
+
+The presence of the amide and ester groups strongly suggests a positive value. The two chlorines might slightly reduce it compared to a purely hydrocarbon/oxygen/nitrogen equivalent, but not to the extent of the highly chlorinated examples that fall into the -674 range.
+
+Given the complexity and the presence of multiple polar functional groups, especially the amide and ester, the value should be significantly positive. It's more complex than simple amides or esters, but less complex than the very large molecules with values in the thousands.
+
+A reasonable estimate would be in the range of values seen for molecules with multiple oxygen/nitrogen functionalities.
+
+Let's consider `O=C1N(COC(=O)CCCC)C(=O)C(N1)(c2ccccc2)c3ccccc3` (1267.17066258) and `O=C1N(COC(=O)CCCCC)C(=O)C(N1)(c2ccccc2)c3ccccc3` (1267.17066258) - these are large molecules with multiple amides and phenyl rings. Our molecule is smaller but still has an amide and an ester.
+
+The value for `CCCCOC(=O)c1ccc(N)cc1` is 667.3. Our molecule has an amide and an ester, similar to this, but also two chlorines and an alkyne. The chlorines might slightly decrease it, but the overall polarity and functional groups are similar.
+
+I predict a value in the positive range, likely in the hundreds.
+
+Predicted property: 350.0
+==================================================
+Iteration: 88
+SMILES: OC(c1ccc(Cl)cc1)(c2cncnc2)c3ccccc3Cl
+True Property: 505.4833790602166
+Predicted Property:
+The provided examples suggest a correlation between the complexity and specific structural features of a molecule and its associated property value. Molecules with a high degree of halogenation (especially chlorine and bromine) and/or a lack of diverse functional groups tend to have a property value around -674.49075948. Conversely, molecules with multiple rings, heteroatoms (N, O, S, P), and various functional groups (e.g., amides, esters, alcohols, ketones, sulfonyls) tend to have higher, positive property values.
+
+Let's analyze the target molecule: OC(c1ccc(Cl)cc1)(c2cncnc2)c3ccccc3Cl
+
+This molecule contains:
+*   **Three aromatic rings:** Two benzene rings and one pyrimidine ring (with two nitrogens).
+*   **Two chlorine atoms:** One on each of two benzene rings.
+*   **One hydroxyl group (-OH):** Attached to a central carbon.
+*   **A central sp3 carbon:** Bridging the three rings and the hydroxyl group.
+*   **Heteroatoms:** Two nitrogen atoms in the pyrimidine ring and one oxygen in the hydroxyl group.
+
+Comparing this to the examples:
+
+*   Molecules like `Clc1cccc(Cl)c1`, `ClC(Cl)=C(c1ccc(Cl)cc1)c2ccc(Cl)cc2`, `Brc1cc(Br)c(Br)cc1Br`, `CCCCCCCCCCCCCCCC`, `CCCCCCl`, `CCCBr`, `ClC(Cl)CC(=O)NC2=C(Cl)C(=O)c1ccccc1C2=O` (this one is an outlier with a high value despite halogens, likely due to the complex amide and multiple carbonyls) and many others with high halogen content or simple aliphatic chains have the -674.49075948 value. Our molecule has halogens, but also significant structural complexity.
+*   Molecules with multiple rings and heteroatoms, like `O=C1NC(=O)c2ccccc12` (509.5867449), `COc5cc4OCC3Oc2c1CC(Oc1ccc2C(=O)C3c4cc5OC)C(C)=C` (946.85166692), `OC3N=C(c1ccccc1)c2cc(Cl)ccc2NC3=O` (907.6132311), `O=C1N(COC(=O)C)C(=O)C(N1)(c2ccccc2)c3ccccc3` (1267.17066258), `Oc2ncc1nccnc1n2` (1166.63819957), `Cn1cnc2n(C)c(=O)[nH]c(=O)c12` (1189.46317204), `C1OC(O)C(O)C(O)C1O` (1637.49942938) tend to have high positive values.
+
+Our molecule has a combination of features: two chlorines (which might depress the value) but also three complex rings, including a pyrimidine, and a hydroxyl group. The presence of multiple rings and heteroatoms, especially the pyrimidine ring, suggests a higher value than the simple halogenated compounds. The structure is somewhat analogous to `OC3N=C(c1ccccc1)c2cc(Cl)ccc2NC3=O` (907.6132311), which has a chlorine and a complex ring system with an alcohol and amide. Another relevant example is `O=C1N(COC(=O)C)C(=O)C(N1)(c2ccccc2)c3ccccc3` (1267.17066258), which has two phenyl groups and a complex heterocyclic system.
+
+Given the presence of two chlorine atoms, it's unlikely to be as high as some of the most complex, non-halogenated examples. However, the three rings and the pyrimidine moiety, along with the hydroxyl group, push it far beyond the simple halogenated compounds. The value of 907.6132311 for `OC3N=C(c1ccccc1)c2cc(Cl)ccc2NC3=O` is a good reference point, as it also contains a chlorine, an alcohol, and a complex fused ring system with nitrogen. Our molecule has three *separate* rings, which might contribute differently, but the overall complexity is comparable or slightly higher due to the additional phenyl ring.
+
+Considering the balance between the complexity (multiple rings, heteroatoms, hydroxyl) and the presence of two chlorines, the value should be in the range of the higher positive values, but perhaps slightly attenuated compared to purely organic complex structures.
+
+Let's consider the impact of the two chlorines. While many chlorinated compounds are -674.49075948, the context matters. In `ClC2=C(Cl)C3(Cl)C1C=CCC1C2(Cl)C3(Cl)Cl` it's heavily chlorinated. In `ClC(Cl)CC(=O)NC2=C(Cl)C(=O)c1ccccc1C2=O` (947.36458765), despite multiple chlorines, the complex amide and multiple carbonyls lead to a high value.
+
+The target molecule has two chlorines, but they are on separate phenyl rings, and the molecule also features a pyrimidine ring and a hydroxyl group. This combination suggests a value closer to the higher end of the spectrum, similar to the complex molecules with some halogenation.
+
+Given the examples, a value in the range of 900-1000 seems plausible, considering the balance of complexity and halogenation. The presence of the pyrimidine ring and the hydroxyl group are strong positive contributors.
+
+Predicted value: 920.0
+
+The final answer is $\boxed{920.0}$
+==================================================
+Iteration: 89
+SMILES: CCCCOC=O
+True Property: 0.0
+Predicted Property:
+-236.71291673
+==================================================
+Iteration: 90
+SMILES: ClCCl
+True Property: -674.4907594765953
+Predicted Property:
+-674.49075948
+==================================================
+Iteration: 91
+SMILES: Cc1cccc(C)c1O
+True Property: -155.6714414457389
+Predicted Property:
+-155.67144145
+==================================================
+Iteration: 92
+SMILES: Clc1ccc(c(Cl)c1)c2cc(Cl)ccc2Cl 
+True Property: -674.4907594765953
+Predicted Property:
+-674.49075948
+==================================================
+Iteration: 93
+SMILES: CC=C(C)C
+True Property: -674.4907594765953
+Predicted Property:
+-674.49075948
+==================================================
+Iteration: 94
+SMILES: ClCCl
+True Property: -674.4907594765953
+Predicted Property:
+-674.49075948
+==================================================
+Iteration: 95
+SMILES: Oc1c(Cl)ccc(Cl)c1Cl
+True Property: -155.6714414457389
+Predicted Property:
+-155.67144145
+==================================================
+Iteration: 96
+SMILES: COc1cc(cc(OC)c1O)C6C2C(COC2=O)C(OC4OC3COC(C)OC3C(O)C4O)c7cc5OCOc5cc67
+True Property: 3450.161287923436
+Predicted Property:
+4186.20253496
+==================================================
+Iteration: 97
+SMILES: CSc1nnc(c(=O)n1N)C(C)(C)C
+True Property: 1218.1867328949913
+Predicted Property:
+1109.44753821
+==================================================
+Iteration: 98
+SMILES: CCOC(=O)c1ccccc1
+True Property: 0.0
+Predicted Property:
+0.0
+==================================================
+Iteration: 99
+SMILES: CCCCCCCBr
+True Property: -674.4907594765953
+Predicted Property:
+-674.49075948
+==================================================
+Iteration: 100
+SMILES: CO
+True Property: -155.6714414457389
+Predicted Property:
+-155.67144145
+==================================================

@@ -1,0 +1,1112 @@
+Iteration: 1
+SMILES: CCCCCCCCCC(=O)OC
+True Property: 0.43391592155474723
+Predicted Property:
+0.390000
+==================================================
+Iteration: 2
+SMILES: Clc2ccc1oc(=O)[nH]c1c2
+True Property: 0.37659285250445473
+Predicted Property:
+1.02
+==================================================
+Iteration: 3
+SMILES: CC(C)N(=O)=O
+True Property: 1.0164964122398745
+Predicted Property:
+0.58933135
+==================================================
+Iteration: 4
+SMILES: CC12CC(O)C3C(CCC4=CC(=O)CCC34C)C2CCC1C(=O)CO
+True Property: -1.9439763482616192
+Predicted Property:
+-2.00196643
+==================================================
+Iteration: 5
+SMILES: Fc1cccc(F)c1C(=O)NC(=O)Nc2ccc(Cl)cc2
+True Property: -1.2681601159635427
+Predicted Property:
+-0.05
+==================================================
+Iteration: 6
+SMILES: CCCOC(C)C
+True Property: -0.08470018262600972
+Predicted Property:
+-0.0420099
+==================================================
+Iteration: 7
+SMILES: CCC(C)n1c(=O)[nH]c(C)c(Br)c1=O 
+True Property: 1.5325591026734258
+Predicted Property:
+1.05
+==================================================
+Iteration: 8
+SMILES: c1ccc(cc1)c2ccccc2
+True Property: -0.5049862565463299
+Predicted Property:
+-0.45
+==================================================
+Iteration: 9
+SMILES: CCCCS
+True Property: -1.0116292991896547
+Predicted Property:
+Based on the provided examples, the property seems to be related to the molecular structure, likely a physical or chemical property such as logP, boiling point, or a similar descriptor.
+
+Let's analyze the given examples to find a pattern for predicting the property of `CCCCS`.
+
+Looking at the examples, we can observe some trends:
+*   **Hydrocarbons:**
+    *   `C1CCC2CCCCC2C1` (fused rings, 10 carbons): -1.51580539
+    *   `Brc1cccc2ccccc12` (brominated naphthalene): 0.36180794
+    *   `CCCC(=C)C` (hexene): 0.20612343
+    *   `C1c2ccccc2c3ccc4ccccc4c13` (triphenylene, 18 carbons): -1.16792032
+    *   `CCCCCC(C)C` (octane): -0.01325799
+    *   `CCC1CCCCC1` (ethylcyclohexane): -1.13631033
+    *   `CCCCCCCC=C` (nonene): -0.11202223
+    *   `Cc1ccc(C)c2ccccc12` (dimethylnaphthalene): 0.42512442
+    *   `c1ccc2ccccc2c1` (naphthalene): 0.31407929
+    *   `CCCC(C)(C)C` (neopentane): 0.82052973
+
+*   **Alcohols:**
+    *   `CC(O)C(C)(C)C` (tert-amyl alcohol): 1.5555883
+    *   `OC1CCCCCCC1` (cycloheptanol): -1.13674324
+    *   `Oc1ccccc1Cl` (chlorophenol): 0.78321946
+    *   `Oc1ccccc1O` (catechol): 0.78321946 (Note: Same value as chlorophenol, which is unusual if it's logP, but could be a coincidence or a different property where they are similar).
+    *   `CCCCCCCC(C)O` (2-octanol): 0.09574637
+
+*   **Halogenated compounds:**
+    *   `CC(C)I` (isopropyl iodide): -0.75847805
+    *   `Clc1cccc(Cl)c1c2c(Cl)cccc2Cl` (trichlorobiphenyl): 0.09566572
+    *   `ClC(Cl)C(c1ccc(Cl)cc1)c2ccc(Cl)cc2` (DDT): -0.62481174
+    *   `Nc1ccc(Cl)cc1` (chloroaniline): 0.58856456
+    *   `Clc1cc(Cl)c(Cl)c(Cl)c1Cl` (hexachlorobenzene): 1.39278252
+    *   `ClC2=C(Cl)C3(Cl)C1C=CCC1C2(Cl)C3(Cl)Cl` (heptachlor): -0.76048754
+    *   `Clc1cccc(c1)c2cc(Cl)ccc2Cl` (dichlorobiphenyl): -0.27346444
+
+*   **Sulfur-containing compounds:**
+    *   `COP(=S)(OC)SCC(=O)N(C)C=O` (organophosphate insecticide): 2.63545705
+    *   `CCNC(=S)NCC` (thiourea derivative): 0.63174477
+    *   `CCOP(=S)(OCC)SCSc1ccc(Cl)cc1` (organophosphate insecticide): -0.55378203
+    *   `Cc1cc(=O)[nH]c(=S)[nH]1` (thiopyrimidine derivative): 1.50697591
+    *   `NC(=N)NS(=O)(=O)c1ccc(N)cc1` (sulfonamide): 0.61713495
+    *   `COCCCNc1nc(NC(C)C)nc(SC)n1` (pyrimidine derivative with sulfur): -0.14917186
+
+The target molecule is `CCCCS`, which is 1-butanethiol. This is a simple thiol.
+
+Let's consider the effect of functional groups and chain length.
+*   Alkanes: Generally negative or small positive values for longer chains.
+*   Alcohols: Can be positive, especially for branched or shorter chains.
+*   Halogens: Can increase the value, especially for multiple halogens.
+*   Sulfur: The examples with sulfur are quite varied, ranging from negative to highly positive. However, these are complex molecules, often with phosphorus or nitrogen.
+
+Comparing `CCCCS` (butanethiol) to similar structures:
+*   `CCCC(C)(C)C` (neopentane, 5 carbons): 0.82052973
+*   `CCCCCC(C)C` (octane, 8 carbons): -0.01325799
+*   `CCCC(=C)C` (hexene, 6 carbons): 0.20612343
+*   `CC(O)C(C)(C)C` (tert-amyl alcohol, 5 carbons): 1.5555883
+*   `CCCCCCCC(C)O` (2-octanol, 8 carbons): 0.09574637
+
+If the property is logP (octanol-water partition coefficient), then:
+*   Alkanes generally have positive logP values that increase with chain length.
+*   Alcohols have lower logP than corresponding alkanes due to the polar -OH group.
+*   Thiols (R-SH) are generally less polar than alcohols (R-OH) and tend to have higher logP values than their corresponding alcohols, but lower than alkanes of similar size.
+
+Let's estimate based on similar chain lengths and functional groups.
+*   Butane (C4H10) logP is around 2.89.
+*   Butanol (C4H9OH) logP is around 0.88.
+
+For thiols, the logP is typically between the alkane and the alcohol.
+*   Methanethiol: 0.54
+*   Ethanethiol: 1.08
+*   Propanethiol: 1.67
+*   Butanethiol: 2.18 (literature value for 1-butanethiol)
+
+Now, let's look at the provided examples again and see if the values align with typical logP ranges.
+*   `CCCC(C)(C)C` (neopentane, 5C): 0.82052973. This is lower than expected for a 5-carbon alkane if it's logP (pentane logP ~3.39). This suggests the property is *not* standard logP.
+*   `CC(O)C(C)(C)C` (tert-amyl alcohol, 5C): 1.5555883. This is higher than the neopentane value, which is opposite of what logP would suggest.
+*   `CCCCCCCC(C)O` (2-octanol, 8C): 0.09574637. This is very low for an 8-carbon alcohol (octanol logP ~2.9).
+
+The values seem to be on a different scale or represent a different property. Let's re-evaluate the trends.
+
+Consider the number of heavy atoms and branching.
+*   `CCCC(C)(C)C` (5 heavy atoms, branched): 0.82052973
+*   `CC(O)C(C)(C)C` (5 heavy atoms, branched, with O): 1.5555883 (Higher than the alkane)
+*   `CCCCS` (5 heavy atoms, linear, with S)
+
+If adding an oxygen increases the value (from 0.82 to 1.55 for similar carbon skeletons), what about sulfur? Sulfur is larger and less electronegative than oxygen.
+
+Let's look at the sulfur examples again:
+*   `COP(=S)(OC)SCC(=O)N(C)C=O`: 2.63545705 (Very high, complex molecule)
+*   `CCNC(=S)NCC`: 0.63174477 (Thiourea, 5 heavy atoms + 2N + 1S)
+*   `CCOP(=S)(OCC)SCSc1ccc(Cl)cc1`: -0.55378203 (Complex, negative)
+*   `Cc1cc(=O)[nH]c(=S)[nH]1`: 1.50697591 (Thiouracil derivative, 6 heavy atoms + 2N + 1S)
+*   `NC(=N)NS(=O)(=O)c1ccc(N)cc1`: 0.61713495 (Sulfonamide, 7 heavy atoms + 3N + 1S)
+*   `COCCCNc1nc(NC(C)C)nc(SC)n1`: -0.14917186 (Complex, negative)
+
+The values for sulfur-containing compounds are quite diverse, making it hard to isolate the effect of a simple thiol group.
+
+Let's consider the simplest linear chains:
+*   `CCCCCC(C)C` (octane, 8C): -0.01325799
+*   `CCCCCCCC=C` (nonene, 9C): -0.11202223
+*   `CCC1CCCCC1` (ethylcyclohexane, 8C): -1.13631033 (Cyclic, much lower)
+
+The values for linear alkanes are small and negative or close to zero.
+The value for `CCCCS` (butanethiol) should be somewhat comparable to a 4-carbon alkane or alcohol.
+
+If we compare `CCCCS` to `CCCC(C)(C)C` (neopentane, 5 carbons, value 0.82052973) and `CC(O)C(C)(C)C` (tert-amyl alcohol, 5 carbons, value 1.5555883).
+The difference between the alcohol and the alkane is `1.5555883 - 0.82052973 = 0.73505857`. This suggests that adding an -OH group significantly *increases* the property value.
+
+If adding -OH increases the value, what about -SH?
+Sulfur is less electronegative than oxygen, so -SH is less polar than -OH.
+If the property is related to polarity or some form of "activity", then -SH might have a smaller effect than -OH, or even a different direction.
+
+Let's consider the number of non-hydrogen atoms (heavy atoms):
+*   `CCCC(C)(C)C`: 5 heavy atoms, value 0.82
+*   `CC(O)C(C)(C)C`: 5 heavy atoms, value 1.55
+*   `CCCCS`: 5 heavy atoms
+
+If the trend is that adding a heteroatom (O, S) increases the value, then `CCCCS` should be higher than a 4-carbon alkane.
+A 4-carbon alkane (butane) is not in the list, but a 5-carbon branched alkane `CCCC(C)(C)C` has a value of 0.82.
+A 4-carbon linear alkane would likely have a value somewhat lower than 0.82, perhaps around 0.5-0.7 based on the trend of decreasing values for longer linear alkanes.
+
+If we assume the effect of -SH is similar to -OH but perhaps slightly less pronounced, then `CCCCS` should be higher than a 4-carbon alkane.
+
+Let's try to find a simple relationship.
+For `CCCC(C)(C)C` (5 heavy atoms, alkane): 0.82
+For `CC(O)C(C)(C)C` (5 heavy atoms, alcohol): 1.55
+Difference (O vs C): +0.73
+
+If we apply a similar increment for S, but perhaps slightly less:
+Let's say the increment for S is around +0.5 to +0.6 compared to a similar alkane.
+If a 4-carbon alkane (butane) had a value around 0.6-0.7 (extrapolating from 5C branched alkane at 0.82 and 8C linear alkane at -0.01), then adding sulfur might bring it to 1.1-1.3.
+
+Let's look at the thiourea example: `CCNC(=S)NCC` (5 heavy atoms, 2N, 1S). Value: 0.63174477. This is lower than the 5-carbon alkane. This contradicts the idea that adding S always increases the value. However, this is a thiourea, not a simple thiol.
+
+Let's reconsider the `Oc1ccccc1Cl` (0.78321946) and `Oc1ccccc1O` (0.78321946) example. The exact same value for two different molecules is highly suspicious for a continuous property like logP. This suggests the property might be quantized or rounded, or there's a specific rule for certain substructures.
+
+Given the limited and somewhat inconsistent examples, a precise prediction is challenging. However, I must provide a specific value.
+
+Let's assume the property is somewhat related to polarity and size.
+`CCCCS` is a relatively small, linear molecule with a polar -SH group.
+
+Consider the values for small molecules:
+*   `CC1CO1` (propylene oxide, 3 heavy atoms): -1.04871682 (cyclic ether, quite low)
+*   `CCCC(C)(C)C` (neopentane, 5 heavy atoms): 0.82052973
+*   `CC(O)C(C)(C)C` (tert-amyl alcohol, 5 heavy atoms): 1.5555883
+
+The difference between the alcohol and the alkane is significant.
+If we consider the effect of -SH relative to -OH, thiols are generally less polar and have weaker hydrogen bonding. This might mean a smaller increase in the property compared to -OH, or even a decrease if the property is sensitive to strong H-bonding.
+
+Let's look at the range of values: from -2.37 to 2.63.
+`CCCCS` is a simple, non-aromatic, non-cyclic molecule.
+
+Let's try to find a molecule with similar characteristics (linear, 4-5 heavy atoms, one heteroatom).
+There isn't a perfect match.
+
+Let's consider the "increment" approach again, but with caution.
+If `CCCC(C)(C)C` (5C alkane) is 0.82, and `CC(O)C(C)(C)C` (5C alcohol) is 1.55.
+The difference is +0.73 for adding -OH to a 5-carbon skeleton.
+
+If we assume a base value for a 4-carbon alkane (butane).
+Extrapolating from `CCCC(C)(C)C` (5C, branched, 0.82) and `CCCCCC(C)C` (8C, linear, -0.01).
+A linear 4-carbon alkane might be around 0.5 to 0.7. Let's estimate 0.6.
+
+If adding -SH has a positive effect, but perhaps less than -OH.
+If -OH adds ~0.73, maybe -SH adds ~0.4 to 0.6.
+So, 0.6 (base alkane) + 0.4 to 0.6 (SH increment) = 1.0 to 1.2.
+
+Let's check if any other sulfur compounds give a clue.
+The thiourea `CCNC(=S)NCC` (5 heavy atoms, 0.63) is lower than the 5C alkane (0.82). This is problematic for a simple additive model. However, thioureas are very different from simple thiols.
+
+Let's consider the possibility that the property is related to the presence of specific functional groups or their "activity".
+The values for simple alkanes are generally low or negative.
+The values for alcohols are higher.
+The values for some sulfur compounds are high, others low.
+
+Given the ambiguity, I will make an educated guess based on the general trend that adding a polar group to a hydrocarbon often shifts the value positively, and that sulfur's effect is often less pronounced than oxygen's in terms of polarity.
+
+If `CCCC(C)(C)C` (5 heavy atoms, alkane) is 0.82, and `CC(O)C(C)(C)C` (5 heavy atoms, alcohol) is 1.55.
+`CCCCS` has 5 heavy atoms. It's a linear chain with a terminal thiol.
+It should be higher than a simple alkane of similar size, but likely not as high as the branched alcohol.
+
+Let's consider the value to be around 1.0.
+
+Final check:
+*   `CCCC(C)(C)C` (5 heavy atoms, alkane): 0.82
+*   `CC(O)C(C)(C)C` (5 heavy atoms, alcohol): 1.55
+*   `CCCCS` (5 heavy atoms, thiol)
+
+The value for `CCCCS` should be between 0.82 and 1.55.
+A value of 1.0 seems reasonable.
+
+1.0
+==================================================
+Iteration: 10
+SMILES: CCCC(C)(C)CO
+True Property: 1.236602118531695
+Predicted Property:
+1.06045217
+==================================================
+Iteration: 11
+SMILES: Cc1ccc2ccccc2c1
+True Property: 0.2016453059317369
+Predicted Property:
+0.08
+==================================================
+Iteration: 12
+SMILES: O=C1NC(=O)NC(=O)C1(C(C)CCC)CC=C
+True Property: 0.7428981790685775
+Predicted Property:
+0.43103241
+==================================================
+Iteration: 13
+SMILES: FC(F)(F)c1ccccc1
+True Property: 0.4623269122808235
+Predicted Property:
+-0.05
+==================================================
+Iteration: 14
+SMILES: OCC1OC(O)C(O)C(O)C1O
+True Property: -0.16804858985732682
+Predicted Property:
+The molecule provided is a cyclic sugar, specifically a pyranose form of a hexose. Looking at the examples, the closest structural analogue is "OCC(O)C(O)C(O)C(O)CO", which is an open-chain hexitol (likely sorbitol or mannitol). This molecule has a property value of 2.3994887.
+
+Sugars and polyols tend to have higher property values, likely related to their high polarity and hydrogen bonding capacity. The cyclic structure of the given molecule, while still highly polar, might slightly reduce the overall value compared to the open-chain counterpart due to some conformational constraints or reduced flexibility for hydrogen bonding. However, it will still be in a similar high range.
+
+Considering the high number of hydroxyl groups and the overall polarity, the value should be close to that of the open-chain hexitol, perhaps slightly lower but still significantly positive.
+
+Predicted property: 2.2
+==================================================
+Iteration: 15
+SMILES: CC(=O)OCC(=O)C3(O)CCC4C2CCC1=CC(=O)C=CC1(C)C2C(O)CC34C 
+True Property: -2.0127001596837677
+Predicted Property:
+-2.1516556
+==================================================
+Iteration: 16
+SMILES: CC34CCC1C(CCC2CC(=O)CCC12C)C3CCC4O 
+True Property: -2.063816687584175
+Predicted Property:
+-1.92289903
+==================================================
+Iteration: 17
+SMILES: CC(=O)Nc1ccc(cc1)N(=O)=O
+True Property: 0.16468010080849932
+Predicted Property:
+0.0913668
+==================================================
+Iteration: 18
+SMILES: CCOP(=S)(OCC)SCn1c(=O)oc2cc(Cl)ccc12
+True Property: -0.8936714439764976
+Predicted Property:
+-0.70824519
+==================================================
+Iteration: 19
+SMILES: CC(C)(C)CO
+True Property: 0.847140781615469
+Predicted Property:
+-0.34837922
+==================================================
+Iteration: 20
+SMILES: O=c1[nH]cnc2nc[nH]c12 
+True Property: 0.7034812642253994
+Predicted Property:
+1.05419206
+==================================================
+Iteration: 21
+SMILES: CC(C)OC=O
+True Property: 0.17359497927026749
+Predicted Property:
+-0.08470018
+==================================================
+Iteration: 22
+SMILES: O=C(Nc1ccccc1)Nc2ccccc2
+True Property: -1.4648133169742565
+Predicted Property:
+O=C(Nc1ccccc1)Nc2ccccc2, 0.25
+==================================================
+Iteration: 23
+SMILES: C1c2ccccc2c3ccccc13
+True Property: -0.7642983867881192
+Predicted Property:
+-0.99935024
+==================================================
+Iteration: 24
+SMILES: NC(=N)NS(=O)(=O)c1ccc(N)cc1 
+True Property: 0.6171349520345718
+Predicted Property:
+-1.05
+==================================================
+Iteration: 25
+SMILES: CCN(CC(C)=C)c1c(cc(cc1N(=O)=O)C(F)(F)F)N(=O)=O
+True Property: 1.9349168642735879
+Predicted Property:
+-0.85
+==================================================
+Iteration: 26
+SMILES: CC(C)OC=O
+True Property: 0.17359497927026749
+Predicted Property:
+0.17332492
+==================================================
+Iteration: 27
+SMILES: Cc1cc(C)cc(O)c1
+True Property: 0.8417813122608622
+Predicted Property:
+0.05
+==================================================
+Iteration: 28
+SMILES: COP(=S)(OC)Oc1ccc(SC)c(C)c1
+True Property: 0.34632101989852593
+Predicted Property:
+0.64808162
+==================================================
+Iteration: 29
+SMILES: Clc1cc(Cl)c(c(Cl)c1)c2c(Cl)cccc2Cl
+True Property: 0.09780747934292637
+Predicted Property:
+1.05889441
+==================================================
+Iteration: 30
+SMILES: CCCN(=O)=O
+True Property: 0.206123426997196
+Predicted Property:
+The molecule is CCCN(=O)=O (1-nitropropane).
+
+Let's analyze the given examples to find similar structures and their properties.
+
+*   **Alkanes:**
+    *   CCC (propane): -2.07155559
+    *   CC (ethane): -3.27475897
+    *   C1CCCCC1 (cyclohexane): -1.3739432
+    *   CCCCCCCCC (nonane): -0.2428006 (This seems like an outlier or a different property for long chains)
+    *   CCCCCC=O (hexanal): -0.31180371 (aldehyde)
+    *   CCCCCCC(=O)C (octan-2-one): 0.20158243 (ketone)
+    *   CCCCCCCCO (octanol): -0.2428006 (alcohol)
+
+*   **Nitro compounds:**
+    *   O=N(=O)c1cc(cc(c1)N(=O)=O)N(=O)=O (1,3,5-trinitrobenzene): 1.26321073
+    *   CCCN(CCC)c1c(cc(cc1N(=O)=O)C(F)(F)F)N(=O)=O (N,N-dipropyl-4-(trifluoromethyl)-2,6-dinitroaniline): 1.85626119
+    *   OCC(NC(=O)C(Cl)Cl)C(O)c1ccc(cc1)N(=O)=O (chloramphenicol-like structure with nitro group): 0.18692716
+
+The target molecule CCCN(=O)=O is a simple nitroalkane.
+Comparing it to propane (CCC, -2.07155559), the addition of a nitro group will significantly change the polarity and potentially other properties.
+
+Let's look at the nitro compounds:
+*   Trinitrobenzene (1.26) and the dinitroaniline (1.85) are highly substituted aromatic nitro compounds, which tend to have higher values due to strong electron-withdrawing effects and potentially higher polarity/dipole moments.
+*   Chloramphenicol-like structure (0.18) also has a nitro group on an aromatic ring, but it's a much larger and more complex molecule with many polar groups (OH, amide).
+
+There isn't a direct comparison for a simple nitroalkane. However, we can infer some trends:
+*   Adding polar groups generally increases the value (e.g., from alkanes to alcohols/ketones, though not always a simple linear increase).
+*   Nitro groups are highly polar.
+
+Let's consider the effect of the nitro group. It's a strong electron-withdrawing group.
+If we compare propane (-2.07) to something like propanol (-0.24 for octanol, so likely similar for propanol, maybe slightly more negative for shorter chain), the value increases.
+The nitro group is more polar than an alcohol group.
+
+Given the values for the aromatic nitro compounds (0.18 to 1.85), a simple aliphatic nitro compound like 1-nitropropane should fall within a similar range, but likely on the lower end of that range, as it lacks the extended conjugation and multiple nitro groups.
+
+Let's consider the range of values: from -3.27 (ethane) to 3.26 (complex organophosphate).
+Simple alkanes are very negative.
+Simple polar molecules like hexanal (-0.31), octan-2-one (0.20), octanol (-0.24) are closer to zero or slightly positive.
+Aromatic compounds with polar groups are often positive.
+
+The nitro group is highly polar. This suggests the value will be significantly higher than a simple alkane.
+It's unlikely to be as high as the multi-nitro aromatic compounds, but it should be positive.
+
+Let's estimate based on the polarity.
+Propane: -2.07
+Hexanal: -0.31 (C=O)
+Octan-2-one: 0.20 (C=O)
+Octanol: -0.24 (OH)
+
+The nitro group is more polar than a carbonyl or hydroxyl group.
+Therefore, the value for CCCN(=O)=O should be higher than those for simple alcohols or ketones.
+It should be positive.
+
+Considering the range of values for polar molecules:
+*   CCOC(=O)c1ccc(O)cc1 (ethyl 4-hydroxybenzoate): 0.058
+*   COC(=O)c1ccccc1 (methyl benzoate): 0.246
+*   N#Cc1ccccc1C#N (1,4-dicyanobenzene): 1.068
+*   O=N(=O)c1cc(cc(c1)N(=O)=O)N(=O)=O (1,3,5-trinitrobenzene): 1.263
+
+A single nitro group on an aliphatic chain should be less than a dicyano or trinitro aromatic, but more than a simple ester or alcohol.
+
+I'd estimate it to be in the range of 0.3 to 0.8.
+Let's try to be more specific.
+The nitro group is a strong dipole.
+Comparing to other small polar molecules:
+*   C=Cc1ccccc1 (styrene): 0.509
+*   Fc1ccccc1Br (1-bromo-4-fluorobenzene): 0.783
+*   Nc1ccccc1O (2-aminophenol): 0.783
+
+These are aromatic, but give a sense of values for molecules with significant dipoles.
+A nitroalkane will have a strong dipole.
+
+Let's consider the effect of chain length on the property for similar functional groups.
+*   CCC: -2.07
+*   CCCCCCCCC: -0.24 (longer alkane chain, less negative)
+*   CCCCCCCCO: -0.24 (octanol)
+
+The property seems to increase (become less negative or more positive) with increasing chain length for alkanes and alcohols.
+Propane is -2.07. 1-nitropropane is a propane derivative.
+The nitro group will increase the value significantly.
+
+Given the examples, a value around 0.5 to 0.8 seems reasonable for a simple nitroalkane.
+Let's pick a value that reflects its polarity and size relative to the examples.
+
+Predicted property for CCCN(=O)=O: 0.65
+
+The final answer is $\boxed{0.65}$
+==================================================
+Iteration: 31
+SMILES: Fc1cccc(Br)c1
+True Property: 0.6744907594765952
+Predicted Property:
+0.39778989
+==================================================
+Iteration: 32
+SMILES: CC1(C)C2CCC1(C)C(O)C2
+True Property: -0.6207354845364524
+Predicted Property:
+-0.9842999
+==================================================
+Iteration: 33
+SMILES: CCOP(=S)(OCC)N2C(=O)c1ccccc1C2=O
+True Property: -0.518212647390944
+Predicted Property:
+-0.86333847
+==================================================
+Iteration: 34
+SMILES: Cc1cc(=O)n(c2ccccc2)n1C
+True Property: -0.06617094781214729
+Predicted Property:
+-0.56019366
+==================================================
+Iteration: 35
+SMILES: CCCCCC(=O)OCC
+True Property: 0.6264281594936748
+Predicted Property:
+The property value for the molecule CCCCCC(=O)OCC is predicted to be **0.43517177**.
+==================================================
+Iteration: 36
+SMILES: COC(=O)c1ccccc1
+True Property: 0.24674541662299065
+Predicted Property:
+-0.05666276
+==================================================
+Iteration: 37
+SMILES: C=CCC=C
+True Property: -0.13240052430167842
+Predicted Property:
+The molecule C=CCC=C is 1,4-pentadiene. It is a simple, acyclic hydrocarbon with two double bonds.
+
+Looking at the provided examples, we can observe some trends:
+*   **Hydrocarbons:** Simple hydrocarbons tend to have values around 0 or slightly negative/positive. For instance, CC/C=C/C (-0.19084541), CCCCCCCC(=O)OCC (0.60371432 - though this has an ester), C=Cc1ccccc1 (0.50985441), CCC(C)(C)CC (1.21199338), C1CCCC1 (-1.21554188), CBr (-3.27475897 - bromine significantly lowers it), CCC(=O)C (0.23676802 - ketone), CCCCOC (-1.0116293 - ether).
+*   **Unsaturation:** Molecules with more unsaturation (double/triple bonds, aromatic rings) often have values that are not extremely low, unless other highly electronegative atoms are present.
+*   **Halogens:** The presence of halogens (especially multiple chlorines or bromines) tends to increase the value, or make it more negative if they are part of a complex structure. For example, ClC(Cl)(Cl)C#N (1.57751875), Clc1ccccc1Br (0.78321946), Clc1cc(Cl)c(Cl)c(Cl)c1Cl (1.39278252).
+*   **Oxygen/Nitrogen:** The effect of oxygen and nitrogen varies greatly depending on their functional group and environment.
+
+C=CCC=C is a relatively small, unsaturated hydrocarbon. It lacks any heteroatoms like halogens, oxygen, or nitrogen that significantly shift the property value in the examples. Its structure is similar in complexity to molecules like CC/C=C/C (-0.19084541) or C=Cc1ccccc1 (0.50985441), but it has two isolated double bonds rather than a conjugated system or an aromatic ring.
+
+Considering its simplicity and the absence of strong electronegative atoms, its value should be in a similar range to other small hydrocarbons. It's slightly more unsaturated than pentane, which would likely have a positive value (similar to CCC(C)(C)CC, 1.21199338, which is a branched hexane). The presence of two double bonds might slightly increase the value compared to a single double bond or a saturated chain of similar size.
+
+Given the examples, a value slightly positive, but not as high as highly halogenated or complex nitrogen/sulfur compounds, seems appropriate. It should be higher than simple alkanes but not as high as highly substituted or aromatic systems with strong electron-withdrawing groups.
+
+Predicted value: 0.35
+
+The predicted specific property value is: 0.35
+==================================================
+Iteration: 38
+SMILES: BrC(Br)Br
+True Property: -0.7584780452032995
+Predicted Property:
+1.5555883
+==================================================
+Iteration: 39
+SMILES: CCOP(=S)(OCC)SC(CCl)N2C(=O)c1ccccc1C2=O
+True Property: -0.8633384737494688
+Predicted Property:
+-0.05
+==================================================
+Iteration: 40
+SMILES: CN(C)C(=O)Nc1ccc(c(Cl)c1)n2nc(oc2=O)C(C)(C)C
+True Property: -0.6685595051099952
+Predicted Property:
+-1.05
+==================================================
+Iteration: 41
+SMILES: Oc1cc(Cl)ccc1Oc2ccc(Cl)cc2Cl
+True Property: -0.780436596404211
+Predicted Property:
+1.08281967
+==================================================
+Iteration: 42
+SMILES: CC/C=C\C
+True Property: -0.1908454138057305
+Predicted Property:
+-0.19084541
+==================================================
+Iteration: 43
+SMILES: CCCOCC
+True Property: -0.729391178214291
+Predicted Property:
+The molecule is an ether, specifically diethyl ether. Looking at the provided examples, there are no direct matches for simple ethers. However, we can infer some general trends:
+
+*   **Alkanes and simple hydrocarbons:** Generally have negative values (e.g., C, C1CCCCCC1, CCC#C).
+*   **Alcohols:** Tend to have negative values, similar to hydrocarbons, but sometimes slightly less negative or even positive depending on the structure (e.g., CC(C)O, CCC(O)CC).
+*   **Halogenated compounds:** Can have a wide range, but often positive, especially with multiple halogens (e.g., Oc1c(Cl)c(Cl)c(Cl)c(Cl)c1Cl, ClC(Cl)(Cl)C(Cl)(Cl)Cl).
+*   **Aromatic compounds:** Vary widely depending on substituents.
+*   **Compounds with oxygen (ethers, esters, ketones):**
+    *   Esters like CCOC(=O)c1ccccc1 are slightly negative.
+    *   Ketones like CCCCCCCC(=O)C are slightly positive.
+    *   Alcohols are negative.
+
+Given that ethers are structurally similar to alcohols (where an -OH group is replaced by an -OR group), and simple alkanes are negative, it's reasonable to expect a simple ether to also have a negative value, likely in a similar range to simple alcohols or slightly less negative than very simple alkanes.
+
+Let's consider the example:
+*   CC(C)O (isopropanol): -0.75847805
+*   CCC(O)CC (pentan-3-ol): 0.05962314
+*   C (methane): -5.17557475
+*   CC#C (propyne): -0.47004028
+
+CCCOCC (diethyl ether) is a relatively small, non-polar molecule with an oxygen atom. It's more complex than methane but simpler than many of the larger, more functionalized molecules. It's also less polar than an alcohol.
+
+Based on the trend that smaller, less polar organic molecules tend to have negative values, and comparing it to alcohols and simple hydrocarbons, a value in the range of -0.5 to -1.0 seems plausible.
+
+Let's try to find a similar structure.
+CC(C)O, -0.75847805 (isopropanol)
+CCC(O)CC, 0.05962314 (pentan-3-ol)
+
+Diethyl ether (CCCOCC) is an isomer of butanol. Butanol would likely be in a similar range to pentan-3-ol or isopropanol. Ethers are generally less polar than alcohols of similar size. Less polarity might lead to a slightly more negative value, closer to simple hydrocarbons.
+
+Considering the values for simple alcohols and hydrocarbons:
+*   CC(C)O: -0.75847805
+*   CCC(O)CC: 0.05962314
+*   CC#C: -0.47004028
+*   C1CCCCCC1: -1.29474254
+
+Diethyl ether is a small, relatively non-polar organic molecule. It's likely to be negative. It's more complex than methane but less complex than many of the larger, substituted molecules.
+
+I'll estimate a value that is negative, but not as extremely negative as methane, and somewhat comparable to simple alcohols or small hydrocarbons.
+
+Predicted value: -0.65
+
+-0.65
+==================================================
+Iteration: 44
+SMILES: CN(C(=O)NC(C)(C)c1ccccc1)c2ccccc2
+True Property: -1.155886938814363
+Predicted Property:
+-0.95
+==================================================
+Iteration: 45
+SMILES: CC(=O)Nc1ccc(Br)cc1
+True Property: 0.025623790100389492
+Predicted Property:
+0.20745259
+==================================================
+Iteration: 46
+SMILES: CC(C)Cc1ccccc1
+True Property: -0.25761845417828616
+Predicted Property:
+0.289765
+==================================================
+Iteration: 47
+SMILES: O=Cc1ccccc1
+True Property: 0.5098544082515718
+Predicted Property:
+0.485789
+==================================================
+Iteration: 48
+SMILES: O=C2CN(N=Cc1ccc(o1)N(=O)=O)C(=O)N2 
+True Property: -1.2403394459862827
+Predicted Property:
+-0.74350629
+==================================================
+Iteration: 49
+SMILES: N(Nc1ccccc1)c2ccccc2 
+True Property: -1.4547736866992345
+Predicted Property:
+-1.07106452
+==================================================
+Iteration: 50
+SMILES: O=C2NC(=O)C1(CCCC1)C(=O)N2
+True Property: -0.788531554424903
+Predicted Property:
+The molecule provided is O=C2NC(=O)C1(CCCC1)C(=O)N2.
+
+Let's break down its structure and compare it to the examples.
+
+This molecule is a cyclic imide derivative, specifically a spiro compound where a cyclopentane ring is fused to a pyrimidine-2,4,6-trione (barbituric acid-like) core.
+
+Looking at the examples, we have several cyclic structures, including:
+*   `O=C1NC(=O)NC(=O)C1(CC)C(C)CCC` (a barbituric acid derivative with an ethyl and a sec-butyl group) which has a property of `0.61437414`.
+*   `C1N(C(=O)NCC(C)C)C(=O)NC1` (a cyclic urea derivative) which has a property of `-0.72062259`.
+*   `O=C1CCCN1` (a lactam, 4-membered ring) which has a property of `-0.67567501`.
+*   `C1CCCCCC1` (cyclohexane) which has a property of `-1.29474254`.
+
+The target molecule has a similar core to the barbituric acid derivative (`O=C1NC(=O)NC(=O)C1(CC)C(C)CCC`). The key difference is that instead of two alkyl chains on the central carbon, it has a spiro-fused cyclopentane ring.
+
+The presence of multiple carbonyl groups and nitrogen atoms suggests a polar molecule. The spiro-fused ring adds rigidity and a degree of lipophilicity compared to simple open-chain analogs.
+
+Comparing `O=C1NC(=O)NC(=O)C1(CC)C(C)CCC` (0.61437414) to the target molecule:
+*   Both have the `O=C-N-C(=O)-C-C(=O)-N` core.
+*   The example has two alkyl chains (ethyl and sec-butyl) on the central carbon.
+*   The target molecule has a cyclopentane ring spiro-fused at that central carbon.
+
+The cyclopentane ring is more constrained and less flexible than two separate alkyl chains of similar carbon count. The overall size and polarity are somewhat comparable. The property value for the barbituric acid derivative is positive, suggesting a certain type of interaction or characteristic.
+
+Given the structural similarity to the barbituric acid derivative, especially the core, and the replacement of two alkyl chains with a cyclic system, the property value should be in a similar range. The cyclic constraint might slightly alter the value, but it's unlikely to cause a drastic shift in magnitude or sign.
+
+Let's consider the impact of the spiro-cyclopentane. It's a compact, rigid lipophilic group. The example `O=C1NC(=O)NC(=O)C1(CC)C(C)CCC` has a total of 7 carbons in the substituents (2 in ethyl + 5 in sec-butyl). The cyclopentane has 5 carbons. This suggests a slightly smaller lipophilic contribution from the spiro ring compared to the two alkyl chains in the example.
+
+A slightly smaller lipophilic contribution might lead to a slightly higher (more positive) value if the property is inversely related to lipophilicity, or a slightly lower (less positive) value if it's directly related. However, the primary influence will be the core structure.
+
+Considering the values of similar cyclic compounds:
+*   `O=C1NC(=O)NC(=O)C1(CC)C(C)CCC`: 0.61437414
+*   `C1N(C(=O)NCC(C)C)C(=O)NC1`: -0.72062259 (This is a cyclic urea, not a triketone, so less comparable)
+*   `O=C1CCCN1`: -0.67567501 (A simple lactam, less comparable)
+
+The closest structural analog is the barbituric acid derivative. The spiro-cyclopentane is a compact, rigid substituent. It's plausible that the value would be slightly different from 0.61437414, but still positive.
+
+Let's estimate the effect of replacing the two alkyl chains with a spiro-cyclopentane. The cyclopentane is more compact and rigid. This might slightly increase the polarity or decrease the overall "bulk" in a way that affects the property.
+
+If we consider the example `O=C1NC(=O)NC(=O)C1(CC)C(C)CCC` (0.61437414), the spiro-cyclopentane is a more constrained and less flexible substituent than the two alkyl chains. This might lead to a slightly different packing or interaction.
+
+Given the strong similarity to the barbituric acid derivative, the value should be in the same positive range. The cyclopentane ring is a common structural motif.
+
+I will predict a value that is close to the barbituric acid derivative, perhaps slightly adjusted due to the cyclic nature of the substituent. The cyclopentane is a relatively small ring.
+
+I predict the value to be slightly higher than the example with the two alkyl chains, as the rigid cyclic structure might lead to a more compact molecule or slightly different electronic distribution.
+
+Predicted value: 0.65
+
+The final answer is $\boxed{0.65}$
+==================================================
+Iteration: 51
+SMILES: Clc1ccc(cc1)c2c(Cl)cccc2Cl 
+True Property: -0.263690645756618
+Predicted Property:
+0.78321946
+==================================================
+Iteration: 52
+SMILES: CCc1ccc(CC)cc1
+True Property: 0.14148457671525685
+Predicted Property:
+-0.400000
+==================================================
+Iteration: 53
+SMILES: Nc1ccc(cc1)S(N)(=O)=O
+True Property: 0.9099172343375195
+Predicted Property:
+0.53333665
+==================================================
+Iteration: 54
+SMILES: c1ccc2c(c1)c3cccc4cccc2c34
+True Property: -0.7789945811263388
+Predicted Property:
+-1.1447625
+==================================================
+Iteration: 55
+SMILES: Oc2cc(O)c1C(=O)CC(Oc1c2)c3ccc(O)c(O)c3
+True Property: -1.3474776663871986
+Predicted Property:
+-1.31636588
+==================================================
+Iteration: 56
+SMILES: COP(=O)(NC(C)=O)SC 
+True Property: 2.5685746920991814
+Predicted Property:
+1.05419206
+==================================================
+Iteration: 57
+SMILES: Cl\C=C/Cl
+True Property: -0.3300278387899034
+Predicted Property:
+-0.05
+==================================================
+Iteration: 58
+SMILES: c1ccncc1
+True Property: 0.526872574036889
+Predicted Property:
+0.20769868
+==================================================
+Iteration: 59
+SMILES: OCC(O)COC(=O)c1ccccc1Nc2ccnc3cc(Cl)ccc23
+True Property: -1.5955022791900173
+Predicted Property:
+-0.45
+==================================================
+Iteration: 60
+SMILES: CCCCCO
+True Property: -0.729391178214291
+Predicted Property:
+-0.61035657
+==================================================
+Iteration: 61
+SMILES: CC1=C(C(=O)Nc2ccccc2)S(=O)(=O)CCO1
+True Property: -0.8313852443932119
+Predicted Property:
+1.05
+==================================================
+Iteration: 62
+SMILES: COC(=O)C1=C(C)NC(=C(C1c2ccccc2N(=O)=O)C(=O)OC)C 
+True Property: 0.1533434330007103
+Predicted Property:
+-0.98765432
+==================================================
+Iteration: 63
+SMILES: O=C2NC(=O)C1(CC1)C(=O)N2 
+True Property: -0.8128969105227446
+Predicted Property:
+-0.45
+==================================================
+Iteration: 64
+SMILES: ClCC
+True Property: -2.0715555858337034
+Predicted Property:
+The molecule ClCC is a simple chloroethane. Based on the provided examples, smaller, less complex molecules tend to have property values closer to zero or slightly negative, especially if they are acyclic and lack extensive conjugation or multiple heteroatoms.
+
+Considering the examples:
+- CCCCC (pentane) has a value of -1.0116293.
+- CCC(C)(C)CC (neopentane) has a value of 1.21199338.
+- CC#N (acetonitrile) has a value of -0.47004028.
+- Clc1ccccc1 (chlorobenzene) has a value of 0.56767417.
+
+ClCC (chloroethane) is a small, saturated molecule with one chlorine atom. It's more polar than pentane but less complex than chlorobenzene or acetonitrile. Its value should be somewhere between these, likely closer to zero or slightly positive due to the chlorine atom's electronegativity.
+
+Given the trend, a value slightly positive or slightly negative, but not as extreme as the very large or very small values seen for complex molecules, would be expected.
+
+Predicted property value: 0.15
+==================================================
+Iteration: 65
+SMILES: Clc1cccc(n1)C(Cl)(Cl)Cl
+True Property: 0.640734655439768
+Predicted Property:
+-0.65
+==================================================
+Iteration: 66
+SMILES: CCCCC(C)O
+True Property: -0.08470018262600972
+Predicted Property:
+0.20719331
+==================================================
+Iteration: 67
+SMILES: Brc1ccc(Br)cc1
+True Property: 0.5885645612506096
+Predicted Property:
+-0.07900085
+==================================================
+Iteration: 68
+SMILES: Clc1cc(Cl)c(c(Cl)c1)c2c(Cl)cc(Cl)cc2Cl 
+True Property: 0.10139052188669313
+Predicted Property:
+-0.05
+==================================================
+Iteration: 69
+SMILES: Cc1ccc(OP(=O)(Oc2cccc(C)c2)Oc3ccccc3C)cc1
+True Property: -1.518457730978069
+Predicted Property:
+-0.26369065
+==================================================
+Iteration: 70
+SMILES: FC(F)(F)c1cccc(c1)N2CC(CCl)C(Cl)C2=O
+True Property: -0.7898603973850887
+Predicted Property:
+-0.15278642
+==================================================
+Iteration: 71
+SMILES: COc1ccccc1N(=O)=O
+True Property: 0.7572881673792355
+Predicted Property:
+0.53856227
+==================================================
+Iteration: 72
+SMILES: ClC1CC2C(C1Cl)C3(Cl)C(=C(Cl)C2(Cl)C3(Cl)Cl)Cl
+True Property: -0.8713974753367544
+Predicted Property:
+1.5
+==================================================
+Iteration: 73
+SMILES: CCCOC=O
+True Property: -0.4455776058356753
+Predicted Property:
+-0.27279627
+==================================================
+Iteration: 74
+SMILES: CCCCCCCCCC(=O)OCC
+True Property: 0.5550536589860438
+Predicted Property:
+-0.98765432
+==================================================
+Iteration: 75
+SMILES: Oc1ccc(Cl)cc1C(=O)Nc2ccc(cc2Cl)N(=O)=O
+True Property: -0.8531258443252334
+Predicted Property:
+-0.45
+==================================================
+Iteration: 76
+SMILES: COP(=S)(OC)Oc1ccc(Sc2ccc(OP(=S)(OC)OC)cc2)cc1
+True Property: -1.3550273437183598
+Predicted Property:
+-0.15
+==================================================
+Iteration: 77
+SMILES: Oc1cccc(c1)N(=O)=O
+True Property: 0.6597382009197083
+Predicted Property:
+0.81758609
+==================================================
+Iteration: 78
+SMILES: OCC1OC(CO)(OC2OC(COC3OC(CO)C(O)C(O)C3O)C(O)C(O)C2O)C(O)C1O
+True Property: -1.9636440466059613
+Predicted Property:
+The molecule provided is a complex carbohydrate structure, likely a polysaccharide or a highly branched oligosaccharide, given the repeating sugar units (pyranose rings) and numerous hydroxyl groups.
+
+Let's analyze the provided examples to understand the trend:
+
+*   **Small, simple hydrocarbons (alkanes, alkenes, alkynes):** Generally have values around 0 or slightly negative (e.g., CCCCCCCCCCCCCCCCCC: 0.2004, CCCCCCCC=C: -0.1120, CCC#CCC: 0.3342). Longer chains tend to have slightly higher values.
+*   **Halogenated compounds:** Often show positive values, especially with multiple halogens (e.g., ClC(Cl)(Cl)C#N: 1.5775, Brc1cc(Br)cc(Br)c1: 0.8417). Highly chlorinated aromatic compounds can be slightly positive or negative depending on the substitution pattern (e.g., Clc1cc(Cl)c(c(Cl)c1)c2c(Cl)cccc2Cl: 0.0978, Clc1cc(Cl)c(cc1Cl)c2cc(Cl)c(Cl)cc2Cl: -0.0594).
+*   **Compounds with multiple polar groups (O, N, S, P):**
+    *   **Carbohydrate-like structures (many -OH groups):** Tend to have negative values (e.g., C1OC(O)C(O)C(O)C1O: -0.3934).
+    *   **Amides, ureas, imides:** Can be positive or negative depending on the overall structure and presence of other groups (e.g., O=C1NC(=O)NC(=O)C1(CC)CC: 0.5408, O=C(Nc1ccccc1)Nc2ccccc2: -1.4648).
+    *   **Phosphates/Thiophosphates:** Can have a wide range, often positive if simple, but negative if part of larger, more complex structures (e.g., COP(=O)(OC)OC(=CCl)c1cc(Cl)c(Cl)cc1Cl: 0.8976, COP(=S)(OC)Oc1ccc(Sc2ccc(OP(=S)(OC)OC)cc2)cc1: -1.3550).
+    *   **Steroids/Complex polycyclic structures with many functional groups:** Tend to have significantly negative values (e.g., CC12CC(O)C3C(CCC4=CC(=O)C=CC34C)C2CCC1(O)C(=O)CO: -1.8543, CC34CCC1C(CCC2CC(=O)CCC12C)C3CCC4O: -2.0638).
+
+The target molecule, OCC1OC(CO)(OC2OC(COC3OC(CO)C(O)C(O)C3O)C(O)C(O)C2O)C(O)C1O, is characterized by:
+1.  **High molecular weight:** It's a tri-saccharide or similar, with three linked sugar units.
+2.  **Numerous hydroxyl groups:** Each sugar unit has multiple -OH groups, making the molecule highly polar and capable of extensive hydrogen bonding.
+3.  **Ether linkages:** The sugar units are linked via glycosidic bonds (ether linkages).
+4.  **Lack of aromaticity or halogens:** These features often contribute to higher positive values.
+
+Comparing it to C1OC(O)C(O)C(O)C1O (-0.39343403), which is a single sugar ring, the target molecule is much larger and more complex, essentially three such units linked together. The general trend for larger, highly hydroxylated, and non-aromatic/non-halogenated molecules seems to be more negative values, especially when they are complex and bulky. The presence of many hydroxyl groups typically increases polarity and intermolecular interactions, which often correlates with more negative values in this dataset, particularly for large, non-hydrophobic structures.
+
+Given its size and the abundance of hydroxyl groups, it's likely to be more negative than a single sugar unit. It shares structural complexity with some of the highly negative steroid-like molecules, although it lacks their rigid, fused ring system and hydrophobic core.
+
+Considering the examples, especially the single sugar ring example, and the general trend for large, polar, non-aromatic molecules, a significantly negative value is expected. It should be more negative than -0.39343403.
+
+Let's estimate based on the increase in complexity and polarity. A value in the range of -1.0 to -2.0 seems plausible, similar to some of the more complex molecules with multiple polar groups or large structures.
+
+Final prediction: The molecule is a large, highly polar carbohydrate. Such molecules, especially when complex and lacking significant hydrophobic or halogenated regions, tend to have negative values in the provided dataset. Given the single sugar example (C1OC(O)C(O)C(O)C1O, -0.3934), this much larger and more branched structure with even more hydroxyl groups would likely exhibit a more negative value.
+
+-1.2
+
+The predicted specific property value is -1.2
+==================================================
+Iteration: 79
+SMILES: CCC#C
+True Property: -0.5507069021279681
+Predicted Property:
+0.0974989
+==================================================
+Iteration: 80
+SMILES: CCOP(=S)(CC)Oc1cc(Cl)c(Cl)cc1Cl
+True Property: 0.5617289047388602
+Predicted Property:
+-0.05
+==================================================
+Iteration: 81
+SMILES: c1nccc(C(=O)NN)c1
+True Property: 0.24674541662299235
+Predicted Property:
+0.25
+==================================================
+Iteration: 82
+SMILES: CCCOP(=S)(OCCC)SCC(=O)N1CCCCC1C
+True Property: -0.4219529427198055
+Predicted Property:
+-0.95
+==================================================
+Iteration: 83
+SMILES: CCCCCCCC
+True Property: -0.36639592191884474
+Predicted Property:
+Based on the provided examples, the property seems to be related to the molecular structure, particularly the presence of functional groups, aromaticity, and chain length.
+
+Let's analyze the given examples:
+
+*   **Alkanes/Simple Aliphatic Chains:**
+    *   `ClCCBr`: -1.42194855 (Halogenated, short chain)
+    *   `CC(Cl)Cl`: -0.75847805 (Halogenated, short chain)
+    *   `CCCCCCCO`: -0.36639592 (Alcohol, longer chain)
+    *   `CCC(O)CC`: 0.05962314 (Alcohol, short chain)
+    *   `CC(C)CO`: -0.34837922 (Branched alcohol)
+    *   `CC(C)CCO`: -0.18172332 (Branched alcohol)
+    *   `CC(C)(C)CO`: 0.84714078 (Highly branched alcohol)
+    *   `CCCC(C)(C)CO`: 1.23660212 (Highly branched alcohol, longer)
+    *   `CCCC/C=C/C`: -0.06398192 (Alkene, short chain)
+    *   `CCCCCC1CCCC1`: -1.54279245 (Cycloalkane with side chain)
+
+*   **Aromatic Compounds:**
+    *   `c1ccc2c(c1)cc3ccc4cccc5ccc2c3c45`: -0.93515855 (Large polycyclic aromatic)
+    *   `c1ccsc1`: 0.76447455 (Thiophene, aromatic heterocycle)
+    *   `Fc1ccccc1`: 0.56767417 (Fluorobenzene)
+    *   `Cc1ccc(cc1)N(=O)=O`: 0.53333665 (Nitrotoluene)
+    *   `Oc1ccc(Cl)cc1`: 0.58856456 (Chlorophenol)
+    *   `Oc1ccc(Br)cc1`: 0.58856456 (Bromophenol)
+    *   `CC(C)(C)c1ccc(O)cc1`: 0.51500158 (tert-butylphenol)
+    *   `c1ccccc1C(O)c2ccccc2`: -0.81083388 (Benzhydrol)
+    *   `Nc1cccc2ccccc12`: 0.36180794 (Naphthylamine)
+    *   `O=N(=O)c1cc(Cl)c(Cl)cc1`: 0.81494057 (Dichloronitrobenzene)
+    *   `Oc1ccc(Cl)c(Cl)c1Cl`: 1.17724393 (Trichlorophenol)
+
+*   **Polyols:**
+    *   `OCC(O)C(O)C(O)C(O)CO`: 2.3994887 (Sorbitol, high value)
+    *   `OCC(O)C(O)CO`: 1.08281967 (Erythritol)
+    *   `C1OC(O)C(O)C(O)C1O`: -0.39343403 (Cyclic polyol)
+
+*   **Complex Molecules (often with negative values):** Many of the very negative values correspond to large, complex, often polycyclic or highly substituted molecules, sometimes with multiple rings or specific functional groups like ketones, esters, or amides.
+
+**Observation for Alkanes:**
+The provided examples for simple alkanes or slightly modified alkanes are limited.
+*   `ClCCBr`: -1.42194855 (Halogenated, short)
+*   `CC(Cl)Cl`: -0.75847805 (Halogenated, short)
+*   `CCCC/C=C/C`: -0.06398192 (Alkene, 6 carbons)
+*   `CCCCCC1CCCC1`: -1.54279245 (Cycloalkane with side chain, 10 carbons total)
+
+The target molecule is `CCCCCCCC`, which is n-octane. It's a straight-chain alkane with 8 carbons.
+
+Let's look at the trend for simple, non-functionalized hydrocarbons.
+The closest example is `CCCC/C=C/C` (hexene), which has a value of -0.06398192.
+Another is `CCCCCC1CCCC1` (decahydronaphthalene derivative), which is -1.54279245. This is a cyclic alkane, so it's not directly comparable to a straight chain.
+
+Consider the general trend:
+*   Short, simple alkanes or alkenes seem to have values closer to zero or slightly negative.
+*   Adding halogens tends to make the value more negative (e.g., `ClCCBr`, `CC(Cl)Cl`).
+*   Adding multiple hydroxyl groups makes the value positive and large (e.g., polyols).
+*   Aromaticity can lead to positive or negative values depending on substituents.
+
+For a straight-chain alkane like octane, we expect a relatively simple, likely negative value, but not as negative as highly halogenated or very large, complex molecules. It should be more negative than hexene due to increased chain length, but not drastically so.
+
+Let's consider the effect of chain length on similar properties (e.g., boiling point, logP). Often, as chain length increases, properties change somewhat linearly or with a diminishing return.
+
+If we consider `CCCC/C=C/C` (6 carbons, -0.06398192), and `CCCCCCCO` (7 carbons, -0.36639592, but it's an alcohol).
+The property seems to become more negative with increasing size/complexity, especially for non-polar or halogenated compounds.
+
+For a simple alkane like octane, it's a non-polar molecule. Compared to hexene (-0.06398192), octane is larger and fully saturated. The lack of a double bond might make it slightly less "reactive" or "polarizable" in some contexts, but generally, increasing chain length in alkanes often leads to a more negative value for properties like logP (if this property is related to hydrophobicity).
+
+Given the values for halogenated short chains (-1.4, -0.7) and a 6-carbon alkene (-0.06), a longer alkane like octane (8 carbons) would likely fall somewhere in between, probably more negative than the hexene but less negative than the highly halogenated compounds.
+
+Let's try to interpolate or extrapolate.
+If a 6-carbon alkene is -0.06, an 8-carbon alkane might be more negative.
+The most negative values are for very large, complex, or highly halogenated molecules.
+The most positive values are for highly polar polyols.
+
+Octane is a simple, non-polar, unbranched alkane. It's larger than the 6-carbon alkene.
+A reasonable prediction would be a negative value, perhaps in the range of -0.1 to -0.5.
+
+Let's consider the trend of increasing carbon atoms in simple hydrocarbons.
+If C6 alkene is -0.06, then C8 alkane should be more negative.
+The value -0.36639592 for `CCCCCCCO` (heptanol) is for a 7-carbon chain with an alcohol group. The alcohol group makes it more polar. Octane is non-polar.
+
+Without more direct alkane examples, it's difficult to pinpoint precisely. However, the general trend for increasing size in non-polar or slightly polar molecules seems to push the value more negative.
+
+I'll estimate a value that is more negative than the 6-carbon alkene but not as negative as the highly substituted or very large molecules.
+
+Predicted value: -0.25
+
+-0.25
+==================================================
+Iteration: 84
+SMILES: CC34CCC1C(CCC2=CC(=O)CCC12O)C3CCC4(O)C#C
+True Property: -1.9396071075795465
+Predicted Property:
+-1.98765432
+==================================================
+Iteration: 85
+SMILES: COc1cc(cc(OC)c1O)C6C2C(COC2=O)C(OC4OC3COC(C)OC3C(O)C4O)c7cc5OCOc5cc67
+True Property: -2.669849052628284
+Predicted Property:
+-2.00
+==================================================
+Iteration: 86
+SMILES: Oc1ccccc1Cl
+True Property: 0.7832194619854209
+Predicted Property:
+0.81758609
+==================================================
+Iteration: 87
+SMILES: ClCC#CCOC(=O)Nc1cccc(Cl)c1
+True Property: -0.6206312614147376
+Predicted Property:
+-0.45
+==================================================
+Iteration: 88
+SMILES: OC(c1ccc(Cl)cc1)(c2cncnc2)c3ccccc3Cl
+True Property: -0.851551034704321
+Predicted Property:
+-0.85
+==================================================
+Iteration: 89
+SMILES: CCCCOC=O
+True Property: -0.31180370893473464
+Predicted Property:
+-0.31180371
+==================================================
+Iteration: 90
+SMILES: ClCCl
+True Property: -2.0715555858337034
+Predicted Property:
+-1.42194855
+==================================================
+Iteration: 91
+SMILES: Cc1cccc(C)c1O
+True Property: 0.9979607450438149
+Predicted Property:
+0.70311575
+==================================================
+Iteration: 92
+SMILES: Clc1ccc(c(Cl)c1)c2cc(Cl)ccc2Cl 
+True Property: -0.1893768870517522
+Predicted Property:
+0.18528079
+==================================================
+Iteration: 93
+SMILES: CC=C(C)C
+True Property: 0.7990642724746111
+Predicted Property:
+0.53950838
+==================================================
+Iteration: 94
+SMILES: ClCCl
+True Property: -2.0715555858337034
+Predicted Property:
+1.81172665
+==================================================
+Iteration: 95
+SMILES: Oc1c(Cl)ccc(Cl)c1Cl
+True Property: 1.1772439286707685
+Predicted Property:
+1.11713836
+==================================================
+Iteration: 96
+SMILES: COc1cc(cc(OC)c1O)C6C2C(COC2=O)C(OC4OC3COC(C)OC3C(O)C4O)c7cc5OCOc5cc67
+True Property: -2.669849052628284
+Predicted Property:
+-2.05
+==================================================
+Iteration: 97
+SMILES: CSc1nnc(c(=O)n1N)C(C)(C)C
+True Property: 1.2816697907869326
+Predicted Property:
+-0.81564947
+==================================================
+Iteration: 98
+SMILES: CCOC(=O)c1ccccc1
+True Property: -0.05666275602925446
+Predicted Property:
+0.47566917
+==================================================
+Iteration: 99
+SMILES: CCCCCCCBr
+True Property: -0.36639592191884474
+Predicted Property:
+-0.20248357
+==================================================
+Iteration: 100
+SMILES: CO
+True Property: -3.2747589721483004
+Predicted Property:
+-0.47004028
+==================================================

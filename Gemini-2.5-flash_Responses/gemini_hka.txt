@@ -1,0 +1,778 @@
+Iteration: 1
+SMILES: CCCCCCCCCC(=O)OC
+True Property: -0.53
+Predicted Property:
+-0.53
+==================================================
+Iteration: 2
+SMILES: Clc2ccc1oc(=O)[nH]c1c2
+True Property: -1.2199999999999998
+Predicted Property:
+-1.03
+==================================================
+Iteration: 3
+SMILES: CC(C)N(=O)=O
+True Property: -0.6000000000000001
+Predicted Property:
+The molecule is 2-nitropropane.
+Based on the provided examples, the property values seem to be related to molecular size, polarity, and the presence of specific functional groups.
+
+Let's analyze the given examples and try to find a pattern:
+
+*   **Small, non-polar hydrocarbons:** Tend to have values around 0 or slightly negative (e.g., CCC(C)CC, 0.0; C1CCC=CCC1, -0.26).
+*   **Halogenated compounds:** Generally have positive values, increasing with more halogens (e.g., ClCC, 0.29; CCCCCl, 0.29; CCI, 0.73; ClC(Cl)(Cl)C(Cl)(Cl)Cl, 1.74). Aromatic halogens can lead to more negative values if other polar groups are present (e.g., Oc1c(Cl)cc(Cl)c(Cl)c1Cl, 0.18; Oc1ccc(Cl)c(Cl)c1Cl, -0.11).
+*   **Compounds with oxygen (ethers, alcohols, ketones, esters):** Values vary widely. Ethers can be slightly negative (CCCOCC, -0.04). Alcohols can be negative (CCCC(O)C=C, -0.3). Esters can be negative (CCCCCCCCC(=O)OCC, -0.53).
+*   **Compounds with nitrogen (amines, amides, nitro groups, heterocycles):** Often lead to more negative values, especially if they are part of complex or aromatic systems.
+    *   Nitro groups: Cc1ncc(N(=O)=O)n1CCO, -1.43. This is a good reference for a nitro group.
+    *   Amides: NC(=O)CCl, -0.24; NC(=O)NC1NC(=O)NC1=O, -1.79.
+    *   Heterocycles with N: Nc1nccs1, -0.57; O=c1[nH]cnc2nc[nH]c12, -1.65.
+*   **Large, polycyclic aromatic hydrocarbons (PAHs):** Tend to have very negative values (e.g., c1ccc2c(c1)cc3ccc4cccc5ccc2c3c45, -2.6; c1ccc2c(c1)ccc3c2ccc4c5ccccc5ccc43, -2.86).
+
+The target molecule is **CC(C)N(=O)=O**.
+This molecule contains:
+1.  An isopropyl group (hydrocarbon, generally contributes to a value around 0 or slightly negative).
+2.  A nitro group (-NO2).
+
+Comparing it to `Cc1ncc(N(=O)=O)n1CCO` which has a value of -1.43. This molecule is a more complex heterocyclic system with an alcohol and a methyl group, in addition to the nitro group.
+
+Our target molecule, 2-nitropropane, is much simpler. It's an aliphatic nitro compound.
+The nitro group is a strong electron-withdrawing group and highly polar. This polarity often leads to more negative values in these examples, especially when combined with other features.
+
+Let's consider the impact of the nitro group. The example `Cc1ncc(N(=O)=O)n1CCO` has a nitro group and a value of -1.43. However, that molecule is also a complex heterocycle with an alcohol.
+
+Consider the general trend:
+*   Simple alkanes: ~0
+*   Simple halogenated alkanes: positive
+*   Simple polar groups (like -OH, -C=O, -NH2): tend to make values more negative than simple alkanes, but not as negative as complex aromatic systems.
+
+The nitro group is quite polar.
+If we look at `NC(=O)CCl` (-0.24), it has an amide and a chlorine.
+`CCCCCl` (0.29) is a simple chloroalkane.
+
+The nitro group is known to be highly polar. The presence of a nitro group often leads to a decrease in the property value in these examples.
+Given the simplicity of the aliphatic chain (isopropyl) compared to the complex heterocyclic system in `Cc1ncc(N(=O)=O)n1CCO`, the value for 2-nitropropane should be less negative than -1.43, but still significantly negative due to the strong polarity of the nitro group.
+
+Let's try to
+==================================================
+Iteration: 4
+SMILES: CC12CC(O)C3C(CCC4=CC(=O)CCC34C)C2CCC1C(=O)CO
+True Property: -1.0000000000000002
+Predicted Property:
+-0.92
+==================================================
+Iteration: 5
+SMILES: Fc1cccc(F)c1C(=O)NC(=O)Nc2ccc(Cl)cc2
+True Property: -2.4699999999999993
+Predicted Property:
+-0.9
+==================================================
+Iteration: 6
+SMILES: CCCOC(C)C
+True Property: -0.04
+Predicted Property:
+-0.04
+==================================================
+Iteration: 7
+SMILES: CCC(C)n1c(=O)[nH]c(C)c(Br)c1=O 
+True Property: -0.8400000000000001
+Predicted Property:
+-1.6
+==================================================
+Iteration: 8
+SMILES: c1ccc(cc1)c2ccccc2
+True Property: -1.5599999999999996
+Predicted Property:
+-1.3
+==================================================
+Iteration: 9
+SMILES: CCCCS
+True Property: 0.35
+Predicted Property:
+-0.04
+==================================================
+Iteration: 10
+SMILES: CCCC(C)(C)CO
+True Property: -0.04
+Predicted Property:
+-0.04
+==================================================
+Iteration: 11
+SMILES: Cc1ccc2ccccc2c1
+True Property: -1.2999999999999998
+Predicted Property:
+-1.3
+==================================================
+Iteration: 12
+SMILES: O=C1NC(=O)NC(=O)C1(C(C)CCC)CC=C
+True Property: -1.65
+Predicted Property:
+-1.65
+==================================================
+Iteration: 13
+SMILES: FC(F)(F)c1ccccc1
+True Property: -0.9900000000000001
+Predicted Property:
+-0.05
+==================================================
+Iteration: 14
+SMILES: OCC1OC(O)C(O)C(O)C1O
+True Property: -0.24000000000000002
+Predicted Property:
+The molecule provided is a cyclic sugar, specifically a pyranose form of a hexose. Let's analyze its structure and compare it to the examples given.
+
+**Molecule to predict:** OCC1OC(O)C(O)C(O)C1O (This is D-glucose in its pyranose form, or a similar hexose)
+
+**Analysis of the molecule:**
+*   It's a six-membered ring containing one oxygen atom (pyranose ring).
+*   It has multiple hydroxyl (-OH) groups attached to the carbon atoms of the ring.
+*   It's highly polar due to the presence of many oxygen atoms and hydroxyl groups.
+*   It's a relatively small, rigid, and highly functionalized molecule.
+
+**Comparing with examples:**
+
+Let's look for molecules with similar characteristics, especially those with multiple hydroxyl groups or high polarity.
+
+*   **OCC(O)C(O)C(O)C(O)CO (-0.24):** This is an open-chain hexitol (like sorbitol). It has 6 hydroxyl groups and is highly polar. The predicted molecule is a cyclic isomer of a hexose, also with 5 hydroxyl groups and one ether oxygen in the ring. The values are likely to be in a similar range, perhaps slightly more negative due to the cyclic structure and potentially different packing efficiency.
+
+*   **CCC(C)(O)CC (-0.04), CC(C)CCCO (-0.04), CC(C)C(C)O (-0.04):** These are simple alcohols with one hydroxyl group. Their values are close to zero, indicating low polarity compared to the target molecule.
+
+*   **Oc1cccc(O)c1 (-1.18):** This is resorcinol, an aromatic diol. While it has two hydroxyl groups, the aromatic ring significantly changes its properties compared to an aliphatic sugar.
+
+*   **O=c1[nH]cnc2[nH]ncc12 (-1.65), Nc1ncnc2nc[nH]c12 (-1.65):** These are highly polar, hydrogen-bonding heterocyclic compounds. Their values are more negative, suggesting higher polarity or different intermolecular interactions.
+
+*   **OCC(O)C(O)C(O)C(O)CO (-0.24):** This is the most relevant comparison. It's an open-chain polyol with 6 hydroxyl groups. The target molecule is a cyclic polyol (sugar) with 5 hydroxyl groups and an ether oxygen in the ring. Both are highly polar and capable of extensive hydrogen bonding. The cyclic structure might lead to slightly different packing or interactions, but the overall polarity and functional group density are very similar.
+
+**Reasoning for prediction:**
+
+The molecule OCC1OC(O)C(O)C(O)C1O is a sugar (likely glucose or a similar hexose in its pyranose form). Sugars are known for their high polarity and ability to form extensive hydrogen bonds due to the numerous hydroxyl groups.
+
+The closest analogue in the provided examples is **OCC(O)C(O)C(O)C(O)CO**, which has a property value of **-0.24**. This is an open-chain hexitol, very similar in terms of functional groups (multiple -OH groups) and overall polarity to a cyclic hexose.
+
+Given the structural similarity and the high density of hydroxyl groups, the property value for OCC1OC(O)C(O)C(O)C1O should be very close to that of the open-chain hexitol. The cyclic nature might slightly alter the packing or intermolecular interactions, but the dominant factor will be the high polarity from the hydroxyl groups. It's unlikely to be as negative as the highly conjugated or aromatic polar molecules, nor as close to zero as simple alcohols or hydrocarbons.
+
+Therefore, a value very close to -0.24 is expected.
+
+Predicted property value: -0.24
+==================================================
+Iteration: 15
+SMILES: CC(=O)OCC(=O)C3(O)CCC4C2CCC1=CC(=O)C=CC1(C)C2C(O)CC34C 
+True Property: -1.79
+Predicted Property:
+-1.0
+==================================================
+Iteration: 16
+SMILES: CC34CCC1C(CCC2CC(=O)CCC12C)C3CCC4O 
+True Property: -0.37
+Predicted Property:
+-1.02
+==================================================
+Iteration: 17
+SMILES: CC(=O)Nc1ccc(cc1)N(=O)=O
+True Property: -1.91
+Predicted Property:
+-1.8
+==================================================
+Iteration: 18
+SMILES: CCOP(=S)(OCC)SCn1c(=O)oc2cc(Cl)ccc12
+True Property: -0.3000000000000001
+Predicted Property:
+-2.01
+==================================================
+Iteration: 19
+SMILES: CC(C)(C)CO
+True Property: -0.04
+Predicted Property:
+-0.04
+==================================================
+Iteration: 20
+SMILES: O=c1[nH]cnc2nc[nH]c12 
+True Property: -1.6500000000000004
+Predicted Property:
+-1.7
+==================================================
+Iteration: 21
+SMILES: CC(C)OC=O
+True Property: -0.53
+Predicted Property:
+-0.46
+==================================================
+Iteration: 22
+SMILES: O=C(Nc1ccccc1)Nc2ccccc2
+True Property: -2.2899999999999996
+Predicted Property:
+-1.5
+==================================================
+Iteration: 23
+SMILES: C1c2ccccc2c3ccccc13
+True Property: -1.5599999999999996
+Predicted Property:
+-2.34
+==================================================
+Iteration: 24
+SMILES: NC(=N)NS(=O)(=O)c1ccc(N)cc1 
+True Property: -1.7599999999999998
+Predicted Property:
+-1.7
+==================================================
+Iteration: 25
+SMILES: CCN(CC(C)=C)c1c(cc(cc1N(=O)=O)C(F)(F)F)N(=O)=O
+True Property: -2.650000000000001
+Predicted Property:
+-2.73
+==================================================
+Iteration: 26
+SMILES: CC(C)OC=O
+True Property: -0.53
+Predicted Property:
+-0.53
+==================================================
+Iteration: 27
+SMILES: Cc1cc(C)cc(O)c1
+True Property: -0.9800000000000001
+Predicted Property:
+-0.98
+==================================================
+Iteration: 28
+SMILES: COP(=S)(OC)Oc1ccc(SC)c(C)c1
+True Property: -0.06000000000000011
+Predicted Property:
+0.2
+==================================================
+Iteration: 29
+SMILES: Clc1cc(Cl)c(c(Cl)c1)c2c(Cl)cccc2Cl
+True Property: -0.11000000000000015
+Predicted Property:
+0.47
+==================================================
+Iteration: 30
+SMILES: CCCN(=O)=O
+True Property: -0.6000000000000001
+Predicted Property:
+-0.33
+==================================================
+Iteration: 31
+SMILES: Fc1cccc(Br)c1
+True Property: -0.3700000000000001
+Predicted Property:
+-0.01
+==================================================
+Iteration: 32
+SMILES: CC1(C)C2CCC1(C)C(O)C2
+True Property: -0.04
+Predicted Property:
+-0.04
+==================================================
+Iteration: 33
+SMILES: CCOP(=S)(OCC)N2C(=O)c1ccccc1C2=O
+True Property: -1.07
+Predicted Property:
+-0.43
+==================================================
+Iteration: 34
+SMILES: Cc1cc(=O)n(c2ccccc2)n1C
+True Property: -1.7699999999999998
+Predicted Property:
+-2.04
+==================================================
+Iteration: 35
+SMILES: CCCCCC(=O)OCC
+True Property: -0.53
+Predicted Property:
+-0.53
+==================================================
+Iteration: 36
+SMILES: COC(=O)c1ccccc1
+True Property: -1.31
+Predicted Property:
+-1.31
+==================================================
+Iteration: 37
+SMILES: C=CCC=C
+True Property: -0.52
+Predicted Property:
+-0.26
+==================================================
+Iteration: 38
+SMILES: BrC(Br)Br
+True Property: 1.44
+Predicted Property:
+0.56
+==================================================
+Iteration: 39
+SMILES: CCOP(=S)(OCC)SC(CCl)N2C(=O)c1ccccc1C2=O
+True Property: -0.4300000000000001
+Predicted Property:
+-0.9
+==================================================
+Iteration: 40
+SMILES: CN(C)C(=O)Nc1ccc(c(Cl)c1)n2nc(oc2=O)C(C)(C)C
+True Property: -2.28
+Predicted Property:
+-2.05
+==================================================
+Iteration: 41
+SMILES: Oc1cc(Cl)ccc1Oc2ccc(Cl)cc2Cl
+True Property: -1.0899999999999994
+Predicted Property:
+-0.98
+==================================================
+Iteration: 42
+SMILES: CC/C=C\C
+True Property: -0.26
+Predicted Property:
+-0.26
+==================================================
+Iteration: 43
+SMILES: CCCOCC
+True Property: -0.04
+Predicted Property:
+-0.04
+==================================================
+Iteration: 44
+SMILES: CN(C(=O)NC(C)(C)c1ccccc1)c2ccccc2
+True Property: -2.289999999999999
+Predicted Property:
+-1.81
+==================================================
+Iteration: 45
+SMILES: CC(=O)Nc1ccc(Br)cc1
+True Property: -0.8300000000000001
+Predicted Property:
+-1.2
+==================================================
+Iteration: 46
+SMILES: CC(C)Cc1ccccc1
+True Property: -0.78
+Predicted Property:
+-0.78
+==================================================
+Iteration: 47
+SMILES: O=Cc1ccccc1
+True Property: -1.11
+Predicted Property:
+-1.05
+==================================================
+Iteration: 48
+SMILES: O=C2CN(N=Cc1ccc(o1)N(=O)=O)C(=O)N2 
+True Property: -2.71
+Predicted Property:
+-1.7
+==================================================
+Iteration: 49
+SMILES: N(Nc1ccccc1)c2ccccc2 
+True Property: -1.9599999999999995
+Predicted Property:
+-1.96
+==================================================
+Iteration: 50
+SMILES: O=C2NC(=O)C1(CCCC1)C(=O)N2
+True Property: -1.3900000000000001
+Predicted Property:
+-1.3
+==================================================
+Iteration: 51
+SMILES: Clc1ccc(cc1)c2c(Cl)cccc2Cl 
+True Property: -0.6900000000000002
+Predicted Property:
+-0.11
+==================================================
+Iteration: 52
+SMILES: CCc1ccc(CC)cc1
+True Property: -0.78
+Predicted Property:
+-0.78
+==================================================
+Iteration: 53
+SMILES: Nc1ccc(cc1)S(N)(=O)=O
+True Property: -1.07
+Predicted Property:
+-1.58
+==================================================
+Iteration: 54
+SMILES: c1ccc2c(c1)c3cccc4cccc2c34
+True Property: -2.079999999999999
+Predicted Property:
+-2.6
+==================================================
+Iteration: 55
+SMILES: Oc2cc(O)c1C(=O)CC(Oc1c2)c3ccc(O)c(O)c3
+True Property: -2.8899999999999997
+Predicted Property:
+-2.85
+==================================================
+Iteration: 56
+SMILES: COP(=O)(NC(C)=O)SC 
+True Property: 0.009999999999999953
+Predicted Property:
+-0.15
+==================================================
+Iteration: 57
+SMILES: Cl\C=C/Cl
+True Property: 0.31999999999999995
+Predicted Property:
+0.18
+==================================================
+Iteration: 58
+SMILES: c1ccncc1
+True Property: -0.8500000000000001
+Predicted Property:
+-0.98
+==================================================
+Iteration: 59
+SMILES: OCC(O)COC(=O)c1ccccc1Nc2ccnc3cc(Cl)ccc23
+True Property: -2.669999999999999
+Predicted Property:
+-2.5
+==================================================
+Iteration: 60
+SMILES: CCCCCO
+True Property: -0.04
+Predicted Property:
+-0.04
+==================================================
+Iteration: 61
+SMILES: CC1=C(C(=O)Nc2ccccc2)S(=O)(=O)CCO1
+True Property: -1.8199999999999996
+Predicted Property:
+-1.5
+==================================================
+Iteration: 62
+SMILES: COC(=O)C1=C(C)NC(=C(C1c2ccccc2N(=O)=O)C(=O)OC)C 
+True Property: -3.16
+Predicted Property:
+-2.3
+==================================================
+Iteration: 63
+SMILES: O=C2NC(=O)C1(CC1)C(=O)N2 
+True Property: -1.3900000000000001
+Predicted Property:
+-0.7
+==================================================
+Iteration: 64
+SMILES: ClCC
+True Property: 0.29
+Predicted Property:
+-0.26
+==================================================
+Iteration: 65
+SMILES: Clc1cccc(n1)C(Cl)(Cl)Cl
+True Property: 0.3099999999999999
+Predicted Property:
+1.06
+==================================================
+Iteration: 66
+SMILES: CCCCC(C)O
+True Property: -0.04
+Predicted Property:
+-0.04
+==================================================
+Iteration: 67
+SMILES: Brc1ccc(Br)cc1
+True Property: 0.17999999999999994
+Predicted Property:
+-0.4
+==================================================
+Iteration: 68
+SMILES: Clc1cc(Cl)c(c(Cl)c1)c2c(Cl)cc(Cl)cc2Cl 
+True Property: 0.17999999999999983
+Predicted Property:
+-1.34
+==================================================
+Iteration: 69
+SMILES: Cc1ccc(OP(=O)(Oc2cccc(C)c2)Oc3ccccc3C)cc1
+True Property: -2.709999999999999
+Predicted Property:
+-2.0
+==================================================
+Iteration: 70
+SMILES: FC(F)(F)c1cccc(c1)N2CC(CCl)C(Cl)C2=O
+True Property: -0.9400000000000002
+Predicted Property:
+-1.2
+==================================================
+Iteration: 71
+SMILES: COc1ccccc1N(=O)=O
+True Property: -1.58
+Predicted Property:
+-1.98
+==================================================
+Iteration: 72
+SMILES: ClC1CC2C(C1Cl)C3(Cl)C(=C(Cl)C2(Cl)C3(Cl)Cl)Cl
+True Property: 2.06
+Predicted Property:
+1.74
+==================================================
+Iteration: 73
+SMILES: CCCOC=O
+True Property: -0.53
+Predicted Property:
+The molecule is ethyl acetate, which is a common solvent. Looking at the examples, simple esters like "CCOC(=O)c1ccc(N)cc1" have negative values, but that molecule has an additional amine group and a benzene ring. "CCSC(=O)N(CC(C)C)CC(C)C" is another ester-like molecule with a value of -0.18. The closest example in terms of simplicity is "CCC#C" with -0.44, or "CC#N" with -0.51. These are small, relatively non-polar molecules.
+
+Considering the general trend, small, relatively non-polar organic molecules tend to have values closer to zero or slightly negative. Esters are somewhat polar due to the carbonyl group and the ether linkage, but not as polar as molecules with multiple hydroxyl groups or nitro groups.
+
+Given the simplicity of the molecule and its similarity to other small organic compounds, I would expect a value slightly negative, but not as negative as those with extensive aromatic systems or multiple highly polar groups.
+
+Let's consider the examples again:
+- "C1CCCCCC1" (cyclohexane) is 0.0, a non-polar alkane.
+- "CC(Cl)Cl" (1,1-dichloroethane) is 0.58. Halogenation increases the value.
+- "CCCI" (1-iodopropane) is 0.73.
+- "CCCC(O)CC" (3-hexanol) is -0.04. Adding an -OH group makes it slightly negative.
+- "CCC#C" (1-butyne) is -0.44.
+- "CC#N" (acetonitrile) is -0.51.
+
+Esters are generally less volatile and more polar than simple alkanes but less polar than alcohols with similar carbon counts. The carbonyl group adds some polarity.
+
+Comparing it to "CCCC(O)CC" (-0.04), which has an alcohol group, an ester group is also polar.
+Comparing it to "CCC#C" (-0.44), which has a triple bond, the ester group is also a polar functional group.
+
+I'll estimate it to be slightly more negative than a simple alcohol but less negative than highly conjugated or multi-polar systems.
+
+Predicted property: -0.25
+==================================================
+Iteration: 74
+SMILES: CCCCCCCCCC(=O)OCC
+True Property: -0.53
+Predicted Property:
+-0.25
+==================================================
+Iteration: 75
+SMILES: Oc1ccc(Cl)cc1C(=O)Nc2ccc(cc2Cl)N(=O)=O
+True Property: -2.3099999999999996
+Predicted Property:
+-2.05
+==================================================
+Iteration: 76
+SMILES: COP(=S)(OC)Oc1ccc(Sc2ccc(OP(=S)(OC)OC)cc2)cc1
+True Property: -0.4700000000000002
+Predicted Property:
+-0.1
+==================================================
+Iteration: 77
+SMILES: Oc1cccc(c1)N(=O)=O
+True Property: -1.58
+Predicted Property:
+-1.38
+==================================================
+Iteration: 78
+SMILES: OCC1OC(CO)(OC2OC(COC3OC(CO)C(O)C(O)C3O)C(O)C(O)C2O)C(O)C1O
+True Property: -0.64
+Predicted Property:
+-0.2
+==================================================
+Iteration: 79
+SMILES: CCC#C
+True Property: -0.44
+Predicted Property:
+-0.26
+==================================================
+Iteration: 80
+SMILES: CCOP(=S)(CC)Oc1cc(Cl)c(Cl)cc1Cl
+True Property: 0.4999999999999999
+Predicted Property:
+-0.1
+==================================================
+Iteration: 81
+SMILES: c1nccc(C(=O)NN)c1
+True Property: -1.42
+Predicted Property:
+-1.4
+==================================================
+Iteration: 82
+SMILES: CCCOP(=S)(OCCC)SCC(=O)N1CCCCC1C
+True Property: 0.38999999999999985
+Predicted Property:
+-1.05
+==================================================
+Iteration: 83
+SMILES: CCCCCCCC
+True Property: 0.0
+Predicted Property:
+-0.04
+==================================================
+Iteration: 84
+SMILES: CC34CCC1C(CCC2=CC(=O)CCC12O)C3CCC4(O)C#C
+True Property: -1.11
+Predicted Property:
+-1.0
+==================================================
+Iteration: 85
+SMILES: COc1cc(cc(OC)c1O)C6C2C(COC2=O)C(OC4OC3COC(C)OC3C(O)C4O)c7cc5OCOc5cc67
+True Property: -3.3299999999999996
+Predicted Property:
+-2.8
+==================================================
+Iteration: 86
+SMILES: Oc1ccccc1Cl
+True Property: -0.6900000000000002
+Predicted Property:
+-0.85
+==================================================
+Iteration: 87
+SMILES: ClCC#CCOC(=O)Nc1cccc(Cl)c1
+True Property: -1.3699999999999997
+Predicted Property:
+-1.2
+==================================================
+Iteration: 88
+SMILES: OC(c1ccc(Cl)cc1)(c2cncnc2)c3ccccc3Cl
+True Property: -1.9399999999999995
+Predicted Property:
+-1.05
+==================================================
+Iteration: 89
+SMILES: CCCCOC=O
+True Property: -0.53
+Predicted Property:
+-0.33
+==================================================
+Iteration: 90
+SMILES: ClCCl
+True Property: 0.58
+Predicted Property:
+0.58
+==================================================
+Iteration: 91
+SMILES: Cc1cccc(C)c1O
+True Property: -0.98
+Predicted Property:
+-0.98
+==================================================
+Iteration: 92
+SMILES: Clc1ccc(c(Cl)c1)c2cc(Cl)ccc2Cl 
+True Property: -0.4000000000000001
+Predicted Property:
+0.18
+==================================================
+Iteration: 93
+SMILES: CC=C(C)C
+True Property: -0.26
+Predicted Property:
+-0.26
+==================================================
+Iteration: 94
+SMILES: ClCCl
+True Property: 0.58
+Predicted Property:
+The molecule ClCCl is dichloromethane. Based on the provided examples, the property values seem to correlate with molecular complexity, polarity, and the presence of certain functional groups.
+
+Looking at the examples:
+*   `ClC(=C(Cl)Cl)Cl` (tetrachloroethylene) has a value of `0.9`. This is a highly chlorinated, non-polar molecule.
+*   `ClC4=C(Cl)C5(Cl)C3C1CC(C2OC12)C3C4(Cl)C5(Cl)Cl` (a highly chlorinated polycyclic compound) has a value of `1.44`.
+*   `ClC1CC2C(C1Cl)C3(Cl)C(=C(Cl)C2(Cl)C3(Cl)Cl)Cl` (another highly chlorinated polycyclic compound) has a value of `2.06`.
+*   `COP(=O)(OC)C(O)C(Cl)(Cl)Cl` (chloral hydrate derivative) has a value of `0.98`.
+*   `CCCCSP(=O)(SCCCC)SCCCC` (a phosphorodithioate) has a value of `1.28`.
+
+These examples suggest that highly chlorinated, relatively small, and somewhat non-polar molecules tend to have positive property values. Dichloromethane (ClCCl) is a simple, highly chlorinated, and moderately polar molecule. It is less complex than the highly chlorinated polycyclic compounds but more chlorinated than simple hydrocarbons.
+
+Considering its structure and the trend for chlorinated compounds, it should have a positive value, likely in the range of the simpler chlorinated molecules. It's simpler than tetrachloroethylene but still has two chlorine atoms.
+
+Predicting based on the trend of increasing chlorination and decreasing complexity (compared to the very large chlorinated molecules):
+
+*   `ClC(=C(Cl)Cl)Cl` (4 Cl, 2 C) -> 0.9
+*   `ClCCl` (2 Cl, 1 C) should be lower than 0.9 but still positive.
+
+A value around 0.5 to 0.7 seems reasonable.
+
+0.55
+==================================================
+Iteration: 95
+SMILES: Oc1c(Cl)ccc(Cl)c1Cl
+True Property: -0.1100000000000001
+Predicted Property:
+-0.11
+==================================================
+Iteration: 96
+SMILES: COc1cc(cc(OC)c1O)C6C2C(COC2=O)C(OC4OC3COC(C)OC3C(O)C4O)c7cc5OCOc5cc67
+True Property: -3.3299999999999996
+Predicted Property:
+-2.6
+==================================================
+Iteration: 97
+SMILES: CSc1nnc(c(=O)n1N)C(C)(C)C
+True Property: -1.04
+Predicted Property:
+-1.21
+==================================================
+Iteration: 98
+SMILES: CCOC(=O)c1ccccc1
+True Property: -1.31
+Predicted Property:
+-0.98
+==================================================
+Iteration: 99
+SMILES: CCCCCCCBr
+True Property: 0.48
+Predicted Property:
+-0.09
+==================================================
+Iteration: 100
+SMILES: CO
+True Property: -0.04
+Predicted Property:
+-0.24
+==================================================
+Iteration: 3
+SMILES: CC(C)N(=O)=O
+True Property: -0.6000000000000001
+Predicted Property:
+The molecule is 2-nitropropane.
+Based on the provided examples, the property values seem to be related to molecular size, polarity, and the presence of specific functional groups.
+
+Let's analyze the given examples and try to find a pattern:
+
+*   **Small, non-polar hydrocarbons:** Tend to have values around 0 or slightly negative (e.g., CCC(C)CC, 0.0; C1CCC=CCC1, -0.26).
+*   **Halogenated compounds:** Generally have positive values, increasing with more halogens (e.g., ClCC, 0.29; CCCCCl, 0.29; CCI, 0.73; ClC(Cl)(Cl)C(Cl)(Cl)Cl, 1.74). Aromatic halogens can lead to more negative values if other polar groups are present (e.g., Oc1c(Cl)cc(Cl)c(Cl)c1Cl, 0.18; Oc1ccc(Cl)c(Cl)c1Cl, -0.11).
+*   **Compounds with oxygen (ethers, alcohols, ketones, esters):** Values vary widely. Ethers can be slightly negative (CCCOCC, -0.04). Alcohols can be negative (CCCC(O)C=C, -0.3). Esters can be negative (CCCCCCCCC(=O)OCC, -0.53).
+*   **Compounds with nitrogen (amines, amides, nitro groups, heterocycles):** Often lead to more negative values, especially if they are part of complex or aromatic systems.
+    *   Nitro groups: Cc1ncc(N(=O)=O)n1CCO, -1.43. This is a good reference for a nitro group.
+    *   Amides: NC(=O)CCl, -0.24; NC(=O)NC1NC(=O)NC1=O, -1.79.
+    *   Heterocycles with N: Nc1nccs1, -0.57; O=c1[nH]cnc2nc[nH]c12, -1.65.
+*   **Large, polycyclic aromatic hydrocarbons (PAHs):** Tend to have very negative values (e.g., c1ccc2c(c1)cc3ccc4cccc5ccc2c3c45, -2.6; c1ccc2c(c1)ccc3c2ccc4c5ccccc5ccc43, -2.86).
+
+The target molecule is **CC(C)N(=O)=O**.
+This molecule contains:
+1.  An isopropyl group (hydrocarbon, generally contributes to a value around 0 or slightly negative).
+2.  A nitro group (-NO2).
+
+Comparing it to `Cc1ncc(N(=O)=O)n1CCO` which has a value of -1.43. This molecule is a more complex heterocyclic system with an alcohol and a methyl group, in addition to the nitro group.
+
+Our target molecule, 2-nitropropane, is much simpler. It's an aliphatic nitro compound.
+The nitro group is a strong electron-withdrawing group and highly polar. This polarity often leads to more negative values in these examples, especially when combined with other features.
+
+Let's consider the impact of the nitro group. The example `Cc1ncc(N(=O)=O)n1CCO` has a nitro group and a value of -1.43. However, that molecule is also a complex heterocycle with an alcohol.
+
+Consider the general trend:
+*   Simple alkanes: ~0
+*   Simple halogenated alkanes: positive
+*   Simple polar groups (like -OH, -C=O, -NH2): tend to make values more negative than simple alkanes, but not as negative as complex aromatic systems.
+
+The nitro group is quite polar.
+If we look at `NC(=O)CCl` (-0.24), it has an amide and a chlorine.
+`CCCCCl` (0.29) is a simple chloroalkane.
+
+The nitro group is known to be highly polar. The presence of a nitro group often leads to a decrease in the property value in these examples.
+Given the simplicity of the aliphatic chain (isopropyl) compared to the complex heterocyclic system in `Cc1ncc(N(=O)=O)n1CCO`, the value for 2-nitropropane should be less negative than -1.43, but still significantly negative due to the strong polarity of the nitro group.
+
+Let's try to estimate based on the "impact" of the nitro group.
+If a simple alkane is around 0, and adding a nitro group makes it significantly negative.
+The closest comparison is the nitro-containing example: `Cc1ncc(N(=O)=O)n1CCO` (-1.43). This molecule is much larger and more complex, with a heterocyclic ring and an alcohol group, which likely contribute to its very negative value.
+
+2-nitropropane is a small, aliphatic molecule with a highly polar nitro group. It's more polar than simple alkanes but less complex than the heterocyclic nitro compound.
+
+Let's consider the range of values for small, polar molecules:
+*   `CCCOCC` (ether): -0.04
+*   `CCCC(O)C=C` (alcohol): -0.3
+*   `NC(=O)CCl` (amide, halogen): -0.24
+
+The nitro group is generally more polar than an ether or a simple alcohol.
+Given the value of -1.43 for a more complex molecule with a nitro group, a simpler aliphatic nitro compound should be less negative.
+
+I'd estimate it to be in the range of -0.5 to -1.0. The nitro group is a strong electron-withdrawing group and highly polar.
+
+Let's consider the impact of the nitro group. If we take a simple alkane like `CCC(C)CC` (0.0), and replace a hydrogen with a nitro group, we expect a significant drop.
+The value of -1.43 for the complex nitro compound suggests that the nitro group itself contributes significantly to a negative value.
+
+I will predict a value that reflects the strong polarity of the nitro group, but is less extreme than the complex heterocyclic example.
+
+Predicted value: -0.85
+==================================================

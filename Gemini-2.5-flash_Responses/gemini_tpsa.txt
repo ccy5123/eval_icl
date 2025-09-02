@@ -1,0 +1,828 @@
+Iteration: 1
+SMILES: CCCCCCCCCC(=O)OC
+True Property: 26.3
+Predicted Property:
+26.3
+==================================================
+Iteration: 2
+SMILES: Clc2ccc1oc(=O)[nH]c1c2
+True Property: 46.0
+Predicted Property:
+63.32
+==================================================
+Iteration: 3
+SMILES: CC(C)N(=O)=O
+True Property: 43.14
+Predicted Property:
+0.0
+==================================================
+Iteration: 4
+SMILES: CC12CC(O)C3C(CCC4=CC(=O)CCC34C)C2CCC1C(=O)CO
+True Property: 74.6
+Predicted Property:
+51.21
+==================================================
+Iteration: 5
+SMILES: Fc1cccc(F)c1C(=O)NC(=O)Nc2ccc(Cl)cc2
+True Property: 58.2
+Predicted Property:
+75.27
+==================================================
+Iteration: 6
+SMILES: CCCOC(C)C
+True Property: 9.23
+Predicted Property:
+20.23
+==================================================
+Iteration: 7
+SMILES: CCC(C)n1c(=O)[nH]c(C)c(Br)c1=O 
+True Property: 54.86
+Predicted Property:
+75.27
+==================================================
+Iteration: 8
+SMILES: c1ccc(cc1)c2ccccc2
+True Property: 0.0
+Predicted Property:
+0.0
+==================================================
+Iteration: 9
+SMILES: CCCCS
+True Property: 0.0
+Predicted Property:
+24.06
+==================================================
+Iteration: 10
+SMILES: CCCC(C)(C)CO
+True Property: 20.23
+Predicted Property:
+20.23
+==================================================
+Iteration: 11
+SMILES: Cc1ccc2ccccc2c1
+True Property: 0.0
+Predicted Property:
+0.0
+==================================================
+Iteration: 12
+SMILES: O=C1NC(=O)NC(=O)C1(C(C)CCC)CC=C
+True Property: 75.27000000000001
+Predicted Property:
+75.27
+==================================================
+Iteration: 13
+SMILES: FC(F)(F)c1ccccc1
+True Property: 0.0
+Predicted Property:
+0.0
+==================================================
+Iteration: 14
+SMILES: OCC1OC(O)C(O)C(O)C1O
+True Property: 110.38000000000001
+Predicted Property:
+121.38
+==================================================
+Iteration: 15
+SMILES: CC(=O)OCC(=O)C3(O)CCC4C2CCC1=CC(=O)C=CC1(C)C2C(O)CC34C 
+True Property: 100.90000000000002
+Predicted Property:
+The provided examples suggest a correlation between the complexity and functional groups of a molecule and its associated property value. Molecules with many rings, hydroxyl groups, carbonyl groups, and heteroatoms tend to have higher values, while simpler hydrocarbons or highly chlorinated/brominated compounds often have values close to 0.
+
+Let's analyze the target molecule:
+`CC(=O)OCC(=O)C3(O)CCC4C2CCC1=CC(=O)C=CC1(C)C2C(O)CC34C`
+
+This molecule is quite complex. It contains:
+*   Multiple rings (a steroid-like backbone).
+*   Several carbonyl groups (`C=O`).
+*   Multiple hydroxyl groups (`-OH`).
+*   Ester linkages (`-COO-`).
+*   Methyl groups.
+*   Double bonds.
+
+Comparing its complexity to the examples:
+*   `CCC1(C(=O)NC(=O)NC1=O)C2=CCCCC2` (75.27) - Has multiple rings, carbonyls, and N-H.
+*   `OCC(O)C(O)C(O)C(O)CO` (121.38) - Simple chain but many hydroxyls.
+*   `NC(=N)NS(=O)(=O)c1ccc(N)cc1` (122.06) - Contains sulfonyl, amino, and guanidine groups.
+*   `Nc2nc1[nH]cnc1c(=O)[nH]2` (100.45) - Purine derivative with multiple heteroatoms and carbonyl.
+*   `OCC3OC(OCC2OC(OC(C#N)c1ccccc1)C(O)C(O)C2O)C(O)C(O)C3O` (202.32) - Very large, complex sugar derivative with many hydroxyls and a nitrile.
+*   `CCC(=O)OC3CCC4C2CCC1=CC(=O)CCC1(C)C2CCC34C` (43.37) - A steroid derivative with an ester and carbonyl, similar backbone to our target.
+
+Our target molecule is a steroid derivative, similar to the one with a value of 43.37, but it has additional functional groups: two ester groups, two hydroxyl groups, and an additional carbonyl group compared to the 43.37 example. The presence of these additional polar and oxygen-containing functional groups will significantly increase the property value.
+
+The molecule `CCC(=O)OC3CCC4C2CCC1=CC(=O)CCC1(C)C2CCC34C` has one ester and one ketone.
+Our target molecule `CC(=O)OCC(=O)C3(O)CCC4C2CCC1=CC(=O)C=CC1(C)C2C(O)CC34C` has two esters, two ketones, and two hydroxyl groups.
+
+The increase in polar functional groups (esters, ketones, hydroxyls) suggests a much higher value than 43.37. It's more complex and polar than many of the examples in the 20-70 range. It's not as large or as rich in hydroxyls as the 100+ or 200+ examples, but it's certainly more complex than the 40s.
+
+Considering the significant increase in oxygen-containing functional groups and the overall complexity, the value should be considerably higher than 43.37. It might fall into a range similar to the more polar and complex molecules like `CCC1(CC)C(=O)NC(=O)N(C)C1=O` (66.48) or `CCNc1nc(NC(C)C)nc(OC)n1` (71.96), but given the steroid backbone and multiple added functionalities, it should be even higher.
+
+Let's estimate the contribution of the additional groups. The base steroid with one ester and one ketone is 43.37. Our molecule adds:
+*   One more ester group.
+*   One more ketone group.
+*   Two hydroxyl groups.
+
+These are significant additions. Each of these groups contributes to polarity and complexity. A rough estimation would be to add a substantial amount for these groups. If we consider the jump from simpler molecules to those in the 40-70 range, adding multiple polar groups to an already complex structure would push it higher.
+
+Given the complexity and the number of oxygen atoms, a value in the range of 8
+==================================================
+Iteration: 16
+SMILES: CC34CCC1C(CCC2CC(=O)CCC12C)C3CCC4O 
+True Property: 37.3
+Predicted Property:
+40.46
+==================================================
+Iteration: 17
+SMILES: CC(=O)Nc1ccc(cc1)N(=O)=O
+True Property: 72.24000000000001
+Predicted Property:
+52.37
+==================================================
+Iteration: 18
+SMILES: CCOP(=S)(OCC)SCn1c(=O)oc2cc(Cl)ccc12
+True Property: 53.6
+Predicted Property:
+52.6
+==================================================
+Iteration: 19
+SMILES: CC(C)(C)CO
+True Property: 20.23
+Predicted Property:
+20.23
+==================================================
+Iteration: 20
+SMILES: O=c1[nH]cnc2nc[nH]c12 
+True Property: 74.43
+Predicted Property:
+71.77
+==================================================
+Iteration: 21
+SMILES: CC(C)OC=O
+True Property: 26.3
+Predicted Property:
+9.23
+==================================================
+Iteration: 22
+SMILES: O=C(Nc1ccccc1)Nc2ccccc2
+True Property: 41.13
+Predicted Property:
+I will analyze the provided examples to understand the relationship between molecular structure and the given property.
+
+**Analysis of Examples:**
+
+*   **Hydrocarbons (alkanes, alkenes, alkynes, simple aromatics):** Generally have a property value of **0.0**. Examples: C1CCCCC1, CC1=CCC(CC1)C(C)=C, Clc1cc(Cl)c(Cl)c(Cl)c1Cl, Cc1ccc(C)c2ccccc12, c1(Br)c(Br)cc(Br)cc1, CCC#CCC, CCCCCCBr, Fc1cccc(F)c1, Cc1cccc2ccccc12, CCCCCC1CCCC1. This suggests that the property is not related to basic hydrocarbon frameworks or simple halogenation.
+
+*   **Molecules with -OH (alcohols, phenols):** Show significant positive values.
+    *   OCC(O)CO (glycerol): 60.69 (multiple -OH)
+    *   OCC1OC(O)C(O)C(O)C1O (glucose): 110.38 (many -OH, cyclic ether)
+    *   OC1CCCCC1 (cyclohexanol): 20.23
+    *   Oc1ccccc1Cl (chlorophenol): 20.23 (similar to cyclohexanol, suggesting a single -OH contributes ~20)
+    *   Oc1ccc(C=O)cc1 (hydroxybenzaldehyde): 37.3 (aldehyde + phenol, higher than just phenol)
+    *   Oc1cccc(c1)N(=O)=O (nitrophenol): 63.37 (nitro group significantly increases value)
+    *   CCCCO (butanol): 20.23 (confirms ~20 for a single alcohol)
+    *   Oc1ccc(Cl)cc1Cc2cc(Cl)ccc2O (bisphenol-like): 40.46 (two phenols, roughly 2 * 20)
+
+*   **Molecules with -C=O (ketones, aldehydes, esters, amides, carboxylic acids):**
+    *   CC(C)C(=O)C(C)C (diisopropyl ketone): 17.07
+    *   CCCCCC=O (hexanal): 17.07 (suggests a single ketone/aldehyde contributes ~17)
+    *   CCCOC(=O)CCC (ester): 26.3
+    *   CCCOC(=O)C (ester): 26.3 (suggests an ester group contributes ~26)
+    *   CCCC(=O)OC (ester): 26.3 (confirms ~26 for ester)
+    *   CC(=O)Nc1ccc(Br)cc1 (amide): 29.1 (amide seems to contribute slightly more than ester)
+    *   CNC(=O)Oc1cc(C)cc(C)c1 (carbamate/ester-amide hybrid): 38.33 (higher, likely due to multiple polar groups)
+    *   NC(=O)c1cccnc1 (amide on pyridine): 55.98 (amide + heterocyclic N)
+    *   NC(=S)N (thiourea): 52.04 (amide-like, with sulfur)
+
+*   **Molecules with Nitrogen (amines, amides, heterocycles, nitro groups):**
+    *   c2ccc1scnc1c2 (benzothiazole): 12.89 (heterocyclic N and S)
+    *   c1ccncc1 (pyridine): 12.89 (heterocyclic N)
+    *   c3ccc2nc1ccccc1cc2c3 (phenanthroline): 12.89 (multiple heterocyclic N, but still 12.89, suggesting a base contribution for aromatic N heterocycles)
+    *   Cc1ccc(N)cc1 (aniline): 26.02 (amine on aromatic ring, similar to ester contribution)
+    *   Oc1cccc(c1)N(=O)=O (nitrophenol): 63.37 (nitro group significantly increases value, much more than -OH alone)
+    *   CCN(Cc1c(F)cccc1Cl)c2c(cc(cc2N(=O)=O)C(F)(F)F)N(=O)=O (complex with two nitro groups): 89.52 (
+==================================================
+Iteration: 23
+SMILES: C1c2ccccc2c3ccccc13
+True Property: 0.0
+Predicted Property:
+0.0
+==================================================
+Iteration: 24
+SMILES: NC(=N)NS(=O)(=O)c1ccc(N)cc1 
+True Property: 122.05999999999999
+Predicted Property:
+82.28
+==================================================
+Iteration: 25
+SMILES: CCN(CC(C)=C)c1c(cc(cc1N(=O)=O)C(F)(F)F)N(=O)=O
+True Property: 89.51999999999998
+Predicted Property:
+84.6
+==================================================
+Iteration: 26
+SMILES: CC(C)OC=O
+True Property: 26.3
+Predicted Property:
+26.3
+==================================================
+Iteration: 27
+SMILES: Cc1cc(C)cc(O)c1
+True Property: 20.23
+Predicted Property:
+40.46
+==================================================
+Iteration: 28
+SMILES: COP(=S)(OC)Oc1ccc(SC)c(C)c1
+True Property: 27.69
+Predicted Property:
+27.69
+==================================================
+Iteration: 29
+SMILES: Clc1cc(Cl)c(c(Cl)c1)c2c(Cl)cccc2Cl
+True Property: 0.0
+Predicted Property:
+0.0
+==================================================
+Iteration: 30
+SMILES: CCCN(=O)=O
+True Property: 43.14
+Predicted Property:
+0.0
+==================================================
+Iteration: 31
+SMILES: Fc1cccc(Br)c1
+True Property: 0.0
+Predicted Property:
+0.0
+==================================================
+Iteration: 32
+SMILES: CC1(C)C2CCC1(C)C(O)C2
+True Property: 20.23
+Predicted Property:
+The property appears to be related to the polarity and complexity of the molecule, possibly a measure of its solubility, melting point, or a similar physical property. Aromatic rings, hydroxyl groups, and heteroatoms (N, O, S, F, Cl) tend to increase the value, while simple hydrocarbons or highly symmetrical molecules have values close to 0.0. Bulky, branched structures also seem to contribute to higher values.
+
+Let's analyze the given molecule: CC1(C)C2CCC1(C)C(O)C2
+
+This molecule is a bicyclic system with two methyl groups and one hydroxyl group.
+- It has a hydroxyl group (OH), which is a polar functional group and typically increases the property value.
+- It is a relatively compact and branched structure.
+- It contains only carbon, hydrogen, and one oxygen atom.
+
+Comparing it to the examples:
+- `CCCC(C)(C)O` (20.23) and `CCCCCCCCCC(C)O` (20.23) and `CC(C)(C)CO` (20.23) are simple alcohols with a single OH group.
+- `CC1CCCO1` (9.23) is a cyclic ether, less polar than an alcohol.
+- `CC1CC2C3CCC4=CC(=O)C=CC4(C)C3(F)C(O)CC2(C)C1(O)C(=O)CO` (94.83) and `CC5(C)OC4CC3C2CCC1=CC(=O)C=CC1(C)C2(F)C(O)CC3(C)C4(O5)C(=O)CO` (93.06) are very complex steroids with multiple polar groups and rings, leading to very high values.
+- `CC(=O)C3CCC4C2CC=C1CC(O)CCC1(C)C2CCC34C` (37.3) is a complex polycyclic ketone with one hydroxyl group.
+
+The molecule `CC1(C)C2CCC1(C)C(O)C2` is a bicyclic alcohol. It's more complex and has more branching than simple linear or branched alcohols like `CCCC(C)(C)O`. The presence of the hydroxyl group will significantly increase the value from 0.0. The bicyclic structure and the two methyl groups add to its complexity and bulk.
+
+Given the values for simple alcohols around 20.23 and more complex structures with OH groups like `CC(=O)C3CCC4C2CC=C1CC(O)CCC1(C)C2CCC34C` at 37.3, this molecule should fall in a similar range, likely higher than the simple alcohols due to its bicyclic nature and branching, but not as high as the very complex steroids.
+
+Let's consider the structure: it's a bicyclo[2.2.1]heptane derivative with two methyl groups and one hydroxyl group. This is a relatively rigid and compact structure.
+
+My prediction is that the value will be higher than simple alcohols (20.23) due to the bicyclic structure and branching, but not as high as the very complex polycyclic molecules. It should be in the range of 30-40.
+
+Predicted property value: 32.5
+
+The final answer is $\boxed{32.5}$
+==================================================
+Iteration: 33
+SMILES: CCOP(=S)(OCC)N2C(=O)c1ccccc1C2=O
+True Property: 55.84
+Predicted Property:
+55.84
+==================================================
+Iteration: 34
+SMILES: Cc1cc(=O)n(c2ccccc2)n1C
+True Property: 26.93
+Predicted Property:
+42.43
+==================================================
+Iteration: 35
+SMILES: CCCCCC(=O)OCC
+True Property: 26.3
+Predicted Property:
+26.3
+==================================================
+Iteration: 36
+SMILES: COC(=O)c1ccccc1
+True Property: 26.3
+Predicted Property:
+26.3
+==================================================
+Iteration: 37
+SMILES: C=CCC=C
+True Property: 0.0
+Predicted Property:
+0.0
+==================================================
+Iteration: 38
+SMILES: BrC(Br)Br
+True Property: 0.0
+Predicted Property:
+0.0
+==================================================
+Iteration: 39
+SMILES: CCOP(=S)(OCC)SC(CCl)N2C(=O)c1ccccc1C2=O
+True Property: 55.84
+Predicted Property:
+70.0
+==================================================
+Iteration: 40
+SMILES: CN(C)C(=O)Nc1ccc(c(Cl)c1)n2nc(oc2=O)C(C)(C)C
+True Property: 80.37
+Predicted Property:
+70.23
+==================================================
+Iteration: 41
+SMILES: Oc1cc(Cl)ccc1Oc2ccc(Cl)cc2Cl
+True Property: 29.46
+Predicted Property:
+20.23
+==================================================
+Iteration: 42
+SMILES: CC/C=C\C
+True Property: 0.0
+Predicted Property:
+0.0
+==================================================
+Iteration: 43
+SMILES: CCCOCC
+True Property: 9.23
+Predicted Property:
+0.0
+==================================================
+Iteration: 44
+SMILES: CN(C(=O)NC(C)(C)c1ccccc1)c2ccccc2
+True Property: 32.34
+Predicted Property:
+42.43
+==================================================
+Iteration: 45
+SMILES: CC(=O)Nc1ccc(Br)cc1
+True Property: 29.1
+Predicted Property:
+20.23
+==================================================
+Iteration: 46
+SMILES: CC(C)Cc1ccccc1
+True Property: 0.0
+Predicted Property:
+0.0
+==================================================
+Iteration: 47
+SMILES: O=Cc1ccccc1
+True Property: 17.07
+Predicted Property:
+9.23
+==================================================
+Iteration: 48
+SMILES: O=C2CN(N=Cc1ccc(o1)N(=O)=O)C(=O)N2 
+True Property: 118.04999999999998
+Predicted Property:
+58.12
+==================================================
+Iteration: 49
+SMILES: N(Nc1ccccc1)c2ccccc2 
+True Property: 24.06
+Predicted Property:
+24.72
+==================================================
+Iteration: 50
+SMILES: O=C2NC(=O)C1(CCCC1)C(=O)N2
+True Property: 75.27
+Predicted Property:
+75.27
+==================================================
+Iteration: 51
+SMILES: Clc1ccc(cc1)c2c(Cl)cccc2Cl 
+True Property: 0.0
+Predicted Property:
+0.0
+==================================================
+Iteration: 52
+SMILES: CCc1ccc(CC)cc1
+True Property: 0.0
+Predicted Property:
+12.89
+==================================================
+Iteration: 53
+SMILES: Nc1ccc(cc1)S(N)(=O)=O
+True Property: 86.18
+Predicted Property:
+69.16
+==================================================
+Iteration: 54
+SMILES: c1ccc2c(c1)c3cccc4cccc2c34
+True Property: 0.0
+Predicted Property:
+0.0
+==================================================
+Iteration: 55
+SMILES: Oc2cc(O)c1C(=O)CC(Oc1c2)c3ccc(O)c(O)c3
+True Property: 107.22000000000001
+Predicted Property:
+70.67
+==================================================
+Iteration: 56
+SMILES: COP(=O)(NC(C)=O)SC 
+True Property: 55.4
+Predicted Property:
+44.76
+==================================================
+Iteration: 57
+SMILES: Cl\C=C/Cl
+True Property: 0.0
+Predicted Property:
+0.0
+==================================================
+Iteration: 58
+SMILES: c1ccncc1
+True Property: 12.89
+Predicted Property:
+The molecule c1ccncc1 is pyridine. Based on the provided examples, molecules with aromatic rings and heteroatoms (like nitrogen in this case) tend to have non-zero property values, especially if they are not simple hydrocarbons.
+
+Looking at the examples:
+*   `CNc1ccccc1` (aniline) has a value of `12.03`.
+*   `CCNc1ccccc1` (N-ethylaniline) has a value of `12.03`.
+*   `c1cnc2c(c1)ccc3ncccc23` (phenanthroline derivative) has a value of `25.78`.
+*   `COc2ncc1nccnc1n2` (a complex nitrogen heterocycle) has a value of `60.79`.
+*   `Cc1ncnc2nccnc12` (a pyrimidine derivative) has a value of `51.56`.
+
+Pyridine is a basic aromatic heterocycle. Its structure is simpler than many of the higher-valued nitrogen-containing compounds, but it's more complex than simple hydrocarbons (which have 0.0). It's also a single ring, unlike the fused systems.
+
+Considering its aromaticity and the presence of nitrogen, it should have a value similar to or slightly higher than aniline, but not as high as the more complex fused ring systems or those with multiple heteroatoms.
+
+Given the values for aniline (12.03), and the general trend that more complex or polar molecules have higher values, a value in the range of 10-20 seems reasonable.
+
+Let's consider the simplest nitrogen-containing aromatic ring in the examples:
+`CNc1ccccc1` (aniline) = 12.03
+`CCNc1ccccc1` (N-ethylaniline) = 12.03
+
+Pyridine is a basic aromatic amine, similar in some ways to aniline but with the nitrogen directly in the ring. It's a fundamental aromatic heterocycle.
+
+Based on the examples, a value around 12-15 seems appropriate for a single aromatic ring with one nitrogen.
+
+12.03
+==================================================
+Iteration: 59
+SMILES: OCC(O)COC(=O)c1ccccc1Nc2ccnc3cc(Cl)ccc23
+True Property: 91.67999999999999
+Predicted Property:
+90.15
+==================================================
+Iteration: 60
+SMILES: CCCCCO
+True Property: 20.23
+Predicted Property:
+20.23
+==================================================
+Iteration: 61
+SMILES: CC1=C(C(=O)Nc2ccccc2)S(=O)(=O)CCO1
+True Property: 72.47
+Predicted Property:
+56.79
+==================================================
+Iteration: 62
+SMILES: COC(=O)C1=C(C)NC(=C(C1c2ccccc2N(=O)=O)C(=O)OC)C 
+True Property: 107.77
+Predicted Property:
+A careful analysis of the provided examples reveals a strong correlation between the presence of nitro groups (N(=O)=O) and higher property values, especially when combined with other polar or aromatic features. Molecules without nitro groups or with only simple alkyl/aryl structures tend to have a property value of 0.0.
+
+Let's examine the target molecule: `COC(=O)C1=C(C)NC(=C(C1c2ccccc2N(=O)=O)C(=O)OC)C`
+
+This molecule contains a nitro group (`N(=O)=O`) attached to a phenyl ring, which is part of a dihydropyridine-like structure. This structural motif is similar to examples like `CCCCN(CC)c1c(cc(cc1N(=O)=O)C(F)(F)F)N(=O)=O` (89.52) and `Cc1ccc(cc1)N(=O)=O` (43.14), both of which have significantly higher values than 0.0. The presence of two ester groups (`COC(=O)`) and multiple methyl groups also contributes to the complexity and potential for interactions.
+
+Considering the examples, the presence of a single nitro group often leads to values in the range of 40-50, while multiple nitro groups or additional highly polar/electronegative substituents can push it higher. The target molecule has one nitro group and two ester groups, which are polar.
+
+Based on this, the predicted property value should be significantly greater than 0.0 and likely in a similar range to other molecules with a single nitro group and additional polar features.
+
+Predicted property value: 50.0
+==================================================
+Iteration: 63
+SMILES: O=C2NC(=O)C1(CC1)C(=O)N2 
+True Property: 75.27
+Predicted Property:
+63.24
+==================================================
+Iteration: 64
+SMILES: ClCC
+True Property: 0.0
+Predicted Property:
+0.0
+==================================================
+Iteration: 65
+SMILES: Clc1cccc(n1)C(Cl)(Cl)Cl
+True Property: 12.89
+Predicted Property:
+0.0
+==================================================
+Iteration: 66
+SMILES: CCCCC(C)O
+True Property: 20.23
+Predicted Property:
+20.23
+==================================================
+Iteration: 67
+SMILES: Brc1ccc(Br)cc1
+True Property: 0.0
+Predicted Property:
+0.0
+==================================================
+Iteration: 68
+SMILES: Clc1cc(Cl)c(c(Cl)c1)c2c(Cl)cc(Cl)cc2Cl 
+True Property: 0.0
+Predicted Property:
+0.0
+==================================================
+Iteration: 69
+SMILES: Cc1ccc(OP(=O)(Oc2cccc(C)c2)Oc3ccccc3C)cc1
+True Property: 44.760000000000005
+Predicted Property:
+20.23
+==================================================
+Iteration: 70
+SMILES: FC(F)(F)c1cccc(c1)N2CC(CCl)C(Cl)C2=O
+True Property: 20.310000000000002
+Predicted Property:
+75.27
+==================================================
+Iteration: 71
+SMILES: COc1ccccc1N(=O)=O
+True Property: 52.37
+Predicted Property:
+86.28
+==================================================
+Iteration: 72
+SMILES: ClC1CC2C(C1Cl)C3(Cl)C(=C(Cl)C2(Cl)C3(Cl)Cl)Cl
+True Property: 0.0
+Predicted Property:
+0.0
+==================================================
+Iteration: 73
+SMILES: CCCOC=O
+True Property: 26.3
+Predicted Property:
+20.23
+==================================================
+Iteration: 74
+SMILES: CCCCCCCCCC(=O)OCC
+True Property: 26.3
+Predicted Property:
+17.07
+==================================================
+Iteration: 75
+SMILES: Oc1ccc(Cl)cc1C(=O)Nc2ccc(cc2Cl)N(=O)=O
+True Property: 92.47
+Predicted Property:
+92.5
+==================================================
+Iteration: 76
+SMILES: COP(=S)(OC)Oc1ccc(Sc2ccc(OP(=S)(OC)OC)cc2)cc1
+True Property: 55.38000000000001
+Predicted Property:
+57.01
+==================================================
+Iteration: 77
+SMILES: Oc1cccc(c1)N(=O)=O
+True Property: 63.37
+Predicted Property:
+43.14
+==================================================
+Iteration: 78
+SMILES: OCC1OC(CO)(OC2OC(COC3OC(CO)C(O)C(O)C3O)C(O)C(O)C2O)C(O)C1O
+True Property: 268.67999999999995
+Predicted Property:
+90.15
+==================================================
+Iteration: 79
+SMILES: CCC#C
+True Property: 0.0
+Predicted Property:
+0.0
+==================================================
+Iteration: 80
+SMILES: CCOP(=S)(CC)Oc1cc(Cl)c(Cl)cc1Cl
+True Property: 18.46
+Predicted Property:
+38.77
+==================================================
+Iteration: 81
+SMILES: c1nccc(C(=O)NN)c1
+True Property: 68.01
+Predicted Property:
+38.33
+==================================================
+Iteration: 82
+SMILES: CCCOP(=S)(OCCC)SCC(=O)N1CCCCC1C
+True Property: 38.77
+Predicted Property:
+70.83
+==================================================
+Iteration: 83
+SMILES: CCCCCCCC
+True Property: 0.0
+Predicted Property:
+0.0
+==================================================
+Iteration: 84
+SMILES: CC34CCC1C(CCC2=CC(=O)CCC12O)C3CCC4(O)C#C
+True Property: 57.53
+Predicted Property:
+94.83
+==================================================
+Iteration: 85
+SMILES: COc1cc(cc(OC)c1O)C6C2C(COC2=O)C(OC4OC3COC(C)OC3C(O)C4O)c7cc5OCOc5cc67
+True Property: 160.83
+Predicted Property:
+102.28
+==================================================
+Iteration: 86
+SMILES: Oc1ccccc1Cl
+True Property: 20.23
+Predicted Property:
+63.37
+==================================================
+Iteration: 87
+SMILES: ClCC#CCOC(=O)Nc1cccc(Cl)c1
+True Property: 38.33
+Predicted Property:
+52.32
+==================================================
+Iteration: 88
+SMILES: OC(c1ccc(Cl)cc1)(c2cncnc2)c3ccccc3Cl
+True Property: 46.010000000000005
+Predicted Property:
+6.1
+==================================================
+Iteration: 89
+SMILES: CCCCOC=O
+True Property: 26.3
+Predicted Property:
+17.07
+==================================================
+Iteration: 90
+SMILES: ClCCl
+True Property: 0.0
+Predicted Property:
+0.0
+==================================================
+Iteration: 91
+SMILES: Cc1cccc(C)c1O
+True Property: 20.23
+Predicted Property:
+20.23
+==================================================
+Iteration: 92
+SMILES: Clc1ccc(c(Cl)c1)c2cc(Cl)ccc2Cl 
+True Property: 0.0
+Predicted Property:
+0.0
+==================================================
+Iteration: 93
+SMILES: CC=C(C)C
+True Property: 0.0
+Predicted Property:
+0.0
+==================================================
+Iteration: 94
+SMILES: ClCCl
+True Property: 0.0
+Predicted Property:
+0.0
+==================================================
+Iteration: 95
+SMILES: Oc1c(Cl)ccc(Cl)c1Cl
+True Property: 20.23
+Predicted Property:
+20.23
+==================================================
+Iteration: 96
+SMILES: COc1cc(cc(OC)c1O)C6C2C(COC2=O)C(OC4OC3COC(C)OC3C(O)C4O)c7cc5OCOc5cc67
+True Property: 160.83
+Predicted Property:
+140.0
+==================================================
+Iteration: 97
+SMILES: CSc1nnc(c(=O)n1N)C(C)(C)C
+True Property: 73.8
+Predicted Property:
+71.96
+==================================================
+Iteration: 98
+SMILES: CCOC(=O)c1ccccc1
+True Property: 26.3
+Predicted Property:
+26.3
+==================================================
+Iteration: 99
+SMILES: CCCCCCCBr
+True Property: 0.0
+Predicted Property:
+0.0
+==================================================
+Iteration: 100
+SMILES: CO
+True Property: 20.23
+Predicted Property:
+20.23
+==================================================
+Iteration: 15
+SMILES: CC(=O)OCC(=O)C3(O)CCC4C2CCC1=CC(=O)C=CC1(C)C2C(O)CC34C 
+True Property: 100.90000000000002
+Predicted Property:
+The provided examples suggest a correlation between the complexity and functional groups of a molecule and its associated property value. Molecules with many rings, hydroxyl groups, carbonyl groups, and heteroatoms tend to have higher values, while simpler hydrocarbons or highly chlorinated/brominated compounds often have values close to 0.
+
+Let's analyze the target molecule:
+`CC(=O)OCC(=O)C3(O)CCC4C2CCC1=CC(=O)C=CC1(C)C2C(O)CC34C`
+
+This molecule is quite complex. It contains:
+*   Multiple rings (a steroid-like backbone).
+*   Several carbonyl groups (`C=O`).
+*   Multiple hydroxyl groups (`-OH`).
+*   Ester linkages (`-COO-`).
+*   Methyl groups.
+*   Double bonds.
+
+Comparing its complexity to the examples:
+*   `CCC1(C(=O)NC(=O)NC1=O)C2=CCCCC2` (75.27) - Has multiple rings, carbonyls, and N-H.
+*   `OCC(O)C(O)C(O)C(O)CO` (121.38) - Simple chain but many hydroxyls.
+*   `NC(=N)NS(=O)(=O)c1ccc(N)cc1` (122.06) - Contains sulfonyl, amino, and guanidine groups.
+*   `Nc2nc1[nH]cnc1c(=O)[nH]2` (100.45) - Purine derivative with multiple heteroatoms and carbonyl.
+*   `OCC3OC(OCC2OC(OC(C#N)c1ccccc1)C(O)C(O)C2O)C(O)C(O)C3O` (202.32) - Very large, complex sugar derivative with many hydroxyls and a nitrile.
+*   `CCC(=O)OC3CCC4C2CCC1=CC(=O)CCC1(C)C2CCC34C` (43.37) - A steroid derivative with an ester and carbonyl, similar backbone to our target.
+
+Our target molecule is a steroid derivative, similar to the one with a value of 43.37, but it has additional functional groups: two ester groups, two hydroxyl groups, and an additional carbonyl group compared to the 43.37 example. The presence of these additional polar and oxygen-containing functional groups will significantly increase the property value.
+
+The molecule `CCC(=O)OC3CCC4C2CCC1=CC(=O)CCC1(C)C2CCC34C` has one ester and one ketone.
+Our target molecule `CC(=O)OCC(=O)C3(O)CCC4C2CCC1=CC(=O)C=CC1(C)C2C(O)CC34C` has two esters, two ketones, and two hydroxyl groups.
+
+The increase in polar functional groups (esters, ketones, hydroxyls) suggests a much higher value than 43.37. It's more complex and polar than many of the examples in the 20-70 range. It's not as large or as rich in hydroxyls as the 100+ or 200+ examples, but it's certainly more complex than the 40s.
+
+Considering the significant increase in oxygen-containing functional groups and the overall complexity, the value should be considerably higher than 43.37. It might fall into a range similar to the more polar and complex molecules like `CCC1(CC)C(=O)NC(=O)N(C)C1=O` (66.48) or `CCNc1nc(NC(C)C)nc(OC)n1` (71.96), but given the steroid backbone and multiple added functionalities, it should be even higher.
+
+Let's estimate the contribution of the additional groups. The base steroid with one ester and one ketone is 43.37. Our molecule adds:
+*   One more ester group.
+*   One more ketone group.
+*   Two hydroxyl groups.
+
+These are significant additions. Each of these groups contributes to polarity and complexity. A rough estimation would be to add a substantial amount for these groups. If we consider the jump from simpler molecules to those in the 40-70 range, adding multiple polar groups to an already complex structure would push it higher.
+
+Given the complexity and the number of oxygen atoms, a value in the range of 80-100 seems plausible. It's not as overwhelmingly hydroxylated as the 121 or 202 examples, but it's much more functionalized than the 43.37 example.
+
+Let's consider the molecule `CC(=O)N(S(=O)c1ccc(N)cc1)c2onc(C)c2C` which has a value of 89.43. This molecule has a sulfonyl group, an amide, and a complex ring system. Our target molecule has a similar level of complexity and polarity due to multiple esters, ketones, and hydroxyls on a steroid backbone.
+
+Therefore, a value around 80-90 seems reasonable.
+
+85.0
+
+The final answer is $\boxed{85.0}$
+==================================================
+Iteration: 22
+SMILES: O=C(Nc1ccccc1)Nc2ccccc2
+True Property: 41.13
+Predicted Property:
+I will analyze the provided examples to understand the relationship between molecular structure and the given property. The property appears to be related to polarity, hydrogen bonding, and the presence of certain functional groups. Aromatic rings generally contribute less to the property unless substituted with polar groups. Alkanes and simple halogenated alkanes have a property of 0.0. Molecules with hydroxyl groups, carbonyl groups, and nitrogen-containing functionalities tend to have higher values, especially if they can participate in hydrogen bonding. The more such groups, and the more accessible they are for interactions, the higher the value.
+
+Let's break down the target molecule: O=C(Nc1ccccc1)Nc2ccccc2
+
+This molecule contains:
+*   Two phenyl rings (C6H5).
+*   Two -NH- groups (secondary amines).
+*   One C=O (carbonyl) group.
+
+The -NH- groups are directly attached to the carbonyl carbon, forming a urea-like linkage. This structure allows for significant hydrogen bonding. Each -NH- group can act as both a hydrogen bond donor and acceptor. The carbonyl oxygen can also act as a hydrogen bond acceptor.
+
+Comparing this to the examples:
+
+*   `Oc1ccccc1Cl` (20.23): One -OH, one Cl, one phenyl.
+*   `CC(=O)Nc1ccc(Br)cc1` (29.1): One amide, one Br, one phenyl. This has an amide, similar to the target, but only one and with a bromine.
+*   `Oc1ccc(C=O)cc1` (37.3): One -OH, one aldehyde, one phenyl.
+*   `CNC(=O)Oc1cc(C)cc(C)c1` (38.33): One carbamate, one phenyl. This has a C=O and an N-H, similar to the target, but also an ether oxygen.
+*   `NC(=O)c1cccnc1` (55.98): One amide, one pyridine. This has an amide and a nitrogen in the ring, contributing to polarity.
+*   `O=C1NC(=O)NC(=O)C1(CC)C(C)C` (75.27): This is a barbiturate derivative with three C=O and two N-H groups within a ring. This shows a high value due to multiple polar groups and hydrogen bonding sites.
+*   `C1N(C(=O)NCC(C)C)C(=O)NC1` (61.44): This is a cyclic urea derivative with two C=O and two N-H groups. This is structurally very similar to the core of the target molecule (a disubstituted urea).
+
+The target molecule, `O=C(Nc1ccccc1)Nc2ccccc2`, is N,N'-diphenylurea. It has two N-H groups and one C=O group, all capable of strong hydrogen bonding. The two phenyl groups are non-polar but do not significantly hinder the polar interactions of the central urea moiety.
+
+Given the value for `C1N(C(=O)NCC(C)C)C(=O)NC1` (61.44), which is a cyclic urea with two N-H and two C=O (one of which is part of the ring and less accessible for external H-bonding than the exocyclic C=O in the target), and the value for `NC(=O)c1cccnc1` (55.98) which has one amide, the diphenylurea should have a significant value.
+
+The presence of two N-H groups and one C=O group, all directly involved in the urea linkage, suggests strong intermolecular interactions. The two phenyl groups will increase the overall size but the core urea functionality is highly polar.
+
+Let's compare it to `CC(=O)Nc1ccc(Br)cc1` (29.1), which has one amide. Our target has essentially two amide-like N-H groups and a central carbonyl. It's like having two amides linked by a carbonyl.
+
+Consider `OCC(O)CO` (60.69), which is glycerol with three hydroxyl groups. This shows the impact of multiple strong hydrogen bond donors/acceptors.
+
+The cyclic urea `C1N(C(=O)NCC(C)C)C(=O)NC1` (61.44) has two N-H and two C=O groups. Our target has two N-H and one C=O. However, the N-H groups in our target are directly attached to phenyl rings, which might slightly reduce their acidity compared to an aliphatic N-H, but they are still very capable of H-bonding.
+
+The value should be higher than a single amide (e.g., 29.1) and likely in the range of molecules with multiple strong hydrogen bonding sites. The value of 61.44 for the cyclic urea is a good reference point. Our molecule has a similar number of H-bond donors (2 N-H) and acceptors (1 C=O, 2 N-H). The phenyl groups are non-polar, but the core is very polar.
+
+I estimate the value to be in the range of 50-70, similar to molecules with multiple strong hydrogen bonding groups. The two phenyl groups might slightly reduce the overall polarity compared to a purely aliphatic analogue, but the strong urea core will dominate.
+
+Given the examples, particularly the cyclic urea (61.44) and glycerol (60.69), and considering the two N-H and one C=O in the urea linkage, the value should be substantial. It's more polar than a single amide but perhaps slightly less than a molecule with three hydroxyls or a cyclic system with two amides.
+
+I will lean towards a value slightly lower than the cyclic urea example, as it has one less carbonyl group, but still high due to the two N-H groups.
+
+Predicted value: 58.0
+
+The final answer is $\boxed{58.0}$
+==================================================
