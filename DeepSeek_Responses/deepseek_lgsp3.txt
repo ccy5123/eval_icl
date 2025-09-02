@@ -1,0 +1,2888 @@
+Iteration: 1
+SMILES: CCCCCCCCCC(=O)OC
+True Property: 0.5768977871024343
+Predicted Property:
+Based on the provided examples, I can identify patterns in the property values associated with different molecular features. 
+
+For the molecule `CCCCCCCCCC(=O)OC`, let's analyze its structure:
+1. It is a long aliphatic chain (`CCCCCCCCC`) with an ester functional group (`CC(=O)OC`). 
+2. Similar molecules with long aliphatic chains and ester or alcohol groups (e.g., `CCCCCCCC(C)O`, `CCCC(C)O`, `CCCCCC(=O)OC`) tend to have property values around **0.77764813** or **0.6098437**, depending on the presence of polar groups like `(=O)`.
+
+Given that this molecule has an ester group (`(=O)OC`), it is most similar to `CCCCCCCCCC(=O)OC` in the examples, which has a value of **0.6098437**. 
+
+Thus, the predicted property value for `CCCCCCCCCC(=O)OC` is:
+
+**0.6098437**
+==================================================
+Iteration: 2
+SMILES: Clc2ccc1oc(=O)[nH]c1c2
+True Property: 0.0
+Predicted Property:
+To predict the property for the molecule **Clc2ccc1oc(=O)[nH]c1c2**, let's analyze its structural features and compare them to the given examples to infer a plausible property value.
+
+### Structural Analysis:
+1. **Heterocyclic Core**: The molecule contains a fused bicyclic system with a lactam-like structure (`oc(=O)[nH]`), which resembles a heterocycle with potential hydrogen bonding (NH and C=O). This is somewhat similar to **C1SC(=S)NC1(=O)** (property = -3.5964555), which also has a polar, hydrogen-bonding heterocycle with multiple electronegative atoms (S and O). However, our molecule lacks sulfur and has a less strained ring system.
+2. **Aromatic Chlorine Substituent**: The presence of a chlorine atom on the aromatic ring (`Clc2ccc...`) introduces some electronegativity but is not as polarizing as multiple halogens (e.g., **Clc1ccc(Cl)c(c1)c2cccc(Cl)c2Cl**, property = 0.0). Single halogens on aromatics often don't drastically lower the property unless combined with other polar groups.
+3. **Lactam-like Motif**: The `oc(=O)[nH]` group is polar and can participate in hydrogen bonding, similar to the urea-like fragments in **O=C1NC(=O)NC(=O)C1(CC)CC=C** (property = -1.84660348) or **O=C1NC(=O)NC(=O)C1(C(C)C)CC=C(C)C** (property = -0.5968971). However, our molecule's fused ring system is smaller and less flexible.
+
+### Comparison to Examples:
+- The closest analogs are molecules with polar heterocycles and moderate hydrogen-bonding capacity, such as:
+  - **O=C1NC(=O)NC(=O)C1(CC)CC=C** (-1.84660348): Highly polar with multiple H-bond donors/acceptors.
+  - **Cc1[nH]c(=O)n(c(=O)c1Cl)C(C)(C)C** (-0.76914036): Polar heterocycle with Cl and bulky substituents.
+  - **C1SC(=S)NC1(=O)** (-3.5964555): Extreme polarity due to thiocarbonyl groups.
+
+Our molecule lacks the extreme polarity of **C1SC(=S)NC1(=O)** but is more polar than simple halogenated aromatics (property = 0.0). It likely falls between **-1.0** and **-0.5**, closer to **-0.7** based on the urea-like examples.
+
+### Predicted Property Value:
+Given the structural similarities and trends in the data, the predicted property for **Clc2ccc1oc(=O)[nH]c1c2** is:
+
+**-0.67449076**  
+
+This aligns with other molecules featuring polar heterocycles, single halogen substituents, and moderate hydrogen-bonding capacity (e.g., **CNc1ccccc1** and **ClC(Cl)C(c1ccc(Cl)cc1)c2ccccc2Cl**, which share this value). The lactam-like fragment and aromatic chlorine are sufficiently polar to match this range.
+==================================================
+Iteration: 3
+SMILES: CC(C)N(=O)=O
+True Property: 0.7776481338173168
+Predicted Property:
+Analyzing the given examples and the molecule `CC(C)N(=O)=O`, let's break down the key observations:
+
+1. **Patterns in the Data**:
+   - Molecules with nitro groups (`N(=O)=O`) tend to have negative property values when they are part of more complex structures (e.g., `Cc1ncc(N(=O)=O)n1CCO` has a value of `-1.20069231`).
+   - Simple aliphatic nitro compounds (like `CC(C)N(=O)=O`) are not explicitly in the examples, but similar nitro-containing molecules with small alkyl groups (e.g., `NC(=O)CCl` and `NC(=O)NC1NC(=O)NC1=O`) have values around `-1.2` to `-1.59`.
+   - The nitro group is strongly electron-withdrawing, which likely contributes to negative property values.
+
+2. **Structure of `CC(C)N(=O)=O`**:
+   - This is isopropyl nitrite (or a nitroalkane derivative), a simple aliphatic nitro compound.
+   - It lacks aromaticity or other functional groups that might modulate the property value significantly.
+
+3. **Closest Analogues in Examples**:
+   - `Cc1ncc(N(=O)=O)n1CCO` has a value of `-1.20069231`.
+   - `NC(=O)CCl` (another simple nitro-like compound) has `-1.20069231`.
+   - `NC(=O)NC1NC(=O)NC1=O` has `-1.59121523`, but this is more complex.
+
+Given the simplicity of `CC(C)N(=O)=O` and the consistent values for similar nitro-containing small molecules, the most reasonable prediction is:
+
+**Predicted property value: `-1.20069231`**  
+
+This aligns with the observed trend for simple nitroalkane-like structures in the provided data.
+==================================================
+Iteration: 4
+SMILES: CC12CC(O)C3C(CCC4=CC(=O)CCC34C)C2CCC1C(=O)CO
+True Property: 0.3150190816579685
+Predicted Property:
+Given the examples provided, the property values seem to correlate with certain structural features of the molecules. Here are some observed trends:
+
+1. **Aromatic systems with halogens (Cl, Br, I) or nitro groups (N(=O)=O)** often have a property value of **0.0**, especially if they are symmetric or heavily substituted (e.g., `Clc1ccc(Br)cc1`, `Brc1cc(Br)cc(Br)c1`, `Nc1ccc(cc1)c2ccc(N)cc2`).
+
+2. **Aliphatic chains or simple functional groups (e.g., alcohols, ketones, esters)** tend to have **positive values** (e.g., `CC(C)Cl` = 0.77764813, `CC(=O)C` = 0.28701204, `CCCC=O` = 0.1293337).
+
+3. **Complex or polycyclic structures with polar or hydrogen-bonding groups** often have **negative values** (e.g., `Cc1cc(C)c(O)c(C)c1` = -3.5964555, `CCC(C)c1cc(cc(N(=O)=O)c1O)N(=O)=O` = -2.77602732).
+
+4. **Steroids or steroid-like structures** (e.g., `CC(=O)C1CCC2C3CCC4=CC(=O)CCC4(C)C3CCC12C`) have **moderate positive values** (0.31501908 in this case).
+
+### Analysis of the Target Molecule:
+The molecule in question is:
+```
+CC12CC(O)C3C(CCC4=CC(=O)CCC34C)C2CCC1C(=O)CO
+```
+This is a **steroid-like structure** with:
+- A **ketone group (`C(=O)`)**,
+- A **hydroxyl group (`C(O)`)**,
+- A **primary alcohol (`C(=O)CO`)**,
+- Multiple fused rings (steroid backbone).
+
+Given the examples, steroid-like structures with polar groups tend to have **moderate positive values** (e.g., 0.31501908 for `CC(=O)C1CCC2C3CCC4=CC(=O)CCC4(C)C3CCC12C`). However, the presence of additional polar groups (OH, C(=O)CO) might slightly reduce the value compared to simpler steroids.
+
+### Predicted Property Value:
+Based on the structural similarity to the steroid example and the influence of polar groups, a reasonable prediction is:
+**0.25** (moderate positive, but slightly lower than the simpler steroid example due to additional polar moieties). 
+
+(Note: Without knowing the exact property being predicted, this is an educated guess based on the trends in the provided data.)
+==================================================
+Iteration: 5
+SMILES: Fc1cccc(F)c1C(=O)NC(=O)Nc2ccc(Cl)cc2
+True Property: 0.0
+Predicted Property:
+To predict the property for the molecule **Fc1cccc(F)c1C(=O)NC(=O)Nc2ccc(Cl)cc2**, let's analyze the given examples and identify patterns in the property values:
+
+### Observations from the Examples:
+1. **Simple aliphatic chains or halogens (e.g., CCCCBr, BrC(Br)(Br)Br, ClCCCl, CNN, CCC(C)(C)O)**:
+   - These typically have a property value of **0.77764813**.
+
+2. **Aromatic rings with no polar or conjugated substituents (e.g., Clc1ccc2ccccc2c1, Clc1ccc(Cl)cc1, Brc1ccc(Br)cc1)**:
+   - These typically have a property value of **0.0**.
+
+3. **Aromatic rings with polar or conjugated substituents (e.g., CN(C)c1ccccc1, Cc1cccc(C)c1O, FC(F)(F)c1ccccc1)**:
+   - These typically have negative values (e.g., -1.59121523, -0.67449076).
+
+4. **Complex or polycyclic structures with polar groups (e.g., CC34CCc1c(ccc2cc(O)ccc12)C3CCC4=O, C1SC(=S)NC1(=O))**:
+   - These have more negative values (e.g., -3.16589955, -3.5964555).
+
+5. **Aromatic rings with amide or urea-like linkages (e.g., NC(=S)Nc1ccccc1, NC(=O)c1cccnc1)**:
+   - These typically have a property value of **0.0**.
+
+### Analysis of the Target Molecule:
+The molecule **Fc1cccc(F)c1C(=O)NC(=O)Nc2ccc(Cl)cc2** has:
+- Two aromatic rings (fluorinated phenyl and chlorinated phenyl).
+- A urea-like linkage (**C(=O)NC(=O)N**) connecting the rings.
+- Polar substituents (F, Cl, and the urea group).
+
+From the examples:
+- Aromatic rings with polar substituents (F, Cl) often result in **0.0** (e.g., Clc1ccc(Cl)cc1, Brc1ccc(Br)cc1).
+- Urea/amide linkages (e.g., NC(=S)Nc1ccccc1, NC(=O)c1cccnc1) also result in **0.0**.
+- No examples suggest that combining these features leads to a more negative value unless additional conjugation or complexity is present (which isn't the case here).
+
+### Predicted Property Value:
+Given the above reasoning, the most likely property value for **Fc1cccc(F)c1C(=O)NC(=O)Nc2ccc(Cl)cc2** is:
+
+**0.0**
+==================================================
+Iteration: 6
+SMILES: CCCOC(C)C
+True Property: 0.7776481338173168
+Predicted Property:
+Analyzing the given examples, I observe that the property values tend to cluster around certain recurring numbers, particularly **0.77764813**, **0.0**, and **-0.67449076**, among others. The value **0.77764813** appears frequently for simple aliphatic compounds, especially those with oxygen-containing functional groups (e.g., alcohols, ethers) or purely hydrocarbon chains without strong electronegative substituents.
+
+The molecule in question, **CCCOC(C)C** (isopropyl propyl ether), fits this pattern:
+- It is an aliphatic ether with no strongly polar or electronegative substituents (like halogens, nitro groups, or carbonyls).
+- Similar molecules with ether or alcohol groups (e.g., CCOC(=O)CC, CCCC(C)(O)CC, CCCCCO) have the property value **0.77764813**.
+- There are no conflicting examples where such a simple ether/aliphatic structure deviates from this value.
+
+Thus, the predicted property value for **CCCOC(C)C** is:  
+**0.77764813**
+==================================================
+Iteration: 7
+SMILES: CCC(C)n1c(=O)[nH]c(C)c(Br)c1=O 
+True Property: -0.7691403623505102
+Predicted Property:
+Analyzing the given examples and the target molecule **CCC(C)n1c(=O)[nH]c(C)c(Br)c1=O**, here's the reasoning for the predicted property value:
+
+### Key Observations from Examples:
+1. **Halogenated Aromatic Systems (e.g., Cl/Br-substituted benzene rings)**:
+   - Molecules like `Clc1cccc(c1Cl)c2c(Cl)c(Cl)cc(Cl)c2Cl` and `Clc1ccc(Cl)cc1` have a property value of **0.0**. This suggests that heavily halogenated aromatic systems tend to default to 0.0 unless other functional groups dominate.
+   - However, `Clc1ccc(Cl)cc1C2=NCC(=O)Nc3ccc(cc23)N(=O)=O` has a value of **-0.27273336**, indicating that complex functional groups (e.g., nitro, amide) can override the halogen effect.
+
+2. **Bromine-Substituted Systems**:
+   - `CC(=O)Nc1ccc(Br)cc1` has a value of **-0.56875632**, showing that Br substitution combined with polar groups (amide) leads to negative values.
+
+3. **Heterocycles with Polar Groups**:
+   - `CCNc1nc(Cl)nc(NCC)n1` (dichloropyrimidine with amine groups) has a value of **-0.66797799**.
+   - `COc2cnc1cncnc1n2` (polar heterocycle with methoxy) has **-0.67449076**.
+   - The presence of polar groups (e.g., C=O, NH, Br) in heterocycles tends to push the property toward negative values.
+
+4. **Carbonyls and Amides**:
+   - Molecules with carbonyls (e.g., `O=C1NC(=O)NC(=O)C1(CC)CC`) or amides often have negative values (e.g., **-0.37456068**).
+
+### Target Molecule Analysis:
+The target molecule **CCC(C)n1c(=O)[nH]c(C)c(Br)c1=O** has:
+- A **bromine substituent** (like `CC(=O)Nc1ccc(Br)cc1`).
+- A **heterocycle (pyrimidine-like)** with two carbonyl groups (C=O) and an NH group (highly polar).
+- An **alkyl chain (CCC(C))** which alone would suggest a neutral/positive value, but the polar groups dominate.
+
+### Similar Examples:
+- The closest matches are:
+  - `CC(=O)Nc1ccc(Br)cc1` (**-0.56875632**).
+  - `CCNc1nc(Cl)nc(NCC)n1` (**-0.66797799**).
+  - `COc2cnc1cncnc1n2` (**-0.67449076**).
+
+Given the combined effects of the Br, C=O, and NH groups in a heterocycle, the property value is likely in the range of **-0.6 to -0.7**.
+
+### Predicted Value:
+**-0.66797799** (same as `CCNc1nc(Cl)nc(NCC)n1`, due to similar polar heterocycle + halogen + alkyl structure). 
+
+Thus, the predicted property value for **CCC(C)n1c(=O)[nH]c(C)c(Br)c1=O** is:  
+**-0.66797799**.
+==================================================
+Iteration: 8
+SMILES: c1ccc(cc1)c2ccccc2
+True Property: 0.0
+Predicted Property:
+Analyzing the given examples and the structure of the molecule **c1ccc(cc1)c2ccccc2** (biphenyl), we can make the following observations:
+
+1. **Aromatic Systems**: 
+   - Molecules with simple aromatic rings (e.g., **c1cc2ccc3ccc4ccc5ccc6ccc1c7c2c3c4c5c67**, **Nc3cc2c1ccccc1ccc2c4ccccc34**) tend to have a property value of **0.0** unless they have significant functional groups or substitutions.
+   - Biphenyl (two benzene rings linked directly) is a simple aromatic system with no polar or strongly electron-withdrawing/donating substituents.
+
+2. **Substituent Effects**:
+   - The presence of polar or bulky substituents (e.g., **NO2**, **Cl**, **OH**, **COOR**, **N-containing groups**) often leads to non-zero values (either positive or negative).
+   - Biphenyl has no such substituents, so it likely behaves similarly to unsubstituted polyaromatic hydrocarbons in the dataset.
+
+3. **Comparison to Similar Structures**:
+   - **c1cc2ccc3ccc4ccc5ccc6ccc1c7c2c3c4c5c67** (coronene, a large aromatic system) has a value of **0.0**.
+   - **Nc3cc2c1ccccc1ccc2c4ccccc34** (a polyaromatic amine) also has a value of **0.0** despite the **NH2** group, suggesting aromaticity dominates.
+   - Biphenyl is simpler than these and lacks functional groups, so **0.0** is a reasonable prediction.
+
+### Predicted Property Value for **c1ccc(cc1)c2ccccc2**: **0.0**
+==================================================
+Iteration: 9
+SMILES: CCCCS
+True Property: 0.7776481338173168
+Predicted Property:
+Analyzing the given examples, I notice the following patterns in the property values:
+
+1. Simple aliphatic hydrocarbons (especially cyclic ones) tend to have values around 0.77764813:
+   - C1CCC2CCCCC2C1: 0.77764813
+   - CC(C)I: 0.77764813
+   - CCC1CCCCC1: 0.77764813
+   - OC1CCCCCCC1: 0.77764813
+
+2. Compounds with sulfur atoms show varied values, but simple thioethers (like the given CCCCS) aren't directly represented in the examples.
+
+3. The molecule CCCCS is a simple aliphatic thioether (butyl mercaptan derivative). Comparing it to similar structures:
+   - CCCC(=C)C (branched alkene): -0.18437602
+   - CCC1(C(=O)NC(=O)NC1=O)c2ccccc2 (complex structure): -1.59121523
+   - CCCOC(=O)c1ccc(N)cc1 (ester with aromatic): -2.42535931
+
+Given that CCCCS is simpler than most negative-valued examples but contains sulfur (which often reduces the value compared to pure hydrocarbons), I would predict its value to be between the pure hydrocarbons (0.777...) and simple branched aliphatics (~-0.18).
+
+A reasonable estimate would be slightly positive but lower than the hydrocarbon baseline. 
+
+Predicted property value for CCCCS: **0.21925028** 
+(Note: This matches the value of CCCCCCC=C in the examples, which seems plausible for a simple aliphatic chain with one heteroatom)
+==================================================
+Iteration: 10
+SMILES: CCCC(C)(C)CO
+True Property: 0.7776481338173168
+Predicted Property:
+Analyzing the given examples, we can observe that the property value **0.77764813** appears frequently for molecules with certain structural features:
+
+1. **Branched alkanes with hydroxyl groups**:  
+   - Examples:  
+     - `CCCC(C)(O)CC` → **0.77764813**  
+     - `CCC(C)(C)C` → **0.77764813**  
+     - `CC(C)CC(C)O` → **0.77764813**  
+     - `CC(C)C1CCC(C)CC1O` → **0.77764813**  
+
+2. **Haloalkanes (Cl, Br) with a single halogen or multiple halogens on a non-aromatic carbon**:  
+   - Examples:  
+     - `ClC(Cl)Cl` → **0.77764813**  
+     - `BrC(Br)Br` → **0.77764813**  
+     - `CCBr` → **0.77764813**  
+
+3. **Ethers or simple alcohols with no strongly polar/charged groups**:  
+   - Examples:  
+     - `CCCCOC` → **0.77764813**  
+
+### Key Observations:
+- The value **0.77764813** is associated with **neutral, non-aromatic, moderately branched hydrocarbons** (often with a single hydroxyl or halogen substituent).  
+- The presence of **NO₂, SO₂, or highly polar groups** tends to lower the value (e.g., negative values).  
+- Aromatic systems with halogens or simple substituents often default to **0.0** unless they have additional polar features.  
+
+### Prediction for `CCCC(C)(C)CO`:
+This molecule is a **branched alcohol (tertiary butyl group with a terminal hydroxyl)**. It fits the pattern of:  
+- Neutral, non-aromatic hydrocarbon.  
+- Single hydroxyl group.  
+- No strongly polar or charged substituents.  
+
+Thus, the predicted property value is:  
+**0.77764813**  
+
+### Final Answer:
+**0.77764813**
+==================================================
+Iteration: 11
+SMILES: Cc1ccc2ccccc2c1
+True Property: -0.38779800596564235
+Predicted Property:
+Analyzing the given examples, I notice that the property value seems to correlate with molecular symmetry, halogen substitution, aromaticity, and functional groups. Here are some key observations:
+
+1. Simple aromatic hydrocarbons (e.g., c1ccccc1, Nc3nc(N)c2nc(c1ccccc1)c(N)nc2n3) typically have a value of 0.0
+2. Halogenated compounds (ClC(Br)Br, BrC(Br)Br, ClC(Cl)C(Cl)Cl) consistently have a value of 0.77764813
+3. Methyl-substituted aromatics show negative values (Cc1cccc(C)c1C = -3.5964555)
+4. Fused aromatic systems with methyl groups have intermediate negative values (Cc1ccc(C)c2ccccc12 = -0.83011789)
+
+The molecule in question is Cc1ccc2ccccc2c1, which is a methyl-substituted naphthalene. Comparing with similar structures:
+
+- c1ccc2ccccc2c1 (naphthalene) would likely be 0.0 (like benzene)
+- Cc1ccc(C)c2ccccc12 (2-methylnaphthalene) is -0.83011789
+- Cc1cccc(C)c1C (1,2,4-trimethylbenzene) is -3.5964555
+
+The given molecule (1-methylnaphthalene) has one methyl group on a fused aromatic system, similar to 2-methylnaphthalene but with slightly different substitution. Based on the pattern, I would predict a value close to the 2-methylnaphthalene example but perhaps slightly more negative due to the 1-position being slightly less sterically hindered.
+
+Predicted property value for Cc1ccc2ccccc2c1: -1.0 (±0.2)
+
+However, looking back at the examples, the closest structural analog is Cc1ccc(C)c2ccccc12 at -0.83011789, and since our molecule has one fewer methyl group, it should be less negative. But there's also Cc1ccc(C)cc1 (toluene analog) at -1.59121523.
+
+Given that naphthalene systems seem to moderate the effect compared to benzenes, I'll adjust my prediction to be between these two references.
+
+Final predicted value: -1.2 (±0.2) 
+
+(Note: Without knowing the exact property being predicted and seeing more examples of methylnaphthalenes, this is an educated estimate based on the available data patterns.)
+==================================================
+Iteration: 12
+SMILES: O=C1NC(=O)NC(=O)C1(C(C)CCC)CC=C
+True Property: -0.5968971048639847
+Predicted Property:
+Analyzing the given examples and the target molecule, we can observe the following patterns:
+
+1. **Property = 0.0**: This occurs in molecules with aromatic rings (especially with halogens like Cl, I), nitro groups (N(=O)=O), or simple diaryl structures (e.g., diphenyl ether, biphenyl). These seem to be rigid, planar, or highly symmetric structures.
+
+2. **Property ≈ 0.77764813**: This occurs in small aliphatic molecules (e.g., CC(C)C, CCCC, ClCCl, CCO) or molecules with long aliphatic chains (e.g., CCCCCCCCCCCCCC). These are flexible, non-aromatic, and lack strong polar functional groups.
+
+3. **Negative values**: These occur in molecules with:
+   - Multiple polar or hydrogen-bonding groups (e.g., CON(C)C(=O)Nc1ccc(Cl)cc1, -1.28607547).
+   - Conjugated systems with electron-withdrawing/donating groups (e.g., C2c1ccccc1N(CCF)C(=O)c3ccccc23, -0.98321673).
+   - Cyclic structures with carbonyls and heteroatoms (e.g., O=C1NC(=O)NC(=O)C1(C)CC=C, -3.90742738).
+
+4. **Positive values (other than 0.777...)**: These are rare but occur in molecules with moderate polarity or steric complexity (e.g., CC12CC(O)C3C(CCC4=CC(=O)CCC34C)C2CCC1C(=O)CO, 0.31501908).
+
+### Target Molecule: O=C1NC(=O)NC(=O)C1(C(C)CCC)CC=C
+This is a cyclic structure with three carbonyl groups (highly polar) and two nitrogen atoms (hydrogen-bond acceptors). It also has an aliphatic side chain (C(C)CCC) and a terminal alkene (CC=C). 
+
+- **Similarity to O=C1NC(=O)NC(=O)C1(C)CC=C**: The given example has a very negative value (-3.90742738). The target molecule is structurally similar but with a slightly larger aliphatic side chain (C(C)CCC instead of just C). This side chain is non-polar and may slightly reduce the overall polarity compared to the example, but the core (three carbonyls and two nitrogens) dominates the property.
+
+### Prediction:
+The property will still be strongly negative but slightly less so than the example due to the larger aliphatic side chain. A reasonable estimate is **-3.5**. 
+
+**Final answer: -3.5**
+==================================================
+Iteration: 13
+SMILES: FC(F)(F)c1ccccc1
+True Property: -0.6744907594765952
+Predicted Property:
+Analyzing the given examples, we can observe certain trends in the property values based on molecular structure:
+
+1. Simple alkanes (e.g., CCCCC, C1CCCC1) and alcohols/ethers (e.g., CCCCCO, CCO) tend to have positive values around 0.77764813.
+
+2. Aromatic systems with electron-withdrawing groups (e.g., COC(=O)c1cccnc1) tend to have negative values around -0.67449076.
+
+3. Highly fluorinated or chlorinated aromatic systems (e.g., Clc1ccc(I)cc1, Clc1ccc(c(Cl)c1)c2cc(Cl)c(Cl)c(Cl)c2Cl) tend to have values of 0.0.
+
+4. The presence of trifluoromethyl groups (CF3) is not explicitly shown in the examples, but fluorine substitution in aromatic systems (e.g., Clc1ccc(I)cc1 vs. Clc1ccc(c(Cl)c1)c2cc(Cl)ccc2Cl) maintains the 0.0 value.
+
+For the molecule FC(F)(F)c1ccccc1 (benzotrifluoride):
+- It's an aromatic system with a strong electron-withdrawing CF3 group
+- The closest analogs in the dataset are halogenated aromatics which show 0.0 values
+- While CF3 is more electron-withdrawing than Cl or Br, the pattern suggests such substitutions result in neutral (0.0) values
+
+Therefore, the predicted property value for FC(F)(F)c1ccccc1 is: 0.0
+==================================================
+Iteration: 14
+SMILES: OCC1OC(O)C(O)C(O)C1O
+True Property: 0.7776481338173168
+Predicted Property:
+Given the examples provided, we can observe trends in the property values based on molecular structure. Here are some key observations:
+
+1. **Hydrophilic/Polar Molecules**: Molecules with multiple hydroxyl groups (e.g., `OCC(O)C(O)C(O)C(O)CO`, `CC(C)C(C)O`, `CC(C)CCCO`) tend to have a property value of **0.77764813**. These are likely highly water-soluble or polar compounds.
+
+2. **Aromatic/Planar Molecules**: Simple aromatic systems (e.g., `c1ccc(cc1)c2ccccc2`, `Oc1cccc(O)c1`) often have a property value of **0.0**, suggesting neutrality or lack of a specific interaction.
+
+3. **Complex or Functionalized Molecules**: Molecules with mixed functional groups (e.g., carbonyls, halogens, nitro groups) tend to have negative values, with more negative values correlating with increased complexity or hydrophobicity.
+
+### Prediction for `OCC1OC(O)C(O)C(O)C1O`:
+This molecule is a sugar-like polyol (similar to glucose or sorbitol) with **five hydroxyl groups** and an **ether linkage**. It is highly polar and hydrophilic, much like `OCC(O)C(O)C(O)C(O)CO` (which has a value of **0.77764813**). 
+
+Thus, the predicted property value is:  
+**0.77764813** (same as other polyols in the dataset). 
+
+### Reasoning:
+- The property seems to correlate with **hydrophilicity** or **hydrogen-bonding capacity**, and this molecule fits the trend of other polyols in the dataset.
+- No conflicting functional groups (e.g., halogens, nitro groups) are present to lower the value. 
+
+Let me know if you'd like further clarification!
+==================================================
+Iteration: 15
+SMILES: CC(=O)OCC(=O)C3(O)CCC4C2CCC1=CC(=O)C=CC1(C)C2C(O)CC34C 
+True Property: -0.06660033388951403
+Predicted Property:
+Given the examples provided, I can attempt to predict the property for the molecule `CC(=O)OCC(=O)C3(O)CCC4C2CCC1=CC(=O)C=CC1(C)C2C(O)CC34C` by analyzing structural features and comparing them to the training data.
+
+### Observations from the training data:
+1. **Ketones and esters** (e.g., `CCCCC(=O)CCCC`, `CCOC(=O)C`) tend to have small positive or negative values (e.g., 0.52780629, 0.1293337).
+2. **Complex polycyclic structures with ketones and alcohols** (e.g., `CC1(O)CCC2C3CCC4=CC(=O)CCC4(C)C3CCC21C`) have intermediate positive values (e.g., 0.42782434).
+3. **Molecules with multiple oxygen-containing functional groups** (e.g., `OCC(O)C(O)C(O)C(O)CO`) often have high positive values (e.g., 0.77764813).
+4. **Aromatic rings with no polar substituents** (e.g., `c1ccncc1`, `Clc1cccc2ccccc12`) tend to have a value of 0.0.
+5. **Sterically hindered or bulky aliphatic chains** (e.g., `CCC(C)(C)CC`, `ClCC(C)C`) often have high positive values (e.g., 0.77764813).
+
+### Analysis of the target molecule:
+The molecule `CC(=O)OCC(=O)C3(O)CCC4C2CCC1=CC(=O)C=CC1(C)C2C(O)CC34C` has:
+- Two ketone groups (`C=O`).
+- Two ester groups (`CC(=O)OCC(=O)`).
+- Two hydroxyl groups (`C(O)`).
+- A polycyclic steroid-like structure with multiple rings.
+- No strongly electron-withdrawing or donating groups beyond the oxygen functionalities.
+
+Given its similarity to `CC1(O)CCC2C3CCC4=CC(=O)CCC4(C)C3CCC21C` (which has a value of 0.42782434) but with additional ester and hydroxyl groups, I would expect its value to be slightly higher due to the increased polarity and oxygen content.
+
+### Predicted property value:
+A reasonable prediction would be **~0.5**, similar to the polycyclic ketone-alcohol examples but accounting for the additional ester groups. 
+
+Looking at the training data, the closest analog is `CCC(=O)OC3CCC4C2CCC1=CC(=O)CCC1(C)C2CCC34C` (value = 0.33997362), which is structurally very similar but lacks the additional hydroxyl group. The hydroxyl group would likely increase the value slightly.
+
+Thus, the predicted value is:  
+**0.45** (approximate, likely between 0.4 and 0.6). 
+
+However, since the training data includes `OCC(O)C(O)C(O)C(O)CO` (highly oxygenated, value = 0.77764813) and `CC1(O)CCC2C3CCC4=CC(=O)CCC4(C)C3CCC21C` (value = 0.42782434), a more precise estimate would be **0.5**. 
+
+### Final answer:  
+**0.5** (rounded from the expected range of 0.4–0.6).
+==================================================
+Iteration: 16
+SMILES: CC34CCC1C(CCC2CC(=O)CCC12C)C3CCC4O 
+True Property: 0.665178049800621
+Predicted Property:
+Given the examples provided, the property values seem to correlate with certain structural features of the molecules, such as the presence of polar functional groups, aromaticity, halogenation, and overall molecular complexity. 
+
+The molecule in question is:  
+**CC34CCC1C(CCC2CC(=O)CCC12C)C3CCC4O**
+
+### Structural Analysis:
+1. **Functional Groups**:  
+   - Contains a **carbonyl group (C=O)** and a **hydroxyl group (OH)**, both of which are polar and can influence the property value.  
+   - The molecule is a **steroid-like structure** with multiple fused rings, indicating significant molecular complexity.  
+
+2. **Comparison with Examples**:  
+   - Molecules with **C=O and OH groups** (e.g., `CC12CCC3C(CCc4cc(O)ccc34)C2CCC1O`, property = **-0.18437602**) have moderately negative values.  
+   - Molecules with **fused ring systems** (e.g., `C1c2ccccc2c3ccccc13`, property = **-0.32019429**) also tend to have negative values.  
+   - The presence of **both C=O and OH** in a fused ring system (similar to the given molecule) suggests a property value in the **moderately negative range**.  
+
+3. **Closest Matches**:  
+   - `CC12CCC3C(CCc4cc(O)ccc34)C2CCC1O` (property = **-0.18437602**) is structurally very similar (steroid backbone with OH and C=O).  
+   - `O=C1N(COC(=O)C)C(=O)C(N1)(c2ccccc2)c3ccccc3` (property = **-0.83011789**) has multiple polar groups but is less similar.  
+
+### Predicted Property:  
+Given the structural similarity to `CC12CCC3C(CCc4cc(O)ccc34)C2CCC1O`, the predicted property value for **CC34CCC1C(CCC2CC(=O)CCC12C)C3CCC4O** is:  
+
+**-0.18437602**  
+
+This aligns with the trend observed for complex, polar, fused-ring molecules in the dataset.
+==================================================
+Iteration: 17
+SMILES: CC(=O)Nc1ccc(cc1)N(=O)=O
+True Property: -0.5687563176052819
+Predicted Property:
+To predict the property value for the molecule **CC(=O)Nc1ccc(cc1)N(=O)=O**, let's analyze the given examples and identify patterns or structural features that correlate with the property values.
+
+### Key Observations:
+1. **Nitro Groups (N(=O)=O)**:
+   - Molecules with nitro groups often have property values around **0.0** (e.g., `O=N(=O)c1ccccc1`, `O=N(=O)c1cccc2ccccc12`, `Clc1cc(Cl)cc(Cl)c1`).
+   - However, when combined with other polar or electron-withdrawing groups, the value can become more negative (e.g., `COc1ccccc1N(=O)=O` has **-0.67449076**).
+
+2. **Amide Groups (C(=O)N)**:
+   - The presence of an amide group (especially aromatic amides) tends to lower the property value. For example:
+     - `O=C(Cn1ccnc1N(=O)=O)NCc2ccccc2` has **-0.83011789**.
+     - `CC(=O)N(N(C1=O)c2ccccc2)c3ccccc3` has **-1.17610429**.
+
+3. **Combination of Amide and Nitro**:
+   - The molecule `CC(=O)Nc1ccc(cc1)N(=O)=O` has both an amide (`CC(=O)N`) and a nitro (`N(=O)=O`) group on an aromatic ring. This combination is likely to result in a moderately negative value, similar to other nitro-amide examples.
+
+4. **Similar Structures**:
+   - `COc1ccccc1N(=O)=O` (methoxy-nitrobenzene) has **-0.67449076**.
+   - `O=C(Cn1ccnc1N(=O)=O)NCc2ccccc2` (amide + nitro) has **-0.83011789**.
+   - The presence of the amide in `CC(=O)Nc1ccc(cc1)N(=O)=O` suggests a value between these two, likely closer to **-0.8**.
+
+### Predicted Property Value:
+Given the structural similarity to molecules with property values around **-0.7 to -0.9**, and the combined effect of the amide and nitro groups, the predicted property value for **CC(=O)Nc1ccc(cc1)N(=O)=O** is:
+
+**-0.83011789** (same as the structurally similar example `O=C(Cn1ccnc1N(=O)=O)NCc2ccccc2`). 
+
+This aligns with the observed trend where aromatic amides with nitro substituents yield values in this range.
+==================================================
+Iteration: 18
+SMILES: CCOP(=S)(OCC)SCn1c(=O)oc2cc(Cl)ccc12
+True Property: -2.347623044178565
+Predicted Property:
+Given the examples provided, I can attempt to predict the property value for the molecule **CCOP(=S)(OCC)SCn1c(=O)oc2cc(Cl)ccc12** by analyzing structural patterns and trends in the dataset.
+
+### Observations from the Dataset:
+1. **Chlorine (Cl) Substitution**:  
+   - Molecules with multiple Cl substitutions (e.g., `Clc1cccc(Cl)c1c2ccccc2`, `Clc1ccc(Cl)cc1`) consistently have a property value of **0.0**.  
+   - This suggests that Cl atoms tend to "zero out" the property unless other strong functional groups override this effect.
+
+2. **Phosphorothioate Group (P(=S))**:  
+   - The molecule contains a **P(=S)** group, which is not explicitly present in the training examples. However, sulfur-containing groups like **CSSC** have a high value (**0.77764813**), while others like **thiophene** (`s1` in `CN(C(=O)COc1nc2ccccc2s1)c3ccccc3`) have negative values.  
+   - This suggests sulfur can contribute either positively or negatively depending on context.
+
+3. **Heterocyclic System (n1c(=O)oc2cc(Cl)ccc12)**:  
+   - The molecule has a fused heterocycle with **Cl substitution**, similar to `Clc1cccc2ccccc12` (property = 0.0).  
+   - The **C=O** in the heterocycle might slightly reduce the property (as seen in other carbonyl-containing molecules).
+
+4. **Ethoxy Groups (OCC)**:  
+   - Alkoxy groups like **OCC** appear in molecules with varying property values, but they don’t dominate the trend.
+
+### Prediction:
+- The **Cl substitution** strongly suggests a baseline of **0.0**.  
+- The **P(=S)** and **thioether (S)** groups could introduce some complexity, but the lack of similar examples makes it hard to assign a strong deviation.  
+- The **heterocycle with C=O** might slightly reduce the value, but the Cl effect likely dominates.  
+
+Given these observations, the most reasonable prediction is:  
+**Predicted property value: 0.0**  
+
+This aligns with the consistent trend for Cl-substituted aromatic systems in the dataset.
+==================================================
+Iteration: 19
+SMILES: CC(C)(C)CO
+True Property: 0.7776481338173168
+Predicted Property:
+Based on the provided examples, I observe that the property value **0.77764813** is frequently associated with simple aliphatic alcohols (e.g., `CCCCCCC(C)O`, `CC(C)CO`, `CCCC(O)CCC`, `OCC(O)C(O)C(O)C(O)CO`). These molecules share the following characteristics:
+1. A hydroxyl group (`-OH`) attached to an aliphatic (non-aromatic) carbon chain.
+2. No strongly electron-withdrawing or polarizing substituents (e.g., halogens, nitro groups, carbonyls conjugated with aromatics).
+
+The molecule in question, **CC(C)(C)CO**, is a tertiary alcohol (`(CH3)3CCH2OH`), which fits this pattern:
+- It has a simple aliphatic structure with an `-OH` group.
+- There are no aromatic rings or other functional groups that would significantly alter the property (as seen in examples where such groups lead to values other than **0.77764813**).
+
+Thus, the predicted property value for **CC(C)(C)CO** is:  
+**0.77764813**
+==================================================
+Iteration: 20
+SMILES: O=c1[nH]cnc2nc[nH]c12 
+True Property: 0.0
+Predicted Property:
+To predict the property value for the molecule **O=c1[nH]cnc2nc[nH]c12**, let's analyze the given examples and identify patterns or structural features that correlate with the property values.
+
+### Observations from the Examples:
+1. **Property = 0.0**: 
+   - Molecules with aromatic heterocycles (e.g., pyridine, imidazole, purine-like structures) often have a property value of 0.0, especially if they lack bulky or highly polar substituents. Examples:
+     - `Oc2ccc1ncccc1c2` (benzimidazole derivative) → 0.0
+     - `Nc1nc(=O)[nH]cc1F` (fluorinated imidazole) → 0.0
+     - `Nc1cc[nH]c(=O)n1` (imidazole-like) → 0.0
+     - `Brc1ccc(Br)cc1` (symmetrical halogenated benzene) → 0.0
+     - `Cl\C=C/Cl` (simple halogenated alkene) → 0.0.
+
+2. **Negative Property Values**:
+   - Occur with larger, more complex structures or those with polar/charged groups (e.g., thiols, sulfoxides, amides, or extended conjugated systems). Examples:
+     - `C=CCS(=O)SCC=C` (disulfide derivative) → -3.5964555
+     - `O=C1NC(=O)NC(=O)C1(CC=C)CC=C` (cyclic imide with alkenes) → -2.42535931.
+
+3. **Positive Property Values**:
+   - Often associated with aliphatic hydrocarbons or simple halogenated alkanes (e.g., `CCC1CCCCC1` → 0.77764813).
+
+### Analysis of the Target Molecule:
+The SMILES string **O=c1[nH]cnc2nc[nH]c12** represents a **purine-2,6-dione** (hypoxanthine-like) structure:
+- It is a fused aromatic heterocycle (imidazole + pyrimidine).
+- Contains polar groups (C=O and NH) but no bulky substituents.
+- Structurally similar to other heterocycles in the examples with property = 0.0 (e.g., `Nc1nc(=O)[nH]cc1F`).
+
+### Prediction:
+Given the prevalence of **0.0** for similar aromatic heterocycles without disruptive substituents, the predicted property value for **O=c1[nH]cnc2nc[nH]c12** is:
+
+**0.0**
+==================================================
+Iteration: 21
+SMILES: CC(C)OC=O
+True Property: 0.12933370350182913
+Predicted Property:
+Analyzing the given examples, I can identify some patterns in the property values:
+
+1. Simple aliphatic chains with single functional groups (like alcohols, ethers, halides) tend to have a property value of 0.77764813. Examples:
+   - CCCC(C)O (0.77764813)
+   - CCOC(C)C (0.77764813)
+   - ClCCCCl (0.77764813)
+   - CC(C)O (0.77764813)
+
+2. Molecules with conjugated aromatic systems or multiple polar groups often have property values of 0.0. Examples:
+   - c1ccc2c(c1)c3cccc4ccc5cccc2c5c43 (0.0)
+   - Clc1ccc(cc1)c2c(Cl)cccc2Cl (0.0)
+   - NC(=O)c1cccnc1 (0.0)
+
+3. The molecule CC(C)OC=O is an ester (methyl acetate with an isopropyl group) which is structurally similar to other simple aliphatic compounds with single functional groups that have the 0.77764813 value.
+
+4. The C=O group here is part of an ester functionality, not significantly different from other oxygen-containing functional groups in the examples that show the 0.77764813 value.
+
+Therefore, based on the structural similarity to other molecules with the 0.77764813 property value, I predict:
+
+CC(C)OC=O → 0.77764813
+==================================================
+Iteration: 22
+SMILES: O=C(Nc1ccccc1)Nc2ccccc2
+True Property: 0.0
+Predicted Property:
+To predict the property for the molecule **O=C(Nc1ccccc1)Nc2ccccc2**, let's analyze the given examples and identify patterns or trends that correlate with the property values.
+
+### Observations from the Examples:
+1. **Aromatic Rings and Substituents**:
+   - Molecules with simple aromatic rings (e.g., benzene, pyridine) and no polar or strongly electron-withdrawing/donating substituents tend to have a property value of **0.0** (e.g., `c1ccncc1`, `c2ccc1scnc1c2`, `Fc1cccc(F)c1`).
+   - Aromatic rings with moderately polar substituents (e.g., `Oc1ccccc1Cl`, `Oc1cccc(c1)N(=O)=O`) also often have **0.0**.
+
+2. **Amides and Ureas**:
+   - Amides (`C(=O)N`) and urea-like structures (`N(C=O)N`) tend to have negative property values, especially when conjugated with aromatic rings.
+     - Example: `CNC(=O)Oc1cc(C)cc(C)c1` has **-2.42535931** (strongly negative).
+     - Example: `C1N(C(=O)NCC(C)C)C(=O)NC1` has **0.1293337** (less negative, possibly due to aliphatic nature).
+
+3. **Aliphatic Rings and Chains**:
+   - Saturated aliphatic rings (e.g., cyclohexane) or chains often have positive values around **0.77764813** (e.g., `C1CCCCC1`, `OCC(O)CO`, `CCCCCO`).
+
+4. **Conjugated Systems**:
+   - Molecules with extended conjugation (e.g., polyaromatics like `Cc1ccc(C)c2ccccc12`) tend to have negative values (e.g., **-0.83011789**).
+
+### Analysis of the Target Molecule:
+The target molecule is **O=C(Nc1ccccc1)Nc2ccccc2**, which is a **urea derivative** with two aromatic rings (phenyl groups) attached to the nitrogen atoms of the urea core (`N-C(=O)-N`). 
+
+Key features:
+- The urea group (`N-C(=O)-N`) is polar and can participate in hydrogen bonding.
+- The two aromatic rings are conjugated with the urea core, which may delocalize electron density and influence the property.
+
+### Comparison with Similar Examples:
+1. `CNC(=O)Oc1cc(C)cc(C)c1` (property: **-2.42535931**):
+   - This is an aromatic amide with electron-donating groups (methoxy and methyl), leading to a strongly negative value.
+2. `C1N(C(=O)NCC(C)C)C(=O)NC1` (property: **0.1293337**):
+   - This is a cyclic urea with aliphatic substituents, giving a less negative value.
+3. `NC(=O)c1cccnc1` (property: **0.0**):
+   - This is a simple aromatic amide (nicotinamide), which has a neutral value.
+
+The target molecule is a **diaryl urea**, which is more similar to the first example (`CNC(=O)Oc1cc(C)cc(C)c1`) but with two phenyl groups instead of substituted phenyl rings. The lack of additional electron-donating/withdrawing groups on the phenyl rings may moderate the effect, but the urea core with two aromatic substituents is likely to give a **negative value**.
+
+### Predicted Property:
+Given the conjugation and polarity of the urea group, the predicted property value is likely in the range of **-1.0 to -2.5**. A reasonable estimate is:
+
+**Predicted property value: -1.5** (intermediate between the strongly negative `CNC(=O)Oc1cc(C)cc(C)c1` and the less negative `C1N(C(=O)NCC(C)C)C(=O)NC1`). 
+
+However, looking more closely, the diaryl urea structure is quite similar to the highly negative `CNC(=O)Oc1cc(C)cc(C)c1` (which has additional substituents), so a value closer to **-2.0** might be more accurate.
+
+Final prediction: **-1.8** (approximate, based on the trend). 
+
+But since the examples show that simple aromatic amides/ureas can be **0.0** and more complex ones are negative, and this is a symmetric diaryl urea, a more precise estimate would be:
+
+**Predicted property value: -1.61225057** (similar to the other complex urea-like structures in the examples). 
+
+However, the exact value is hard to pin down without more data, but it is certainly negative and likely between **-1.5 and -2.5**. 
+
+Given the symmetry and lack of additional substituents, I'll predict: **-1.8**. 
+
+But to match the precision of the examples, let's say: **-1.61225057** (same as `CSCS(=O)CC(CO)NC(=O)C=Cc1c(C)[nH]c(=O)[nH]c1=O`, which is a complex urea-like molecule). 
+
+Final answer: **-1.61225057**. 
+
+(Note: Without a clear mathematical model, this is an educated guess based on the examples.)
+==================================================
+Iteration: 23
+SMILES: C1c2ccccc2c3ccccc13
+True Property: -0.3201942928912116
+Predicted Property:
+Analyzing the given examples and the structure of the molecule **C1c2ccccc2c3ccccc13**, here's the reasoning for the predicted property value:
+
+1. **Structural Features**:
+   - The molecule is **fluorene**, a polycyclic aromatic hydrocarbon (PAH) with three fused rings (two benzene rings fused to a central cyclopentadiene ring).
+   - It is fully conjugated and aromatic, similar to other purely hydrocarbon PAHs in the dataset (e.g., `c1ccc2cc3cc4ccccc4cc3cc2c1`, `Sc1ccccc1`, `N(=Nc1ccccc1)c2ccccc2`, `Clc1cccc(Cl)c1c2c(Cl)cccc2Cl`).
+
+2. **Observations from Examples**:
+   - Purely aromatic hydrocarbons or symmetric halogenated aromatics (e.g., `c1ccc2cc3cc4ccccc4cc3cc2c1`, `Clc1cccc(Cl)c1c2c(Cl)cccc2Cl`, `Brc1ccccc1`) consistently have a property value of **0.0**.
+   - The presence of heteroatoms (O, N, S, P), polar groups (e.g., carbonyl, nitro), or aliphatic chains tends to shift the property value away from 0 (either positive or negative).
+   - Fluorene lacks polar functional groups or heteroatoms, just like the other PAHs with a value of 0.0.
+
+3. **Prediction**:
+   - Since fluorene is a neutral, non-polar, purely aromatic hydrocarbon, its property value should align with the other similar examples in the dataset. 
+
+**Predicted property value: 0.0**
+==================================================
+Iteration: 24
+SMILES: NC(=N)NS(=O)(=O)c1ccc(N)cc1 
+True Property: 0.0
+Predicted Property:
+Analyzing the given examples and the molecule in question, **NC(=N)NS(=O)(=O)c1ccc(N)cc1**, we can deduce the property value based on structural features and trends observed in the dataset.
+
+### Key Observations:
+1. **Highly polar or charged groups** (e.g., sulfonamides, nitro groups, multiple halogens) often correlate with negative property values (e.g., -3.90742738 for `Cn1cnc2n(C)c(=O)n(C)c(=O)c12` or -8.58238875 for `CC(C)(C)C(=O)C(Oc1ccc(Cl)cc1)n2cncn2`).
+2. **Aromatic systems with electron-withdrawing groups** (e.g., sulfonyl, nitro) tend to lower the property value (e.g., -3.5964555 for `CCOP(=S)(OCC)ON=C(C#N)c1ccccc1`).
+3. **Neutral or nonpolar molecules** (e.g., alkanes, simple halides) often have values of **0.0** or **0.77764813** (e.g., `ClC(=C(Cl)C(=C(Cl)Cl)Cl)Cl` = 0.0, `CC(C)Cl` = 0.77764813).
+
+### Structure of the Query Molecule:
+- **NC(=N)NS(=O)(=O)c1ccc(N)cc1** contains:
+  - A **sulfonamide group (S(=O)(=O))**, which is strongly electron-withdrawing.
+  - A **guanidine-like group (NC(=N)N)**, which is polar and can contribute to negative values.
+  - An **aromatic ring with an amino group (N)**, which is moderately electron-donating but less impactful than the sulfonamide.
+
+### Comparison to Similar Molecules:
+- The sulfonamide group is present in molecules like `CCOc2ccc1nc(sc1c2)S(N)(=O)=O` (property = -1.28607547) and `CCOP(=S)(OCC)ON=C(C#N)c1ccccc1` (property = -3.5964555).
+- The guanidine-like moiety resembles polar groups in molecules like `O=C1NCCN1c2ncc(s2)N(=O)=O` (property = -3.5964555).
+
+### Predicted Property:
+Given the strong electron-withdrawing nature of the sulfonamide and the polar guanidine-like group, the property value is likely **negative and moderately large in magnitude**. A reasonable estimate, based on similar structures, is:
+
+**Predicted property value: -3.5964555**  
+
+This aligns with the trend for sulfonamide-containing polar aromatic systems in the dataset.
+==================================================
+Iteration: 25
+SMILES: CCN(CC(C)=C)c1c(cc(cc1N(=O)=O)C(F)(F)F)N(=O)=O
+True Property: -3.353075426940803
+Predicted Property:
+Analyzing the given examples and the target molecule, I'll predict the property value based on structural features and trends observed in the data:
+
+Key observations from the training data:
+1. Molecules with multiple nitro groups (N(=O)=O) tend to have property values around 0.0 (e.g., Oc1cccc(c1)N(=O)=O, Nc2cnn(c1ccccc1)c(=O)c2Cl)
+2. Fluorinated aromatic compounds (C(F)(F)F) appear in molecules with values around 0.0
+3. Tertiary amines (N with three substituents) appear in both positive and negative values
+4. The combination of nitro groups and fluorinated substituents appears in the training set with values near 0.0
+
+The target molecule CCN(CC(C)=C)c1c(cc(cc1N(=O)=O)C(F)(F)F)N(=O)=O contains:
+- Two nitro groups (N(=O)=O)
+- A trifluoromethyl group (C(F)(F)F)
+- A tertiary amine (N with three substituents)
+- An aromatic system
+
+Given that:
+- Multiple nitro groups consistently correlate with values near 0.0
+- The fluorinated aromatic component doesn't appear to shift this significantly
+- No strongly negative functional groups (like multiple hydroxyls) are present
+- No strongly positive features (like long aliphatic chains) dominate
+
+The most consistent prediction based on these structural features would be: 0.0
+==================================================
+Iteration: 26
+SMILES: CC(C)OC=O
+True Property: 0.12933370350182913
+Predicted Property:
+To predict the property for the molecule **CC(C)OC=O**, let's analyze the given examples and identify patterns or trends in the property values based on molecular features.
+
+### Observations from the Examples:
+1. **Simple alkanes, alcohols, and halogenated alkanes** (e.g., CCCC(C)O, ClC(Cl)Cl, BrCBr, C1CCCCCCC1) tend to have a property value of **0.77764813**. These are generally non-polar or weakly polar molecules without complex functional groups.
+   
+2. **Molecules with aromatic rings** (e.g., c1ccccc1, Clc1ccccc1) often have a property value of **0.0**, unless they have additional polar or charged substituents.
+
+3. **Molecules with carbonyl groups (C=O)**:
+   - If the carbonyl is part of an aldehyde or ketone in a simple aliphatic chain (e.g., CCCC=O, O=C1CCCCC1), the property value is **0.38253832**.
+   - If the carbonyl is part of an ester (e.g., CCOC(=O)c1ccc(N)cc1), the value tends to be more negative (e.g., -1.28607547), especially if conjugated with aromatic systems or polar groups.
+   - The molecule **CC(=O)N** has a value of **-1.20069231**, likely due to the amide group's polarity.
+
+4. **Molecules with ethers (C-O-C)**:
+   - Simple ethers (e.g., CCOC(=O)C) have values around **0.44676617**.
+   - More complex ethers with polar groups can have more negative values.
+
+### Analysis of **CC(C)OC=O**:
+- This molecule is an ester: **isopropyl formate (CH3)2CHOCHO**.
+- It has a simple aliphatic ester structure (no aromaticity or additional polar groups).
+- Comparing to similar molecules:
+  - **CC(=O)N** (amide) has **-1.20069231**, but this is more polar due to the amide.
+  - **CCOC(=O)C** (ethyl acetate) has **0.44676617**.
+  - **CC(C)OC=O** is less polar than an amide but similar to ethyl acetate, though slightly less polar due to the branched isopropyl group.
+
+### Predicted Property:
+Given the simplicity of the ester and lack of additional polar/aromatic features, the value is likely close to **0.38253832** (similar to aliphatic aldehydes/ketones) or slightly higher due to the ether-like character. 
+
+However, since **CCOC(=O)C** (ethyl acetate) has **0.44676617**, and **CC(C)OC=O** is structurally similar but with a slightly less polar isopropyl group, a reasonable prediction is:
+
+**Predicted property value: 0.38253832** (same as aliphatic aldehydes/ketones). 
+
+This aligns with the trend that simple aliphatic carbonyls (not conjugated or highly polar) fall in this range.
+==================================================
+Iteration: 27
+SMILES: Cc1cc(C)cc(O)c1
+True Property: -1.591215232982005
+Predicted Property:
+Based on the provided examples, I can identify a pattern in the property values:
+
+1. **Aromatic rings with simple substituents (e.g., halogens, alkyl groups) or no polar functional groups** tend to have a property value of **0.0**. Examples:
+   - `Clc1ccc(c(Cl)c1)c2cc(Cl)c(Cl)c(Cl)c2Cl` → 0.0
+   - `c1ccc2ccccc2c1` → 0.0
+   - `O=Cc1ccccc1` → 0.0
+
+2. **Aliphatic hydrocarbons (e.g., alkanes, alcohols, ethers)** tend to have a property value of **0.77764813**. Examples:
+   - `CC(C)C` → 0.77764813
+   - `CCC(C)CCO` → 0.77764813
+   - `C1CCOC1` → 0.77764813
+   - `CO` → 0.77764813
+
+3. **Aromatic rings with polar or electron-withdrawing/donating substituents (e.g., OH, NO₂, COOH, halogens in certain patterns)** tend to have **negative values**, often around **-0.5 to -0.7**. Examples:
+   - `COC(=O)c1cc(O)c(O)c(O)c1` → -0.56875632
+   - `Cc1cccc(N)c1` → -0.67449076
+   - `Cc1c(cc(cc1N(=O)=O)N(=O)=O)N(=O)=O` → -0.67449076
+
+4. **Highly polar or conjugated systems with multiple functional groups** can have **more negative values (e.g., -1.4 to -3.9)**. Examples:
+   - `CC(C)OC(=O)C(O)(c1ccc(Br)cc1)c2ccc(Br)cc2` → -1.42092862
+   - `CCOC(=O)c1ccccc1C(=O)OCC` → -3.5964555
+
+### Analysis of the Target Molecule: `Cc1cc(C)cc(O)c1`
+- This is a **toluene derivative** with two methyl groups (`Cc1cc(C)cc(O)c1`) and one hydroxyl group (`OH`).
+- The hydroxyl group is polar and can donate hydrogen bonds, which likely reduces the property value compared to pure hydrocarbons or non-polar aromatics.
+- Similar molecules with polar substituents (e.g., `COC(=O)c1cc(O)c(O)c(O)c1` → -0.568) or `Cc1cccc(N)c1` → -0.674) have negative values in the **-0.5 to -0.7 range**.
+
+### Prediction:
+Given the presence of the polar `OH` group and the aromatic ring with alkyl substituents, the property value is likely in the **-0.5 to -0.7 range**. A reasonable estimate is:
+
+**Predicted property value: -0.6170455**  
+(This aligns with similar molecules like `Oc2cc(O)c1C(=O)CC(Oc1c2)c3ccc(O)c(O)c3` → -0.6170455, which also has hydroxyl groups on an aromatic ring.)
+==================================================
+Iteration: 28
+SMILES: COP(=S)(OC)Oc1ccc(SC)c(C)c1
+True Property: -2.776027317655544
+Predicted Property:
+Analyzing the given examples and the molecule in question (`COP(=S)(OC)Oc1ccc(SC)c(C)c1`), here's the reasoning for the predicted property value:
+
+### Key Observations from Examples:
+1. **Phosphorothioate/Phosphate Derivatives (e.g., `COP(=S)(OC)Oc1cc(Cl)c(Br)cc1Cl`, `COP(=S)(OC)Oc1cc(Cl)c(I)cc1Cl`, `COP(=S)(OC)Oc1cc(Cl)c(Cl)cc1Cl`)**:
+   - These molecules consistently have a property value of **-1.59121523** when they contain a `P(=S)(OR)OR'` group (where R/R' are alkyl/aryl) and halogen substitutions (Cl, Br, I) on the aromatic ring.
+   - The presence of halogens seems to reinforce this value, but the core `P(=S)(OR)OR'` structure appears to be the dominant factor.
+
+2. **Aromatic Substitutions**:
+   - Molecules with aromatic rings substituted with halogens (Cl, Br, I) or other groups (e.g., `Oc1ccc(Cl)c(Cl)c1`, `Clc1ccc(Cl)c(Cl)c1`) often have a property value of **0.0** unless paired with specific functional groups (e.g., phosphorothioates).
+
+3. **Molecule in Question (`COP(=S)(OC)Oc1ccc(SC)c(C)c1`)**:
+   - Contains the `P(=S)(OC)OC` group (phosphorothioate), which is strongly associated with **-1.59121523** in the examples.
+   - The aromatic ring is substituted with `SC` (thioether) and `C` (methyl), but these are not halogens. However, the phosphorothioate group is the dominant feature.
+   - No examples contradict this assignment for phosphorothioates, even with non-halogen substituents.
+
+### Predicted Property Value:
+The property value for `COP(=S)(OC)Oc1ccc(SC)c(C)c1` is **-1.59121523**. This aligns with the consistent pattern observed for phosphorothioate-containing molecules in the provided examples.
+==================================================
+Iteration: 29
+SMILES: Clc1cc(Cl)c(c(Cl)c1)c2c(Cl)cccc2Cl
+True Property: 0.0
+Predicted Property:
+Analyzing the given examples and the molecule in question (`Clc1cc(Cl)c(c(Cl)c1)c2c(Cl)cccc2Cl`), we can identify patterns in the property values:
+
+1. **Highly chlorinated aromatic systems**: 
+   - Molecules like `Clc1ccc(Cl)c(c1)c2cc(Cl)c(Cl)c(Cl)c2Cl` and `Clc1ccc(Cl)c(c1)c2c(Cl)c(Cl)c(Cl)c(Cl)c2Cl` have a property value of **0.0**. These are heavily chlorinated biphenyl or similar aromatic systems.
+   - The given molecule is structurally similar: it is a biphenyl with multiple chlorine substitutions (hexachlorinated biphenyl analog).
+
+2. **Other observations**:
+   - Simple chlorinated aliphatics (e.g., `ClC(Cl)Cl`, `ClC1C(Cl)C(Cl)C(Cl)C(Cl)C1Cl`) have a value of **0.77764813**, but these are not aromatic.
+   - Aromatic systems with fewer chlorines (e.g., `Oc1cc(Cl)cc(Cl)c1`) also have a value of **0.0**.
+   - The property seems to be **0.0** for highly symmetric, polyhalogenated aromatic systems.
+
+3. **Prediction**:
+   - The molecule `Clc1cc(Cl)c(c(Cl)c1)c2c(Cl)cccc2Cl` is a heavily chlorinated biphenyl derivative, similar to the examples with a value of **0.0**.
+
+Thus, the predicted property value for this molecule is:  
+**0.0**
+==================================================
+Iteration: 30
+SMILES: CCCN(=O)=O
+True Property: 0.7776481338173168
+Predicted Property:
+Analyzing the given examples, we can observe the following patterns in the property values:
+
+1. Simple alkanes (e.g., CCC, C1CCCCC1, CC, CCCCCCCCC) consistently have a property value of **0.77764813**.
+
+2. Molecules with nitro groups (N(=O)=O) attached to aromatic rings tend to have property values of **0.0** (e.g., N(=O)=O attached to benzene derivatives).
+
+3. Aliphatic nitro compounds (nitro groups attached to non-aromatic carbon chains) are less common in the examples, but we can compare with similar structures.
+
+For the molecule **CCCN(=O)=O** (1-nitropropane), we note:
+- It is an aliphatic nitro compound (not aromatic).
+- The nitro group is attached to a short (3-carbon) aliphatic chain.
+- The closest analogs in the examples are alkanes (0.77764813) and aromatic nitro compounds (0.0), but this is neither.
+
+Given the lack of exact matches, we can infer:
+- The nitro group introduces some polarity/electronegativity, likely reducing the property value compared to pure alkanes.
+- However, it is not as strongly reduced as in aromatic nitro compounds (which are 0.0).
+
+A reasonable estimate would be **between 0.0 and 0.77764813**, leaning toward the lower end due to the nitro group's effect. A plausible prediction is **~0.38253832**, which appears in other polar aliphatic compounds (e.g., CCCCCC=O, CC(C)CCOC=O).
+
+### Final predicted property value for CCCN(=O)=O: **0.38253832**
+==================================================
+Iteration: 31
+SMILES: Fc1cccc(Br)c1
+True Property: 0.0
+Predicted Property:
+Analyzing the given examples, I can identify some patterns in the property values:
+
+1. Simple halogenated benzenes (e.g., Clc1ccc(Br)cc1, Clc1ccc(c(Cl)c1)c2cc(Cl)ccc2Cl) tend to have property values of 0.0
+2. Brominated alkanes (e.g., CCCBr, BrC(Br)Br) tend to have values around 0.77764813
+3. Nitro groups (N(=O)=O) tend to decrease the value (more negative)
+4. Oxygen-containing functional groups can either increase or decrease the value depending on context
+5. More complex structures with multiple functional groups show intermediate values
+
+The molecule in question is Fc1cccc(Br)c1, which is a simple halogenated benzene with both fluorine and bromine substituents. 
+
+Looking at similar examples:
+- Clc1ccc(Br)cc1 has a value of 0.0
+- Other simple dihalogenated benzenes also show 0.0
+- The presence of bromine alone in aliphatic compounds gives ~0.777, but in aromatic systems it appears to behave differently
+
+Given that all simple halogenated benzenes in the examples have property values of 0.0, and there's no evidence that fluorine substitution changes this pattern, the most reasonable prediction is:
+
+Predicted property value for Fc1cccc(Br)c1: 0.0
+==================================================
+Iteration: 32
+SMILES: CC1(C)C2CCC1(C)C(O)C2
+True Property: 0.7776481338173168
+Predicted Property:
+Analyzing the given examples and the molecule **CC1(C)C2CCC1(C)C(O)C2**, I can make the following observations:
+
+1. **Patterns in the Data**:
+   - Simple aliphatic chains with halogens (e.g., CBr, CCCCBr, CCCCCCCCCI) or alcohols (e.g., CCCC(C)(C)O, CCCCCCCCC(C)O) tend to have a property value of **0.77764813**.
+   - Molecules with complex cyclic structures, especially those with multiple rings or heteroatoms (e.g., nitrogen, oxygen, sulfur), often deviate from this value.
+   - The presence of carbonyl groups (C=O) or other polar functional groups can reduce the property value (e.g., CCCC(=O)C → 0.44676617, CCOC(=O)C → 0.1293337).
+   - Steroids or steroid-like structures (e.g., CC5(C)OC4CC3C2CCC1=CC(=O)C=CC1(C)C2(F)C(O)CC3(C)C4(O5)C(=O)CO → 0.1293337) tend to have values around **0.1293337** or **0.05090986**.
+
+2. **Analysis of the Target Molecule**:
+   - The molecule **CC1(C)C2CCC1(C)C(O)C2** is a bicyclic structure with two tertiary carbons (C(C)(C)) and a hydroxyl group (C(O)).
+   - It resembles steroid-like or terpene-like structures (e.g., similar to some of the examples with multiple fused rings and an OH group).
+   - The hydroxyl group introduces polarity, but the overall structure is not as complex as some of the highly negative examples.
+
+3. **Closest Matches**:
+   - The molecule is most similar to steroid-like examples such as:
+     - `CC5(C)OC4CC3C2CCC1=CC(=O)C=CC1(C)C2(F)C(O)CC3(C)C4(O5)C(=O)CO` → **0.1293337**
+     - `CC1CC2C3CCC4=CC(=O)C=CC4(C)C3(F)C(O)CC2(C)C1(O)C(=O)CO` → **0.05090986**
+   - The absence of additional polar groups (e.g., C=O, F) in the target molecule suggests it might be closer to **0.1293337** than to the lower values.
+
+4. **Prediction**:
+   - Given the structural similarity to the steroid-like examples and the presence of a hydroxyl group, the predicted property value is likely **0.1293337**.
+
+### Final Answer:
+**0.1293337**
+==================================================
+Iteration: 33
+SMILES: CCOP(=S)(OCC)N2C(=O)c1ccccc1C2=O
+True Property: -3.596455500398697
+Predicted Property:
+Given the examples provided, we can observe patterns in the property values based on molecular structure. The molecule in question is:
+
+**CCOP(=S)(OCC)N2C(=O)c1ccccc1C2=O**
+
+This structure resembles the following example from the list:
+- **CCOP(=S)(OCC)SC(CCl)N1C(=O)c2ccccc2C1=O**, which has a property value of **-2.10929072**.
+
+The main differences between the two molecules are:
+1. The example has an additional **SC(CCl)** group attached to the phosphorus, while the query molecule lacks this substituent.
+2. The core structure (P(=S)(OCC) attached to a phthalimide-like ring system) is very similar.
+
+### Observations from the dataset:
+- The presence of **P(=S)** and **phthalimide-like (N2C(=O)c1ccccc1C2=O)** moieties tends to correlate with negative property values (e.g., -2.10929072 in the example).
+- The absence of the **SC(CCl)** group in the query molecule might slightly reduce the magnitude of the negative property value (since the **SC(CCl)** group likely contributes to the electron-withdrawing or steric effects that lower the property value).
+
+### Prediction:
+Given the structural similarity and the absence of the **SC(CCl)** group, the property value for **CCOP(=S)(OCC)N2C(=O)c1ccccc1C2=O** is likely slightly less negative than **-2.10929072**. 
+
+A reasonable estimate would be:
+**-1.8** (approximate, based on the trend).
+
+However, looking more closely at the examples, the **P(=S)** core with the phthalimide seems to consistently give values around **-2.1 to -2.7** (e.g., **-2.10929072** and **-2.77602732** for similar structures). The query molecule is very similar to the example with **-2.10929072**, just missing the **SC(CCl)** group. Since this group is not strongly electron-withdrawing or polar, its absence might not drastically change the value.
+
+Thus, a more precise prediction would be close to the example:
+**-2.0** (rounded from **-2.10929072**).
+
+### Final predicted property value:
+**-2.1** (closest to the example with minor adjustment).
+==================================================
+Iteration: 34
+SMILES: Cc1cc(=O)n(c2ccccc2)n1C
+True Property: -0.9396679417484032
+Predicted Property:
+To predict the property for the molecule **Cc1cc(=O)n(c2ccccc2)n1C**, let's analyze the given examples and identify patterns or similarities in the molecular structures and their corresponding property values.
+
+### Observations:
+1. **Aromatic rings with carbonyl (C=O) groups and nitrogen heterocycles** often have negative property values. For example:
+   - **Cc1ccccc1n3c(C)nc2ccccc2c3=O** (similar structure with a carbonyl and nitrogen heterocycle) has a value of **-0.56875632**.
+   - **c1ccccc1(OC(=O)NC)** (aromatic with carbonyl and nitrogen) has a value of **-0.56875632**.
+
+2. **Molecules with fused aromatic systems and carbonyl groups** tend to have values around **-0.3 to -0.6**. For example:
+   - **Cc2ncc1nccnc1n2** (fused nitrogen heterocycle) has a value of **-0.67449076**.
+   - **O2c1ccccc1N(C)C(=O)c3cccnc23** (fused system with carbonyl) has a value of **-0.32019429**.
+
+3. The presence of **methyl groups (C)** attached to aromatic systems does not drastically change the property if the core structure is similar.
+
+### Target Molecule Analysis:
+The molecule **Cc1cc(=O)n(c2ccccc2)n1C** has:
+- A **fused aromatic system** with two nitrogen atoms (n1 and n3).
+- A **carbonyl group (C=O)** attached to the aromatic ring.
+- **Methyl groups (C)** attached to the nitrogen atoms.
+
+This structure is very similar to **Cc1ccccc1n3c(C)nc2ccccc2c3=O** (value = **-0.56875632**), which also has:
+- A fused aromatic system with nitrogen and carbonyl.
+- Methyl groups attached to the nitrogen.
+
+### Prediction:
+Given the strong similarity, the property value for **Cc1cc(=O)n(c2ccccc2)n1C** is likely very close to **-0.56875632**.
+
+### Final Answer:
+**-0.56875632**
+==================================================
+Iteration: 35
+SMILES: CCCCCC(=O)OCC
+True Property: 0.492962782162202
+Predicted Property:
+To predict the property for the molecule **CCCCCC(=O)OCC**, let's analyze the given examples and identify patterns:
+
+### Observations:
+1. **Alcohols and polyols (e.g., OCC(O)C(O)CO, OCC(O)C2OC1OC(OC1C2O)C(Cl)(Cl)Cl, CCOP(=O)(OCC)OCC)** tend to have a property value of **0.77764813**.
+2. **Esters (e.g., CC(=O)OC3CCC4C2CCC1=CC(=O)CCC1(C)C2CCC34C, CCCCCC(=O)OC)** have values like **0.55503263** or **0.31501908**, depending on complexity.
+3. **Simple alkanes (e.g., CCCCC, CCC(C)C)** also often have **0.77764813**, but branching or functional groups can change this.
+4. **Aromatic or conjugated systems with halogens (e.g., Clc1ccc(Cl)c(c1)c2c(Cl)c(Cl)cc(Cl)c2Cl)** tend to have **0.0**.
+
+### Analysis of **CCCCCC(=O)OCC**:
+- This is an ester (**hexanoic acid ethyl ester**, ethyl hexanoate), structurally similar to **CCCCCC(=O)OC** (methyl hexanoate), which has a value of **0.55503263**.
+- The additional **ethyl group (OCC)** instead of **methyl (OC)** is unlikely to drastically change the property, as esters with similar structures cluster around **0.55503263** or **0.31501908** (for more complex cases).
+
+### Prediction:
+Given the simplicity of the ester and its similarity to other examples, the most likely value is **0.55503263**.
+
+### Final Answer:
+**0.55503263**
+==================================================
+Iteration: 36
+SMILES: COC(=O)c1ccccc1
+True Property: -0.5687563176052819
+Predicted Property:
+Analyzing the given examples, I observe that the property value often correlates with certain structural features:
+
+1. Simple aliphatic chains (e.g., CCCC, CC(C)C) tend to have a value of ~0.77764813
+2. Aromatic esters (COC(=O)c...) tend to have values around -1.28607547 (seen in CCOC(=O)c1ccc(O)cc1, CCOC(=O)c1ccccc1, and CCOc2ccc1nc(sc1c2)S(N)(=O)=O)
+3. The molecule COC(=O)c1ccccc1 is an aromatic ester (methyl benzoate) with the same ester-aromatic pattern as the examples showing -1.28607547
+
+Notably, when the ester is attached to a phenyl ring (c1ccccc1) with no other major functional groups, the value consistently appears to be -1.28607547 in the training examples.
+
+Therefore, the predicted property value for COC(=O)c1ccccc1 is:
+
+-1.28607547
+==================================================
+Iteration: 37
+SMILES: C=CCC=C
+True Property: -1.0844124430276243
+Predicted Property:
+Given the examples provided, we can observe patterns in the property values based on molecular structure:
+
+1. **Simple alkanes and cycloalkanes** (e.g., `C1CCCC1`, `CCC(C)(C)CC`) tend to have positive property values around **0.77764813**.
+2. **Molecules with conjugated double bonds or aromatic rings** (e.g., `C=Cc1ccccc1`, `c1ccc2c(c1)c3cccc4cccc2c34`) often have a property value of **0.0**.
+3. **Molecules with polar or functional groups** (e.g., halogens, nitro groups, carbonyls) tend to have negative property values, with more polar/electron-withdrawing groups leading to more negative values.
+4. **Simple alkenes** (e.g., `CC/C=C/C`) have a property value of **-0.50341541**, but this can vary depending on conjugation or substitution.
+
+The molecule in question is **C=CCC=C** (1,3-butadiene), which is a simple conjugated diene. Based on the examples:
+- `CC/C=C/C` (a non-conjugated alkene) has a value of **-0.50341541**.
+- `C=Cc1ccccc1` (a conjugated alkene-aromatic system) has a value of **0.0**.
+- `C=CCC=C` is conjugated but lacks aromaticity, so its value is likely intermediate.
+
+Given the conjugation in `C=CCC=C`, it is more similar to aromatic systems (which are fully conjugated) than to isolated alkenes. Thus, the predicted property value is likely **0.0**, matching the trend for conjugated/aromatic systems in the examples.
+
+### Predicted property value for `C=CCC=C`: **0.0**
+==================================================
+Iteration: 38
+SMILES: BrC(Br)Br
+True Property: 0.7776481338173168
+Predicted Property:
+Given the examples provided, we can observe certain patterns in the property values associated with different molecular structures. Here are some key observations:
+
+1. **Halogenated Alkanes (e.g., CCl3, CBr3, etc.)**: 
+   - Molecules like `COP(=O)(OC)C(O)C(Cl)(Cl)Cl` (with CCl3) and `FC(F)(F)C(Cl)Br` (with CF3 and CClBr) have a property value of **0.77764813**.
+   - This suggests that fully halogenated carbon centers (e.g., CX3 where X is a halogen) tend to have this value.
+
+2. **Brominated Analogues**:
+   - The molecule `BrC(Br)Br` (tribromomethane, CBr3) is structurally analogous to CCl3 (as in the first example) but with bromine instead of chlorine. 
+   - Since the property value seems consistent for fully halogenated carbon centers (regardless of the specific halogen), we can infer that `BrC(Br)Br` will also have the same value.
+
+3. **Other Supporting Examples**:
+   - `CC(C)CO`, `CCCC(C)C`, `OCC(O)C(O)CO`, and other non-halogenated but highly saturated/aliphatic molecules also have the value **0.77764813**, but the strongest correlation is with the CX3 motif.
+
+Thus, the predicted property value for `BrC(Br)Br` is:
+
+**0.77764813**
+==================================================
+Iteration: 39
+SMILES: CCOP(=S)(OCC)SC(CCl)N2C(=O)c1ccccc1C2=O
+True Property: -2.109290717979383
+Predicted Property:
+To predict the property for the given molecule `CCOP(=S)(OCC)SC(CCl)N2C(=O)c1ccccc1C2=O`, let's analyze the structural features and compare them to the examples provided. Here's the step-by-step reasoning:
+
+### Key Structural Features:
+1. **Phosphorothioate group (`P(=S)(OCC)`)**:
+   - Present in `COP(=S)(OC)SCC(=O)N(C(C)C)c1ccc(Cl)cc1` (property = -1.61225057).
+   - This group is associated with negative property values (likely due to polarity or electronegativity effects).
+
+2. **Thioether linkage (`SC(CCl)`)**:
+   - Similar to sulfur-containing groups in other molecules (e.g., `CCSC(=O)N(CC)C1CCCCC1` with property = 0.57689779), but the presence of `CCl` adds electronegativity.
+
+3. **Lactam ring (`N2C(=O)c1ccccc1C2=O`)**:
+   - A fused aromatic lactam (similar to `OC3N=C(c1ccccc1Cl)c2cc(Cl)ccc2NC3=O` with property = -0.27273336).
+   - Lactams with aromatic rings tend to have moderately negative property values.
+
+4. **Ethoxy groups (`CCO` and `OCC`)**:
+   - Present in molecules like `OCC(O)COC(=O)c1ccccc1Nc2ccnc3cc(Cl)ccc23` (property = -0.77062223), which also have negative values.
+
+### Comparison to Examples:
+- The molecule combines a phosphorothioate group (strongly negative contribution) with a lactam (moderately negative) and ethoxy groups (negative). 
+- The closest analog is `COP(=S)(OC)SCC(=O)N(C(C)C)c1ccc(Cl)cc1` (property = -1.61225057), but our molecule has additional complexity (lactam ring and ethoxy groups), which may slightly offset the negativity.
+
+### Predicted Property:
+Given the combined effects, the property is likely **negative and moderately large**, similar to the phosphorothioate-containing example but adjusted for the lactam and ethoxy contributions. 
+
+**Predicted property value: -1.2**  
+*(This is an estimate based on the structural similarity to examples with values around -1.2 to -1.6.)*
+==================================================
+Iteration: 40
+SMILES: CN(C)C(=O)Nc1ccc(c(Cl)c1)n2nc(oc2=O)C(C)(C)C
+True Property: -2.776027317655544
+Predicted Property:
+To predict the property for the given molecule **CN(C)C(=O)Nc1ccc(c(Cl)c1)n2nc(oc2=O)C(C)(C)C**, let's analyze its structural features and compare them with the provided examples to infer the likely property value.
+
+### Structural Analysis:
+1. **Functional Groups and Fragments**:
+   - **Amide-like group**: `CN(C)C(=O)N` (similar to `CN(C)C(=O)N(C)C` in the examples, which has a value of **0.28701204**).
+   - **Aromatic ring with chlorine substitution**: `c1ccc(c(Cl)c1)` (similar to `Clc1ccc(cc1)N(=O)=O`, which has a value of **0.0**).
+   - **Heterocyclic fragment**: `n2nc(oc2=O)` (similar to `Nc1cc(nc(N)n1=O)` or `Cc2cccc3sc1nncn1c23`, which have values around **-0.5 to 0.0**).
+   - **Bulky tert-butyl group**: `C(C)(C)C` (this is a neutral/steric feature; no strong impact on polarity or charge).
+
+2. **Polarity and Charge**:
+   - The amide group (`C(=O)N`) is polar but neutral (no strong negative value like carboxylic acids or phenols).
+   - The chlorine on the aromatic ring is electron-withdrawing but does not introduce strong polarity (as seen in other chloro-aromatics with **0.0**).
+   - The heterocycle (`n2nc(oc2=O)`) is polar but not strongly charged (similar to other heterocycles with values near **0.0**).
+
+3. **Comparison with Examples**:
+   - The closest analog is `CN(C)C(=O)N(C)C` (value: **0.28701204**), but the given molecule has additional polar/neutral fragments (Cl, heterocycle) that may slightly reduce the value.
+   - No strongly negative groups (like `-OH`, `-NO2`, or `-SO2`) are present to push the value toward negatives like **-0.674** or lower.
+
+### Predicted Property:
+Given the neutral/polar but not strongly charged nature of the molecule, the value is likely **close to 0.0** but slightly positive due to the amide group. A reasonable estimate is:  
+**Predicted value: 0.0**  
+
+(Note: If the amide group's contribution dominates, it could be closer to **0.28701204**, but the other fragments balance it toward **0.0**. Given the examples, **0.0** is the most consistent for this hybrid structure.)
+==================================================
+Iteration: 41
+SMILES: Oc1cc(Cl)ccc1Oc2ccc(Cl)cc2Cl
+True Property: 0.0
+Predicted Property:
+Analyzing the given examples, I observe the following patterns regarding the property values:
+
+1. Molecules with simple aliphatic structures (e.g., CCCCCBr, CCCC(C)(C)O, ICI, BrC(Br)Br) tend to have a property value of 0.77764813.
+
+2. Aromatic compounds with oxygen or nitrogen substituents often have property values of 0.0 (e.g., c2ccc1[nH]ccc1c2, Oc1ccc(Cl)cc1Cl, Nc1ccc(Cl)cc1).
+
+3. More complex structures with multiple functional groups (especially those containing nitro groups, carbonyls, or multiple halogens) tend to have negative values ranging from -0.1 to -3.5.
+
+4. The presence of multiple chlorine atoms in aromatic systems consistently gives 0.0 in the examples (e.g., Oc1cc(Cl)c(Cl)c(Cl)c1Cl, O=N(=O)c1c(Cl)c(Cl)ccc1).
+
+The molecule in question: Oc1cc(Cl)ccc1Oc2ccc(Cl)cc2Cl
+
+This is a chlorinated diphenyl ether structure with:
+- Two aromatic rings connected by an oxygen bridge
+- Three chlorine substituents (two on one ring, one on the other)
+- Two phenolic hydroxyl groups
+
+Key observations:
+1. It contains multiple chlorine atoms in aromatic systems, which in all examples gave 0.0
+2. The hydroxyl groups are similar to other phenolic compounds that showed 0.0
+3. The structure is more complex than simple aliphatic compounds but lacks the strongly negative functional groups (like nitro or multiple carbonyls) that would push the value negative
+
+Therefore, based on the consistent pattern for similar structures in the examples, I predict the property value for this molecule to be:
+
+0.0
+==================================================
+Iteration: 42
+SMILES: CC/C=C\C
+True Property: -0.5034154059594502
+Predicted Property:
+Given the examples provided, the property values seem to follow certain trends based on molecular structure. Let's analyze the given molecule:
+
+**Molecule:** `CC/C=C\C`  
+This is a simple alkene with the structure of 2-pentene (specifically, trans-2-pentene due to the `/` and `\` notation indicating trans configuration around the double bond).
+
+From the examples, we can observe:
+1. `CC/C=C/C` (likely cis-2-butene or similar) has a property value of **-0.50341541**.
+2. `CCCC(=O)OC` (methyl butyrate) has a value of **0.28701204**.
+3. Simple alkanes or alkenes with no polar or aromatic groups tend to have values around **0.77764813** (e.g., `CCCCCCCCCCCCCCCCCCCCCCCCCC`, `ClC(Cl)Cl`, `CC(C)CCC(C)(C)C`).
+4. Molecules with conjugated systems or aromaticity often have values of **0.0** (e.g., `O=Cc1ccccc1`, `c1ccccc1O`).
+
+The molecule `CC/C=C\C` is a simple alkene without conjugation or polar groups, similar to `CC/C=C/C` but slightly larger. Given that `CC/C=C/C` has a value of **-0.50341541**, and larger non-polar molecules tend toward **0.77764813**, this molecule likely falls somewhere in between but closer to the simpler alkene value.
+
+However, the trans configuration (`/C=C\`) might slightly reduce the property value compared to the cis configuration (`/C=C/`), as trans alkenes are typically less polarizable. Thus, I predict the property value for `CC/C=C\C` to be slightly more negative than `CC/C=C/C`.
+
+**Predicted property value:** **-0.55** (approximate, based on trends). 
+
+(Note: Without knowing the exact property being predicted, this is an educated guess based on the given examples. The value is likely close to `CC/C=C/C` but adjusted for the trans configuration.)
+==================================================
+Iteration: 43
+SMILES: CCCOCC
+True Property: 0.7776481338173168
+Predicted Property:
+Analyzing the given examples, I notice a pattern in the property values based on molecular structure:
+
+1. Simple alkanes, alcohols, and halogenated alkanes (e.g., CC(C)O, CC(C)Cl, C, CCC(O)CC, ClC(Cl)(Cl)C(Cl)(Cl)Cl) consistently have the value 0.77764813.
+
+2. Ethers with simple alkyl groups (e.g., CCOP(=S)(OCC)SCCSCC) also show 0.77764813.
+
+3. The molecule CCCOCC is diethyl ether, which fits the pattern of simple ethers with alkyl groups.
+
+4. No complicating functional groups (like aromatic rings, multiple halogens, or complex heterocycles) are present that would lower the value from 0.77764813.
+
+Therefore, the predicted property value for CCCOCC is:
+
+0.77764813
+==================================================
+Iteration: 44
+SMILES: CN(C(=O)NC(C)(C)c1ccccc1)c2ccccc2
+True Property: -1.4209286226590956
+Predicted Property:
+To predict the property value for the molecule **CN(C(=O)NC(C)(C)c1ccccc1)c2ccccc2**, let's analyze the given examples and identify patterns or trends that correlate molecular features with the property values.
+
+### Observations from the Examples:
+1. **Aliphatic Chains and Alcohols (e.g., C, CCCC, CCO, C1CCCCC1, OCC(O)C(O)CO)**:
+   - These typically have a property value of **0.77764813** (e.g., simple hydrocarbons, alcohols, or cyclic alkanes).
+
+2. **Aromatic Rings with No Polar/Functional Groups (e.g., c1ccccc1, c1ccccc1n2ncc(N)c(Br)c2(=O))**:
+   - These often have a property value of **0.0**, especially if they contain halogens (Cl, Br) or nitro groups (N(=O)=O).
+
+3. **Aromatic Rings with Polar/Functional Groups (e.g., Cc1ccccc1N(=O)=O, C(Cc1ccccc1)c2ccccc2)**:
+   - These tend to have negative values (e.g., **-0.67449076** for nitrobenzene or diphenylmethane derivatives).
+
+4. **Amides, Ureas, or Carbamates (e.g., CN(C(=O)COc1nc2ccccc2s1)c3ccccc3, CCOc1ccc(NC(=O)C)cc1)**:
+   - These often have negative values (e.g., **-0.56875632** for an amide with aromatic rings, **-2.42535931** for an aromatic amide).
+
+5. **Steric or Bulky Groups (e.g., CC2(C)C1CCC(C)(C1)C2=O)**:
+   - These may have intermediate values (e.g., **0.55503263** for a bulky ketone).
+
+### Analysis of the Target Molecule:
+The molecule is:  
+**CN(C(=O)NC(C)(C)c1ccccc1)c2ccccc2**
+
+- It contains **two aromatic rings** (one substituted with a bulky tert-butyl group via an amide linkage, the other attached to a dimethylamide group).
+- The structure resembles a **bulky aromatic amide** (similar to the examples with negative values).
+- The presence of the **tert-butyl group** and **two aromatic rings** suggests steric hindrance and reduced polarity compared to simpler amides, but the amide functionality is still dominant.
+
+### Comparison with Similar Examples:
+1. **CN(C(=O)COc1nc2ccccc2s1)c3ccccc3** → **-0.56875632** (amide with aromatic rings).
+2. **CCOc1ccc(NC(=O)C)cc1** → **-2.42535931** (aromatic amide).
+3. **C(Cc1ccccc1)c2ccccc2** → **-0.67449076** (diphenylmethane, no amide but aromatic).
+
+Given that the target molecule is a **bulky aromatic amide**, its value should be closer to the first example (**-0.56875632**) but slightly less negative due to the steric shielding of the tert-butyl group.
+
+### Predicted Property Value:
+**-0.45** (estimated based on the above reasoning). 
+
+However, looking more closely, the dimethylamide group (N(C(=O))c2ccccc2) is similar to the example **CN(C(=O)COc1nc2ccccc2s1)c3ccccc3 (-0.56875632)**, and the tert-butyl group is less polarizing than the thiazole ring in that example. Thus, a slightly less negative value is expected.
+
+### Final Prediction:
+**-0.50** (rounded from the estimated range). 
+
+But to match the precision of the given examples, we can select a value close to the observed trend for aromatic amides. A reasonable guess is:
+
+**-0.56875632** (same as the similar example). 
+
+However, since the tert-butyl group is less polar than the thiazole ring, the value might be slightly less negative. Thus, a refined prediction is:
+
+**-0.45**. 
+
+But given the examples, the closest match is likely **-0.56875632**. 
+
+### Final Answer:
+**-0.56875632** (same as the structurally similar example).
+==================================================
+Iteration: 45
+SMILES: CC(=O)Nc1ccc(Br)cc1
+True Property: -0.5687563176052819
+Predicted Property:
+Analyzing the given examples, I can identify some patterns in the property values:
+
+1. Simple aromatic compounds with halogens (Br, Cl, F) or simple substituents tend to have a property value of 0.0 (e.g., c1ccccc1n2ncc(N)c(Br)c2(=O), Fc1cccc(Br)c1, Clc1cccc(Cl)c1).
+
+2. Compounds with amide groups (CON) tend to have negative values around -0.3 to -0.6 (e.g., O=C2NC(=O)C1(CCCC1)C(=O)N2 has -0.37456068, CCNc1nc(Cl)nc(NC(C)C)n1 has -0.37456068).
+
+3. The molecule CC(=O)Nc1ccc(Br)cc1 contains:
+   - An amide group (CON)
+   - A brominated aromatic ring
+   - No other significant functional groups
+
+Given that simple halogenated aromatics tend to be 0.0 but the presence of the amide group typically reduces the value, I would predict this compound's property to be similar to other simple amides in the dataset.
+
+The closest analogs are:
+- CN(C(=O)NC(C)(C)c1ccccc1)c2ccccc2: -1.42092862 (but this has more complex structure)
+- CCNc1nc(Cl)nc(NC(C)C)n1: -0.37456068 (amide + halogen)
+- ClCc1ccccc1: -0.67449076 (halogen + simple substituent)
+
+Given that our molecule is simpler than these but still has the amide + halogen combination, I would predict a value between -0.3 and -0.7.
+
+The most reasonable prediction would be: -0.37456068 (same as other simple amide+halogen compounds in the dataset)
+
+Final answer: -0.37456068
+==================================================
+Iteration: 46
+SMILES: CC(C)Cc1ccccc1
+True Property: -2.776027317655544
+Predicted Property:
+Analyzing the given examples, we can observe patterns in the property values based on molecular structure:
+
+1. Simple aliphatic alcohols/ethers (e.g., CC(C)CO, OC1CCCCC1) consistently have a value of 0.77764813
+2. Aromatic rings without polar substituents (e.g., C=Cc1ccccc1, c1ccc2c(c1)c3ccccc3c4ccccc24) have 0.0
+3. Alkyl-substituted aromatics show negative values, with the magnitude increasing with more/bulkier substitutions:
+   - Cc1ccccc1N: -0.67449076 (single methyl + amino)
+   - CCc1ccc(C)cc1: -3.5964555 (ethyl + methyl)
+   - CC(C)c1ccc(C)cc1: -2.77602732 (isopropyl + methyl)
+
+The molecule in question is CC(C)Cc1ccccc1, which has:
+- An isopropyl group attached to an ethyl group (CC(C)C-)
+- A phenyl ring (c1ccccc1)
+
+This is structurally similar to:
+- CCc1ccc(C)cc1 (-3.5964555) but with one less methyl on the ring
+- CC(C)c1ccc(C)cc1 (-2.77602732) but with the isopropyl attached directly to the ring
+
+Given that our molecule has an isopropyl group separated from the ring by one carbon (less direct conjugation than CC(C)c1ccc(C)cc1), but more bulk than CCc1ccc(C)cc1, I would predict a value between these two references.
+
+The most reasonable prediction is: -2.77602732
+
+This matches exactly with CC(C)c1ccc(C)cc1, as the extra methylene spacer in CC(C)Cc1ccccc1 likely doesn't significantly change the property compared to direct attachment of the isopropyl group.
+==================================================
+Iteration: 47
+SMILES: O=Cc1ccccc1
+True Property: 0.0
+Predicted Property:
+Based on the provided examples, I can analyze the given molecule **O=Cc1ccccc1** (benzaldehyde) and predict its property value by comparing it to similar structures in the dataset.
+
+### Observations from the Examples:
+1. **Aromatic rings with simple substituents**:
+   - **COc1ccccc1** (anisole) has a value of **-0.67449076**.
+   - **NC(=O)c1ccccc1O** (paracetamol-like) has a value of **0.0**.
+   - **c1ccc2c(c1)cc3ccc4cccc5ccc2c3c45** (polyaromatic) has a value of **0.0**.
+   - **C1c2ccccc2c3ccccc13** (fluorene-like) has a value of **-0.32019429**.
+
+2. **Aldehyde-containing compounds**:
+   - **Sc1nccc(=O)[nH]1** (thiazole with carbonyl) has a value of **0.0**.
+   - **CC(=C)C1CC=C(C)C(=O)C1** (unsaturated ketone) has a value of **-1.20069231**.
+   - **O=C1NC(=O)C(N1)(c2ccccc2)c3ccccc3** (imide) has a value of **-0.27273336**.
+
+3. **Benzene derivatives with polar groups**:
+   - **O=N(=O)c1ccccc1N(=O)=O** (dinitrobenzene) has a value of **0.0**.
+   - **Oc1cccc(c1)N(=O)=O** (nitrophenol) has a value of **0.0**.
+
+### Analysis of **O=Cc1ccccc1** (benzaldehyde):
+- The molecule consists of a benzene ring with an aldehyde (**-CHO**) group.
+- The aldehyde is a polar group but not as strongly electron-withdrawing as nitro (**-NO2**) or carbonyls in imides/amides.
+- Compared to **COc1ccccc1** (**-0.67449076**), the aldehyde is more polar than the methoxy group but less disruptive to aromaticity.
+- No strongly electron-withdrawing or donating groups are present (unlike nitro or hydroxyl groups, which often result in **0.0** in the examples).
+
+### Closest Analogues:
+- **COc1ccccc1** (**-0.67449076**) is structurally similar (methoxy vs. aldehyde).
+- **C1c2ccccc2c3ccccc13** (**-0.32019429**) is a pure hydrocarbon with extended conjugation.
+- The aldehyde group is likely to give a value between these two, leaning toward the methoxy case due to polarity.
+
+### Predicted Property Value:
+Given the above reasoning, the most reasonable prediction for **O=Cc1ccccc1** is:  
+**-0.67449076** (same as **COc1ccccc1**, as the aldehyde and methoxy groups have comparable effects in this context).
+
+### Final Answer:
+**-0.67449076**
+==================================================
+Iteration: 48
+SMILES: O=C2CN(N=Cc1ccc(o1)N(=O)=O)C(=O)N2 
+True Property: -0.5687563176052819
+Predicted Property:
+To predict the property value for the molecule **O=C2CN(N=Cc1ccc(o1)N(=O)=O)C(=O)N2**, let's analyze its structural features and compare them to the given examples to infer the likely property value.
+
+### Key Observations from the Given Examples:
+1. **Highly polar or charged groups (e.g., nitro groups, multiple halogens, or ionizable groups)** often correlate with property values of **0.0** or negative values. Examples:
+   - `Clc2ccc(Oc1ccc(cc1)N(=O)=O)c(Cl)c2` → **0.0** (nitro group + halogens).
+   - `Clc1cc(Cl)c(Cl)c(Cl)c1Cl` → **0.0** (highly halogenated).
+   - `NC(=S)Nc1ccccc1` → **0.0** (thiourea group).
+
+2. **Neutral, non-polar, or simple aliphatic/ether compounds** tend to have the value **0.77764813**. Examples:
+   - `CCO`, `CC(C)C`, `BrCCBr`, `ClC(Br)Br`, `CCCOC` → all **0.77764813**.
+
+3. **Moderately polar or conjugated systems** (e.g., aromatic rings with single substituents like -OH, -OCH3, or halogens) often have values around **-0.67449076**. Examples:
+   - `Cc1ccccc1O`, `COc1ccc(Cl)cc1`, `ClCc1ccccc1` → all **-0.67449076**.
+
+4. **Complex or polycyclic systems with hydrogen-bonding or multiple polar groups** have more negative values (e.g., **-1.20069231** to **-8.58238875**).
+
+### Analysis of the Target Molecule:
+The molecule **O=C2CN(N=Cc1ccc(o1)N(=O)=O)C(=O)N2** has the following features:
+- A **nitro group (N(=O)=O)**, which is highly polar and often associated with **0.0** in the examples.
+- A **fused heterocyclic system** with two amide/carbamate-like groups (`O=C2CN...C(=O)N2`), which introduces polarity and potential hydrogen bonding.
+- An **aromatic ring with an oxygen linker (o1)**, adding some polarity but not as extreme as the nitro group.
+
+### Comparison to Similar Examples:
+- The presence of the nitro group is reminiscent of `Clc2ccc(Oc1ccc(cc1)N(=O)=O)c(Cl)c2` (property = **0.0**), but the target molecule has additional polar amide groups.
+- The fused heterocycle with polar groups is somewhat similar to `OC1CCCCCCC1` (property = **0.77764813**), but the nitro group and amides likely reduce the value further.
+
+### Predicted Property:
+Given the strong polarity from the nitro group and the additional amide/carbamate groups, the molecule is unlikely to have the neutral value of **0.77764813**. The nitro group's dominance suggests a value of **0.0**, as seen in other nitro-containing examples. The additional polar groups might push it slightly negative, but the nitro group's effect is primary.
+
+Thus, the predicted property value is:  
+**0.0**
+==================================================
+Iteration: 49
+SMILES: N(Nc1ccccc1)c2ccccc2 
+True Property: 0.0
+Predicted Property:
+Analyzing the given examples and the molecule in question, **N(Nc1ccccc1)c2ccccc2**, let's break down the patterns observed in the data to predict the property value.
+
+### Observations from the Examples:
+1. **Simple Aromatic Systems**: 
+   - Molecules with simple aromatic rings (e.g., `c1ccccc1`, `Nc1ccccc1`, `Brc1ccccc1`) typically have a property value of **0.0** unless they have additional functional groups or substituents that alter the property.
+   - Example: `Nc1ccccc1` has a value of **0.0**.
+
+2. **Nitrogen-Containing Aromatic Systems**:
+   - Molecules with nitrogen directly in the aromatic ring (e.g., `c2ccc1[nH]ncc1c2`) or as substituents (e.g., `Nc1ccccc1`) tend to have **0.0** unless other features are present.
+   - Example: `N(=Nc1ccccc1)c2ccccc2` has a value of **0.0**.
+
+3. **Symmetrical or Extended Aromatic Systems**:
+   - Symmetrical or extended aromatic systems (e.g., `c1ccc(cc1)c2ccc(cc2)c3ccccc3`) also have **0.0** unless other functional groups are present.
+
+4. **Functional Groups Impact**:
+   - The presence of functional groups like nitro (`N(=O)=O`), carbonyl (`C=O`), or halogens (e.g., `Br`, `Cl`) can significantly alter the property value (e.g., negative values).
+
+### Analysis of the Target Molecule:
+The molecule is **N(Nc1ccccc1)c2ccccc2**, which consists of:
+- Two phenyl rings (`c1ccccc1` and `c2ccccc2`) connected via a nitrogen-nitrogen single bond (`N(N`)).
+- This is structurally similar to `N(=Nc1ccccc1)c2ccccc2` (which has a value of **0.0**), but with a single bond instead of a double bond between the nitrogens.
+
+Given that:
+1. The molecule is purely aromatic with no additional functional groups.
+2. The nitrogen-nitrogen single bond does not introduce significant polarity or other features that would deviate from the **0.0** trend observed in similar aromatic systems.
+3. The examples show that even nitrogen-containing aromatic systems like `Nc1ccccc1` and `N(=Nc1ccccc1)c2ccccc2` have **0.0**.
+
+### Predicted Property Value:
+The property value for **N(Nc1ccccc1)c2ccccc2** is **0.0**.
+==================================================
+Iteration: 50
+SMILES: O=C2NC(=O)C1(CCCC1)C(=O)N2
+True Property: -0.374560676490217
+Predicted Property:
+To predict the property for the molecule **O=C2NC(=O)C1(CCCC1)C(=O)N2**, let's analyze its structural features and compare them to the given examples to infer the likely property value.
+
+### Structural Analysis:
+1. **Functional Groups**: The molecule contains two amide groups (**NC=O**) and a cyclic structure (cyclopentane, **CCCC1**). It is a cyclic diamide (imide) with a 5-membered ring fused to another 5-membered ring (lactam-like structure).
+2. **Polarity**: The presence of two highly polar amide groups suggests moderate to high polarity, which often correlates with negative property values in the given dataset (e.g., other amides like **C1N(C(=O)NCC(C)C)C(=O)NC1** have a value of **0.1293337**).
+3. **Rigidity**: The fused cyclic structure adds rigidity, which may reduce flexibility and increase the magnitude of the property value (more negative or positive depending on context).
+4. **Similar Examples**:
+   - **O=C1NC(=O)NC(=O)C1(CC)C(C)CCC** has a value of **0.05090986** (cyclic diamide with side chains).
+   - **O=C1CCCN1** (cyclic amide) has a value of **0.1293337**.
+   - **C1N(C(=O)NCC(C)C)C(=O)NC1** (cyclic diamide) has a value of **0.1293337**.
+
+### Prediction:
+The molecule is most similar to cyclic diamides/imide structures in the dataset, which tend to have property values in the range of **0.0 to 0.2**. Given its symmetry and lack of strongly electron-withdrawing/donating groups (like nitro or halogens), the value is likely close to the other cyclic diamides. 
+
+### Final Prediction:
+The predicted property value for **O=C2NC(=O)C1(CCCC1)C(=O)N2** is **~0.12**, consistent with the trend observed for similar cyclic diamides. 
+
+**Answer: 0.12** (approximating to two decimal places based on the examples). 
+
+(Note: If more precision is required, a value of **0.129** could also be justified, matching **O=C1CCCN1** and **C1N(C(=O)NCC(C)C)C(=O)NC1**).
+==================================================
+Iteration: 51
+SMILES: Clc1ccc(cc1)c2c(Cl)cccc2Cl 
+True Property: 0.0
+Predicted Property:
+Analyzing the given examples and the target molecule **Clc1ccc(cc1)c2c(Cl)cccc2Cl**, we can observe the following patterns:
+
+1. **Simple halogenated aromatics** (e.g., Clc1ccccc1Cl, Ic1ccccc1) consistently have a property value of **0.0** unless they have additional functional groups or complex substitutions.
+2. The target molecule is a **polychlorinated biphenyl (PCB)** with three chlorine substituents, but it lacks any additional functional groups (e.g., NO2, COOH, NH2, etc.) that would significantly alter the property value in the examples.
+3. The closest analog in the examples is **Clc1ccc(cc1)C(c2ccc(Cl)cc2)C(Cl)(Cl)Cl**, which has a value of **-0.67449076**, but this molecule has a C(Cl)(Cl)Cl group (a highly chlorinated carbon) that likely contributes to the deviation from 0.0. The target molecule lacks such a group.
+4. The target molecule is structurally similar to **Clc1ccccc1Cl** (property = 0.0), just with an additional chlorinated phenyl ring.
+
+Given these observations, the predicted property value for **Clc1ccc(cc1)c2c(Cl)cccc2Cl** is:
+
+**0.0**  
+
+This aligns with the trend that simple halogenated aromatics without additional functional groups default to 0.0 in the given dataset.
+==================================================
+Iteration: 52
+SMILES: CCc1ccc(CC)cc1
+True Property: -2.776027317655544
+Predicted Property:
+Analyzing the given examples, I observe that the property values seem to correlate with certain structural features of the molecules. Here are some key observations:
+
+1. Simple aliphatic chains and ethers (e.g., CCOP(=S)(OCC)SCSC(C)(C)C, CCCCOC, ClCCCl) tend to have values around 0.77764813.
+
+2. Aromatic rings with simple alkyl substitutions (e.g., Cc1ccccc1N) have values around -0.67449076.
+
+3. Molecules with extended conjugation or polar groups tend to have more negative values.
+
+4. The molecule CCc1ccc(CC)cc1 is a simple dialkyl-substituted benzene (diethylbenzene), which is structurally similar to:
+   - Cc1ccccc1N (toluene derivative) with value -0.67449076
+   - CCCCc1ccccc1 (butylbenzene) with value -1.20069231
+
+Given that CCc1ccc(CC)cc1 has two ethyl groups (more hydrophobic than toluene but less extended than butylbenzene), and considering the trend that increased alkylation tends to make the value more negative (but not as extreme as with polar groups), I would predict its value to be between these two references.
+
+A reasonable interpolation would be approximately -0.9, but looking at the exact values in the examples, the closest match is likely -1.20069231 (same as CCCCc1ccccc1 and other similar non-polar aromatics).
+
+Therefore, the predicted property value for CCc1ccc(CC)cc1 is:
+
+-1.20069231
+==================================================
+Iteration: 53
+SMILES: Nc1ccc(cc1)S(N)(=O)=O
+True Property: 0.0
+Predicted Property:
+Analyzing the given examples and the molecule in question, `Nc1ccc(cc1)S(N)(=O)=O`, let's break down the structural features to predict the property value.
+
+### Key Observations from Examples:
+1. **Nitro Groups (`N(=O)=O`)**:
+   - Molecules with nitro groups often have property values around `0.0` or negative values (e.g., `-0.50341541`, `-0.67449076`).
+   - Example: `Nc1ccc(cc1)N(=O)=O` has a property value of `0.0`.
+
+2. **Sulfonamide Groups (`S(=O)(=O)N`)**:
+   - The molecule `Nc1ccc(cc1)S(N)(=O)=O` contains a sulfonamide group (`S(N)(=O)=O`), which is somewhat analogous to a nitro group in terms of electronegativity and polarity.
+   - Sulfonamides are polar and can participate in hydrogen bonding, similar to nitro groups.
+
+3. **Aromatic Systems with Electron-Withdrawing Groups**:
+   - Aromatic rings with strong electron-withdrawing groups (like nitro or sulfonamide) tend to have property values closer to `0.0` unless other significant features are present (e.g., long aliphatic chains, halogens, or additional functional groups).
+
+4. **Similar Molecules**:
+   - `Nc1ccc(cc1)N(=O)=O` (property `0.0`) is very similar to `Nc1ccc(cc1)S(N)(=O)=O`, with the only difference being the replacement of `N(=O)=O` with `S(N)(=O)=O`.
+   - The sulfonamide group is similarly electron-withdrawing and polar, so the property value should be close.
+
+### Prediction:
+Given the structural similarity to `Nc1ccc(cc1)N(=O)=O` (property `0.0`) and the analogous electronic effects of the sulfonamide group, the predicted property value for `Nc1ccc(cc1)S(N)(=O)=O` is:
+
+**0.0**
+==================================================
+Iteration: 54
+SMILES: c1ccc2c(c1)c3cccc4cccc2c34
+True Property: 0.0
+Predicted Property:
+Analyzing the given examples and the molecule in question, `c1ccc2c(c1)c3cccc4cccc2c34`, which is a polycyclic aromatic hydrocarbon (PAH) with a structure resembling fused benzene rings, we can make the following observations:
+
+1. **Molecules with Halogen Substituents (Cl, Br, I)**: Many of the molecules with multiple halogen substituents (e.g., `Clc1cc(Cl)c(Cl)c(c1Cl)c2c(Cl)c(Cl)cc(Cl)c2Cl`) have a property value of **0.0**. This suggests that halogenation tends to drive the property toward zero unless other functional groups are present.
+
+2. **Aromatic Systems without Polar Functional Groups**: Pure aromatic systems without polar or ionizable functional groups (e.g., `c1ccc2c(c1)c3cccc4c3c2cc5ccccc54` and `Sc2nc1ccccc1s2`) also have a property value of **0.0**. This indicates that the property is likely related to polarity, solubility, or some form of electronic effect, and pure aromatic systems without substituents default to zero.
+
+3. **Functional Groups Impacting the Property**: Molecules with polar or ionizable functional groups (e.g., `-OH`, `-C=O`, `-NO2`, `-S(=O)`, `-N=`, etc.) deviate from zero, with the sign and magnitude depending on the specific group. For example:
+   - `COc1ccccc1` (methoxybenzene) has a value of **-0.67449076**.
+   - `C=CCS(=O)SCC=C` (a disulfide with sulfoxide) has a value of **-3.5964555**.
+
+4. **Polycyclic Aromatic Hydrocarbons (PAHs)**: The given examples of PAHs without polar substituents (e.g., `c1ccc2c(c1)c3cccc4c3c2cc5ccccc54`) have a property value of **0.0**.
+
+### Prediction for `c1ccc2c(c1)c3cccc4cccc2c34`:
+This molecule is a **polycyclic aromatic hydrocarbon (PAH)** with no polar or ionizable functional groups. It consists solely of fused benzene rings, similar to the example `c1ccc2c(c1)c3cccc4c3c2cc5ccccc54`, which has a property value of **0.0**. 
+
+Thus, the predicted property value for `c1ccc2c(c1)c3cccc4cccc2c34` is:
+**0.0**
+==================================================
+Iteration: 55
+SMILES: Oc2cc(O)c1C(=O)CC(Oc1c2)c3ccc(O)c(O)c3
+True Property: -0.6170455034525391
+Predicted Property:
+Analyzing the given examples and the target molecule, I notice that the property values seem to correlate with certain structural features:
+
+1. **High value (0.77764813)**: Simple aliphatic compounds (e.g., ClC(Cl)(Cl)Cl, CC(C)I, ClCCl, CCCC(C)O), alcohols (e.g., OCC1OC(O)C(O)C(O)C1O), and some cyclic alkanes. These are generally small, non-aromatic, and lack complex functional groups.
+
+2. **Zero value (0.0)**: Aromatic systems with minimal polar substituents (e.g., Fc1ccccc1, c1ccc2cc3c4cccc5cccc(c3cc2c1)c45, Nc3ccc2cc1ccccc1cc2c3). These are typically neutral, planar, and lack strong electron-withdrawing or donating groups.
+
+3. **Negative values**: Complex molecules with multiple polar/functional groups (e.g., O=C1CNC(=O)N1 → -3.5964555), conjugated systems, or heterocycles (e.g., Cc1cccnc1C → -2.12882935). The more extended the conjugation or the more functional groups (especially carbonyls, hydroxyls, or halogens), the more negative the value.
+
+### Target Molecule: 
+**Oc2cc(O)c1C(=O)CC(Oc1c2)c3ccc(O)c(O)c3**
+
+This molecule has:
+- Multiple hydroxyl groups (-OH) on aromatic rings.
+- A carbonyl group (C=O) in a fused ring system.
+- Extended conjugation across three aromatic rings (two fused, one linked).
+- A polycyclic, highly oxygenated structure resembling flavonoids or polyphenols.
+
+### Comparison to Examples:
+- The closest analogs are highly functionalized aromatic systems like:
+  - `OC(c1ccc(Cl)cc1)(c2cncnc2)c3ccccc3Cl` (-0.23755909): Less oxygenated but similar complexity.
+  - `Oc1cccc(O)c1` (0.0): Simpler, less conjugated, and less functionalized.
+  - `OC(CC(c1ccccc1)c3c(O)c2ccccc2oc3=O)c4ccc(cc4)c5ccc(Br)cc5` (-0.43367645): Similar oxygenated polyaromatic system.
+
+Given the **high oxygenation, conjugation, and polycyclic nature**, the value should be **more negative** than simpler aromatic systems but not as extreme as small polar heterocycles (e.g., O=C1CNC(=O)N1). 
+
+### Predicted Value:
+**-0.35** (approximately between -0.23755909 and -0.43367645, accounting for additional hydroxyl groups). 
+
+### Refined Estimate:
+The presence of **three aromatic rings with four hydroxyl groups and a carbonyl** suggests stronger polarity and conjugation than most examples. A value closer to **-0.45** is plausible, but the exact value likely aligns with other polyoxygenated aromatics in the dataset. 
+
+Given the examples, the most reasonable prediction is:  
+**-0.43367645** (similar to the other polyoxygenated biphenyl-like structure in the dataset). 
+
+However, since the target molecule has even more hydroxyl groups, a slightly more negative value like **-0.5** might be justified, but the dataset does not show a linear trend with the number of -OH groups. Thus, sticking to the closest analog:  
+**Final Prediction: -0.43367645** (or rounded to -0.43). 
+
+But reviewing again, the molecule `COc2c1occc1cc3ccc(=O)oc23` with fewer -OH groups but similar complexity has a value of **-0.3507495**, so the prediction could be adjusted to **-0.4** as a compromise. 
+
+Given the uncertainty, the safest answer based on the closest structural match is:  
+**-0.43367645**. 
+
+However, to match the precision of the examples, I'll provide the exact value from the closest analog:  
+**Predicted Property: -0.43367645**.
+==================================================
+Iteration: 56
+SMILES: COP(=O)(NC(C)=O)SC 
+True Property: 0.12933370350182913
+Predicted Property:
+To predict the property value for the molecule **COP(=O)(NC(C)=O)SC**, let's analyze the given examples and identify patterns or trends that correlate structural features with the property values.
+
+### Observations from the Examples:
+1. **Simple Alkanes/Alkyl Halides/Alcohols (e.g., CCCCC, CCCCO, CCCI, C1CCOC1)**:
+   - These typically have a property value of **0.77764813**, suggesting that simple hydrophobic/aliphatic chains contribute positively to the property.
+
+2. **Aromatic Rings with Electron-Withdrawing Groups (e.g., NO2, Cl)**:
+   - Examples like `Cc1cccc(c1)N(=O)=O` and `Cc1c(cccc1N(=O)=O)N(=O)=O` have a value of **-0.67449076**.
+   - Aromatic rings with polar substituents (e.g., NO2) tend to decrease the property value.
+
+3. **Phosphorus-Containing Groups (e.g., COP(=S)(OC)Oc1cc(Cl)c(Cl)cc1Cl)**:
+   - These often have negative values (e.g., **-1.59121523** for the above example), suggesting that phosphorus esters/thioesters with aromatic/chlorinated groups strongly decrease the property.
+
+4. **Complex or Mixed Functional Groups**:
+   - Molecules with a mix of polar and nonpolar groups (e.g., `CCCCOCN(C(=O)CCl)c1c(CC)cccc1CC`) tend to have intermediate negative values (e.g., **-0.5687075**).
+
+5. **Thioesters/Thiophosphates**:
+   - The presence of sulfur (e.g., `COP(=S)(OCCC)SCC(=O)N1CCCCC1C`) can lead to intermediate positive values (e.g., **0.62256469**), but this depends on the rest of the structure.
+
+### Analysis of the Target Molecule: **COP(=O)(NC(C)=O)SC**
+- **Structural Features**:
+  - Contains a **phosphoryl group (P=O)** with a **thioester (SC)** and an **amide (NC(C)=O)**.
+  - The presence of **P=O** and **S** suggests polar/electron-withdrawing character.
+  - The **methyl group (C)** is a simple hydrophobic moiety, but its effect may be overshadowed by the polar groups.
+
+- **Analogous Examples**:
+  - `COP(=S)(OC)Oc1cc(Cl)c(Cl)cc1Cl` has a value of **-1.59121523**, but this is more heavily chlorinated/aromatic.
+  - `COP(=O)(OC)OC(=CCl)c1cc(Cl)c(Cl)cc1Cl` has a value of **-1.08441244**, which is less negative due to fewer chlorines.
+  - `COP(=S)(OCCC)SCC(=O)N1CCCCC1C` has a value of **0.62256469**, but this is a larger, less polar molecule.
+
+- **Prediction**:
+  - The target molecule is less polar than heavily chlorinated examples but more polar than simple aliphatic chains. The **P=O** and **SC** groups will likely decrease the property value, but not as drastically as in the most negative examples.
+  - A reasonable estimate is **-0.5 to -0.7**, similar to molecules with mixed polar/nonpolar features.
+
+### Final Prediction:
+The property value for **COP(=O)(NC(C)=O)SC** is **-0.56875632** (matching the trend for similar mixed polar/nonpolar structures).
+==================================================
+Iteration: 57
+SMILES: Cl\C=C/Cl
+True Property: 0.0
+Predicted Property:
+Given the examples provided, I can attempt to predict the property for the molecule `Cl\C=C/Cl` (which is trans-1,2-dichloroethene) based on the patterns observed in the data.
+
+### Observations from the Examples:
+1. **Simple Hydrocarbons and Alkanes**: 
+   - Molecules like `CC1CCCC1` (cyclohexane), `CCCC(C)C` (branched alkane), and `CCCCO` (butanol) all have the property value **0.77764813**. This suggests that simple, unfunctionalized hydrocarbons tend to have this value.
+   - The presence of halogens (e.g., `CCBr`) does not change this value if the rest of the molecule is a simple alkane.
+
+2. **Molecules with Polar or Functional Groups**:
+   - Molecules with polar or functional groups (e.g., carbonyls, nitros, halogens beyond simple substitution) tend to have negative or zero values.
+   - For example, `CCC(=O)C` (butanone) has **0.28701204**, while `Nc1nc(=O)[nH]cc1F` (a fluorinated uracil derivative) has **0.0**.
+
+3. **Halogenated Aromatics or Alkenes**:
+   - Molecules like `Clc1ccc(Cl)c(c1)c2cc(Cl)c(Cl)c(Cl)c2Cl` (hexachlorobiphenyl) and `Oc1ccc(Cl)cc1Cl` (dichlorophenol) have **0.0**. This suggests that halogenated aromatic systems or systems with significant halogen substitution tend to have a property value of **0.0**.
+   - The molecule `Cl\C=C/Cl` is a halogenated alkene, similar in spirit to these examples.
+
+4. **Symmetry and Simplicity**:
+   - The molecule `Cl\C=C/Cl` is small, symmetric, and has no additional functional groups beyond the halogens. This simplicity might place it closer to the **0.0** category rather than the **0.77764813** category (reserved for simple hydrocarbons).
+
+### Prediction:
+Given that:
+- Simple hydrocarbons: **0.77764813**.
+- Halogenated aromatics/aliphatic systems: **0.0**.
+- `Cl\C=C/Cl` is a halogenated alkene (not a simple hydrocarbon), it is most similar to the halogenated examples with **0.0**.
+
+Thus, the predicted property value for `Cl\C=C/Cl` is:  
+**0.0**
+==================================================
+Iteration: 58
+SMILES: c1ccncc1
+True Property: 0.0
+Predicted Property:
+Analyzing the given examples, we can observe patterns in the property values based on molecular structure:
+
+1. Simple aliphatic chains with halogens or alcohols (e.g., CCCC(C)(C)O, BrC(Cl)Cl) consistently have a value of 0.77764813.
+
+2. Aromatic systems without polar substituents (e.g., c1ccc2c(c1)c3cccc4ccc5cccc2c5c43) have a value of 0.0.
+
+3. Pyridine (c1ccncc1) is an aromatic heterocycle similar to benzene but with a nitrogen atom. Looking at similar structures:
+   - c1cnc2c(c1)ccc3ncccc23 has value 0.0
+   - Cc1ncnc2nccnc12 has value -0.67449076 (but this is more complex with multiple nitrogens)
+   - COc2ncc1nccnc1n2 has value -0.67449076 (but has methoxy group)
+   - CNc1ccccc1 (aniline derivative) has value -0.67449076
+
+The simplest comparable structure is c1cnc2c(c1)ccc3ncccc23 which has value 0.0. Since pyridine (c1ccncc1) is a simpler aromatic system with one nitrogen and no other substituents, it most closely matches the unsubstituted polyaromatic systems that have value 0.0.
+
+Therefore, the predicted property value for c1ccncc1 is: 0.0
+==================================================
+Iteration: 59
+SMILES: OCC(O)COC(=O)c1ccccc1Nc2ccnc3cc(Cl)ccc23
+True Property: -0.7706222275018558
+Predicted Property:
+To predict the property value for the molecule **OCC(O)COC(=O)c1ccccc1Nc2ccnc3cc(Cl)ccc23**, let's analyze its structural features and compare them to the given examples to infer the likely property value.
+
+### Structural Analysis:
+1. **Functional Groups and Fragments**:
+   - **Ether linkage (OCC(O)CO-)**: Similar to molecules like `C1OC(O)C(O)C(O)C1O` and `OCC(O)C(O)C(O)C(O)CO`, which have property values of **0.77764813**. Ethers and polyols tend to have this value unless other strongly influencing groups are present.
+   - **Ester (COC(=O)-)**: Present in molecules like `CCOC(=O)CC` (0.38253832) and `CCCCC(=O)OC` (0.38253832), but also in `CCOC(=O)c1ccccc1C(=O)OCC` (-3.5964555). The ester alone is not enough to push the value negative unless combined with other features.
+   - **Aromatic ring with substituents (c1ccccc1N-)**: The presence of an aromatic amine (`Nc2ccnc3...`) is notable. Aromatic amines like `CCOC(=O)c1ccc(N)cc1` have a value of **-1.28607547**, and `CC(=O)N` is **-1.20069231**. This suggests a negative contribution.
+   - **Chlorinated aromatic system (cc(Cl)ccc23)**: Chlorinated aromatics like `Clc1ccc(I)cc1` and `Clc1cc(Cl)c(c(Cl)c1)c2c(Cl)cccc2Cl` have values of **0.0**, but when combined with other polar groups, the effect can vary.
+   - **Heterocycle (ccnc3)**: Nitrogen-containing heterocycles (e.g., pyridine-like) are present in molecules like `c1ccc2cnccc2c1` (0.0) and `c3ccc2nc1ccccc1cc2c3` (0.0), but when combined with other groups, the impact depends on context.
+
+2. **Key Observations**:
+   - The molecule combines an ester, an aromatic amine, and a chlorinated heterocycle. The aromatic amine is the most strongly negative-influencing feature here.
+   - The closest analog is `CCOC(=O)c1ccc(N)cc1` (-1.28607547), which has an ester and an aromatic amine. The additional complexity (chlorine, heterocycle) may not drastically change the value, as chlorinated aromatics often contribute 0.0.
+
+3. **Prediction**:
+   - The dominant feature is the aromatic amine (`Nc2ccnc3...`), which aligns with the **-1.28607547** value of `CCOC(=O)c1ccc(N)cc1`. The ether/polyol part (OCC(O)CO-) would typically contribute **0.77764813**, but the amine overrides this.
+   - The heterocycle and chlorine are less influential than the amine, so the value should stay close to **-1.28607547**.
+
+### Final Prediction:
+The predicted property value for **OCC(O)COC(=O)c1ccccc1Nc2ccnc3cc(Cl)ccc23** is **-1.28607547**.
+==================================================
+Iteration: 60
+SMILES: CCCCCO
+True Property: 0.7776481338173168
+Predicted Property:
+Analyzing the given examples, we can observe patterns in the property values based on molecular structure:
+
+1. **Aliphatic alcohols (R-OH)** tend to have a property value of **0.77764813** (e.g., `CC(C)(C)C(C)(C)O`, `OC1CCCCCCC1`, `CC(C)CC(C)(C)O`).
+2. **Simple aliphatic chains** (no functional groups) like `CCCc1ccccc1` or `Cc1cccc(C)c1C` tend to have values around **-3.5964555**.
+3. The presence of **oxygen in non-alcohol functional groups** (e.g., carbonyl, ether) often reduces the value (e.g., `CCOC=O` is **-0.18437602**, `COC=O` is **-1.20069231**).
+
+The molecule in question, **CCCCCO**, is a **linear aliphatic alcohol (1-pentanol)**. Based on the trend:
+- Aliphatic alcohols consistently have a property value of **0.77764813** in the given examples.
+
+Thus, the predicted property value for **CCCCCO** is:
+
+**0.77764813**
+==================================================
+Iteration: 61
+SMILES: CC1=C(C(=O)Nc2ccccc2)S(=O)(=O)CCO1
+True Property: -1.591215232982005
+Predicted Property:
+Analyzing the given molecule **CC1=C(C(=O)Nc2ccccc2)S(=O)(=O)CCO1**, let's break down its structural features and compare them to the examples to predict the property value.
+
+### Key Structural Features:
+1. **Aromatic ring (c2ccccc2)**: Present in many examples, often associated with property values of **0.0** when the molecule is symmetric or lacks strong polar/functional groups (e.g., `Nc1ccc(cc1)c2ccc(N)cc2`, `Oc1ccc(O)cc1`). However, substitution can modify this.
+2. **Amide group (C(=O)N)**: Seen in molecules like `CC(=O)Nc1ccc(F)cc1` (property = **-0.56875632**) and `O=C1NC(=O)NC(=O)C1(CC)CC` (property = **-0.37456068**), suggesting a negative contribution.
+3. **Sulfone group (S(=O)(=O))**: Not directly in the examples, but sulfonyl groups are polar and may contribute negatively (similar to phosphates like `CCOP(=S)(OCC)Oc1ccc(cc1)N(=O)=O`, property = **-2.77602732**).
+4. **Heterocycle (CCO1)**: The 5-membered ring with O and S is somewhat analogous to cyclic ethers/sulfides, but no exact matches. Smaller heterocycles in the data (e.g., `c1ccncc1`) have **0.0**, but functionalization changes this.
+5. **Methyl group (CC1)**: Alkyl groups alone (e.g., `CCCCCCCCCCCCCC`) give **0.77764813**, but here it's part of a polar system.
+
+### Comparison to Examples:
+- The closest analog is **O=C1NC(=O)C(N1)(c2ccccc2)c3ccccc3** (property = **-0.27273336**), which has two aromatic rings and amide-like groups.
+- The sulfone group's polarity may push the value further negative, similar to phosphate esters (e.g., **-0.92523555** for `CCOP(=S)(NC(C)C)Oc1ccccc1C(=O)OC(C)C`).
+- The molecule lacks symmetry (unlike many **0.0** examples) and has multiple polar groups.
+
+### Predicted Property:
+Given the combined effects of the amide, sulfone, and aromatic systems, the property value is likely **negative** and moderately sized (not extreme like **-3.9**). A reasonable estimate is:  
+**-0.65** (close to `CNC(=O)ON=C(SC)C(=O)N(C)C` at **-0.66797799**, which also has polar N/O/S groups).
+
+### Final Answer:
+**-0.65** (approximate, based on structural similarity to examples with amides/sulfones).
+==================================================
+Iteration: 62
+SMILES: COC(=O)C1=C(C)NC(=C(C1c2ccccc2N(=O)=O)C(=O)OC)C 
+True Property: -2.295087078694378
+Predicted Property:
+To predict the property for the given molecule, let's analyze its structural features and compare them to the examples provided. The molecule is:
+
+**COC(=O)C1=C(C)NC(=C(C1c2ccccc2N(=O)=O)C(=O)OC)C**
+
+### Key structural features:
+1. **Aromatic ring with nitro group (`c2ccccc2N(=O)=O`)**: This is a phenyl ring with a nitro substituent. From the examples, molecules with nitro groups often have negative property values (e.g., `Cc1ccc(cc1)N(=O)=O` has a value of `-0.67449076`).
+2. **Ester groups (`COC(=O)` and `C(=O)OC`)**: These are present twice in the molecule. Esters are polar and can influence the property, but their exact contribution isn't clear from the examples.
+3. **Heterocyclic nitrogen (`NC(=C)`)**: The nitrogen in the ring may contribute to polarity or hydrogen bonding potential.
+4. **Substituted aromatic system**: The molecule has a fused ring system with substitutions, similar to some of the examples with negative values (e.g., `CC(C)c1ccccc1C` has `-2.77602732`).
+
+### Comparison to examples:
+- The nitro-aromatic fragment is similar to `Cc1ccc(cc1)N(=O)=O` (`-0.67449076`), but the current molecule is more complex with additional polar groups.
+- The presence of two ester groups and a nitro group suggests significant polarity, likely leading to a negative property value.
+- The fused ring system with substitutions is reminiscent of `CC1=C(CCCO1)C(=O)Nc2ccccc2` (`-2.61781273`), which also has a negative value.
+
+### Predicted property:
+Given the structural complexity and the presence of multiple polar groups (nitro and esters), the property value is likely in the range of **-1.5 to -2.5**. A reasonable estimate is:
+
+**Predicted property value: -2.12882935**  
+*(This aligns with the trend observed for similarly complex, polar, and nitro-substituted aromatic systems in the examples.)*
+==================================================
+Iteration: 63
+SMILES: O=C2NC(=O)C1(CC1)C(=O)N2 
+True Property: -1.2006923062727917
+Predicted Property:
+To predict the property for the molecule **O=C2NC(=O)C1(CC1)C(=O)N2**, let's analyze its structural features and compare them to the given examples to infer the likely property value.
+
+### Structural Analysis:
+1. **Functional Groups**: The molecule contains two amide groups (**NC=O**) and a cyclopropane ring (**C1(CC1)**). It is a cyclic diamide (imide) structure, resembling a small, rigid, and polar heterocycle.
+2. **Polarity**: The presence of two highly polar amide groups suggests significant polarity, but the cyclopropane ring adds rigidity and reduces conformational flexibility.
+3. **Aromaticity**: The molecule is non-aromatic (no conjugated π-system).
+4. **Halogens/Substituents**: No halogens or bulky substituents are present.
+
+### Comparison with Examples:
+- **Non-aromatic cyclic structures with polar groups** (e.g., **C1CCCCC1**, **CC(=O)OC3(C)CCC4C2CCC1=CC(=O)CCC1(C)C2CCC34C**) tend to have property values around **0.77764813** or **0.33997362**, depending on flexibility and polarity.
+- **Amide-containing molecules** (e.g., **CN(C)C(=O)Nc1ccc(Cl)cc1**) often have negative values (e.g., **-1.28607547**), but this is influenced by additional substituents like aromatic rings or halogens.
+- **Small rigid polar molecules** (e.g., **c1ccncc1**, **Clc1cccc(I)c1**) frequently have a value of **0.0**, especially if they are symmetric or lack extended conjugation.
+
+### Key Observations:
+- The molecule is small, rigid, and symmetric (no dipole moment in the ring due to symmetry).
+- It lacks aromaticity, halogens, or extended conjugation, which often push values toward zero.
+- The polar amides are internally balanced (no net dipole in the ring), resembling symmetric non-aromatic systems like **c1ccncc1** (property = 0.0).
+
+### Predicted Property:
+Given the symmetry, rigidity, and lack of aromaticity or halogens, the most likely property value is **0.0**. This aligns with similar small, symmetric, non-aromatic heterocycles in the examples.
+
+**Final Answer: 0.0**
+==================================================
+Iteration: 64
+SMILES: ClCC
+True Property: 0.7776481338173168
+Predicted Property:
+Given the examples provided, we can observe certain trends in the property values based on molecular structure:
+
+1. **Simple alkanes** (e.g., `CCCCC`, `CCC1CCCCC1`) tend to have a property value of **0.77764813**.
+2. **Chlorinated simple alkanes/alkenes/aromatics** (e.g., `Clc1ccccc1`, `Clc1ccc(Cl)c(Cl)c1Cl`) tend to have a property value of **0.0** unless other functional groups are present.
+3. **Small chlorinated alkanes** (e.g., `ClCC`) are not explicitly in the examples, but similar small molecules with halogens (like `CC#N` or `ClC1=C(Cl)C2(Cl)C3C4CC(C=C4)C3C1(Cl)C2(Cl)Cl`) have values ranging from **-1.20069231** to **-0.18437602**, depending on complexity and other functional groups.
+
+Since `ClCC` is a very simple chlorinated alkane (chloroethane) with no additional functional groups or complexity, it is most analogous to the chlorinated aromatics (e.g., `Clc1ccccc1`) that have a property value of **0.0**. There is no evidence in the examples that simple chlorinated alkanes deviate from this trend.
+
+### Predicted property value for `ClCC`: **0.0**
+==================================================
+Iteration: 65
+SMILES: Clc1cccc(n1)C(Cl)(Cl)Cl
+True Property: -0.8301178867644748
+Predicted Property:
+Analyzing the given examples, we can observe the following patterns for the property values:
+
+1. **Value = 0.0**: 
+   - Molecules with aromatic rings (especially polycyclic aromatics like naphthalenes, biphenyls, etc.), often with nitro groups (N(=O)=O) or halogens (Cl, Br) attached.
+   - Examples: `Oc1ccc(cc1)c2ccccc2`, `o1c2ccccc2c3ccccc13`, `O=N(=O)c1ccc(cc1)N(=O)=O`, `Clc1ccc(cc1)c2cccc(Cl)c2Cl`.
+
+2. **Value = 0.77764813**: 
+   - Aliphatic hydrocarbons (e.g., `CC(C)CCC(C)(C)C`, `CCCCCCCCCCCCCCCCCCCC`), alcohols (e.g., `OCC(O)C(O)C(O)C(O)CO`), or halogenated alkanes (e.g., `ClC(Cl)C(Cl)(Cl)Cl`).
+   - Also includes nitroalkanes (`CN(=O)=O`) and some cyclic alkanes.
+
+3. **Negative values**:
+   - Associated with complex functional groups like amides (`C(=O)N`), sulfonamides (`S(=O)(=O)N`), or other polar groups (e.g., `CN(C)C(=O)Nc1cccc(OC(=O)NC(C)(C)C)c1`).
+   - More negative values correlate with more polar or multifunctional groups.
+
+4. **Intermediate values (e.g., 0.38253832, -0.18437602)**:
+   - Seen in molecules with carbonyls (e.g., `CCCC(=O)OCC`) or less polar functional groups.
+
+### Prediction for `Clc1cccc(n1)C(Cl)(Cl)Cl`:
+- The molecule consists of a chlorinated pyridine (`Clc1ccccn1`) attached to a trichloromethyl group (`C(Cl)(Cl)Cl`).
+- Pyridine is aromatic, and the presence of multiple chlorines is reminiscent of molecules like `Clc1ccc(cc1)c2cccc(Cl)c2Cl` (value = 0.0) or `Clc1ccccc1c2ccccc2` (value = 0.0).
+- The trichloromethyl group is aliphatic but heavily halogenated, similar to `ClC(Cl)C(Cl)(Cl)Cl` (value = 0.77764813). However, the aromatic pyridine ring dominates the property.
+- No strongly polar functional groups (e.g., nitro, amide, sulfonamide) are present to suggest a negative value.
+
+### Conclusion:
+The molecule is most similar to the aromatic halogenated compounds with a value of **0.0**.
+
+**Predicted property value: 0.0**
+==================================================
+Iteration: 66
+SMILES: CCCCC(C)O
+True Property: 0.7776481338173168
+Predicted Property:
+Analyzing the given examples, we can observe the following patterns for the property values:
+
+1. **Simple aliphatic chains with terminal hydroxyl groups (-OH)** tend to have a property value of **0.77764813**. Examples include:
+   - `CCCC(O)CCC` → 0.77764813
+   - `CCC(C)CCO` → 0.77764813
+   - `CCC(CC)CO` → 0.77764813
+   - `CCCCCCCCO` → 0.77764813 (implied from similar structures)
+
+2. The presence of branching or additional functional groups can alter the property value, but simple branched alcohols like `CCC(C)CCO` still retain the 0.77764813 value.
+
+3. The molecule in question, `CCCCC(C)O`, is a **branched aliphatic alcohol** (6-carbon chain with a hydroxyl group at the end and a methyl branch). This is structurally very similar to the examples above that have the property value of 0.77764813.
+
+Thus, the predicted property value for `CCCCC(C)O` is:
+
+**0.77764813**
+==================================================
+Iteration: 67
+SMILES: Brc1ccc(Br)cc1
+True Property: 0.0
+Predicted Property:
+Analyzing the given examples, we can observe certain patterns in the property values based on molecular structure:
+
+1. Simple halogenated aromatic compounds (e.g., Clc1ccc(Cl)cc1, Oc1cc(Cl)cc(Cl)c1) tend to have property values of 0.0
+2. Bromine substitution appears similar to chlorine in this context
+3. The molecule Brc1ccc(Br)cc1 is a simple di-brominated benzene, structurally analogous to the di-chlorinated benzenes that have property value = 0.0
+4. There are no complicating functional groups or complex structural features that would suggest deviation from this pattern
+
+Therefore, the predicted property value for Brc1ccc(Br)cc1 is:
+
+0.0
+==================================================
+Iteration: 68
+SMILES: Clc1cc(Cl)c(c(Cl)c1)c2c(Cl)cc(Cl)cc2Cl 
+True Property: 0.0
+Predicted Property:
+Analyzing the given examples and the target molecule, I notice a pattern where highly chlorinated aromatic compounds tend to have a property value of **0.0**. For instance:
+
+- **Clc1c(Cl)c(Cl)c(c(Cl)c1Cl)c2c(Cl)c(Cl)c(Cl)c(Cl)c2Cl** (a heavily chlorinated biphenyl-like structure) has a property value of **0.0**.
+- **O=N(=O)c1cccc2ccccc12** (a nitro-substituted aromatic) also has **0.0**.
+- Other fully aromatic or heavily halogenated systems (e.g., **c1ccc2c(c1)cc3ccc4cccc5ccc2c3c45**, **Oc1cccc2ncccc12**) consistently show **0.0**.
+
+The target molecule, **Clc1cc(Cl)c(c(Cl)c1)c2c(Cl)cc(Cl)cc2Cl**, is a polychlorinated biphenyl derivative with chlorine atoms on both aromatic rings. This structural similarity strongly suggests it will follow the same trend as the other heavily chlorinated aromatics in the dataset.
+
+### Predicted property value: **0.0**
+==================================================
+Iteration: 69
+SMILES: Cc1ccc(OP(=O)(Oc2cccc(C)c2)Oc3ccccc3C)cc1
+True Property: -0.6744907594765952
+Predicted Property:
+To predict the property for the given molecule, let's analyze the structural features and compare them to the examples provided. The molecule is:
+
+**Cc1ccc(OP(=O)(Oc2cccc(C)c2)Oc3ccccc3C)cc1**
+
+### Key Structural Features:
+1. **Aromatic rings**: The molecule contains three aromatic rings (two substituted phenyl rings and one central phenyl ring).
+2. **Phosphate group (P=O)**: The central phenyl ring is substituted with a phosphate group (OP(=O)(...)...), which is highly polar and can participate in hydrogen bonding.
+3. **Ether linkages (O-aryl)**: The phosphate group is further linked to two other phenyl rings via ether (O-aryl) bonds.
+4. **Methyl substituents**: There are methyl groups on two of the phenyl rings (C attached to aromatic rings).
+
+### Comparison with Examples:
+- Molecules with **polar groups (e.g., P=O, OH, COOH, etc.)** and **aromatic systems** tend to have property values in the **mid-range (between -1.0 and 0.0)** unless they are very large or have additional hydrophobic groups.
+- Examples with **phosphate groups**:
+  - `CCOP(=S)(OCC)SC(CCl)N1C(=O)c2ccccc2C1=O` has a value of **-2.10929072**, but it also has a thio-phosphate (P=S) and additional polar groups.
+  - `CCOP(=S)(OCC)SCCSCC` has a value of **0.77764813**, but it is less polar and more hydrophobic.
+- Examples with **multiple aromatic rings and polar groups**:
+  - `COc1ccc(cc1)C(c2ccc(OC)cc2)C(Cl)(Cl)Cl` has a value of **-1.59121523**.
+  - `CC2=CC(=O)c1ccccc1C2=O` has a value of **-0.38779801**.
+  - `CC(=O)Nc1ccc(Cl)cc1` has a value of **-0.56875632**.
+
+### Prediction:
+The given molecule has:
+- A **phosphate group (highly polar)**.
+- **Three aromatic rings** (moderate hydrophobicity).
+- **Ether linkages** (moderate polarity).
+- **Methyl groups** (slightly hydrophobic).
+
+Given the balance between polar (P=O, O-aryl) and hydrophobic (aromatic rings, methyl) features, the property value is likely in the **mid-negative range**, similar to molecules like `CC(=O)Nc1ccc(Cl)cc1` or `CC2=CC(=O)c1ccccc1C2=O`.
+
+### Predicted Property Value:
+**-0.55** (approximate, based on structural similarity to examples with polar and aromatic features). 
+
+This is an educated guess, as the exact property is not specified, but the value aligns with the trend observed in the examples. For a precise prediction, a model trained on these data would be needed. 
+
+**Final Answer: -0.55**
+==================================================
+Iteration: 70
+SMILES: FC(F)(F)c1cccc(c1)N2CC(CCl)C(Cl)C2=O
+True Property: -2.347623044178565
+Predicted Property:
+Analyzing the given examples and the target molecule, I'll attempt to predict the property based on structural features that seem to correlate with the property values in the training set.
+
+Key observations from the training data:
+1. Simple aliphatic chains/alcohols (e.g., CCCC, CCCCCO, CC(C)CC(C)O) consistently have property = 0.77764813
+2. Aromatic systems without strong electron-withdrawing groups often have property = 0.0
+3. Nitro groups (N(=O)=O) attached to aromatics typically give values around -0.67449076
+4. Complex polycyclic structures with oxygen heteroatoms tend to have positive values (0.2-0.6)
+5. Highly halogenated compounds (especially Cl) often show negative values
+6. CF3 groups appear in some of the more negative examples
+
+The target molecule: FC(F)(F)c1cccc(c1)N2CC(CCl)C(Cl)C2=O contains:
+- A CF3 group (electron-withdrawing)
+- An aromatic ring
+- A complex heterocyclic moiety with two chlorine atoms and a ketone
+- An amide-like linkage between the rings
+
+Comparing with similar structures in the training set:
+- The CF3 group suggests a negative contribution
+- The two chlorines in the heterocycle (similar to ClC(Cl)C... examples) suggest ~-0.67
+- The overall complexity is similar to some mid-range negative values
+
+The closest analogs seem to be molecules like:
+- Cc1cc(cc(N(=O)=O)c1O)N(=O)=O (-0.67449076)
+- ClC(Cl)C(c1ccc(Cl)cc1)c2ccc(Cl)cc2 (-0.67449076)
+- NS(=O)(=O)c2cc1c(NCNS1(=O)=O)cc2Cl (-0.67449076)
+
+Given these comparisons, the most consistent prediction would be:
+
+Predicted property value: -0.67449076
+==================================================
+Iteration: 71
+SMILES: COc1ccccc1N(=O)=O
+True Property: -0.6744907594765952
+Predicted Property:
+Analyzing the given examples, we can observe certain patterns in the property values based on the molecular structures:
+
+1. **Hydrophilic groups (e.g., -OH, -O-, -COO-) tend to have positive property values**, often around **0.77764813** when multiple hydroxyl groups are present (e.g., sugars like `OCC(O)C(O)CO` or `OCC2OC(OC1(CO)OC(CO)C(O)C1O)C(O)C(O)C2O`). Even single hydroxyl or ether groups (e.g., `CCCO`, `ClCCCl`) often have this value.
+
+2. **Aromatic systems with no polar substituents** (e.g., `c1ccccc1O`, `c3ccc2nc1ccccc1cc2c3`) tend to have a property value of **0.0**, unless they have strongly polar or charged groups.
+
+3. **Nitro groups (`N(=O)=O`)** are present in some molecules with a property value of **0.0** (e.g., `O=N(=O)c1ccc(cc1)N(=O)=O`, `c1ccccc1N(=O)=O`), unless combined with other polar groups.
+
+4. **Methoxy groups (`-OCH3`)** are present in some molecules with moderate property values (e.g., `COC(=O)c1ccccc1C(=O)OC` has -1.08441244, but this also includes ester groups).
+
+5. **Combination of methoxy and nitro groups on an aromatic ring** appears in the given examples (e.g., `c1ccccc1N(=O)=O` has 0.0, and `COc1ccccc1` is not explicitly listed, but similar systems suggest a neutral or slightly negative value).
+
+### Prediction for `COc1ccccc1N(=O)=O`:
+This molecule is anisole (methoxybenzene) with a nitro substituent. Given that:
+- Aromatic systems with nitro groups alone tend to have a property value of **0.0**.
+- Methoxy groups alone (without nitro) might slightly reduce the property value (but not drastically, as seen in other examples).
+- No strongly hydrophilic groups (like -OH) are present to push the value to 0.77764813.
+
+Thus, the most likely property value for `COc1ccccc1N(=O)=O` is:
+**0.0** (same as other nitroaromatics in the dataset). 
+
+This aligns with the examples where nitroaromatics (`O=N(=O)c1ccc(cc1)N(=O)=O`, `c1ccccc1N(=O)=O`) and methoxy-substituted aromatics without additional polar groups tend to have neutral (0.0) values.
+==================================================
+Iteration: 72
+SMILES: ClC1CC2C(C1Cl)C3(Cl)C(=C(Cl)C2(Cl)C3(Cl)Cl)Cl
+True Property: 0.2870120414568245
+Predicted Property:
+Given the examples provided, we can observe patterns in the property values based on molecular structure. Here are some key observations:
+
+1. **Highly symmetric, halogen-rich (Cl, Br) or nitro (NO2) compounds** tend to have a property value of **0.0** (e.g., `O=N(=O)c1cccc(c1)N(=O)=O`, `Clc1ccccc1`, `Brc1ccc2ccccc2c1`, `ClC1C(Cl)C(Cl)C(Cl)C(Cl)C1Cl`).
+
+2. **Simple aliphatic chains, ethers, alcohols, or non-aromatic halogenated compounds** tend to have a property value of **0.77764813** (e.g., `CCCCOC`, `ClCCCl`, `CCCCl`, `CCBr`, `CCCC(O)CC`).
+
+3. **Highly branched or sterically hindered aliphatic structures** tend to have a property value of **-3.5964555** (e.g., `CC(=C)C(=C)C`, `Cc1cccc(C)c1C`).
+
+4. **Aromatic systems with moderate substitution (e.g., carbonyls, halogens, or nitro groups)** often have intermediate values between **-0.5 and -2.5** (e.g., `CNC(=O)Oc1cc(C)cc(C)c1` = -2.425, `CC(=O)c1ccccc1` = -0.568).
+
+### Analysis of the Target Molecule:
+The given molecule is a **highly chlorinated polycyclic structure**:
+```
+ClC1CC2C(C1Cl)C3(Cl)C(=C(Cl)C2(Cl)C3(Cl)Cl)Cl
+```
+- It is **fully saturated with chlorine atoms**, similar to `ClC1C(Cl)C(Cl)C(Cl)C(Cl)C1Cl` (hexachlorocyclohexane), which has a property value of **0.77764813**.
+- The symmetry and high halogenation suggest **low polarity or steric hindrance effects**, aligning with the trend for simple halogenated aliphatics.
+
+### Predicted Property Value:
+Given the structural similarity to other highly chlorinated aliphatic compounds with a value of **0.77764813**, the predicted property for this molecule is:
+
+**0.77764813**
+==================================================
+Iteration: 73
+SMILES: CCCOC=O
+True Property: 0.12933370350182913
+Predicted Property:
+Given the examples provided, let's analyze the molecule **CCCOC=O** (propyl formate) to predict its property value.
+
+### Observations from the Examples:
+1. **Simple Aliphatic Compounds**: 
+   - **C1CCCCCC1** (cyclohexane) has a value of **0.77764813**.
+   - **CC(Cl)Cl** (dichloropropane) and **CCCI** (iodopropane) also have the same value of **0.77764813**.
+   - These suggest that simple aliphatic hydrocarbons or halogenated alkanes tend to have this value.
+
+2. **Compounds with Polar Functional Groups**:
+   - **CC#N** (acetonitrile) has a value of **-1.20069231**, indicating that polar groups like nitriles reduce the value.
+   - **CCC#C** (propyne) also has a value of **-1.20069231**, suggesting that triple bonds (alkynes) similarly reduce the value.
+   - **CCOC(=O)c1ccc(N)cc1** (ethyl 4-aminobenzoate) has a value of **-1.28607547**, indicating that esters combined with aromatic amines further reduce the value.
+
+3. **Esters and Carbonyl-Containing Compounds**:
+   - **CCOC(=O)NCCOc2ccc(Oc1ccccc1)cc2** (a complex ester) has a value of **-1.42092862**.
+   - **CC(=O)CCC1C(=O)N(N(C1=O)c2ccccc2)c3ccccc3** (a diketone with aromatic groups) has a value of **-1.17610429**.
+   - These suggest that esters and carbonyl groups tend to reduce the property value, especially when combined with aromatic systems.
+
+4. **Simple Esters**:
+   - The molecule **CCCOC=O** (propyl formate) is a simple ester with no aromatic or highly polar substituents. From the examples, simple aliphatic esters (like **CCOC(=O)NCCOc2ccc(Oc1ccccc1)cc2**) tend to have values around **-1.4 to -1.2**, but simpler esters may be less negative.
+
+### Prediction for **CCCOC=O**:
+- It is a simple aliphatic ester (propyl formate), less complex than the examples with aromatic rings or multiple polar groups.
+- Comparing to **CCC#C** (propyne, **-1.20069231**) and **CCOC(=O)c1ccc(N)cc1** (ethyl 4-aminobenzoate, **-1.28607547**), **CCCOC=O** is likely less negative than these because it lacks an aromatic ring or additional polar groups.
+- However, it is more negative than simple alkanes (**0.77764813**) due to the presence of the ester group.
+
+Given these observations, a reasonable prediction for **CCCOC=O** is:
+
+**-1.20069231** (similar to **CCC#C** and other simple polar aliphatic compounds). 
+
+### Final Answer:
+**-1.20069231**
+==================================================
+Iteration: 74
+SMILES: CCCCCCCCCC(=O)OCC
+True Property: 0.5948456553007314
+Predicted Property:
+Based on the provided examples and the structure of the molecule **CCCCCCCCCC(=O)OCC**, I will predict the property value by analyzing the functional groups and structural features that influence the property in the given dataset.
+
+### Key Observations from the Dataset:
+1. **Hydrocarbons (alkanes, alkenes, aromatics)**:
+   - Simple alkanes (e.g., **CC**, **CCC1CCCCC1**) tend to have a property value of **0.77764813**.
+   - Aromatic hydrocarbons (e.g., **c1ccc2c(c1)cc3ccc4cccc5ccc2c3c45**) tend to have a property value of **0.0** unless functionalized.
+
+2. **Functional Groups**:
+   - **Esters (e.g., COCC(=O)N...)**: Often have negative values (e.g., **-1.54936586** for **COCC(=O)N(C(C)C(=O)OC)c1c(C)cccc1C**).
+   - **Alcohols (e.g., CCOC)**: Some alcohols (e.g., **CCOC**) have **0.77764813**, while others with more complex structures (e.g., **OCC2OC(Oc1ccccc1CO)C(O)C(O)C2O**) have negative values.
+   - **Carboxylic acids or derivatives**: Tend to lower the property value (e.g., **O=C1NC(=O)NC(=O)C1(C)C** has **-1.20069231**).
+
+3. **Chain Length and Branching**:
+   - Longer aliphatic chains (e.g., **CCCCCCc1ccccc1**) tend to have negative values (e.g., **-1.20069231**).
+   - Branching or cyclic structures can modulate the value.
+
+### Analysis of **CCCCCCCCCC(=O)OCC**:
+- This molecule is a **long-chain aliphatic ester**:
+  - **CCCCCCCCCC(=O)OCC**: Decanoic acid ethyl ester (ethyl decanoate).
+  - Features:
+    - Long aliphatic chain (**CCCCCCCCC**).
+    - Ester group (**C(=O)OCC**), which is polar and often associated with negative values in the dataset.
+- Similar molecules in the dataset:
+  - **CCCCCCc1ccccc1** (hexylbenzene): **-1.20069231**.
+  - **COCC(=O)N(C(C)C(=O)OC)c1c(C)cccc1C**: **-1.54936586** (more complex ester).
+  - **CCOC(=O)CCN(SN(C)C(=O)Oc1cccc2CC(C)(C)Oc21)C(C)C**: **-0.50341541** (ester with additional complexity).
+
+### Prediction:
+Given the long aliphatic chain and the ester group, the property value is likely negative. The closest analog is **CCCCCCc1ccccc1** (**-1.20069231**), but the ester group may further reduce the value slightly. However, simpler esters like **CCOC(=O)CCN...** have less negative values. 
+
+Given the balance between the long chain and the ester, a reasonable prediction is:  
+**-1.20069231** (similar to other long-chain esters/aliphatics in the dataset).
+
+### Final Answer:
+The predicted property value for **CCCCCCCCCC(=O)OCC** is:  
+**-1.20069231**
+==================================================
+Iteration: 75
+SMILES: Oc1ccc(Cl)cc1C(=O)Nc2ccc(cc2Cl)N(=O)=O
+True Property: 0.0
+Predicted Property:
+To predict the property value for the molecule **Oc1ccc(Cl)cc1C(=O)Nc2ccc(cc2Cl)N(=O)=O**, let's analyze its structural features and compare them with the given examples to infer a plausible value.
+
+### Structural Analysis:
+1. **Phenol core with Chlorine substitution**: The molecule has a phenol group (`Oc1ccc...`) with a chlorine substituent (`Cl`). From the examples:
+   - `Oc1ccc2ccccc2c1` has a property value of **0.0**.
+   - `COc1ccc(Cl)cc1` has a value of **-0.67449076**.
+   - Phenol/chlorophenol derivatives tend to have values around **0.0 to -0.7**.
+
+2. **Amide linkage (`C(=O)N`)**: The presence of an amide group (`C(=O)N`) is seen in:
+   - `CN(C)C(=O)Nc2ccc(Oc1ccc(Cl)cc1)cc2` with a value of **-0.6170455**.
+   - Amides generally contribute to negative values.
+
+3. **Nitro group (`N(=O)=O`)**: The nitro group is present in:
+   - `Clc1cccc(c1)N(=O)=O` with a value of **0.0**.
+   - Nitro groups alone may not strongly influence the property, but combined with other features, they can contribute to more negative values.
+
+4. **Additional Chlorine substitution**: The second aromatic ring also has a chlorine substituent (`cc2Cl`). Multiple chlorines can increase hydrophobicity, but in the given examples, heavily chlorinated molecules like `ClC(Cl)(Cl)C(Cl)(Cl)Cl` have a value of **0.77764813**, while others like `Oc1ccc(Cl)cc1Cl` have **0.0**. This suggests chlorines alone don't always dominate the property.
+
+5. **Overall polarity and functional groups**: The molecule has a mix of polar (phenol, amide, nitro) and moderately hydrophobic (chlorine) groups. Similar molecules with amides and polar groups tend to have negative values (e.g., **-0.6 to -1.5**).
+
+### Comparison with Similar Molecules:
+- `CN(C)C(=O)Nc2ccc(Oc1ccc(Cl)cc1)cc2` (**-0.6170455**): Similar amide + phenol + chlorine.
+- `CCOC(=O)c1ccc(N)cc1` (**-1.28607547**): Ester + amine (more polar than nitro).
+- `O=C1NC(=O)NC(=O)C1(CC)c1ccccc1` (**-1.59121523**): Multiple amides + aromatic.
+
+Given the presence of **two chlorines, an amide, a nitro group, and a phenol**, the property value is likely more negative than **-0.6170455** (due to the nitro group adding polarity) but less negative than **-1.59121523** (which has multiple amides). 
+
+### Predicted Value:
+A reasonable estimate is **-0.98321673** (similar to `CC2Nc1cc(Cl)c(cc1C(=O)N2c3ccccc3C)S(N)(=O)=O`, which has amide, chlorine, and sulfonamide).
+
+### Final Answer:
+**-0.98321673**
+==================================================
+Iteration: 76
+SMILES: COP(=S)(OC)Oc1ccc(Sc2ccc(OP(=S)(OC)OC)cc2)cc1
+True Property: -1.591215232982005
+Predicted Property:
+Given the examples provided, we can observe patterns in the property values based on molecular structure. Here's the analysis:
+
+### Key Observations:
+1. **Simple aliphatic chains or alcohols (e.g., CCCC, CCO, CCC(C)O, CBr, CC(C)(C)C)** tend to have a property value of **0.77764813**.
+2. **Aromatic rings without polar or electronegative substituents (e.g., c1ccccc1, C=Cc1ccccc1)** have a property value of **0.0**.
+3. **Chlorinated aromatic rings (e.g., Clc1cccc(Cl)c1Cl, Clc1cc(Cl)cc(Cl)c1)** also tend to have a property value of **0.0** unless combined with other functional groups.
+4. **Molecules with polar or electronegative substituents (e.g., carbonyls, nitro groups, sulfonamides)** often have negative property values, with more complex or multiple polar groups leading to more negative values (e.g., -1.61225057 for COP(=S)(OC)SCC(=O)N(C(C)C)c1ccc(Cl)cc1).
+5. **Phosphorothioate groups (P(=S)(OC)OC)** appear in molecules with negative property values (e.g., -1.61225057 for COP(=S)(OC)SCC(=O)N(C(C)C)c1ccc(Cl)cc1).
+
+### Target Molecule:
+**COP(=S)(OC)Oc1ccc(Sc2ccc(OP(=S)(OC)OC)cc2)cc1**
+
+This molecule contains:
+- Two **phosphorothioate groups (P(=S)(OC)OC)**.
+- A **thioether linkage (S)** between two aromatic rings.
+- No strongly polar or electronegative substituents beyond the phosphorothioate groups.
+
+### Comparison:
+The molecule is structurally similar to **COP(=S)(OC)SCC(=O)N(C(C)C)c1ccc(Cl)cc1** (property = -1.61225057), but with fewer polar groups (no amide or Cl substituents). The presence of two phosphorothioate groups suggests a negative value, but the lack of additional polar groups may moderate this.
+
+### Predicted Property:
+Given the above, the predicted property value is likely close to **-1.61225057**, but slightly less negative due to the absence of the amide and Cl substituents. A reasonable estimate is:
+
+**Predicted property value: -1.5** (approximate, based on structural similarity and trends in the examples). 
+
+However, since the examples show that phosphorothioate-containing molecules tend to cluster around -1.61225057, and this molecule has two such groups but no additional polar features, the exact value might still be **-1.61225057**. 
+
+For precision, I would predict:  
+**-1.61225057** (same as the closest analogous example).
+==================================================
+Iteration: 77
+SMILES: Oc1cccc(c1)N(=O)=O
+True Property: 0.0
+Predicted Property:
+Analyzing the given examples and the molecule in question (`Oc1cccc(c1)N(=O)=O`), we can identify patterns in the property values based on functional groups and structural features:
+
+1. **Nitrophenol-like structures**: 
+   - `NC(=O)c1ccccc1O` has a property value of **0.0**.
+   - `Cc1ccccc1N(=O)=O` (a nitro group attached to a toluene) has a value of **-0.67449076**.
+   - `Clc2ccc(Oc1ccc(cc1)N(=O)=O)c(Cl)c2` (a nitrophenol derivative with chloro substituents) has a value of **0.0**.
+
+2. **Phenol derivatives**:
+   - Phenols with simple substituents (e.g., `Oc1cc(Cl)c(Cl)cc1Cl`) tend to have a value of **0.0** unless other significant functional groups are present.
+
+3. **Nitro group impact**:
+   - The nitro group (`N(=O)=O`) tends to reduce the property value slightly (e.g., `-0.67449076` for `Cc1ccccc1N(=O)=O`), but when combined with other polar groups (e.g., hydroxyl), the effect may cancel out (e.g., `0.0` for `NC(=O)c1ccccc1O`).
+
+4. **Specific case of `Oc1cccc(c1)N(=O)=O`**:
+   - This is a nitrophenol (hydroxyl and nitro groups on benzene). 
+   - From the examples, nitrophenol-like structures with no additional complicating groups (e.g., `Clc2ccc(Oc1ccc(cc1)N(=O)=O)c(Cl)c2`) have a value of **0.0**.
+   - The nitro group alone might suggest a slight reduction, but the hydroxyl group counteracts this, leading to a neutral net effect.
+
+### Predicted property value:
+**0.0** (consistent with similar nitrophenol derivatives in the dataset).
+==================================================
+Iteration: 78
+SMILES: OCC1OC(CO)(OC2OC(COC3OC(CO)C(O)C(O)C3O)C(O)C(O)C2O)C(O)C1O
+True Property: 0.7776481338173168
+Predicted Property:
+Given the examples provided, the property values seem to correlate with certain structural features of the molecules. Here are some observed patterns:
+
+1. **Highly symmetric or halogenated aromatic systems (e.g., Cl/Br-substituted benzenes)**: These tend to have a property value of **0.0**. Examples:
+   - `Clc1cc(Cl)c(c(Cl)c1)c2c(Cl)cccc2Cl` → 0.0
+   - `Brc1cc(Br)cc(Br)c1` → 0.0
+   - `c1ccc2c(c1)c3ccccc3c4ccccc24` (polyaromatic) → 0.0
+
+2. **Long aliphatic chains (no functional groups)**: These tend to have a property value of **0.77764813**. Examples:
+   - `CCCCCCCCCCCCCCCCCCCCCCCCCC` → 0.77764813
+   - `CCCCCCCCCCCCCCCC` → 0.77764813
+   - `CBr` (simple alkyl halide) → 0.77764813
+
+3. **Polar or functionalized molecules (e.g., nitriles, esters, amides, heterocycles)**: These tend to have negative values, with more complex or electronegative functionalities leading to more negative values. Examples:
+   - `CCC#N` → -0.18437602
+   - `CN(C(=O)COc1nc2ccccc2s1)c3ccccc3` → -0.56875632
+   - `CN(C)C(=O)Nc1cccc(OC(=O)NC(C)(C)C)c1` → -2.10929072
+
+4. **Highly oxygenated or polyhydroxylated systems (e.g., sugars)**: These tend to have positive or near-zero values if they are symmetric or flexible. Examples:
+   - `C1OC(O)C(O)C(O)C1O` (cyclic polyol) → 0.77764813
+   - `CC34CCC1C(CCC2CC(=O)CCC12C)C3CCC4O` → 0.66517805
+
+### Analysis of the Target Molecule:
+The molecule in question is:
+`OCC1OC(CO)(OC2OC(COC3OC(CO)C(O)C(O)C3O)C(O)C(O)C2O)C(O)C1O`
+
+This is a **highly oxygenated, branched sugar-like molecule** (resembling a oligosaccharide or sugar derivative). Key features:
+- Multiple hydroxyl (`-OH`) groups.
+- Ether (`-O-`) linkages.
+- No aromaticity or halogens.
+- Symmetric and flexible structure.
+
+Given the examples, similar polyhydroxylated systems (e.g., `C1OC(O)C(O)C(O)C1O`) have a property value of **0.77764813**. The branching and additional oxygen atoms in this case do not seem to introduce significant polarity or asymmetry that would drive the value negative.
+
+### Predicted Property Value:
+**0.77764813** (same as other flexible, highly oxygenated aliphatic systems).
+==================================================
+Iteration: 79
+SMILES: CCC#C
+True Property: -1.2006923062727917
+Predicted Property:
+Analyzing the given examples, we can observe certain patterns in the property values based on molecular structure:
+
+1. Simple hydrocarbons (especially linear ones) tend to have positive property values around 0.28-0.78 (e.g., CCCC(=O)C = 0.28701204, CCCCCCCCC=C = 0.28701204, CCCCCCCCCCCCCCCCO = 0.77764813)
+
+2. Molecules with triple bonds (N#C or C#C) tend to have property values of 0.0 when they're small/simple (e.g., N#Cc1ccccc1C#N = 0.0)
+
+3. The molecule CCC#C is:
+   - A simple hydrocarbon (4 carbons)
+   - Contains a triple bond
+   - Similar to CCCC(=O)C but with a triple bond instead of a carbonyl
+
+Given that:
+- Simple hydrocarbons with 4 carbons have values around 0.28-0.38
+- Triple bonds in small molecules tend to reduce the value toward 0.0
+- There's no strong electron-withdrawing or donating groups
+
+The most reasonable prediction would be slightly positive but less than the 0.287 value of CCCC(=O)C, likely close to 0.0 but not exactly zero since it's still a hydrocarbon.
+
+Predicted property value for CCC#C: **0.1293337**
+
+This matches values seen for other small, moderately polar molecules like CC(C)OC=O and COP(=O)(NC(C)=O)SC which also have values of 0.1293337.
+==================================================
+Iteration: 80
+SMILES: CCOP(=S)(CC)Oc1cc(Cl)c(Cl)cc1Cl
+True Property: -2.776027317655544
+Predicted Property:
+To predict the property for the molecule **CCOP(=S)(CC)Oc1cc(Cl)c(Cl)cc1Cl**, let's analyze its structural features and compare them to the given examples to infer a plausible value.
+
+### Key Observations from the Given Examples:
+1. **Highly halogenated (Cl/Br) aromatic rings** (e.g., `Clc1ccc(c(Cl)c1)c2cc(Cl)c(Cl)c(Cl)c2Cl`) tend to have a property value of **0.0**, especially when no other strongly polar or functional groups are present.
+2. **Phosphorothioate (P=S) groups** (e.g., `COP(=S)(OC)SCC(=O)N(C(C)C)c1ccc(Cl)cc1`) are associated with negative property values (e.g., -1.61225057 in this case), especially when combined with halogens and aromatic systems.
+3. **Ether linkages (O-alkyl/aryl)** and **alkyl chains** (e.g., `CCCCOCCCC`) often contribute to neutral or slightly positive values (~0.77764813) unless paired with strongly negative functional groups.
+
+### Analysis of the Target Molecule:
+- **Structure**: `CCOP(=S)(CC)Oc1cc(Cl)c(Cl)cc1Cl`
+  - Contains a **phosphorothioate (P=S) group** linked to an ethoxy (`CCO-`) and a **trichlorinated phenyl ring** (`Oc1cc(Cl)c(Cl)cc1Cl`).
+  - The combination of P=S and multiple Cl substituents is reminiscent of molecules like `COP(=S)(OC)SCC(=O)N(C(C)C)c1ccc(Cl)cc1` (property = -1.61225057), but with fewer polarizable groups (no amide or carbonyl here).
+  - The ethoxy and ethyl groups (`CCOP` and `CC`) may slightly offset the negative contribution from P=S and Cl.
+
+### Comparison to Closest Examples:
+- `COP(=S)(OC)SCC(=O)N(C(C)C)c1ccc(Cl)cc1` → **-1.61225057**  
+  (P=S, Cl, and additional polar groups)
+- `Clc1ccc(Cl)cc1C(c2ccc(Cl)cc2)(O)C(=O)OC(C)C` → **-1.42092862**  
+  (Cl, ester, and tertiary alcohol)
+- `CON(C)C(=O)Nc1ccc(Br)c(Cl)c1` → **-1.28607547**  
+  (halogens + amide)
+
+The target molecule lacks the additional polar groups (e.g., amides) that further reduce the property in the above examples, but the P=S and trichlorophenyl ring dominate. The ethoxy/ethyl groups are less impactful.
+
+### Predicted Property:
+Given the dominance of P=S and Cl, but absence of other strongly negative functional groups, the value should be **less negative** than -1.61225057 but still significantly negative. A reasonable estimate is:
+
+**Predicted property value: -1.2**  
+
+(Note: Without knowing the exact property being predicted—e.g., logP, solubility, or a bioactivity metric—this is an empirical estimate based on the trend of halogenation and P=S groups reducing the property value in the given data.)
+==================================================
+Iteration: 81
+SMILES: c1nccc(C(=O)NN)c1
+True Property: 0.0
+Predicted Property:
+To predict the property for the molecule `c1nccc(C(=O)NN)c1`, let's analyze the given examples and identify patterns or features that correlate with the property values. 
+
+### Observations from the Examples:
+1. **Property = 0.0**: 
+   - Simple aromatic systems with no polar or strongly electron-withdrawing/donating groups (e.g., `Nc1ccccc1Cl`, `C=C`, `c1cnc2c(c1)ccc3ncccc23`, `N(c1ccccc1)c2ccccc2`).
+   - Halogenated aromatics (e.g., `Clc1ccccc1Cl`, `Fc1cccc(Br)c1`).
+   - Neutral heterocycles (e.g., `Nc1cccc2ccccc12`).
+
+2. **Property ≈ 0.77764813**: 
+   - Aliphatic chains or simple branched alkanes (e.g., `ClCC(C)C`, `CC(C)C`, `CCCCBr`, `CCCCCCC`).
+   - Cyclic alkanes (e.g., `CC12CCC(CC1)C(C)(C)O2`).
+
+3. **Negative Property Values**:
+   - Presence of polar or hydrogen-bonding groups (e.g., `CN(C)C(=O)Nc1ccc(Cl)c(Cl)c1` with amide and amine: -1.28607547).
+   - Aromatic systems with electron-withdrawing/donating groups (e.g., `Cc1ccc(O)cc1C` with phenol: -1.59121523).
+   - Complex heterocycles with polar substituents (e.g., `CCOP(=S)(NC(C)C)Oc1ccccc1C(=O)OC(C)C`: -0.92523555).
+
+### Analysis of `c1nccc(C(=O)NN)c1`:
+- The molecule is a pyridine derivative (`c1nccc(C(=O)NN)c1`) with a hydrazide group (`C(=O)NN`).
+- The hydrazide group is highly polar and capable of hydrogen bonding (both donor and acceptor), similar to amides or other polar groups in the examples that led to negative property values.
+- The pyridine ring is aromatic but the presence of the strongly polar hydrazide group will dominate the property.
+
+### Comparison with Similar Examples:
+- `CN(C)C(=O)Nc1ccc(Cl)c(Cl)c1` (amide + aromatic): -1.28607547.
+- `COc1ccc(C=O)cc1` (aldehyde + aromatic): -0.56875632.
+- `CCOC(=O)Nc2cccc(OC(=O)Nc1ccccc1)c2` (ester + aromatic): -0.56875632.
+
+The hydrazide group is even more polar than a simple amide or aldehyde due to the additional nitrogen, so we expect a moderately negative value.
+
+### Predicted Property:
+Given the strong polarity and hydrogen-bonding capability of the hydrazide group, the property value is likely in the range of **-0.5 to -1.3**. A reasonable estimate is **-0.8**, similar to other polar aromatic systems in the examples.
+
+### Final Answer:
+**-0.8** (approximate; exact value would require more precise modeling or additional similar examples). 
+
+If forced to pick from the example values, the closest match is **-0.77062223** (for `CC(=O)CC(c1ccccc1)c3c(O)c2ccccc2oc3=O`), but the hydrazide group here is more polar, so a slightly more negative value like **-0.9** might be more accurate. However, without more data, **-0.8** is a reasonable prediction.
+==================================================
+Iteration: 82
+SMILES: CCCOP(=S)(OCCC)SCC(=O)N1CCCCC1C
+True Property: 0.6225646891704604
+Predicted Property:
+To predict the property for the molecule **CCCOP(=S)(OCCC)SCC(=O)N1CCCCC1C**, let's analyze its structural features and compare them to the given examples to infer the likely property value.
+
+### Structural Analysis:
+1. **Phosphorothioate Group (P(=S))**: This is a notable functional group, similar to the one in **COP(=S)(OC)Oc1ccc(N(=O)=O)c(C)c1**, which has a property value of **-3.5964555**. Phosphorothioates often contribute to negative property values in the dataset.
+2. **Thioether Linkage (SCC(=O))**: The presence of sulfur (thioether) is seen in molecules like **CCS** and **CN(C)C(=O)SCCCCOc1ccccc1**, which have property values of **0.77764813** and **-1.61225057**, respectively. However, the thioether here is part of a larger polar/charged group, which may lower the value.
+3. **Amide Group (C(=O)N)**: Amides are present in many molecules in the dataset, often associated with negative or moderately negative values (e.g., **CN(C)C(=O)N(C)C** has **0.28701204**, while **CCOC(=O)N** has **-0.18437602**).
+4. **Cyclohexane Ring (N1CCCCC1)**: Aliphatic rings like this are common in the dataset and typically do not strongly influence the property unless combined with other polar groups.
+5. **Alkyl Chains (CCCO and OCCC)**: These are neutral contributors unless paired with strongly polar or charged groups.
+
+### Comparison to Similar Molecules:
+- The closest analog in the dataset is **COP(=S)(OC)Oc1ccc(N(=O)=O)c(C)c1**, which has a value of **-3.5964555**. This molecule also contains a phosphorothioate group and aromatic nitro groups, which are highly polar/electron-withdrawing.
+- Our target molecule lacks nitro groups but has an amide and thioether, which are less electron-withdrawing than nitro groups but still polar. Thus, the property value should be less negative than **-3.5964555** but still significantly negative.
+
+### Predicted Property Value:
+Given the above reasoning, the predicted property value for **CCCOP(=S)(OCCC)SCC(=O)N1CCCCC1C** is likely in the range of **-1.5 to -2.5**. A reasonable estimate is:
+
+**Predicted property value: -1.61225057**  
+*(This matches the value of **CN(C)C(=O)SCCCCOc1ccccc1**, which has a similar combination of polar groups and sulfur.)*
+==================================================
+Iteration: 83
+SMILES: CCCCCCCC
+True Property: 0.7776481338173168
+Predicted Property:
+Analyzing the given examples, we can observe the following patterns in the property values:
+
+1. **Hydrocarbons with only carbon and hydrogen (no functional groups)** tend to have a property value of **0.77764813** if they are aliphatic (e.g., `ClCCBr`, `CC(Cl)Cl`, `OCC(O)C(O)C(O)C(O)CO`, `CCC(O)CC`, `C/C1CCCCC1\C`, `CCCCCCCO`, `CC(C)CO`, `C1OC(O)C(O)C(O)C1O`, `CC(C)CCO`, `CC(C)(C)CO`, `CCCC(C)(C)CO`, `CCCCCC1CCCC1`, `OCC(O)C(O)CO`). 
+
+   The value **0.77764813** appears consistently for such molecules, even if they contain simple functional groups like alcohols (`-OH`) or halogens (e.g., `ClCCBr`), as long as the structure is largely aliphatic and non-aromatic.
+
+2. **Aromatic hydrocarbons or molecules with conjugated systems** (e.g., `c1ccc2c(c1)cc3ccc4cccc5ccc2c3c45`, `Clc1ccc(Oc1ccc(cc1)N(=O)=O)c(Cl)c2`, `c1ccsc1`, `Nc1cccc2ccccc12`, `O=C1NC(=O)c2ccccc12`, `Fc1ccccc1`, `Oc1ccc(Cl)cc1`, `Oc1ccc(Br)cc1`, `c1ccccc1C(O)c2ccccc2`) tend to have a property value of **0.0**, unless they have additional functional groups that significantly alter the property.
+
+3. The molecule `CCCCCCCC` (octane) is a purely aliphatic hydrocarbon with no functional groups or aromaticity. Based on the examples, this fits the pattern of molecules like `CCCCCCCO`, `CCCCCC1CCCC1`, or `C/C1CCCCC1\C`, which all have the property value **0.77764813**.
+
+### Predicted property value for `CCCCCCCC`: **0.77764813**
+==================================================
+Iteration: 84
+SMILES: CC34CCC1C(CCC2=CC(=O)CCC12O)C3CCC4(O)C#C
+True Property: 0.12933370350182913
+Predicted Property:
+Analyzing the given examples and the target molecule **CC34CCC1C(CCC2=CC(=O)CCC12O)C3CCC4(O)C#C**, I can infer the following patterns to predict the property:
+
+### Observations from the Examples:
+1. **Steroids and Complex Polycyclic Structures**: 
+   - Molecules with steroid-like frameworks (e.g., **CC(=O)C1(O)CCC2C3CCC4=CC(=O)CCC4(C)C3CCC21C**) tend to have property values around **0.3 to 0.4**.
+   - The presence of **ketone (=O)** and **hydroxyl (OH)** groups in such structures does not drastically lower the value.
+
+2. **Simple Hydrocarbons and Alkanes**: 
+   - Molecules like **C1CCCCCCC1**, **CC(C)CCC(C)(C)C**, and **CCC1CCCCC1** consistently have a value of **0.77764813**, suggesting this is a baseline for non-polar, saturated hydrocarbons.
+
+3. **Polar or Functionalized Molecules**: 
+   - Molecules with **halogens (Cl, Br, F)**, **nitro groups (NO2)**, or **sulfur-containing groups (S, P=O, P=S)** tend to have negative values (e.g., **-2.77602732** for **COP(=S)(OC)Oc1ccc(SC)c(C)c1**).
+   - Aromatic systems with polar substituents (e.g., **NC(=O)c1ccccc1**) often have values around **0.0**.
+
+4. **Special Cases**:
+   - The molecule **C1C=CCC=C1** (a highly unsaturated cyclohexadiene) has a very low value (**-3.5964555**), likely due to conjugation and strain.
+   - The presence of **C#C (alkyne)** in the target molecule is rare in the examples, but it may slightly reduce the property value compared to pure alkanes.
+
+### Analysis of the Target Molecule:
+The target molecule is a **steroid-like polycyclic structure** with:
+- A **ketone (=O)** group,
+- A **hydroxyl (OH)** group,
+- An **alkyne (C#C)** group,
+- Multiple fused rings (similar to other steroids in the examples).
+
+Given the examples:
+- **CC(=O)C1(O)CCC2C3CCC4=CC(=O)CCC4(C)C3CCC21C** has a value of **0.31501908**.
+- **CC12CCC3C(CCC4=CC(=O)CCC34C)C2CCC1O** has a value of **0.40656693**.
+
+The alkyne group (**C#C**) might slightly reduce the value compared to these, but the overall structure is very similar. 
+
+### Predicted Property Value:
+Considering the above, the predicted value for **CC34CCC1C(CCC2=CC(=O)CCC12O)C3CCC4(O)C#C** is likely in the range of **0.3 to 0.4**, similar to the other steroid-like molecules. 
+
+A reasonable estimate is:  
+**0.35000000** (averaging the two closest examples). 
+
+However, since the examples show **0.31501908** and **0.40656693**, and the alkyne may slightly reduce this, I will predict:  
+**0.35** (rounded). 
+
+But to match the precision of the given examples, I'll provide:  
+**0.35000000**. 
+
+However, looking back, the two closest steroid examples average to ~0.36, so:  
+**0.36000000** is also plausible. 
+
+Given the alkyne's minor effect, I'll lean toward:  
+**0.35000000**. 
+
+But to be precise, the closest analog is **CC12CCC3C(CCC4=CC(=O)CCC34C)C2CCC1O** with **0.40656693**, and the alkyne might reduce this by ~0.05, so:  
+**0.35000000**. 
+
+### Final Prediction:
+**0.35000000**
+==================================================
+Iteration: 85
+SMILES: COc1cc(cc(OC)c1O)C6C2C(COC2=O)C(OC4OC3COC(C)OC3C(O)C4O)c7cc5OCOc5cc67
+True Property: -0.7947681266421731
+Predicted Property:
+Given the examples provided, I can attempt to predict the property value for the molecule:
+
+**COc1cc(cc(OC)c1O)C6C2C(COC2=O)C(OC4OC3COC(C)OC3C(O)C4O)c7cc5OCOc5cc67**
+
+### Observations from the Examples:
+1. **Property = 0.0**: 
+   - Simple aromatic systems (e.g., `c1ccccc1`), halogenated aromatics (e.g., `Clc1ccc(Cl)c(Cl)c1Cl`), and small heterocycles (e.g., `c1nccc(C(=O)NN)c1`) tend to have a property value of 0.0.
+   - Molecules with nitro groups (`N(=O)=O`) or simple substituents like `Oc1ccccc1Cl` also often have 0.0.
+
+2. **Property ≈ 0.77764813**: 
+   - Aliphatic chains with oxygen (e.g., `CCCCOCCO`, `CC(Cl)CCl`, `CCSC(=O)N(CC(C)C)CC(C)C`).
+   - Flexible, non-aromatic, oxygen-containing structures.
+
+3. **Negative Property Values**:
+   - More complex structures with multiple functional groups (e.g., `Cn1cnc2n(C)c(=O)[nH]c(=O)c12` has -2.12882935).
+   - Aromatic systems with polar substituents (e.g., `Cc1ccccc1N` has -0.67449076).
+   - Large, rigid, or polycyclic systems (e.g., `C1Cc2ccccc2C1` has -3.5964555).
+
+### Analysis of the Target Molecule:
+The given molecule is highly complex with:
+- Multiple aromatic rings (`c1cc...c67`).
+- Several ether linkages (`OC`, `COC`).
+- A cyclic ketone (`COC2=O`).
+- Multiple oxygen-containing functional groups (ethers, alcohols, and a ketone).
+- Fused ring systems and a dioxolane-like moiety (`OCOc5cc67`).
+
+Given the complexity and the presence of multiple polar groups, this molecule is unlikely to have a property value of 0.0. It is also not a simple aliphatic chain, so 0.77764813 is unlikely. 
+
+The closest analogs in the examples are:
+- `C1C(O)CCC2(C)CC3CCC4(C)C5(C)CC6OCC(C)CC6OC5CC4C3C=C21` (property = 0.61645509): A large polycyclic oxygenated structure.
+- `COP(=S)(OC)Oc1ccc(Sc2ccc(OP(=S)(OC)OC)cc2)cc1` (property = -1.59121523): A complex, polar, multi-ring system.
+
+Given the even greater complexity of the target molecule, I predict a **negative property value**, likely in the range of **-1.0 to -2.0**. 
+
+### Final Prediction:
+**-1.37267118** (similar to other highly complex, oxygen-rich polycyclic systems in the examples).
+==================================================
+Iteration: 86
+SMILES: Oc1ccccc1Cl
+True Property: 0.0
+Predicted Property:
+Analyzing the given examples, we can observe the following patterns for the property values:
+
+1. **Aromatic compounds with simple substituents (halogens, nitro, etc.)** typically have a property value of **0.0**. Examples:
+   - `Clc1ccccc1I` (chlorobenzene with iodine substituent) → 0.0
+   - `Oc1cccc(c1)N(=O)=O` (nitrophenol) → 0.0
+   - `Fc1ccccc1` (fluorobenzene) → 0.0
+   - `Clc1ccccc1c2ccccc2Cl` (dichlorobiphenyl) → 0.0
+
+2. **Compounds with aliphatic chains, hydroxyl groups, or multiple non-aromatic functional groups** tend to have **positive values** (e.g., 0.77764813, 0.44676617, etc.). Examples:
+   - `OCC1OC(O)(CO)C(O)C1O` (sugar-like structure) → 0.77764813
+   - `CC(C)CCOC(=O)C` (ester/aliphatic chain) → 0.44676617
+   - `CCCCCl` (butyl chloride) → 0.77764813
+
+3. **Compounds with nitrogen-containing heterocycles, thiols, or complex polar groups** often have **negative values**. Examples:
+   - `Cc2ncc1nccnc1n2` (nitrogen-rich heterocycle) → -0.67449076
+   - `CON(C)C(=O)Nc1ccc(Cl)c(Cl)c1` (amide with aromatic chlorides) → -1.28607547
+   - `CC#N` (acetonitrile) → -1.20069231
+
+### Prediction for `Oc1ccccc1Cl` (4-chlorophenol):
+- This is a simple aromatic compound with a hydroxyl (-OH) and a chlorine (-Cl) substituent. 
+- Similar examples like `Oc1ccccc1N(=O)=O` (nitrophenol) and `Fc1ccccc1` (fluorobenzene) have a property value of **0.0**.
+- The presence of -OH and -Cl does not seem to deviate from the trend for simple substituted aromatics.
+
+Thus, the predicted property value for `Oc1ccccc1Cl` is:  
+**0.0**
+==================================================
+Iteration: 87
+SMILES: ClCC#CCOC(=O)Nc1cccc(Cl)c1
+True Property: -0.9396679417484032
+Predicted Property:
+To predict the property for the molecule **ClCC#CCOC(=O)Nc1cccc(Cl)c1**, let's analyze its structural features and compare them to the given examples to infer a plausible value.
+
+### Structural Analysis:
+1. **Functional Groups and Fragments**:
+   - **Cl-substituted aromatic ring**: `c1cccc(Cl)c1` (similar to `Clc1ccc(Cl)c(c1)...` in some examples, which often have values around **0.0** or lower).
+   - **Amide linkage**: `OC(=O)N` (seen in molecules like `CCOc1ccc(NC(=O)C)cc1` with a value of **-2.425** and `O=C1N(COC(=O)CCCC)C(=O)C(N1)(c2ccccc2)c3ccccc3` with **-2.128**).
+   - **Alkyne group**: `C#C` (not directly in examples, but similar to unsaturated groups contributing to polarity).
+   - **Chlorinated aliphatic chain**: `ClCC` (similar to `CCCCl` with **0.777**, but here it's attached to polar groups).
+
+2. **Polarity and Electronic Effects**:
+   - The molecule has multiple polar groups (amide, alkyne, Cl-substitution) and is likely to have moderate to high polarity.
+   - The presence of two Cl atoms and the amide group suggests a value more negative than simple hydrocarbons (which are often **0.777** or **0.0**).
+
+3. **Comparison to Examples**:
+   - Molecules with `NC(=O)` and Cl-substituted aromatics (e.g., `CCOc1ccc(NC(=O)C)cc1`) have values around **-2.425**.
+   - The alkyne and ether (`O`) might slightly offset this, but the overall polarity is high.
+
+### Predicted Property:
+Given the structural similarity to molecules with values around **-2.0 to -2.5**, and considering the additional polarity from the alkyne and Cl, a reasonable prediction is:  
+**-2.12882935** (matching the closest example with similar functional groups).
+
+### Final Answer:
+**-2.12882935**
+==================================================
+Iteration: 88
+SMILES: OC(c1ccc(Cl)cc1)(c2cncnc2)c3ccccc3Cl
+True Property: -0.23755908680708349
+Predicted Property:
+To predict the property value for the molecule **OC(c1ccc(Cl)cc1)(c2cncnc2)c3ccccc3Cl**, let's analyze its structural features and compare them to the given examples to infer a reasonable value.
+
+### Structural Analysis:
+1. **Aromatic Systems**: The molecule contains three aromatic rings (two benzene rings and one pyridine-like ring with nitrogens, `c2cncnc2`). 
+   - Substituted benzene rings with halogens (Cl) are present in the examples, and many such cases have a property value of **0.0** (e.g., `Clc1cccc(Cl)c1`, `Clc1ccc(cc1)C(c2ccc(Cl)cc2)C(Cl)(Cl)Cl`).
+   - However, the presence of multiple aromatic systems with substitutions can sometimes lead to slight deviations from 0.0 (e.g., `Cc1cccc2ccccc12` has -0.38779801).
+
+2. **Heteroatoms and Functional Groups**:
+   - The molecule has an **OH group** attached to a central carbon, which is also bonded to two aromatic systems and a chlorinated benzene ring. 
+   - In the examples, molecules with OH groups attached to aromatic systems often have a value of **0.0** (e.g., `Oc1ccc(O)cc1`), but this is not always the case if other features dominate.
+   - The `c2cncnc2` ring is a heteroaromatic system with nitrogens. Similar systems like `Oc2ncc1nccnc1n2` and `Nc1nc[nH]n1` have a value of **0.0**.
+
+3. **Chlorine Substitutions**:
+   - Chlorine substitutions on benzene rings are common in the examples, and many of them result in **0.0** (e.g., `Clc1cccc(Cl)c1`, `Clc1ccc(cc1)C(c2ccc(Cl)cc2)C(Cl)(Cl)Cl`).
+   - However, if the molecule has additional polar or bulky groups, the value may deviate slightly (e.g., `ClC(Cl)C(Cl)(Cl)Cl` has **0.77764813**, but this is a very different structure).
+
+4. **Central Carbon with Multiple Aromatic Systems**:
+   - The central carbon bonded to three aromatic systems (two benzene rings and one heteroaromatic ring) is somewhat similar to `C(c1ccc(Cl)cc1)C(c2ccc(Cl)cc2)C(Cl)(Cl)Cl`, which has a value of **-0.67449076**. However, that molecule has more chlorines and a CCl3 group, which likely contributes to the negative value.
+   - The presence of the OH group here may counteract some of the negative contribution.
+
+### Comparison to Examples:
+- The closest analog is likely **Clc1ccc(cc1)C(c2ccc(Cl)cc2)C(Cl)(Cl)Cl**, which has a value of **-0.67449076**. Our molecule replaces one of the chlorinated benzene rings with a heteroaromatic ring (`c2cncnc2`) and adds an OH group. The heteroaromatic ring may slightly reduce the negative contribution, while the OH group could push the value closer to zero.
+- Another similar case is **O=C1N(COC(=O)C)C(=O)C(N1)(c2ccccc2)c3ccccc3**, which has a value of **-0.83011789**, but this has additional carbonyl groups that likely contribute more negativity.
+
+### Predicted Value:
+Given the above analysis, the molecule **OC(c1ccc(Cl)cc1)(c2cncnc2)c3ccccc3Cl** is expected to have a **slightly negative property value**, but not as negative as the fully chlorinated examples. A reasonable prediction is:
+
+**Predicted property value: -0.35**  
+
+This balances the slight negative contribution from the chlorinated aromatic systems and the central carbon with the mitigating effect of the OH group and heteroaromatic ring.
+==================================================
+Iteration: 89
+SMILES: CCCCOC=O
+True Property: 0.2870120414568245
+Predicted Property:
+To predict the property value for the molecule **CCCCOC=O** (butyl formate), let's analyze the given examples and identify patterns or similarities:
+
+### Observations:
+1. **Simple aliphatic chains with polar groups** (e.g., esters, aldehydes, halides) tend to have property values around **0.3 to 0.7**:
+   - `CCCC(=O)OCC` (ethyl butyrate): **0.38253832**
+   - `CCCCBr` (1-bromobutane): **0.77764813**
+   - `CCCCCC=O` (heptanal): **0.38253832**
+
+2. **Esters** (R-COO-R') often have values close to **0.38**, as seen in `CCCC(=O)OCC` and `CCCCCC=O`.
+
+3. The molecule **CCCCOC=O** is an ester (butyl formate), structurally similar to `CCCC(=O)OCC` (ethyl butyrate) but with a formate group (HCOO-) instead of a butyrate group. The formate group is smaller and slightly more polar, but the aliphatic chain (butyl) is the same as in `CCCCBr`, which has a value of **0.77764813**.
+
+4. The presence of the ester group (`OC=O`) likely reduces the property value compared to a pure alkyl halide like `CCCCBr` (0.777), bringing it closer to the other ester examples (~0.38).
+
+### Prediction:
+Given the similarity to `CCCC(=O)OCC` (0.38253832) and `CCCCCC=O` (0.38253832), the property value for **CCCCOC=O** is likely very close to these. 
+
+### Final Answer:
+**0.38253832**
+==================================================
+Iteration: 90
+SMILES: ClCCl
+True Property: 0.7776481338173168
+Predicted Property:
+Given the examples provided, we can observe patterns in the property values based on molecular structure. 
+
+1. **Simple halogenated alkanes** (e.g., `ClCCCl`, `CCBr`, `ClC(Cl)(Cl)C...`) often have a property value of **0.77764813** when they are small and symmetric or lack additional functional groups. For example:
+   - `ClCCCl` → 0.77764813  
+   - `CCBr` → 0.77764813  
+   - `CNN` → 0.77764813 (despite the N, it's small and simple).  
+
+2. **Very small or symmetric halogenated molecules** (e.g., `Clc1cc(Cl)c(Cl)c(Cl)c1Cl`, `Nc1ccc(Cl)cc1`) have a property value of **0.0**, likely due to their symmetry or lack of complexity.  
+
+3. The molecule `ClCCl` (dichloromethane analog, but with only two chlorines) is even simpler than `ClCCCl` (1,2-dichloroethane). Given its small size and symmetry, it aligns more closely with the examples that have a property value of **0.0** (e.g., `Clc1cc(Cl)c(Cl)c(Cl)c1Cl` or `Nc1ccc(Cl)cc1`).  
+
+### Predicted property value for `ClCCl`:  
+**0.0**
+==================================================
+Iteration: 91
+SMILES: Cc1cccc(C)c1O
+True Property: -1.591215232982005
+Predicted Property:
+To predict the property for the molecule **Cc1cccc(C)c1O**, let's analyze the given examples and identify patterns or trends that correlate with the property values.
+
+### Observations from the Examples:
+1. **Simple Aromatic Alcohols/Phenols**:
+   - **Oc1cccc(O)c1** (catechol): Property = 0.0
+   - **Oc1cccc(c1)N(=O)=O** (nitrophenol): Property = 0.0
+   - **CC(C)c1ccc(C)cc1O** (alkyl-substituted phenol): Property = -2.77602732 (this is an outlier; likely due to steric effects or additional interactions)
+   - **c1(O)cc(O)ccc1CCCCCC** (alkyl-substituted dihydroxybenzene): Property = -1.20069231
+
+2. **Mono-Substituted Phenols**:
+   - **Cc1cccc(C)c1O** is a dimethylphenol (specifically, 2,5-dimethylphenol). This is structurally similar to **CC(C)c1ccc(C)cc1O** but with less steric hindrance.
+
+3. **General Trends**:
+   - Phenols with no strong electron-withdrawing/donating groups or steric hindrance tend to have property values close to 0.0.
+   - Alkyl substituents (e.g., methyl groups) slightly perturb the property but not drastically unless there are multiple bulky groups (as in **CC(C)c1ccc(C)cc1O**, which has a very negative value).
+
+### Prediction:
+- **Cc1cccc(C)c1O** is a dimethylphenol with no strongly polar or sterically demanding substituents. It is most similar to simple phenols like **Oc1cccc(O)c1** (property = 0.0) but with minor perturbation from the methyl groups.
+- The outlier **CC(C)c1ccc(C)cc1O** suggests that bulky alkyl groups can significantly lower the property, but **Cc1cccc(C)c1O** is less hindered.
+- A reasonable estimate is slightly negative but closer to 0.0 than the extreme cases.
+
+### Predicted Property:
+**-0.67449076**  
+(This matches the value for **Cc1c(cc(cc1N(=O)=O)N(=O)=O)N(=O)=O** and **c1ccccc1C(O)C(O)c2ccccc2**, which are also moderately perturbed aromatic systems. The dimethylphenol is likely in this range.) 
+
+However, if we consider the simpler phenols (property = 0.0) and the mild perturbation from methyl groups, an alternative prediction could be **-0.32019429** (similar to **C1c2ccccc2c3ccccc13**). 
+
+Given the ambiguity, the most consistent value is **-0.67449076**. 
+
+Final answer: **-0.67449076**
+==================================================
+Iteration: 92
+SMILES: Clc1ccc(c(Cl)c1)c2cc(Cl)ccc2Cl 
+True Property: 0.0
+Predicted Property:
+Analyzing the given examples, I observe the following patterns for the property values:
+
+1. Molecules with multiple aromatic rings and halogen (Cl, Br) substitutions tend to have a property value of **0.0**. This is seen in:
+   - `Clc1c(Cl)c(Cl)c(c1ccccc1)c(Cl)c2Cl` → 0.0  
+   - `Clc1ccc(Cl)c(c1)c2c(Cl)c(Cl)cc(Cl)c2Cl` → 0.0  
+   - `Brc1cc(Br)c(Br)cc1Br` → 0.0  
+   - `c1ccc2c(c1)c3ccccc3c4ccccc24` (polyaromatic) → 0.0  
+
+2. The molecule `Clc1ccc(c(Cl)c1)c2cc(Cl)ccc2Cl` fits this pattern:  
+   - It consists of two benzene rings connected directly (biphenyl-like structure).  
+   - It has multiple chlorine substitutions (4 Cl atoms).  
+   - No other functional groups (e.g., nitro, carbonyl, etc.) are present to deviate from the 0.0 trend.  
+
+Thus, based on the consistent trend for halogenated polyaromatic systems in the examples, the predicted property value for **Clc1ccc(c(Cl)c1)c2cc(Cl)ccc2Cl** is:  
+
+**0.0**
+==================================================
+Iteration: 93
+SMILES: CC=C(C)C
+True Property: -0.5034154059594502
+Predicted Property:
+To predict the property value for the molecule **CC=C(C)C** (isobutylene), let's analyze the given examples and identify patterns or trends that might apply to this molecule.
+
+### Observations from the Examples:
+1. **Hydrocarbons with no polar or functional groups** (e.g., alkanes, alkenes, aromatics without substituents) tend to have property values close to **0.0** or slightly positive. Examples:
+   - `c1ccc2c(c1)ccc3ccccc32` (a polycyclic aromatic hydrocarbon) → **0.0**
+   - `CCCCCCCC` (octane) → **0.77764813**
+   - `CCCCCCCCC=C` (nonene) → **0.28701204**
+
+2. **Branched alkanes/alkenes** often have slightly positive values, especially if they are non-polar and lack functional groups. Examples:
+   - `CC(C)CCC(C)(C)C` (a branched alkane) → **0.77764813**
+   - `CC=C(C)C` is a branched alkene, structurally similar to the above.
+
+3. **Polar or functionalized molecules** (e.g., with -OH, -C=O, -N, -Cl, etc.) tend to have negative values, with more polar groups leading to more negative values.
+
+### Prediction for CC=C(C)C:
+- The molecule is a simple branched alkene with no polar or functional groups. 
+- It is structurally similar to `CCCCCCCCC=C` (nonene, property = **0.28701204**) but smaller and more branched.
+- Branched hydrocarbons like `CC(C)CCC(C)(C)C` have higher values (~0.777), but alkenes may have slightly lower values due to the double bond.
+- Given the lack of polarity and the branching, a reasonable estimate would be slightly positive, similar to other non-polar alkenes/alkanes.
+
+### Predicted Property Value:
+**0.28701204** (similar to `CCCCCCCCC=C`, adjusted for branching). 
+
+However, since `CC(C)CCC(C)(C)C` (a more branched alkane) has a higher value (0.777), and `CC=C(C)C` is less bulky but still branched, a compromise might be closer to **~0.5**. 
+
+Given the examples, the most consistent prediction is:  
+**0.49296278** (same as `CCCCC(CC)C=O` but without the aldehyde, so slightly adjusted). 
+
+But based on the nonene example (`CCCCCCCCC=C` = 0.287), a conservative estimate is:  
+**0.28701204**. 
+
+Final answer: **0.28701204** (assuming the double bond and branching balance out similarly to nonene). 
+
+However, if we consider the branching effect more strongly (like `CC(C)CCC(C)(C)C`), it could be higher. Given the ambiguity, the safest answer is:  
+**0.49296278**. 
+
+But to align with the simplest non-polar alkene example, I'll stick with:  
+**0.28701204**. 
+
+### Final Predicted Value:  
+**0.28701204**
+==================================================
+Iteration: 94
+SMILES: ClCCl
+True Property: 0.7776481338173168
+Predicted Property:
+Given the examples provided, we can observe the following patterns in the property values:
+
+1. **Simple halogenated hydrocarbons (especially chlorinated) often have a property value of 0.0**:
+   - Examples: 
+     - `Oc1ccc(Cl)c(Cl)c1` → 0.0
+     - `Clc1cc(c(Cl)c(Cl)c1Cl)c2cc(Cl)c(Cl)c(Cl)c2Cl` → 0.0
+     - `ClC(=C(Cl)Cl)Cl` → 0.0
+     - `Oc1cccc(Cl)c1` → 0.0
+
+2. **The molecule `ClCCl` (dichloromethane) is a simple chlorinated hydrocarbon**, similar to many of the examples above that have a property value of 0.0. There are no additional functional groups or complexities that would suggest a deviation from this trend.
+
+3. **Other small halogenated molecules (e.g., `ClC1CC2C(C1Cl)C3(Cl)C(=C(Cl)C2(Cl)C3(Cl)Cl)Cl`) sometimes have slightly positive values**, but these are more complex and heavily halogenated. `ClCCl` is much simpler.
+
+### Predicted Property Value for `ClCCl`:
+**0.0**
+==================================================
+Iteration: 95
+SMILES: Oc1c(Cl)ccc(Cl)c1Cl
+True Property: 0.0
+Predicted Property:
+To predict the property for the molecule **Oc1c(Cl)ccc(Cl)c1Cl**, let's analyze the given examples and identify patterns or similarities.
+
+### Observations:
+1. **Highly halogenated (especially chlorinated) aromatic rings** often have a property value of **0.0** when no other strongly polar or functional groups are present. For example:
+   - `Oc1c(Cl)cc(Cl)cc1Cl` has a value of **0.0** (this is very similar to the target molecule, just with a slightly different substitution pattern).
+   - `Brc1cc(Br)cc(Br)c1` also has a value of **0.0**.
+
+2. The presence of an **-OH group** on a halogenated aromatic ring does not necessarily change the property value if the rest of the molecule is heavily halogenated (as seen in the example above).
+
+3. The target molecule **Oc1c(Cl)ccc(Cl)c1Cl** is structurally very similar to the example `Oc1c(Cl)cc(Cl)cc1Cl` (both are trichlorophenols with slight differences in chlorine positions). Since the example has a value of **0.0**, it is reasonable to predict the same for this molecule.
+
+### Conclusion:
+The predicted property value for **Oc1c(Cl)ccc(Cl)c1Cl** is **0.0**. 
+
+This is based on the observation that heavily chlorinated aromatic systems with minor functional group variations (like -OH) tend to have this property value in the given dataset.
+==================================================
+Iteration: 96
+SMILES: COc1cc(cc(OC)c1O)C6C2C(COC2=O)C(OC4OC3COC(C)OC3C(O)C4O)c7cc5OCOc5cc67
+True Property: -0.7947681266421731
+Predicted Property:
+Given the examples provided, I will analyze the given molecule and predict its property based on the patterns observed in the training data.
+
+### Observations from the Training Data:
+1. **Highly Negative Values (e.g., ~ -3.6)**:
+   - Associated with molecules containing aromatic rings with hydroxyl (-OH) and/or methyl (-CH3) substitutions (e.g., `Cc1cc(C)c(O)c(C)c1`).
+   - Also seen in small heterocyclic structures with polar groups (e.g., `O=C1CNC(=O)N1`).
+
+2. **Moderately Negative Values (e.g., ~ -1.2 to -2.9)**:
+   - Seen in molecules with amide groups (`NC=O`), aromatic rings with substitutions, or complex heterocycles (e.g., `CN(C)C(=O)Nc1ccc(C)c(Cl)c1`).
+
+3. **Values Around 0.0**:
+   - Common in molecules with halogens (Cl, Br, F), nitro groups (`N(=O)=O`), or sulfur-containing groups (e.g., `Clc1ccc(Cl)c(c1)c2cccc(Cl)c2Cl`, `Sc1ccccc1`).
+
+4. **Values Around 0.777**:
+   - Seen in aliphatic chains (e.g., `CCCCl`, `CCCCCCCCCCCCCCCCCCCCCCCCCC`), alcohols (`CCO`, `OCC(O)CO`), or simple cyclic alkanes (`CC1CCCC1`).
+
+5. **Intermediate Positive Values (e.g., ~ 0.2 to 0.4)**:
+   - Seen in larger or more complex aliphatic/cyclic structures with polar groups (e.g., `CC12CCC3C(CCC4=CC(=O)CCC34C)C2CCC1(O)C(=O)CO`).
+
+### Analysis of the Given Molecule:
+The molecule is:
+```
+COc1cc(cc(OC)c1O)C6C2C(COC2=O)C(OC4OC3COC(C)OC3C(O)C4O)c7cc5OCOc5cc67
+```
+Key features:
+1. **Multiple aromatic rings** with methoxy (`OCH3`) and hydroxyl (`OH`) substitutions.
+2. **Complex polycyclic structure** with fused rings and ether linkages (`OCO`).
+3. **Presence of a carbonyl group (`C=O`)** in a cyclic structure.
+4. **No halogens, nitro groups, or sulfur**.
+
+### Comparison with Training Data:
+- The molecule resembles complex polycyclic structures with polar groups (e.g., `O=c2c(C3CCCc4ccccc43)c(O)c1ccccc1o2`, which has a value of `-1.176`).
+- The presence of multiple hydroxyl and methoxy groups suggests a moderately negative value (similar to `Cc1cc(C)c(O)c(C)c1`, which has `-3.596`).
+- However, the size and complexity of the molecule may push the value toward a less extreme negative range.
+
+### Predicted Property Value:
+Given the complexity and polar substitutions, the predicted value is likely in the moderately negative range, similar to other polycyclic aromatic structures with polar groups. A reasonable prediction is:
+
+**Predicted value: -1.70314511**  
+*(This matches the value for `Nc1ncnc2n(ccc12)C3OC(CO)C(O)C3O`, which is a complex heterocycle with polar groups.)*
+==================================================
+Iteration: 97
+SMILES: CSc1nnc(c(=O)n1N)C(C)(C)C
+True Property: -0.374560676490217
+Predicted Property:
+To predict the property for the molecule **CSc1nnc(c(=O)n1N)C(C)(C)C**, let's analyze its structural features and compare them to the given examples to infer the likely property value.
+
+### Structural Analysis:
+1. **Core Structure**: The molecule contains a **thiazole**-like ring (with S and N atoms) fused to a **pyrimidine**-like ring (with N and C=O groups). This is somewhat similar to the structure **CN1CC(O)N(C1=O)c2nnc(s2)C(C)(C)C** (property = **-0.04980785**), which also has a heterocyclic core with N and S atoms and a bulky **C(C)(C)C** group.
+   
+2. **Functional Groups**:
+   - **Thioether (C-S-C)**: Present in the given molecule. In the examples, **CCSC(=O)N(CC)C1CCCCC1** has a thioether and a property of **0.57689779**, but this is less relevant due to other dominant features.
+   - **Amide (C=O and N)**: The **c(=O)n1N** group is an amide-like moiety. Amides often contribute to negative property values (e.g., **NC(=O)c1ccccc1O** = 0.0, but others like **O=C1N(C2CCC(=O)NC2=O)C(=O)c3ccccc13** = **-1.37267118**).
+   - **Bulky tert-butyl group (C(C)(C)C)**: This appears in **CN1CC(O)N(C1=O)c2nnc(s2)C(C)(C)C** (property = **-0.04980785**), suggesting a modest negative contribution.
+
+3. **Comparison to Closest Example**:
+   - The most similar molecule in the examples is **CN1CC(O)N(C1=O)c2nnc(s2)C(C)(C)C**, which has:
+     - A heterocyclic core with N and S.
+     - A C=O group.
+     - A tert-butyl group.
+     - Property = **-0.04980785**.
+   - Our molecule replaces the **CC(O)N(C1=O)** part with **c(=O)n1N**, which is still an amide-like group but slightly more polar/negative due to the additional N-H.
+
+### Predicted Property:
+Given the similarities to **CN1CC(O)N(C1=O)c2nnc(s2)C(C)(C)C** but with a slightly more polar/negative amide group, the property should be **more negative** than **-0.04980785** but not as extreme as **-1.08441244** (seen in **Nc1c(C)c[nH]c(=O)n1**, which has two amide-like groups).
+
+A reasonable estimate is **-0.18437602**, which is the value for **CCNc1nc(NC(C)C)nc(OC)n1** (another heterocycle with polar groups). Alternatively, splitting the difference between **-0.04980785** and **-0.18437602** gives **~-0.1**.
+
+However, the presence of the **S** atom (which is less electronegative than O) and the tert-butyl group may moderate the negativity. Thus, the closest match is likely **-0.18437602**.
+
+### Final Prediction:
+**-0.18437602**
+==================================================
+Iteration: 98
+SMILES: CCOC(=O)c1ccccc1
+True Property: -1.2860754684033593
+Predicted Property:
+Analyzing the given examples, I observe that the property value tends to be **0.0** for aromatic systems (especially those with heteroatoms like nitrogen or oxygen in rings) unless they have significant polar or functional group contributions. For molecules with ester groups (`COC=O` or similar), the property values are often **non-zero**, especially when combined with aromatic rings.
+
+The molecule in question is:  
+**CCOC(=O)c1ccccc1**  
+This is ethyl benzoate, which consists of:
+1. An ethyl group (`CCO-`)  
+2. An ester linkage (`C(=O)O-`)  
+3. A benzene ring (`c1ccccc1`)  
+
+From the examples:
+- **COCC(=O)N(C(C)C(=O)OC)c1c(C)cccc1C** has a value of **-1.54936586** (contains ester + aromatic + bulky groups).  
+- **CCOC(=O)c1ccccc1S(=O)(=O)NN(C=O)c2nc(Cl)cc(OC)n2** has a value of **-1.08441244** (ester + aromatic + complex polar groups).  
+- **CCCCC(=O)OCC** (ethyl pentanoate) has a value of **0.44676617**.  
+
+Since **CCOC(=O)c1ccccc1** is a simpler ester with just an aromatic ring and no additional polar/disruptive groups, its value should be **closer to the aliphatic ester examples** (e.g., **0.44676617** for `CCCCC(=O)OCC`).  
+
+However, the benzene ring may slightly reduce the value compared to purely aliphatic esters.  
+
+### Predicted property value:  
+**≈ 0.44676617** (similar to other simple esters in the dataset).  
+
+(Note: If the property is logP or a similar descriptor, this aligns with the trend where aromatic esters have moderately positive values but less than fully aliphatic esters.)  
+
+**Final answer:**  
+**0.44676617**
+==================================================
+Iteration: 99
+SMILES: CCCCCCCBr
+True Property: 0.7776481338173168
+Predicted Property:
+Analyzing the given examples, I observe that the property values seem to correlate with certain structural features:
+
+1. **Simple aliphatic chains with halogens (Br, Cl, I)** often have a property value of **0.77764813** (e.g., CI, CCOP(=S)(OCC)SCCSCC, OCC(O)C(O)CO, CCN(=O)=O).
+2. **Aromatic systems with halogens** (e.g., Clc1ccc(cc1)c2cc(Cl)ccc2Cl, Brc1ccc2ccccc2c1) tend to have a value of **0.0** unless other functional groups are present.
+3. **Aliphatic chains with polar groups (e.g., carbonyls, hydroxyls)** have intermediate values (e.g., CCCCOC=O: 0.28701204, CCCC(=O)CCC: 0.44676617).
+4. **Complex or conjugated systems** often have negative values.
+
+The molecule in question, **CCCCCCCBr**, is a simple aliphatic chain with a bromine atom. This closely resembles:
+- **CI** (0.77764813), which is a simple aliphatic chain with iodine.
+- **CCOP(=S)(OCC)SCCSCC** (0.77764813), which is a longer aliphatic chain with sulfur/phosphorus groups but no strong polar effects.
+- **OCC(O)C(O)CO** (0.77764813), which is a polar aliphatic chain but still has the same value.
+
+Given this pattern, the property value for **CCCCCCCBr** is most likely:
+
+**Predicted property value: 0.77764813**
+==================================================
+Iteration: 100
+SMILES: CO
+True Property: 0.7776481338173168
+Predicted Property:
+Based on the provided examples and the structure of the molecule **CO (methanol)**, I can predict its property value by comparing it to similar molecules in the dataset. 
+
+Here's the reasoning:
+
+1. **CO** is a simple alcohol (methanol), similar to other small alcohols or oxygen-containing molecules in the dataset (e.g., **CCCCOC=O**, **OCC1OC(O)(CO)C(O)C1O**, **CCC(C)CO**, **CC(C)C1CCC(C)CC1O**, **CCCC(O)CCC**). Many of these molecules have a property value of **0.77764813**.
+
+2. Small, non-aromatic, oxygen-containing molecules (especially alcohols) tend to cluster around this value unless they have additional functional groups that significantly alter the property (e.g., nitro groups, multiple polar groups, or conjugated systems).
+
+3. **CO** does not contain any additional functional groups (like nitro, carbonyl, or aromatic rings) that would push the property value toward extremes (e.g., negative values or zero).
+
+Thus, the most likely property value for **CO** is:
+
+**Predicted property value: 0.77764813**
+==================================================
